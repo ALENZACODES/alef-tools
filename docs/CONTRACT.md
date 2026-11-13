@@ -213,10 +213,14 @@ passed in, so everything runs under `node --test`.
 ## 6. Shabbat-safe mode
 
 `loader.isShabbatSafeMode(now = Date.now())` is the one check every lane uses.
-The app registers its own Shabbat and Yom Tov logic at start-up with
+The app registers its own Shabbat and Yom Tov logic with
 `loader.setShabbatCheck(fn)` (candle lighting to havdalah when a city is set,
-plus the fixed Friday 18:00 to Saturday 21:00 rule). Without a registered check
-the loader uses the fixed rule alone.
+the same hours around every Yom Tov day, plus the fixed Friday 18:00 to
+Saturday 21:00 rule). It does so in `src/settings/shabbat.js`, which
+`src/settings/tools.js` loads before it hands out the loader, so the check is
+in place before any pack code can run. Without a registered check the loader
+uses the fixed rule alone. In the app, `isShabbatSafeMode()` is also exported
+from `src/settings/shabbat.js`.
 
 While it is on:
 
@@ -273,6 +277,17 @@ pack's files add up to more than its `budgetBytes`.
   because the host publishes the repo as it is.
 - `src/settings/alef-tools.generated.js` (written by sync) maps package id → folder, so
   no screen hard-codes a version.
+- Screens import the loader from **`src/settings/tools.js`** and nowhere else:
+  `import { loader, toolUrl } from '../settings/tools.js'`. A lane's package is
+  loaded with `const pkg = await import(toolUrl('words'))`, then
+  `await pkg.load({ loader, ortBase })`.
+- Only packs marked `"published": true` are shown on the Language Packs page
+  (`#/packs`). A pack in the `alef.pack.v1` format needs no app code to be
+  listed, downloaded and deleted there: publishing it and bumping the lock is
+  enough.
+- The vendored code is listed for "Download everything" (on demand), so a
+  screen that imports it still opens offline. A package's own `dist/vendor/`
+  folder is not listed; it is fetched when the feature is first used.
 - `data/packs/catalog.json` (written by sync from the manifest's `packs` table)
   is what the Language packs page reads.
 - Weights are fetched lazily on the learner's tap from the site or the pack
