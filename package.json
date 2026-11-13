@@ -1,0 +1,15 @@
+{
+  "name": "alef-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tools for the open Hebrew language models used by ALEF",
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test \"packages/*/tests/*.test.js\" \"scripts/tests/*.test.mjs\"",
+    "build": "node scripts/build-dist.mjs",
+    "check": "node scripts/check-manifest.mjs && node scripts/check-budgets.mjs && node scripts/build-dist.mjs --check"
+  }
+}

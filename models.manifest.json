@@ -1,0 +1,2353 @@
+{
+ "schema": "alef.models.manifest.v1",
+ "contract": 1,
+ "checked": "2026-11-12",
+ "note": "Every model considered for ALEF, whatever its tier. D = on the device (opt-in language pack), B = offline build time only, Q = internal checks only (never ships), X = dropped. Licences and revisions were read from the Hub on the checked date; node scripts/pin-revisions.mjs reads them again.",
+ "packHost": "https://alenzacodes.github.io/alef-packs/",
+ "talkRuntime": {
+  "note": "onnxruntime-web (MIT), already vendored in the app (assets/vendor/_ort). Its WebAssembly is fetched with the first Talk pack and kept in alef-talk-pack-v1.",
+  "bytes": 14927315,
+  "gpuBytes": 28871937
+ },
+ "packs": {
+  "translate-en-he": {
+   "title": "English to Hebrew",
+   "what": "Translates everyday English lines into Hebrew on this device.",
+   "budgetBytes": 83886080,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "deviceNote": "all devices",
+   "published": true,
+   "lane": 1,
+   "cache": "alef-talk-pack-v1",
+   "format": "alef.talk.nmt.manifest.v1",
+   "legacy": {
+    "adapter": "talk",
+    "direction": "en-he"
+   }
+  },
+  "translate-he-en": {
+   "title": "Hebrew to English",
+   "what": "Translates everyday Hebrew lines into English on this device.",
+   "budgetBytes": 83886080,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "deviceNote": "all devices",
+   "published": true,
+   "lane": 1,
+   "cache": "alef-talk-pack-v1",
+   "format": "alef.talk.nmt.manifest.v1",
+   "legacy": {
+    "adapter": "talk",
+    "direction": "he-en"
+   }
+  },
+  "translate-he-en-hq": {
+   "title": "Hebrew to English, high quality",
+   "what": "A larger pack for longer Hebrew sentences. For a computer with a graphics card.",
+   "budgetBytes": 262144000,
+   "device": {
+    "webgpu": true,
+    "minRamGB": 0
+   },
+   "deviceNote": "desktop with a graphics card",
+   "published": false,
+   "lane": 1,
+   "cache": "alef-pack-translate-he-en-hq-v1",
+   "format": "alef.pack.v1"
+  },
+  "listen-lite": {
+   "title": "Listening, small",
+   "what": "Writes down the Hebrew you say, on this device. Nothing you say leaves it.",
+   "budgetBytes": 83886080,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "deviceNote": "all devices",
+   "published": false,
+   "lane": 2,
+   "cache": "alef-pack-listen-lite-v1",
+   "format": "alef.pack.v1"
+  },
+  "listen-mid": {
+   "title": "Listening, medium",
+   "what": "Writes down the Hebrew you say with fewer mistakes. A bigger download.",
+   "budgetBytes": 268435456,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 4
+   },
+   "deviceNote": "recent phone or a computer",
+   "published": false,
+   "lane": 2,
+   "budgetNote": "Not in PLAN.md section 3. 256 MiB is proposed here from the 249 MB estimate; confirm before this pack is published.",
+   "cache": "alef-pack-listen-mid-v1",
+   "format": "alef.pack.v1"
+  },
+  "listen-best": {
+   "title": "Listening, best",
+   "what": "The most careful listening. For a computer with a graphics card and 8 GB of memory. Use Wi-Fi.",
+   "budgetBytes": 608174080,
+   "device": {
+    "webgpu": true,
+    "minRamGB": 8
+   },
+   "deviceNote": "desktop with a graphics card, Wi-Fi, 8 GB of memory or more",
+   "published": false,
+   "lane": 2,
+   "cache": "alef-pack-listen-best-v1",
+   "format": "alef.pack.v1"
+  },
+  "pron-check": {
+   "title": "Precise pronunciation check",
+   "what": "Checks your Hebrew letter by letter as you speak.",
+   "budgetBytes": 377487360,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 4
+   },
+   "deviceNote": "desktop or high-end phone",
+   "published": false,
+   "lane": 2,
+   "cache": "alef-pack-pron-check-v1",
+   "format": "alef.pack.v1"
+  },
+  "nikud": {
+   "title": "Vowel marks",
+   "what": "Adds vowel marks (nikud) to any Hebrew text.",
+   "budgetBytes": 335544320,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 4
+   },
+   "deviceNote": "desktop or high-end phone",
+   "published": false,
+   "lane": 3,
+   "cache": "alef-pack-nikud-v1",
+   "format": "alef.pack.v1"
+  },
+  "phonemes": {
+   "title": "Sounds and stress",
+   "what": "Shows how any Hebrew text is said, sound by sound, with the stress marked.",
+   "budgetBytes": 325058560,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 4
+   },
+   "deviceNote": "desktop or high-end phone",
+   "published": false,
+   "lane": 3,
+   "cache": "alef-pack-phonemes-v1",
+   "format": "alef.pack.v1"
+  },
+  "words": {
+   "title": "Word helper",
+   "what": "Tap any Hebrew word to see its dictionary form, root and prefixes.",
+   "budgetBytes": 52428800,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "deviceNote": "all devices",
+   "published": false,
+   "lane": 4,
+   "cache": "alef-pack-words-v1",
+   "format": "alef.pack.v1"
+  },
+  "handwriting": {
+   "title": "Handwriting check",
+   "what": "Checks the letters you trace.",
+   "budgetBytes": 2097152,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "deviceNote": "all devices",
+   "published": false,
+   "lane": 6,
+   "cache": "alef-pack-handwriting-v1",
+   "format": "alef.pack.v1"
+  }
+ },
+ "models": [
+  {
+   "id": "Helsinki-NLP/opus-mt-en-he",
+   "hubRevision": "b3df900afbb13bc343b0d28a03ac6f7990091f54",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "D",
+   "reason": "English to Hebrew for Talk, the camera translator and the live translator (the shipped en-he pack).",
+   "pack": "translate-en-he",
+   "files": [
+    {
+     "name": "en-he/table.p0.bin",
+     "bytes": 16777216,
+     "sha256": "4ee7626d8a7f1f557c78e51fa4ed0a7c8b90ed5d9fafcbac4ef9c1c112cb74ef",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/table.p0.bin"
+    },
+    {
+     "name": "en-he/table.p1.bin",
+     "bytes": 16777216,
+     "sha256": "46fea5d530f3af45c9e36d19da6ead040c16d70c0a7708a8d8adfd0f17fe33cf",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/table.p1.bin"
+    },
+    {
+     "name": "en-he/table.p2.bin",
+     "bytes": 682626,
+     "sha256": "e884a0924d403a793bbac882a08fcc19c67eeaca6574304edab9d82437e832d9",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/table.p2.bin"
+    },
+    {
+     "name": "en-he/encoder.p0.bin",
+     "bytes": 16777216,
+     "sha256": "54b7215fb7a946d8aa94de1dcc06183bbbb0129326109adc344e42b388b9719a",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/encoder.p0.bin"
+    },
+    {
+     "name": "en-he/encoder.p1.bin",
+     "bytes": 6658216,
+     "sha256": "502350afd7bc4d0fc7caee7c337ff6224d18cefaa74fb28dc96184a04c742a33",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/encoder.p1.bin"
+    },
+    {
+     "name": "en-he/decoder.p0.bin",
+     "bytes": 16777216,
+     "sha256": "ddd52831793ef900dfbd2f39997cf67857602696c19ce246fa75e5e243168ea0",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/decoder.p0.bin"
+    },
+    {
+     "name": "en-he/decoder.p1.bin",
+     "bytes": 6699514,
+     "sha256": "4217a0ae5e91d05d048f3601b194378a5f3012f4d75ab6430b8d5cf0f89fb55d",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/decoder.p1.bin"
+    },
+    {
+     "name": "en-he/vocab.json",
+     "bytes": 1311951,
+     "sha256": "37e4283db6e3ee7fe4150ce922bc824e58a72441d4566e2db4e053ded2b06820",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/vocab.json"
+    },
+    {
+     "name": "en-he/encoder.gpu.onnx",
+     "bytes": 113766,
+     "sha256": "59070f4ee2748404e7a58736d9cf7e319371572c2791808690ca82ff4ed66c32",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/encoder.gpu.onnx"
+    },
+    {
+     "name": "en-he/decoder.gpu.onnx",
+     "bytes": 124276,
+     "sha256": "bf64a91fe7f5aa7546094b5214fa4813d41f7d7758704fc3d8306be0a0b4aaee",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/en-he/decoder.gpu.onnx"
+    }
+   ],
+   "budgetBytes": 83886080,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Helsinki-NLP/Tatoeba-Challenge:heb-eng/opus-2021-02-19",
+   "source": "other",
+   "sourceUrl": "https://github.com/Helsinki-NLP/Tatoeba-Challenge/tree/master/models/heb-eng",
+   "hubRevision": null,
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "D",
+   "reason": "Hebrew to English (the shipped he-en pack). OPUS-MT Tatoeba release, not a Hub repository.",
+   "pack": "translate-he-en",
+   "files": [
+    {
+     "name": "he-en/table.p0.bin",
+     "bytes": 16777216,
+     "sha256": "e6e55476d3ce8852e6bf3835512b6de765152c37cb0e73fad12a7e4589b053df",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/table.p0.bin"
+    },
+    {
+     "name": "he-en/table.p1.bin",
+     "bytes": 15960162,
+     "sha256": "fa47f451933018974d34884ed04b8382a1994629746f160e7c5223293d7a082d",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/table.p1.bin"
+    },
+    {
+     "name": "he-en/encoder.p0.bin",
+     "bytes": 16777216,
+     "sha256": "4e75c71d5021fa387158223b1721ce4a935ea8559bb2bfd55fd1eed53f79a908",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/encoder.p0.bin"
+    },
+    {
+     "name": "he-en/encoder.p1.bin",
+     "bytes": 6658222,
+     "sha256": "4f2fa1dd58250386385d3370b1552d2fbe92dd62e84d73582aa551f6a2062e63",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/encoder.p1.bin"
+    },
+    {
+     "name": "he-en/decoder.p0.bin",
+     "bytes": 16777216,
+     "sha256": "a94fa1a042e0bf1525451b27833da2032b40dd0fa85f52031ab82906254d2fd7",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/decoder.p0.bin"
+    },
+    {
+     "name": "he-en/decoder.p1.bin",
+     "bytes": 6699520,
+     "sha256": "e56b73dc5b2d7c0f9da9fcf74d093882acc54ca564123f1bec3af24790c63b2d",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/decoder.p1.bin"
+    },
+    {
+     "name": "he-en/vocab.json",
+     "bytes": 1255313,
+     "sha256": "384dc6ccdee32af477f807abdad674e9214c7ad3cfeb661dd0ed323e7efed6c9",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/vocab.json"
+    },
+    {
+     "name": "he-en/encoder.gpu.onnx",
+     "bytes": 113766,
+     "sha256": "3edb195df863e0f251f3484c8124fa86cdd17627661c472c3037046210c40c42",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/encoder.gpu.onnx"
+    },
+    {
+     "name": "he-en/decoder.gpu.onnx",
+     "bytes": 124276,
+     "sha256": "b0949042de52ff3c18e0076840ecaa86e067515b59faf902792de8bf6c5bae12",
+     "url": "https://alenzacodes.github.io/alef-packs/_nmt/he-en/decoder.gpu.onnx"
+    }
+   ],
+   "budgetBytes": 83886080,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+   "hubRevision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "D",
+   "reason": "Better Hebrew to English on a desktop with a graphics card (opt-in); also used offline to build the translation memory for app sentences.",
+   "pack": "translate-he-en-hq",
+   "files": [],
+   "budgetBytes": 262144000,
+   "device": {
+    "webgpu": true,
+    "minRamGB": 0
+   },
+   "attribution": "OPUS-MT (opus-mt-tc-big-he-en) by the Language Technology Research Group at the University of Helsinki, CC BY 4.0"
+  },
+  {
+   "id": "Xenova/opus-mt-mul-en",
+   "hubRevision": "72a05e47cee89c718a9db4dc70d02fef3bc39de8",
+   "licence": "Apache-2.0 (base model; the port states none)",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Baseline in the scoring harness only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "onnx-community/opus-mt-mul-en",
+   "hubRevision": "caca514947aca3bc7e83e6ff1cc459fea224c728",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "Q",
+   "reason": "Baseline in the scoring harness only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Xenova/nllb-200-distilled-600M",
+   "hubRevision": "261c31d1a5732c67cdd16d80e8d6088507c7ccea",
+   "licence": "CC-BY-NC-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+   "tier": "X",
+   "reason": "Dropped: non-commercial licence.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ashercn97/english-hebrew-translation",
+   "hubRevision": "7d295c00e34cc3b00d56ae6c75b5cc4f10d22826",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/ashercn97/english-hebrew-translation",
+   "tier": "X",
+   "reason": "Dropped: no licence stated.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/whisper-large-v3-turbo",
+   "hubRevision": "f33172a8c3c6efbc040a7200e00835257cac0447",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Source model of the listen-best pack; offline transcript checks.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/whisper-large-v3-turbo-onnx",
+   "hubRevision": "edb17b6b65f60a299d4b620d043e15b60321e5ff",
+   "licence": "Apache-2.0 (inherited from ivrit-ai/whisper-large-v3-turbo; the port carries no licence tag)",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "D",
+   "reason": "Best listening on a desktop with a graphics card: live translator and voice journal transcripts. Pack as built: q4f16 encoder and merged decoder, 538.1 MiB (packages/speech/packs/listen-best.pack.json); not published yet, and not yet run on a graphics card. The port has no model card on the Hub (checked 2026-11-12).",
+   "pack": "listen-best",
+   "files": [],
+   "budgetBytes": 608174080,
+   "device": {
+    "webgpu": true,
+    "minRamGB": 8
+   },
+   "attribution": ""
+  },
+  {
+   "id": "onnx-community/whisper-base",
+   "hubRevision": "27a07b4b52b3a4c5886134bb4320e93e1a4bbc7c",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "D",
+   "reason": "Quick Hebrew listening on any device, so audio never leaves the device. Pack as built: 4-bit encoder and 8-bit merged decoder, 69.9 MiB (packages/speech/packs/listen-lite.pack.json); not published yet.",
+   "pack": "listen-lite",
+   "files": [],
+   "budgetBytes": 83886080,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "onnx-community/whisper-small",
+   "hubRevision": "36050c46d777d46dc4b5f43f6d90574fc38f8732",
+   "licence": "Apache-2.0 (base openai/whisper-small; the port carries no licence tag)",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "D",
+   "reason": "Optional middle tier: better listening on a phone. Not built by Lane 2 in this round.",
+   "pack": "listen-mid",
+   "files": [],
+   "budgetBytes": 268435456,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 4
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/wav2vec2-large-xlsr-53-hebrew",
+   "hubRevision": "3dd308dda70b20507a6920b459052635973ae3cd",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Source model of the pron-check pack.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "XDcobra/wav2vec2-large-xlsr-53-hebrew-ONNX",
+   "hubRevision": "9a38de310285ce9e4352178bb56bd0c6fc282c85",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "D",
+   "reason": "Letter-level pronunciation check (character alignment against the expected letters). Pack as built: re-exported from the fp32 graph to 4-bit weights, 198.6 MiB (packages/speech/packs/pron-check.pack.json); not published yet.",
+   "pack": "pron-check",
+   "files": [],
+   "budgetBytes": 377487360,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 4
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/wav2vec2-xls-r-300m-hebrew",
+   "hubRevision": "b2e683004903f1b11bee2c6092a7c323ed858d82",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/imvladikon/wav2vec2-xls-r-300m-hebrew",
+   "tier": "X",
+   "reason": "Dropped: no licence stated (the xlsr-53 model is used instead).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/wav2vec2-xls-r-300m-lm-hebrew",
+   "hubRevision": "a532e94f9747ade06ec9b3a45aee3d7965dd8f84",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Scoring-harness comparison only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/wav2vec2-xls-r-1b-hebrew",
+   "hubRevision": "d67afbcd9f3722564ba3e1146e9181bfd7063e23",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Scoring-harness comparison only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/whisper-medium-he",
+   "hubRevision": "241e89a758b512be3e5bae44dc93c2dc34873b81",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline transcript checks of app audio.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/whisper-large-v3",
+   "hubRevision": "766847c9795b3b5cc0d42f8476199c711d5cee21",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline: transcribe and verify every shipped Hebrew clip (wrong takes, a voiced divine Name).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/whisper-large-v3-ct2",
+   "hubRevision": "e9ed4a4a98d761b0f617d668303de2c514236c66",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline: transcribe and verify every shipped Hebrew clip.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/whisper-large-v3-turbo-ct2",
+   "hubRevision": "72ad623a37947395efcc3933132353790e5a12f5",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline: transcribe and verify every shipped Hebrew clip.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/whisper-v2-d4",
+   "hubRevision": "db40b936baaf76e8d58ae1201590f1965d328077",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline: transcribe and verify every shipped Hebrew clip.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/faster-whisper-v2-d4",
+   "hubRevision": "45ef6dd536dfbf6e8633796157cad00f428142cc",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline: transcribe and verify every shipped Hebrew clip.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/pyannote-speaker-diarization-3.1",
+   "hubRevision": "38f6d53531ff4519f895b18fd3f67424b81415db",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "B",
+   "reason": "Offline split of multi-speaker recordings.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ivrit-ai/pyannote-segmentation-3.0",
+   "hubRevision": "2a6b1347edb11dcf022a5b87162739a07232c90d",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/ivrit-ai/pyannote-segmentation-3.0",
+   "tier": "X",
+   "reason": "Dropped: no licence stated.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "thewh1teagle/whisper-heb-ipa",
+   "hubRevision": null,
+   "licence": "unavailable",
+   "licenceUrl": "https://huggingface.co/thewh1teagle/whisper-heb-ipa",
+   "tier": "X",
+   "reason": "Dropped: the repository is private or removed (the Hub answers 401). Replaced by phonikud phonemes plus the wav2vec2 alignment.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "slprl/WhiStress",
+   "hubRevision": "3641786c97df31786d2ae17bb9307f7776cf7138",
+   "licence": "CC-BY-NC-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+   "tier": "Q",
+   "reason": "Non-commercial: may only be used to evaluate our own stress rules internally. Never ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "slprl/StresSLM",
+   "hubRevision": "711c31102bd6cfb9fb2be0c3cb38f7cefae8ef38",
+   "licence": "CC-BY-NC-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+   "tier": "Q",
+   "reason": "Non-commercial: internal evaluation only. Never ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "slprl/PAST",
+   "hubRevision": "07329e810dd1e5e68eae97824e167bdb508ae7d9",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/slprl/PAST",
+   "tier": "Q",
+   "reason": "No licence stated: internal evaluation only. Never ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Hebrish/Jachnun-ONNX",
+   "hubRevision": "5dbe4ccc858c0423b5d8d8201426d3a05f636d94",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "Q",
+   "reason": "Mixed Hebrew and English speech in Talk (PLAN.md calls this \"danielrosehill/Parakeet-TDT-0.6B EN-HE code-switching\"; on the Hub it is Hebrish/Jachnun, a Parakeet fine-tune). Gated: John has to accept the terms before it can be evaluated. Internal checks only for now.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "tzikitrop/whisper-he-tiny-picking-onnx",
+   "hubRevision": "1e48b78c266aae232508a4b75caff7fd0c6c3bdc",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/tzikitrop/whisper-he-tiny-picking-onnx",
+   "tier": "X",
+   "reason": "Dropped: no licence stated, narrow domain.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/dictabert-large-char-menaked",
+   "hubRevision": "4dfc20b94565d7868e1c8c00bf039d38c071a062",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "D",
+   "reason": "Vowel marks for any text the learner brings (camera, Talk, typed); offline, vowel marks for every app sentence, checked.",
+   "pack": "nikud",
+   "files": [],
+   "budgetBytes": 335544320,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 4
+   },
+   "attribution": "dictabert-large-char-menaked by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "avraham123/tale-me-dictabert-menaked-browser",
+   "hubRevision": "c9e5cf7f1e6d88918968c75a2aad701675d76209",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "Q",
+   "reason": "Third-party browser port of the menaked model. Not used: the pack is converted from the Dicta original.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/dictabert-char",
+   "hubRevision": "58849bcd91db1df3134e23a7ab0358116e81dfc8",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "Q",
+   "reason": "Experiment: a smaller vowel-marking head.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Phonikud/phonikud-onnx",
+   "hubRevision": "b806189fe1fc0085b1012b7560ffb5e8ecfd72a2",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "D",
+   "reason": "Phonemes and stress marks for any text; the target for the pronunciation check; transliteration checks. (Also reachable as thewh1teagle/phonikud-onnx.)",
+   "pack": "phonemes",
+   "files": [],
+   "budgetBytes": 325058560,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 4
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Phonikud/phonikud",
+   "hubRevision": "aef4b260fe8d522525b4f2896af90605ce58e274",
+   "licence": "\"cc\" (unspecified)",
+   "licenceUrl": "https://huggingface.co/Phonikud/phonikud",
+   "tier": "X",
+   "reason": "Dropped: licence unclear (training repository; the MIT ONNX build is used instead).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "verbit/hebrew_punctuation",
+   "hubRevision": "85f81abab8d179df179c901d260592915e29cce3",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Punctuate offline transcripts (voice journal export, lesson scripts).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/dictabert-tiny-joint",
+   "hubRevision": "708026b7297ffde293f14a3a592f8cf649f12c38",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "D",
+   "reason": "Word taps anywhere: dictionary form, root and pattern hint, prefixes, part of speech, names.",
+   "pack": "words",
+   "files": [],
+   "budgetBytes": 52428800,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-tiny-joint by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-joint",
+   "hubRevision": "7b1256fc0846e22d1af431eae299e2dcecee2778",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Build-time analysis of every lesson word and sentence into static JSON for lesson explanations.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-joint by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-morph",
+   "hubRevision": "608e457a423775358dda33a01e82aeb3e7a83150",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Cross-check of the joint model; roots table checks.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-morph by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-lex",
+   "hubRevision": "91b97a6125732f1c0dda7b479e48050b0fd01ab4",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Cross-check of the joint model; roots table checks.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-lex by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-seg",
+   "hubRevision": "7318bcbbad1152a52a65b1d1157ed4a2654c98a4",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Cross-check of the joint model; roots table checks.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-seg by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-syntax",
+   "hubRevision": "fa11cb5df763e1f6412e03b3566728933121cab6",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Cross-check of the joint model; roots table checks.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-syntax by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-parse",
+   "hubRevision": "37f4d6fd556766f15e955fe5bd0f16942b46853e",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Cross-check of the joint model; roots table checks.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-parse by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-large-parse",
+   "hubRevision": "485ed0b4ed1b836ebd278a4ec37ac0ab85d9ae64",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Cross-check of the joint model; roots table checks.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-large-parse by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-tiny-parse",
+   "hubRevision": "8e97fcdcec347e1ef1b24d82c01d4fc73989ece8",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Cross-check of the joint model; roots table checks.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-tiny-parse by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "onnx-community/dictabert-ner-ONNX",
+   "hubRevision": "4f0aabf58566526df6f3fb548e0fd2619fbf2b1d",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Names and places tags for camera signs and reading texts.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-ner by Dicta: The Israel Center for Text Analysis (ONNX build by onnx-community), CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-ner",
+   "hubRevision": "05ed61bc99437b13bc2bdef8154c52f8b44eaad6",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Source model of the NER ONNX build.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-ner by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-large-ner",
+   "hubRevision": "ac70130828d5a6811c2dc451e2255424c96f0eb0",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "Q",
+   "reason": "NER gold check.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/dictabert-sentiment",
+   "hubRevision": "a61e139c59818955c92f355455b495ea6391a29f",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Label sentences for the feelings games (static JSON, human-checked).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-sentiment by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-heq",
+   "hubRevision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Ask the Torah: finding the answering span inside cited sources (quote-and-cite).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-heq by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-large-heq",
+   "hubRevision": "2eb6caa4f677cbf7ec8d95353dd1747b3b2f47dc",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Ask the Torah: finding the answering span inside cited sources (quote-and-cite).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-large-heq by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert",
+   "hubRevision": "8884c6db002aba4002ee638fe4070c92e9ffbbf1",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Offline: quiz distractors, cloze-item checks, typo correction after OCR.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/dictabert-large",
+   "hubRevision": "a972ffb612c03bcfb128f10f5ef4462f7adb9844",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Offline: quiz distractors, cloze-item checks, typo correction after OCR.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "dictabert-large by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/neodictabert",
+   "hubRevision": "9052b2e47fe3e615931563bb2a74b26df6e028a3",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Offline: quiz distractors, cloze-item checks, typo correction after OCR.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "neodictabert by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/neodictabert-bilingual",
+   "hubRevision": "3367cca9df69104101175b563696463c6524f03d",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Offline: quiz distractors, cloze-item checks, typo correction after OCR.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "neodictabert-bilingual by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/MsBERT",
+   "hubRevision": "d87fc6949dd9e77a0a6df1c33fff72db56eeb486",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Offline: quiz distractors, cloze-item checks, typo correction after OCR.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "MsBERT by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "dicta-il/alephbertgimmel-base",
+   "hubRevision": "973a5f8bb492c0525c21b4f9dd3d18f9ddc02dad",
+   "licence": "CC0-1.0",
+   "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "tier": "B",
+   "reason": "Offline: quiz distractors, cloze-item checks, typo correction after OCR.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "onlplab/alephbert-base",
+   "hubRevision": "1745fb3ff5137e41e9eb4d6246e0758f63b93e46",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline: quiz distractors, cloze-item checks, typo correction after OCR.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/heBERT",
+   "hubRevision": "01566c04aa226325662d5054331458e14ef3ede1",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/heBERT",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/heBERT_NER",
+   "hubRevision": "fc4a87775d8cb716b9803b73672ebcd53e933c4a",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/heBERT_NER",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/heBERT_sentiment_analysis",
+   "hubRevision": "022c0d00fc26288c25c0b9f5389d7f0991f93de2",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/heBERT_sentiment_analysis",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/hebEMO_anger",
+   "hubRevision": "98c86d3cfb0ad57d87d5b751e64affdbf96eedf4",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/hebEMO_anger",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/hebEMO_anticipation",
+   "hubRevision": "87772a230ab10269368b113f8c53fc4b27211212",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/hebEMO_anticipation",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/hebEMO_disgust",
+   "hubRevision": "ab06244d38eb446de15420f20c9660d5472d548c",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/hebEMO_disgust",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/hebEMO_fear",
+   "hubRevision": "d0d904a86c7f28859c67c9855118d18ebbabf2f9",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/hebEMO_fear",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/hebEMO_joy",
+   "hubRevision": "87c55811d54c59b43e407cc10c0af13b9e618563",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/hebEMO_joy",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/hebEMO_sadness",
+   "hubRevision": "174de57c806c9b6bd12738709727db5e513c7459",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/hebEMO_sadness",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/hebEMO_surprise",
+   "hubRevision": "5596b27373fcc10af1b194eadf8b7998eb9c4126",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/hebEMO_surprise",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/hebEMO_trust",
+   "hubRevision": "60f487bb367c33692a265b9c83321f867c9e2fdd",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/hebEMO_trust",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "avichr/Legal-heBERT",
+   "hubRevision": "dd775034faa5d4668da364d21a396e1c51773ec1",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/avichr/Legal-heBERT",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub. Replaced by the DictaBERT equivalents.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "onnx-community/heBERT_NER-ONNX",
+   "hubRevision": "16a6e787e031687571d454db9b978807e28b08a6",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/onnx-community/heBERT_NER-ONNX",
+   "tier": "X",
+   "reason": "Dropped: no licence on the Hub.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "HeNLP/HeRo",
+   "hubRevision": "8dc628f5e29a17aa73f924d8609421f3ec5bf763",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/HeNLP/HeRo",
+   "tier": "X",
+   "reason": "Dropped: no licence stated.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "HeNLP/LongHeRo",
+   "hubRevision": "8362824792f8a3f48aadd359adb8301206a08b7e",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/HeNLP/LongHeRo",
+   "tier": "X",
+   "reason": "Dropped: no licence stated.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/hebert_parashoot",
+   "hubRevision": "868cf55bb7a8af2a4c7b382ca5212c7b4be4b422",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/imvladikon/hebert_parashoot",
+   "tier": "X",
+   "reason": "Dropped: no licence stated (dictabert-heq is used instead).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "KevynKrancenblum/hebrew-offensive-detection",
+   "hubRevision": "e127b6a3ea1ec560a62c1a58c1234301b3b34b01",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "B",
+   "reason": "Screen every generated or learner-facing Hebrew string offline.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "tdklab/hebert-finetuned-hebrew-metaphor",
+   "hubRevision": "1843ead383554fe3422a77e850aae3493bdbb22a",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/tdklab/hebert-finetuned-hebrew-metaphor",
+   "tier": "Q",
+   "reason": "Idioms unit checks only, and only if a licence is confirmed (derived from heBERT, which states none).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/neodictabert-bilingual-embed",
+   "hubRevision": "1da86250a8021a7f7c3e427defbd9604fdb16c25",
+   "licence": "CC-BY-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+   "tier": "B",
+   "reason": "Build-time vectors for the Ask the Torah question bank, lessons and dictionary; English or Hebrew queries.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": "neodictabert-bilingual-embed by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+  },
+  {
+   "id": "imvladikon/sentence-transformers-alephbert",
+   "hubRevision": "547db5a2028766922251e5e2be6a973674ee0c07",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/imvladikon/sentence-transformers-alephbert",
+   "tier": "X",
+   "reason": "Dropped: no licence stated.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/sentence_transformers_alephbertgimmel_small",
+   "hubRevision": "99d2b941ca4c729a6439a472a83c4acc59bc7f5f",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/imvladikon/sentence_transformers_alephbertgimmel_small",
+   "tier": "X",
+   "reason": "Dropped: no licence stated.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/DictaLM-3.0-24B-Thinking",
+   "hubRevision": "165442be7f7dd86c1f516c5a1796f3e787d0845b",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: draft Ask the Torah answers (quote-and-cite, from sources already in the app), example sentences, quiz items, translation-memory review. Nothing ships without a test gate and a human-review list.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/DictaLM-3.0-24B-Base",
+   "hubRevision": "6efc92259da9a242b937f9af3a099c18d3a127cb",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: as the Thinking model.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/DictaLM-3.0-Nemotron-12B-Instruct",
+   "hubRevision": "d08cd8264b74595dc38aa046b0ab9639240f6570",
+   "licence": "NVIDIA Open Model License",
+   "licenceUrl": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+   "tier": "B",
+   "reason": "Offline only: second-opinion checker (cross-model agreement gate). Commercial use allowed; terms recorded.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/DictaLM-3.0-Nemotron-12B-Base",
+   "hubRevision": "6e9b054c8d05731572504d6e840974f1ee470208",
+   "licence": "NVIDIA Open Model License",
+   "licenceUrl": "https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/",
+   "tier": "B",
+   "reason": "Offline only: second-opinion checker.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+   "hubRevision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: cheap bulk pass (grammar and gender agreement of generated items).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/DictaLM-3.0-1.7B-Thinking",
+   "hubRevision": "43e2fac285633ab440577ce5bcd7223e277cb3a2",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: cheap bulk pass (grammar and gender agreement of generated items).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/DictaLM-3.0-1.7B-Base",
+   "hubRevision": "b0bdc0d1b236f60ea99a2b844745d2b3d199ad66",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: cheap bulk pass (grammar and gender agreement of generated items).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/dictalm2.0",
+   "hubRevision": "f8ab3208e95a7b44a9a2fbb9bbbdd8ea11be509d",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: fallback generator.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/dictalm2.0-instruct",
+   "hubRevision": "257c6023d6ac1bfa12110b7b17e7600da7da4e1e",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: fallback generator.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/BEREL_3.0",
+   "hubRevision": "25dc07f2e622ba14eeea6c026eaa54f3586ceabf",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Biblical and Rabbinic Hebrew: vowel and trope checks on Torah reading texts, cloze items for Torah and prayer units.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/BEREL",
+   "hubRevision": "029fa610debddd0cd798f8babc33e41388fb2bac",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Biblical and Rabbinic Hebrew checks (older model).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "yam-peleg/Hebrew-Mistral-7B",
+   "hubRevision": "3d32134b5959492fd7efbbf16395352594bc89f7",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Extra judge in the agreement gate.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "yam-peleg/Hebrew-Mistral-7B-200K",
+   "hubRevision": "7b51c7b31e3d9e29ea964c579a45233cfad255fe",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Extra judge in the agreement gate.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ronmasas/Hebrew-Mistral-7B-Instruct-v0.1",
+   "hubRevision": "88de6fcaa0e9a53c6bbc7a9c6211b0ff50c51a7f",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Extra judge in the agreement gate.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "SicariusSicariiStuff/Hebrew_Nemo",
+   "hubRevision": "63e7e7769c8c064c1062a83788b3b3e6eb262d6b",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Extra judge in the agreement gate.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "yonioz123/Llama-3.2-3B-Hebrew-Master",
+   "hubRevision": "6c27d89168f8557d4e74816c6679314cb35a79da",
+   "licence": "Apache-2.0 (as tagged; base model is under the Llama 3.2 Community Licence)",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Extra judge in the agreement gate.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Intel/hebrew-math-tutor-v1",
+   "hubRevision": "5b2027ea4ad0767cd18c9a6620a7e033b3580722",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "Q",
+   "reason": "Numbers-unit word-problem experiment only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "ronigold/dictalm2.0-instruct-fine-tuned-alpaca-gpt4-hebrew",
+   "hubRevision": "34620801cdbf1dfe54955e5f101c73949d4b05db",
+   "licence": "MIT (trained on GPT-4 outputs)",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "Q",
+   "reason": "Judge only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "yam-peleg/Hebrew-Gemma-11B",
+   "hubRevision": "20216cb3fbef07b47196ca463814cb7beabb29a9",
+   "licence": "Gemma Terms of Use",
+   "licenceUrl": "https://ai.google.dev/gemma/terms",
+   "tier": "Q",
+   "reason": "Use-policy terms, not an open-source licence: internal checks only, writes nothing that ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "yam-peleg/Hebrew-Gemma-11B-V2",
+   "hubRevision": "bff43da660089d467a2b29a8cc8ead986b3277ca",
+   "licence": "Gemma Terms of Use",
+   "licenceUrl": "https://ai.google.dev/gemma/terms",
+   "tier": "Q",
+   "reason": "Use-policy terms, not an open-source licence: internal checks only, writes nothing that ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "yam-peleg/Hebrew-Gemma-11B-Instruct",
+   "hubRevision": "a40259d1efbcac4829ed44d3b589716f615ed362",
+   "licence": "Gemma Terms of Use",
+   "licenceUrl": "https://ai.google.dev/gemma/terms",
+   "tier": "Q",
+   "reason": "Use-policy terms, not an open-source licence: internal checks only, writes nothing that ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Norod78/gemma-3_4b_hebrew-lyrics-finetune",
+   "hubRevision": "a16990bd975331e2e02bf3125c1e05c100ab3ebc",
+   "licence": "Gemma Terms of Use",
+   "licenceUrl": "https://ai.google.dev/gemma/terms",
+   "tier": "Q",
+   "reason": "Use-policy terms: internal checks only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "XythicK/Hebrew-GPT",
+   "hubRevision": "ad3ef49c8481bbbb30f6c1d208427c6d1c062794",
+   "licence": "Llama 3.2 Community Licence",
+   "licenceUrl": "https://www.llama.com/llama3_2/license/",
+   "tier": "Q",
+   "reason": "Attribution and acceptable-use terms: internal checks only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "slprl/SIMS-Llama3.2-3B",
+   "hubRevision": "847146d5fbb2d8e5345d4cf1379c1e0e94eeb501",
+   "licence": "Llama 3.2 Community Licence",
+   "licenceUrl": "https://www.llama.com/llama3_2/license/",
+   "tier": "Q",
+   "reason": "Attribution and acceptable-use terms: internal checks only.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "slprl/SIMS-7B",
+   "hubRevision": "2a83e72d7e6ae8f582ebe0d27cab8baf90c5a6c3",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "X",
+   "reason": "Dropped: a speech language model, not usable for the frozen-cast spoken lessons.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Slasky/HebrewGPT-1B",
+   "hubRevision": "fd08f10a8df7507df2ec413d698dd0500cb54bf1",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "X",
+   "reason": "Dropped: too weak for teaching content.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Slasky/HebrewGPT-296M",
+   "hubRevision": "a142784c73d8c2b12b55d63ea45c1bcdccc46389",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "X",
+   "reason": "Dropped: too weak for teaching content.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Norod78/Hebrew-GPT2-345M-Stage",
+   "hubRevision": "41750d709ac68833fe2ff778d03ec4af9abe4e07",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "X",
+   "reason": "Dropped: too weak for teaching content.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Norod78/hebrew-gpt_neo-small",
+   "hubRevision": "d9ee75ea9eb03f817c5c97a4e4d7b2e300be365b",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "X",
+   "reason": "Dropped: too weak for teaching content.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Norod78/hebrew-gpt_neo-tiny",
+   "hubRevision": "7669a3dcb026a3d693de9bd6c9fbcf6b4288b4c2",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "X",
+   "reason": "Dropped: too weak for teaching content (an ONNX build exists, 122 MB; not worth a pack).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Norod78/hebrew-gpt_neo-xl",
+   "hubRevision": "1afb0e845b7578b7d816a7ab686e4113bac74b18",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "X",
+   "reason": "Dropped: too weak for teaching content.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Norod78/SmolLM-135M-FakyPedia-EngHeb",
+   "hubRevision": "fd2d0138c4d0f03e7ca5fcdd3cdf52c82248c4e9",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "X",
+   "reason": "Dropped: too weak for teaching content.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/het5_summarization",
+   "hubRevision": "013e7d3c7a1eff6692397d7cc96dbaac54a0e358",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/imvladikon/het5_summarization",
+   "tier": "X",
+   "reason": "Dropped: no licence stated (lesson summaries are covered offline by DictaLM).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/het5_small_summarization",
+   "hubRevision": "57371030ddf5c85569f8249fc67ce29151c54e0b",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/imvladikon/het5_small_summarization",
+   "tier": "X",
+   "reason": "Dropped: no licence stated.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "imvladikon/cross_summarization_he_en",
+   "hubRevision": "f46ac014f9523ae702c36ad369fb7164bfd556d1",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/imvladikon/cross_summarization_he_en",
+   "tier": "X",
+   "reason": "Dropped: no licence stated.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "sivan22/testing-trOCR-hebrew-handwritten",
+   "hubRevision": "419f9f0b3a76c20254e17a9a1722f91c588420f6",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/sivan22/testing-trOCR-hebrew-handwritten",
+   "tier": "Q",
+   "reason": "Benchmark only for the tracing checker. No licence stated; never ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Xenova/trocr-small-handwritten",
+   "hubRevision": "02bea33ca09a70e2e2d91140a7e6e1a729606a5b",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "Q",
+   "reason": "Architecture reference only for the tracing checker.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "alef-tools/handwriting-cnn",
+   "source": "own",
+   "sourceUrl": "https://github.com/ALENZACODES/alef-tools/tree/main/packages/handwriting",
+   "hubRevision": null,
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "D",
+   "reason": "The tracing checker: our own small network (at most 2 MiB), trained here on letters drawn from OFL Hebrew fonts.",
+   "pack": "handwriting",
+   "files": [],
+   "budgetBytes": 2097152,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "mr3vial/paleo-hebrew-mt5-post-ocr-processing",
+   "hubRevision": "9b24743a414b2a9322be666e72b4c16b8cbffe2f",
+   "licence": "MIT",
+   "licenceUrl": "https://opensource.org/license/mit",
+   "tier": "X",
+   "reason": "Dropped: out of scope (paleo-Hebrew).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "tesseract-ocr/tessdata:heb",
+   "source": "other",
+   "sourceUrl": "https://github.com/tesseract-ocr/tessdata",
+   "hubRevision": null,
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "D",
+   "reason": "Camera OCR. Already vendored in the app (assets/vendor/_tesseract); stays as it is.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "facebook/mms-tts-heb",
+   "hubRevision": "28f1fce7cf56b2a3a56e19a4a1405ed70b454853",
+   "licence": "CC-BY-NC-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+   "tier": "X",
+   "reason": "Dropped: non-commercial. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "thewh1teagle/mms-tts-heb",
+   "hubRevision": null,
+   "licence": "unavailable",
+   "licenceUrl": "https://huggingface.co/thewh1teagle/mms-tts-heb",
+   "tier": "X",
+   "reason": "Dropped: the Hub answers 401. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Xenova/mms-tts-heb",
+   "hubRevision": null,
+   "licence": "unavailable",
+   "licenceUrl": "https://huggingface.co/Xenova/mms-tts-heb",
+   "tier": "X",
+   "reason": "Dropped: the Hub answers 401. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "notmax123/Zonos-Hebrew",
+   "hubRevision": "66c4f2124dbf70811ebb12e7608262a21578e638",
+   "licence": "CC-BY-NC-4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+   "tier": "X",
+   "reason": "Dropped: non-commercial. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "thewh1teagle/kokoro-hebrew-nc",
+   "hubRevision": "07e2334fc252d7965cb8dbd503bf7565bad71228",
+   "licence": "\"other\" (non-commercial by name)",
+   "licenceUrl": "https://huggingface.co/thewh1teagle/kokoro-hebrew-nc",
+   "tier": "X",
+   "reason": "Dropped: non-commercial. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "Trojanssafsdg/hebrewTTS-orpheus3b",
+   "hubRevision": "b80c2b513a4efde1cf462c9ce95df7557cd57233",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "X",
+   "reason": "Dropped: the repository holds no weights. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "rotem1121/hebrew-orpheus-tts",
+   "hubRevision": "c454935d3b0f832c150e178c700af451cbf95e21",
+   "licence": "none stated",
+   "licenceUrl": "https://huggingface.co/rotem1121/hebrew-orpheus-tts",
+   "tier": "X",
+   "reason": "Dropped: no licence stated. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "slp-rl/HebTTS",
+   "source": "github",
+   "sourceUrl": "https://github.com/slp-rl/HebTTS",
+   "hubRevision": null,
+   "licence": "none stated",
+   "licenceUrl": "https://github.com/slp-rl/HebTTS",
+   "tier": "X",
+   "reason": "Dropped: GitHub project with no licence file. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "thewh1teagle/israwave",
+   "source": "github",
+   "sourceUrl": "https://github.com/thewh1teagle/israwave",
+   "hubRevision": null,
+   "licence": "none stated",
+   "licenceUrl": "https://github.com/thewh1teagle/israwave",
+   "tier": "X",
+   "reason": "Dropped: GitHub project with no licence file. No synthetic voice ships.",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  }
+ ]
+}
