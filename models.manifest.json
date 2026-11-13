@@ -48,7 +48,7 @@
   },
   "translate-he-en-hq": {
    "title": "Hebrew to English, high quality",
-   "what": "A larger pack for longer Hebrew sentences. For a computer with a graphics card.",
+   "what": "A larger pack that gets more Hebrew lines right. For a computer with a graphics card.",
    "budgetBytes": 262144000,
    "device": {
     "webgpu": true,
@@ -57,8 +57,13 @@
    "deviceNote": "desktop with a graphics card",
    "published": false,
    "lane": 1,
-   "cache": "alef-pack-translate-he-en-hq-v1",
-   "format": "alef.pack.v1"
+   "cache": "alef-talk-pack-v1",
+   "format": "alef.talk.nmt.manifest.v1",
+   "legacy": {
+    "adapter": "talk",
+    "direction": "he-en",
+    "name": "he-en-hq"
+   }
   },
   "listen-lite": {
    "title": "Listening, small",
@@ -323,7 +328,7 @@
     "webgpu": false,
     "minRamGB": 0
    },
-   "attribution": ""
+   "attribution": "OPUS-MT Tatoeba heb-eng by the Language Technology Research Group at the University of Helsinki (the Tatoeba Translation Challenge)."
   },
   {
    "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
@@ -331,7 +336,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "D",
-   "reason": "Better Hebrew to English on a desktop with a graphics card (opt-in); also used offline to build the translation memory for app sentences.",
+   "reason": "Better Hebrew to English on a desktop with a graphics card (opt-in). Built and scored on 12 November 2026 (237.6 MiB in 17 parts; the part list with sizes and SHA-256 is packages/translate/packs/he-en-hq.pack.json); the files are not on the pack host yet, so the list below stays empty. Also used offline for the few lesson sentences of the sentence memory that had no English.",
    "pack": "translate-he-en-hq",
    "files": [],
    "budgetBytes": 262144000,
@@ -339,7 +344,7 @@
     "webgpu": true,
     "minRamGB": 0
    },
-   "attribution": "OPUS-MT (opus-mt-tc-big-he-en) by the Language Technology Research Group at the University of Helsinki, CC BY 4.0"
+   "attribution": "OPUS-MT tc-big he-en by the Language Technology Research Group at the University of Helsinki, CC BY 4.0. Converted to 8-bit for the browser."
   },
   {
    "id": "Xenova/opus-mt-mul-en",
@@ -363,7 +368,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "Q",
-   "reason": "Baseline in the scoring harness only.",
+   "reason": "Baseline in the scoring harness only. Not run yet: packages/translate/scripts/score.mjs reads the Talk pack layout, not the stock ONNX layout.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
