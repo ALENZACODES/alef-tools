@@ -1,0 +1,11 @@
+{
+  "name": "@alef-tools/morph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Word notes for ALEF: per-lesson notes built ahead of time, the Words language pack reader, and plain-English note text",
+  "license": "MIT",
+  "exports": { ".": "./dist/index.js" },
+  "scripts": { "test": "node --test \"tests/*.test.js\"" },
+  "alef": { "firstInstall": [] }
+}
