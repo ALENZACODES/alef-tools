@@ -1,0 +1,5 @@
+# Pinned tools for the conversion helpers in scripts/convert-common.py. A lane adds its own pins in
+# packages/<name>/scripts/requirements.txt (torch, transformers, optimum, ...).
+huggingface_hub==0.36.0
+onnx==1.19.1
+onnxruntime==1.23.2
