@@ -271,7 +271,7 @@ pack's files add up to more than its `budgetBytes`.
   (CI runs this).
 - The vendored files are committed in Al-Heb, like its other vendored code,
   because the host publishes the repo as it is.
-- `src/packs/tools.generated.js` (written by sync) maps package id → folder, so
+- `src/settings/alef-tools.generated.js` (written by sync) maps package id → folder, so
   no screen hard-codes a version.
 - `data/packs/catalog.json` (written by sync from the manifest's `packs` table)
   is what the Language packs page reads.
