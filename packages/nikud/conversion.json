@@ -1,0 +1,54 @@
+{
+ "schema": "alef.nikud.conversion.v1",
+ "note": "What was converted for the two packs of this package, with sizes and SHA-256. The pack lists in packs/ are the exact lists to publish next to the parts (alef.pack.v1). Nothing here is on the pack host yet, so models.manifest.json still has empty `files` for both models.",
+ "converted": "2026-11-12",
+ "tools": "see scripts/requirements.txt (torch 2.15.0 CPU, transformers 5.22.2, onnx 1.23.2, onnxruntime 1.31.1); opset 17",
+ "packs": {
+  "nikud": {
+   "model": "dicta-il/dictabert-large-char-menaked",
+   "hubRevision": "4dfc20b94565d7868e1c8c00bf039d38c071a062",
+   "licence": "CC-BY-4.0",
+   "source": {
+    "file": "model.safetensors",
+    "bytes": 1222010788,
+    "sha256": "c2927643c61f408c7d5ff1652b605b322ed896fa07ded344bd508a02b76bf50e"
+   },
+   "file": {
+    "name": "menaked.int8.onnx",
+    "bytes": 317816752,
+    "sha256": "a15cc9ba1b501a07c2d8fd198e46cd0127ecd8525a7c8b757287420265979808",
+    "how": "scripts/export_menaked.py --variants int8: dynamic 8-bit on MatMul with signed weights, one scale per channel, reduced range; tool notes stripped"
+   },
+   "parts": 19,
+   "list": "packs/nikud.pack.json",
+   "budgetBytes": 335544320
+  },
+  "phonemes": {
+   "model": "Phonikud/phonikud-onnx",
+   "hubRevision": "b806189fe1fc0085b1012b7560ffb5e8ecfd72a2",
+   "licence": "MIT",
+   "source": {
+    "file": "phonikud-1.0.int8.onnx",
+    "bytes": 307844158,
+    "sha256": "113afb58d3140502aa1e7691cdc6b240b56cf97e5852fc870e1a7fb5a400dd62"
+   },
+   "file": {
+    "name": "phonikud.int8.onnx",
+    "bytes": 307850928,
+    "sha256": "612a0eb42146b7e775ba1881c014c4517a320cf9b20d2213ad380880d55080db",
+    "how": "the published file with tool notes stripped (scripts/convert-common.py strip_onnx_metadata); weights untouched"
+   },
+   "parts": 19,
+   "list": "packs/phonemes.pack.json",
+   "budgetBytes": 325058560
+  }
+ },
+ "notShipped": {
+  "menaked.q4.onnx": {
+   "bytes": 203116791,
+   "sha256": "fb0ab5bdd63c865587f258e75b0266fa492ce869c416a3fba6113ee4acd3ba3a",
+   "how": "scripts/export_menaked.py --variants q4: 4-bit weights (MatMulNBits, block 32, symmetric)",
+   "why": "194 MiB, under the 200 MiB aim, and close to the full model (review/build-agreement.json), but about three times slower on the browser runtime (one thread). Kept as an option for devices short on space."
+  }
+ }
+}
