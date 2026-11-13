@@ -37,6 +37,7 @@ scripts/    offline builds (Python + Node); pinned in scripts/requirements.txt
   eval_vocab.py          scores against the app word list (Python models)
   eval_pack.mjs          the same test through the browser code path
   crosscheck.py          second opinions from the other DictaBERT models
+  sweep_examples.py      reads every example sentence of the app's word list and says keep or hold
 pack/       pack.json: the Words pack list (alef.pack.v1) with every part's size and SHA-256. No weights.
 review/     lists for a person: disagreements, unclear links, mood labels, score reports
 tests/      node --test, on recorded fixtures; no model download. Run from src/ and again from dist/ in CI.
@@ -185,3 +186,13 @@ To publish the pack: put `work/pack/words/` on the pack host as `words/`, copy t
 - No noun-pattern (mishkal) hint.
 - No person has reviewed anything: not the lesson notes, not the 765 review words, not the 160 mood labels.
 - `load()` and the worker are tested with a stand-in worker and the real shared loader under Node. They have not run in a browser.
+
+## Example Sentence Sweep
+
+`scripts/sweep_examples.py --app <Al-Heb checkout> --out review/example-sweep.json` reads each example sentence of `data/vocab/words.json` with dictabert-joint and compares the word the entry matched with the entry. `review/example-sweep.json` lists all 5,706 examples with a verdict and the evidence.
+
+- Hold (1,445): the word is read as another dictionary word (487), as the same letters in a part of speech the entry does not allow (697), with no dictionary form and a part of speech that cannot be the entry's (182), or as a name while the sentence's English shares no word with the entry's meaning (79).
+- Keep (4,261): same dictionary form and a fitting part of speech (3,580); no dictionary form but the part of speech fits (405); the word is letter for letter a form the entry lists (179); a pointed verse carries exactly the entry's vowels and the word is not a name there (79); the word could not be found as one word (15); dictabert-parse, asked only about doubtful holds, agreed with the entry (3).
+- In 50 holds looked at by hand before the pointed-verse rule was added, about 42 were right to hold. The keeps were not sampled. Nobody who reads Hebrew natively has checked the list.
+
+The app applies the holds with its own `tools/vocab/hold_examples.mjs`; this package only writes the list.
