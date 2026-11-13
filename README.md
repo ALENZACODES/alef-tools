@@ -1,5 +1,7 @@
 # alef-tools
 
+![Rimon, a small round pomegranate character, at a workbench with wooden blocks, a mallet and a blank frame](docs/social-preview.png)
+
 Tools for the open Hebrew language models used by ALEF, a Hebrew-learning app
 ([ALENZACODES/Al-Heb](https://github.com/ALENZACODES/Al-Heb)).
 
