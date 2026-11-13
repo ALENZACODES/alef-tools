@@ -16,3 +16,5 @@ __pycache__/
 /release-out/
 # ...except tiny fixtures used by tests
 !packages/*/tests/fixtures/**
+.pytest_cache/
+.ruff_cache/
