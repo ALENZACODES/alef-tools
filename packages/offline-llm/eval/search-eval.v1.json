@@ -1,0 +1,662 @@
+{
+ "schema": "alef-search-eval/1",
+ "note": "100 questions, 50 English and 50 Hebrew, each written for one existing entry of the app: a topic of the checked Ask the Torah bank (70), a practical unit (15) or a dictionary word (15). The questions were written by hand before the index was tuned and are new wordings, not copies of the bank's questions. The Hebrew has not been reviewed by a native speaker. A question counts as a hit when its entry is among the first three results. expect is type:id (for a word, type:lemma). For a unit question, one of that unit's own lessons (also) counts as well, since the lesson is part of the unit.",
+ "items": [
+  {
+   "q": "What does the Torah teach about keeping Shabbat?",
+   "lang": "en",
+   "expect": "ask:1e214811b6",
+   "from": "data/ask/topics.json#shabbat"
+  },
+  {
+   "q": "Where can I find the Shema prayer in the Torah?",
+   "lang": "en",
+   "expect": "ask:a54c761528",
+   "from": "data/ask/topics.json#shema"
+  },
+  {
+   "q": "Does the Torah mention Hanukkah?",
+   "lang": "en",
+   "expect": "ask:83d296ab38",
+   "from": "data/ask/topics.json#hanukkah"
+  },
+  {
+   "q": "Where is the blessing of the kohanim written?",
+   "lang": "en",
+   "expect": "ask:c81beb82c0",
+   "from": "data/ask/topics.json#priestly-blessing-more"
+  },
+  {
+   "q": "Which animals are kosher according to the Torah?",
+   "lang": "en",
+   "expect": "ask:1360a2450c",
+   "from": "data/ask/topics.json#cud-hoof"
+  },
+  {
+   "q": "Tell me about Miriam, the sister of Moses",
+   "lang": "en",
+   "expect": "ask:c3e99c5b12",
+   "from": "data/ask/topics.json#miriam-leader"
+  },
+  {
+   "q": "What is the story of Noah and the flood?",
+   "lang": "en",
+   "expect": "ask:ea0f3488b1",
+   "from": "data/ask/topics.json#noah"
+  },
+  {
+   "q": "What happened at the Tower of Babel?",
+   "lang": "en",
+   "expect": "ask:2895ee8036",
+   "from": "data/ask/topics.json#babel"
+  },
+  {
+   "q": "Where is the binding of Isaac?",
+   "lang": "en",
+   "expect": "ask:afeedb2beb",
+   "from": "data/ask/topics.json#binding-isaac"
+  },
+  {
+   "q": "Where does God speak to Moses from a burning bush?",
+   "lang": "en",
+   "expect": "ask:40f6108c84",
+   "from": "data/ask/topics.json#burning-bush"
+  },
+  {
+   "q": "Where are the Ten Commandments listed?",
+   "lang": "en",
+   "expect": "ask:15f6efd470",
+   "from": "data/ask/topics.json#ten-commandments"
+  },
+  {
+   "q": "What was the sin of the golden calf?",
+   "lang": "en",
+   "expect": "ask:0449d3c00e",
+   "from": "data/ask/topics.json#golden-calf"
+  },
+  {
+   "q": "What did the Israelites eat in the desert?",
+   "lang": "en",
+   "expect": "ask:9159ad5a08",
+   "from": "data/ask/topics.json#manna"
+  },
+  {
+   "q": "Where does the Torah describe Passover?",
+   "lang": "en",
+   "expect": "ask:d451ca37d7",
+   "from": "data/ask/topics.json#passover"
+  },
+  {
+   "q": "When did the sea split for the Israelites?",
+   "lang": "en",
+   "expect": "ask:5d61b38f91",
+   "from": "data/ask/topics.json#splitting-sea"
+  },
+  {
+   "q": "What were the plagues in Egypt?",
+   "lang": "en",
+   "expect": "ask:33d0d3da71",
+   "from": "data/ask/topics.json#ten-plagues"
+  },
+  {
+   "q": "Is Yom Kippur commanded in the Torah?",
+   "lang": "en",
+   "expect": "ask:dc37da2c55",
+   "from": "data/ask/topics.json#yom-kippur"
+  },
+  {
+   "q": "Where does the Torah tell us to sit in a sukkah?",
+   "lang": "en",
+   "expect": "ask:65cc064893",
+   "from": "data/ask/topics.json#sukkot"
+  },
+  {
+   "q": "Is the festival of Shavuot in the Torah?",
+   "lang": "en",
+   "expect": "ask:491cbe1f9b",
+   "from": "data/ask/topics.json#shavuot"
+  },
+  {
+   "q": "Where are the fringes on a garment commanded?",
+   "lang": "en",
+   "expect": "ask:c2d052d746",
+   "from": "data/ask/topics.json#tzitzit"
+  },
+  {
+   "q": "Where does it say to love your neighbour as yourself?",
+   "lang": "en",
+   "expect": "ask:0c2f05426b",
+   "from": "data/ask/topics.json#love-neighbour"
+  },
+  {
+   "q": "Which verse says to honour your father and mother?",
+   "lang": "en",
+   "expect": "ask:dba47f5a77",
+   "from": "data/ask/topics.json#honour-parents"
+  },
+  {
+   "q": "What is the jubilee year?",
+   "lang": "en",
+   "expect": "ask:dca9a40c1f",
+   "from": "data/ask/topics.json#jubilee"
+  },
+  {
+   "q": "What is the sabbatical year for the land?",
+   "lang": "en",
+   "expect": "ask:85bb686d0b",
+   "from": "data/ask/topics.json#sabbatical"
+  },
+  {
+   "q": "What is the red heifer?",
+   "lang": "en",
+   "expect": "ask:b69ecb82d7",
+   "from": "data/ask/topics.json#red-heifer"
+  },
+  {
+   "q": "What is a nazirite vow?",
+   "lang": "en",
+   "expect": "ask:3d49988380",
+   "from": "data/ask/topics.json#nazirite"
+  },
+  {
+   "q": "Who was Korach and what did he do?",
+   "lang": "en",
+   "expect": "ask:d90bf81e42",
+   "from": "data/ask/topics.json#korah"
+  },
+  {
+   "q": "Who was Balaam with the talking donkey?",
+   "lang": "en",
+   "expect": "ask:a26ddf94be",
+   "from": "data/ask/topics.json#balaam"
+  },
+  {
+   "q": "What happened with the twelve spies?",
+   "lang": "en",
+   "expect": "ask:76f8d438c6",
+   "from": "data/ask/topics.json#twelve-spies"
+  },
+  {
+   "q": "What are the cities of refuge?",
+   "lang": "en",
+   "expect": "ask:f3cfcb7387",
+   "from": "data/ask/topics.json#cities-refuge"
+  },
+  {
+   "q": "Where is circumcision commanded?",
+   "lang": "en",
+   "expect": "ask:80a9a70b94",
+   "from": "data/ask/topics.json#circumcision"
+  },
+  {
+   "q": "What happened to Sodom and Gomorrah?",
+   "lang": "en",
+   "expect": "ask:4f34a60f72",
+   "from": "data/ask/topics.json#sodom"
+  },
+  {
+   "q": "What is the story of Jacob and Esau?",
+   "lang": "en",
+   "expect": "ask:75b5fa20a4",
+   "from": "data/ask/topics.json#jacob-esau"
+  },
+  {
+   "q": "Who got a coat of many colours?",
+   "lang": "en",
+   "expect": "ask:9f5c9058ad",
+   "from": "data/ask/topics.json#joseph"
+  },
+  {
+   "q": "Is the Talmud part of the Torah?",
+   "lang": "en",
+   "expect": "ask:72c2df5912",
+   "from": "data/ask/topics.json#talmud"
+  },
+  {
+   "q": "מה התורה אומרת על שבת?",
+   "lang": "he",
+   "expect": "ask:1e214811b6",
+   "from": "data/ask/topics.json#shabbat"
+  },
+  {
+   "q": "איפה כתוב שמע ישראל?",
+   "lang": "he",
+   "expect": "ask:a54c761528",
+   "from": "data/ask/topics.json#shema"
+  },
+  {
+   "q": "האם חנוכה מופיעה בתורה?",
+   "lang": "he",
+   "expect": "ask:83d296ab38",
+   "from": "data/ask/topics.json#hanukkah"
+  },
+  {
+   "q": "איפה ברכת כהנים בתורה?",
+   "lang": "he",
+   "expect": "ask:c81beb82c0",
+   "from": "data/ask/topics.json#priestly-blessing-more"
+  },
+  {
+   "q": "אילו חיות כשרות?",
+   "lang": "he",
+   "expect": "ask:1360a2450c",
+   "from": "data/ask/topics.json#cud-hoof"
+  },
+  {
+   "q": "מי הייתה מרים?",
+   "lang": "he",
+   "expect": "ask:c3e99c5b12",
+   "from": "data/ask/topics.json#miriam-leader"
+  },
+  {
+   "q": "מה הסיפור של נח והמבול?",
+   "lang": "he",
+   "expect": "ask:ea0f3488b1",
+   "from": "data/ask/topics.json#noah"
+  },
+  {
+   "q": "מה קרה במגדל בבל?",
+   "lang": "he",
+   "expect": "ask:2895ee8036",
+   "from": "data/ask/topics.json#babel"
+  },
+  {
+   "q": "איפה כתובה עקדת יצחק?",
+   "lang": "he",
+   "expect": "ask:afeedb2beb",
+   "from": "data/ask/topics.json#binding-isaac"
+  },
+  {
+   "q": "מה זה הסנה הבוער?",
+   "lang": "he",
+   "expect": "ask:40f6108c84",
+   "from": "data/ask/topics.json#burning-bush"
+  },
+  {
+   "q": "איפה עשרת הדיברות?",
+   "lang": "he",
+   "expect": "ask:15f6efd470",
+   "from": "data/ask/topics.json#ten-commandments"
+  },
+  {
+   "q": "מה היה חטא העגל?",
+   "lang": "he",
+   "expect": "ask:0449d3c00e",
+   "from": "data/ask/topics.json#golden-calf"
+  },
+  {
+   "q": "מה זה המן שאכלו במדבר?",
+   "lang": "he",
+   "expect": "ask:9159ad5a08",
+   "from": "data/ask/topics.json#manna"
+  },
+  {
+   "q": "איפה כתוב על פסח בתורה?",
+   "lang": "he",
+   "expect": "ask:d451ca37d7",
+   "from": "data/ask/topics.json#passover"
+  },
+  {
+   "q": "מתי נקרע ים סוף?",
+   "lang": "he",
+   "expect": "ask:5d61b38f91",
+   "from": "data/ask/topics.json#splitting-sea"
+  },
+  {
+   "q": "מה היו עשר המכות?",
+   "lang": "he",
+   "expect": "ask:33d0d3da71",
+   "from": "data/ask/topics.json#ten-plagues"
+  },
+  {
+   "q": "האם יום כיפור כתוב בתורה?",
+   "lang": "he",
+   "expect": "ask:dc37da2c55",
+   "from": "data/ask/topics.json#yom-kippur"
+  },
+  {
+   "q": "מה התורה אומרת על סוכות?",
+   "lang": "he",
+   "expect": "ask:65cc064893",
+   "from": "data/ask/topics.json#sukkot"
+  },
+  {
+   "q": "האם חג השבועות בתורה?",
+   "lang": "he",
+   "expect": "ask:491cbe1f9b",
+   "from": "data/ask/topics.json#shavuot"
+  },
+  {
+   "q": "איפה כתוב על ציצית?",
+   "lang": "he",
+   "expect": "ask:c2d052d746",
+   "from": "data/ask/topics.json#tzitzit"
+  },
+  {
+   "q": "איפה כתוב ואהבת לרעך כמוך?",
+   "lang": "he",
+   "expect": "ask:0c2f05426b",
+   "from": "data/ask/topics.json#love-neighbour"
+  },
+  {
+   "q": "איפה כתוב כבד את אביך ואת אמך?",
+   "lang": "he",
+   "expect": "ask:dba47f5a77",
+   "from": "data/ask/topics.json#honour-parents"
+  },
+  {
+   "q": "מה זה שנת היובל?",
+   "lang": "he",
+   "expect": "ask:dca9a40c1f",
+   "from": "data/ask/topics.json#jubilee"
+  },
+  {
+   "q": "מה זו שנת שמיטה?",
+   "lang": "he",
+   "expect": "ask:85bb686d0b",
+   "from": "data/ask/topics.json#sabbatical"
+  },
+  {
+   "q": "מה זו פרה אדומה?",
+   "lang": "he",
+   "expect": "ask:b69ecb82d7",
+   "from": "data/ask/topics.json#red-heifer"
+  },
+  {
+   "q": "מה זה נזיר?",
+   "lang": "he",
+   "expect": "ask:3d49988380",
+   "from": "data/ask/topics.json#nazirite"
+  },
+  {
+   "q": "מי היה קורח?",
+   "lang": "he",
+   "expect": "ask:d90bf81e42",
+   "from": "data/ask/topics.json#korah"
+  },
+  {
+   "q": "מי היה בלעם?",
+   "lang": "he",
+   "expect": "ask:a26ddf94be",
+   "from": "data/ask/topics.json#balaam"
+  },
+  {
+   "q": "מה קרה עם שנים עשר המרגלים?",
+   "lang": "he",
+   "expect": "ask:76f8d438c6",
+   "from": "data/ask/topics.json#twelve-spies"
+  },
+  {
+   "q": "מה הן ערי מקלט?",
+   "lang": "he",
+   "expect": "ask:f3cfcb7387",
+   "from": "data/ask/topics.json#cities-refuge"
+  },
+  {
+   "q": "איפה מצוות ברית מילה?",
+   "lang": "he",
+   "expect": "ask:80a9a70b94",
+   "from": "data/ask/topics.json#circumcision"
+  },
+  {
+   "q": "מה קרה לסדום ועמורה?",
+   "lang": "he",
+   "expect": "ask:4f34a60f72",
+   "from": "data/ask/topics.json#sodom"
+  },
+  {
+   "q": "מה הסיפור של יעקב ועשו?",
+   "lang": "he",
+   "expect": "ask:75b5fa20a4",
+   "from": "data/ask/topics.json#jacob-esau"
+  },
+  {
+   "q": "איך נברא העולם?",
+   "lang": "he",
+   "expect": "ask:9a795f6d18",
+   "from": "data/ask/topics.json#creation"
+  },
+  {
+   "q": "מי היה אברהם?",
+   "lang": "he",
+   "expect": "ask:6f951fb823",
+   "from": "data/ask/topics.json#abraham"
+  },
+  {
+   "q": "How do I order a coffee in Hebrew?",
+   "lang": "en",
+   "expect": "unit:pu-cafe",
+   "from": "data/curriculum/practical/pu-cafe.json",
+   "also": [
+    "lesson:il06",
+    "lesson:il07",
+    "lesson:I-13"
+   ]
+  },
+  {
+   "q": "Hebrew greetings",
+   "lang": "en",
+   "expect": "unit:pu-greetings",
+   "from": "data/curriculum/practical/pu-greetings.json",
+   "also": [
+    "lesson:il01"
+   ]
+  },
+  {
+   "q": "words for my family in Hebrew",
+   "lang": "en",
+   "expect": "unit:pu-family",
+   "from": "data/curriculum/practical/pu-family.json",
+   "also": [
+    "lesson:il14",
+    "lesson:I-42"
+   ]
+  },
+  {
+   "q": "how to ask for directions",
+   "lang": "en",
+   "expect": "unit:pu-directions",
+   "from": "data/curriculum/practical/pu-directions.json",
+   "also": [
+    "lesson:il11",
+    "lesson:I-15"
+   ]
+  },
+  {
+   "q": "Hebrew numbers and prices",
+   "lang": "en",
+   "expect": "unit:pu-numbers",
+   "from": "data/curriculum/practical/pu-numbers.json",
+   "also": [
+    "lesson:il04",
+    "lesson:il05"
+   ]
+  },
+  {
+   "q": "talking about the weather",
+   "lang": "en",
+   "expect": "unit:pu-weather",
+   "from": "data/curriculum/practical/pu-weather.json",
+   "also": [
+    "lesson:il15",
+    "lesson:I-24"
+   ]
+  },
+  {
+   "q": "at the pharmacy",
+   "lang": "en",
+   "expect": "unit:pu-pharmacy",
+   "from": "data/curriculum/practical/pu-pharmacy.json",
+   "also": [
+    "lesson:I-14"
+   ]
+  },
+  {
+   "q": "booking a hotel room",
+   "lang": "en",
+   "expect": "unit:pu-hotel",
+   "from": "data/curriculum/practical/pu-hotel.json",
+   "also": [
+    "lesson:il17"
+   ]
+  },
+  {
+   "q": "איך מזמינים קפה?",
+   "lang": "he",
+   "expect": "unit:pu-cafe",
+   "from": "data/curriculum/practical/pu-cafe.json",
+   "also": [
+    "lesson:il06",
+    "lesson:il07",
+    "lesson:I-13"
+   ]
+  },
+  {
+   "q": "ברכות שלום",
+   "lang": "he",
+   "expect": "unit:pu-greetings",
+   "from": "data/curriculum/practical/pu-greetings.json",
+   "also": [
+    "lesson:il01"
+   ]
+  },
+  {
+   "q": "מילים על המשפחה",
+   "lang": "he",
+   "expect": "unit:pu-family",
+   "from": "data/curriculum/practical/pu-family.json",
+   "also": [
+    "lesson:il14",
+    "lesson:I-42"
+   ]
+  },
+  {
+   "q": "מזג האוויר",
+   "lang": "he",
+   "expect": "unit:pu-weather",
+   "from": "data/curriculum/practical/pu-weather.json",
+   "also": [
+    "lesson:il15",
+    "lesson:I-24"
+   ]
+  },
+  {
+   "q": "בית מרקחת",
+   "lang": "he",
+   "expect": "unit:pu-pharmacy",
+   "from": "data/curriculum/practical/pu-pharmacy.json",
+   "also": [
+    "lesson:I-14"
+   ]
+  },
+  {
+   "q": "בנק",
+   "lang": "he",
+   "expect": "unit:pu-bank",
+   "from": "data/curriculum/practical/pu-bank.json",
+   "also": [
+    "lesson:I-21",
+    "lesson:I-48"
+   ]
+  },
+  {
+   "q": "סופרמרקט",
+   "lang": "he",
+   "expect": "unit:pu-supermarket",
+   "from": "data/curriculum/practical/pu-supermarket.json",
+   "also": [
+    "lesson:I-43"
+   ]
+  },
+  {
+   "q": "water",
+   "lang": "en",
+   "expect": "word:מים",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "how do you say bread",
+   "lang": "en",
+   "expect": "word:לחם",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "the word for house",
+   "lang": "en",
+   "expect": "word:בית",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "book in Hebrew",
+   "lang": "en",
+   "expect": "word:ספר",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "what is the Hebrew for friend",
+   "lang": "en",
+   "expect": "word:חבר",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "day",
+   "lang": "en",
+   "expect": "word:יום",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "big",
+   "lang": "en",
+   "expect": "word:גדול",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "מה זה מים",
+   "lang": "he",
+   "expect": "word:מים",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "ילד",
+   "lang": "he",
+   "expect": "word:ילד",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "שולחן",
+   "lang": "he",
+   "expect": "word:שולחן",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "כסף",
+   "lang": "he",
+   "expect": "word:כסף",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "עיר",
+   "lang": "he",
+   "expect": "word:עיר",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "דלת",
+   "lang": "he",
+   "expect": "word:דלת",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "שמש",
+   "lang": "he",
+   "expect": "word:שמש",
+   "from": "data/vocab/packs"
+  },
+  {
+   "q": "חלון",
+   "lang": "he",
+   "expect": "word:חלון",
+   "from": "data/vocab/packs"
+  }
+ ]
+}

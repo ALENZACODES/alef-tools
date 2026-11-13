@@ -25,7 +25,7 @@ A model with a non-commercial or unclear licence is never shipped: it is dropped
 | [alef-tools/handwriting-cnn](https://github.com/ALENZACODES/alef-tools/tree/main/packages/handwriting) | [MIT](https://opensource.org/license/mit) | n/a | handwriting | The tracing checker: our own small network (at most 2 MiB), trained here on letters drawn from OFL Hebrew fonts. |
 | [tesseract-ocr/tessdata:heb](https://github.com/tesseract-ocr/tessdata) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | n/a |  | Camera OCR. Already vendored in the app (assets/vendor/_tesseract); stays as it is. |
 
-## B: offline build time only (43)
+## B: offline build time only (45)
 
 | Model | Licence | Pinned revision | Pack | Why |
 |---|---|---|---|---|
@@ -70,6 +70,8 @@ A model with a non-commercial or unclear licence is never shipped: it is dropped
 | [dicta-il/DictaLM-3.0-1.7B-Base](https://huggingface.co/dicta-il/DictaLM-3.0-1.7B-Base) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `b0bdc0d1b236` |  | Offline only: cheap bulk pass (grammar and gender agreement of generated items). |
 | [dicta-il/dictalm2.0](https://huggingface.co/dicta-il/dictalm2.0) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `f8ab3208e95a` |  | Offline only: fallback generator. |
 | [dicta-il/dictalm2.0-instruct](https://huggingface.co/dicta-il/dictalm2.0-instruct) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `257c6023d6ac` |  | Offline only: fallback generator. |
+| [dicta-il/DictaLM-3.0-1.7B-Thinking-GGUF](https://huggingface.co/dicta-il/DictaLM-3.0-1.7B-Thinking-GGUF) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `34cd052348a4` |  | Offline only: Dicta's own 4-bit GGUF of the 1.7B Thinking model, run with llama.cpp as a judge on a CPU box (packages/offline-llm). |
+| [dicta-il/dictalm2.0-instruct-GGUF](https://huggingface.co/dicta-il/dictalm2.0-instruct-GGUF) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `9ed3346a1440` |  | Offline only: Dicta's own 4-bit GGUF of dictalm2.0-instruct, run with llama.cpp as a judge and as the base of the offensive-language screen (packages/offline-llm). |
 | [dicta-il/BEREL_3.0](https://huggingface.co/dicta-il/BEREL_3.0) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `25dc07f2e622` |  | Biblical and Rabbinic Hebrew: vowel and trope checks on Torah reading texts, cloze items for Torah and prayer units. |
 | [dicta-il/BEREL](https://huggingface.co/dicta-il/BEREL) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `029fa610debd` |  | Biblical and Rabbinic Hebrew checks (older model). |
 
