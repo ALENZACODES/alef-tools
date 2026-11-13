@@ -784,7 +784,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "D",
-   "reason": "Vowel marks for any text the learner brings (camera, Talk, typed); offline, vowel marks for every app sentence, checked.",
+   "reason": "Vowel marks for any text the learner brings (camera, Talk, typed): the 8-bit build (303 MiB) made by packages/nikud/scripts/export_menaked.py. Offline, the full-precision model marks the app's own bare sentences (packages/nikud/src/nikud). Sizes and SHA-256 of the converted files are in packages/nikud/conversion.json until the pack is on the pack host.",
    "pack": "nikud",
    "files": [],
    "budgetBytes": 335544320,
@@ -792,7 +792,7 @@
     "webgpu": false,
     "minRamGB": 4
    },
-   "attribution": "dictabert-large-char-menaked by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+   "attribution": "Vowel marks: DictaBERT-large-char-menaked by Dicta: The Israel Center for Text Analysis, CC BY 4.0. Changed: converted to ONNX with 8-bit weights."
   },
   {
    "id": "avraham123/tale-me-dictabert-menaked-browser",
@@ -800,7 +800,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "Q",
-   "reason": "Third-party browser port of the menaked model. Not used: the pack is converted from the Dicta original.",
+   "reason": "Third-party browser port of the menaked model. Never shipped: the pack is converted from the Dicta original. Used once, to compare its answers with our conversion (packages/nikud/review/build-agreement.json).",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -816,7 +816,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "Q",
-   "reason": "Experiment: a smaller vowel-marking head.",
+   "reason": "Looked at as a smaller base for a vowel-marking head. It has no such head and training one was not done in the nikud lane, so nothing was built from it.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -832,7 +832,7 @@
    "licence": "MIT",
    "licenceUrl": "https://opensource.org/license/mit",
    "tier": "D",
-   "reason": "Phonemes and stress marks for any text; the target for the pronunciation check; transliteration checks. (Also reachable as thewh1teagle/phonikud-onnx.)",
+   "reason": "Stress, sounded shva and prefix marks for any text; packages/nikud/src/phonikud.js turns them into a sound line. Used as published (already 8-bit, 294 MiB) with tool notes stripped. The target for the pronunciation check; transliteration checks. (Also reachable as thewh1teagle/phonikud-onnx.)",
    "pack": "phonemes",
    "files": [],
    "budgetBytes": 325058560,
@@ -840,7 +840,7 @@
     "webgpu": false,
     "minRamGB": 4
    },
-   "attribution": ""
+   "attribution": "Sounds and stress: Phonikud (phonikud-onnx), MIT licence. Built on DictaBERT-large-char-menaked by Dicta, CC BY 4.0."
   },
   {
    "id": "Phonikud/phonikud",
@@ -864,7 +864,7 @@
    "licence": "Apache-2.0",
    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
    "tier": "B",
-   "reason": "Punctuate offline transcripts (voice journal export, lesson scripts).",
+   "reason": "Punctuate offline transcripts (voice journal export, lesson scripts): packages/nikud/scripts/punctuate.py. Never runs in the app.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -1712,7 +1712,7 @@
    "licence": "Apache-2.0",
    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
    "tier": "B",
-   "reason": "Biblical and Rabbinic Hebrew: vowel and trope checks on Torah reading texts, cloze items for Torah and prayer units.",
+   "reason": "Biblical and Rabbinic Hebrew: packages/nikud/scripts/qa_berel.py lists unlikely words in Torah and prayer text for a person to read; it never changes a text. Also cloze items for Torah and prayer units.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
