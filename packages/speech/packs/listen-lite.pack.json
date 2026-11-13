@@ -1,0 +1,75 @@
+{
+ "schema": "alef.pack.v1",
+ "pack": "listen-lite",
+ "version": "1",
+ "files": [
+  {
+   "name": "spec.json",
+   "bytes": 721,
+   "sha256": "9646c5cd6ba6d89b02c398e05c7f7cd0012cb4834efef6e35f8853ca7ef0fd68",
+   "parts": [
+    {
+     "path": "spec.json.p000",
+     "bytes": 721,
+     "sha256": "9646c5cd6ba6d89b02c398e05c7f7cd0012cb4834efef6e35f8853ca7ef0fd68"
+    }
+   ]
+  },
+  {
+   "name": "tokens.json",
+   "bytes": 863743,
+   "sha256": "b7da93df0ced0f82906c4739437658b49dfe28a827f26a29eb340c108bac6d11",
+   "parts": [
+    {
+     "path": "tokens.json.p000",
+     "bytes": 863743,
+     "sha256": "b7da93df0ced0f82906c4739437658b49dfe28a827f26a29eb340c108bac6d11"
+    }
+   ]
+  },
+  {
+   "name": "encoder.onnx",
+   "bytes": 18773905,
+   "sha256": "bcd6fbfce509cc8550489166d9370a4c1daadfd8f7d7c886290e26710ca7dc6f",
+   "parts": [
+    {
+     "path": "encoder.onnx.p000",
+     "bytes": 16777216,
+     "sha256": "d0fd906223bb0c05aa6a78d506405f0ba4be2e01e7b7ad8f4e4714cf4f8f6b52"
+    },
+    {
+     "path": "encoder.onnx.p001",
+     "bytes": 1996689,
+     "sha256": "bd93038be42fe6b7e1751f8f0edec03fa38563483c8dcbe0713fef7e228d537b"
+    }
+   ]
+  },
+  {
+   "name": "decoder.onnx",
+   "bytes": 53693274,
+   "sha256": "9caef4adc9bc56dbf342f7b18dc7985944e9063d74335a995b807d50651058b3",
+   "parts": [
+    {
+     "path": "decoder.onnx.p000",
+     "bytes": 16777216,
+     "sha256": "f4cbd144b231cfa03477fb85a1e24c24fb4ed43cc8e75fb0098a9898975e187a"
+    },
+    {
+     "path": "decoder.onnx.p001",
+     "bytes": 16777216,
+     "sha256": "ebf20f8644c31023f018bd11f350b2c46d86d8d61ae097cdfcecec2c57010b3d"
+    },
+    {
+     "path": "decoder.onnx.p002",
+     "bytes": 16777216,
+     "sha256": "de3332a7b3d55e46c7dd9be5d7a8154c372ad5b77a8fb2a3830c27a23387ba9e"
+    },
+    {
+     "path": "decoder.onnx.p003",
+     "bytes": 3361626,
+     "sha256": "8703c042c0d26e97b38ba7f97109b5bfb4d268447301d4e218f403aeba9a9413"
+    }
+   ]
+  }
+ ]
+}

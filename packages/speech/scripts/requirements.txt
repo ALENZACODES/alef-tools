@@ -1,0 +1,8 @@
+# Offline tools only (scripts/export.py, scripts/audit-clips.py). Nothing here runs in the app.
+# The versions the packs in packs/*.pack.json were built with.
+numpy==2.5.3
+onnx==1.23.2
+onnx-ir==1.1.0
+onnxruntime==1.29.0
+# scripts/audit-clips.py only:
+faster-whisper==1.2.1

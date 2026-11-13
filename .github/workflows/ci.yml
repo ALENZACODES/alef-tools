@@ -49,4 +49,4 @@ jobs:
       - name: Lint
         run: python -m ruff check scripts packages
       - name: Tests
-        run: python -m pytest -q scripts/tests_py
+        run: python -m pytest -q scripts/tests_py packages/speech/scripts/tests_py
