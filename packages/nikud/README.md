@@ -86,7 +86,16 @@ The real pack lists and parts → the shared loader's download (every part check
 vendored onnxruntime-web (WebAssembly, one thread) → pointed text, run from the built `dist/`.
 `nikud`: load 2038 ms, 477 ms a sentence. `phonemes`: load 1389 ms, 439 ms a sentence.
 Peak memory of the Node process with both packs 2128 MiB. This was a 2-core cloud machine, not a phone, and
-not a browser: **no browser run was done in this lane.**
+not a browser.
+
+### 3b. The real packs in a real browser (`review/e2e-browser.json`)
+
+Run by hand on 13 November 2026 with `tools/alef-tools/pack-browser-check.mjs` in the Al-Heb repo: headless Chromium 153 on the
+same 2-core cloud machine, the real app pages, the packs served from the app's own folder. The `nikud` pack downloaded through
+the app's service (all 19 parts checked), the first sentence took 2.7 s including the load and later ones 0.4 to 0.8 s, and the
+four test lines came out the same as in the Node run, the Name line included. A bare word typed into Word Trace was given its
+marks and traced. The `phonemes` pack loaded and gave a sound line. Both packs were then removed and the device reported them
+gone. No page error. This is one desktop engine on a cloud machine: **not a phone, not Safari, not Firefox.**
 
 ### 4. The app's own pronunciation rules against the phoneme pack (`review/phoneme-agreement.json`, `scripts/agree_rules.mjs`)
 
@@ -151,7 +160,7 @@ node scripts/build-dist.mjs
 ## Not done in this lane
 
 - The packs are not on the pack host, so nothing can be downloaded by a learner yet.
-- No run in a real browser, and no timing on a phone.
+- No run on a phone, and none in Safari or Firefox. (Headless Chromium was run: section 3b.)
 - No graphics-card (WebGPU) build: the 8-bit graph runs on WebAssembly only.
 - A smaller vowel-marking head on dicta-il/dictabert-char was not trained.
 - The BEREL check was not run over the full Torah and prayer text.
