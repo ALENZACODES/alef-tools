@@ -1,0 +1,3585 @@
+{
+ "schema": "alef.sentiment.review/1",
+ "model": "dicta-il/dictabert-sentiment",
+ "revision": "a61e139c59818955c92f355455b495ea6391a29f",
+ "howToReview": "For each item read the Hebrew and the English, fix `label` if the model is wrong (positive, neutral or negative), then set `checked` to true. Leave an item unchecked to keep it out of the app.",
+ "count": 160,
+ "checked": 0,
+ "modelLabels": {
+  "positive": 18,
+  "negative": 31,
+  "neutral": 111
+ },
+ "items": [
+  {
+   "id": "vocab:hf28ba308",
+   "he": "אתם יודעים איפה הוא נולד?",
+   "en": "Do you know where he was born?",
+   "word": "יָדַע",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hf28ba308",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1303941",
+    "heAuthor": "Eldad",
+    "enAuthor": "CM"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h645365e7",
+   "he": "אני רוצה לנסוע לחו\"ל.",
+   "en": "I want to go abroad.",
+   "word": "רָצָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h645365e7",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/337792",
+    "heAuthor": "gkh",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h4b81aad7",
+   "he": "אתה צריך להתכונן לרע ביותר.",
+   "en": "You must prepare for the worst.",
+   "word": "צָרִיךְ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h4b81aad7",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/622133",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h1b96f9f4",
+   "he": "הוא אוהב לבשל בשביל המשפחה.",
+   "en": "He likes cooking for his family.",
+   "word": "אָהַב",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h1b96f9f4",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/469619",
+    "heAuthor": "zhekka",
+    "enAuthor": "zhekka"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:ha7e901e9",
+   "he": "תום לא נראה ירא.",
+   "en": "Tom does not look scared.",
+   "word": "יָרֵא",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "ha7e901e9",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2274344",
+    "heAuthor": "fekundulo",
+    "enAuthor": "AlanF_US"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h511bbb6f",
+   "he": "בבקשה, תרגישו חופשיים לשאול שאלות.",
+   "en": "Please feel free to ask questions.",
+   "word": "הִרְגִּישׁ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h511bbb6f",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1431665",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.001,
+     "neutral": 0.999
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hd83852fd",
+   "he": "אם אתם לא מבינים, שאלו.",
+   "en": "If you don't understand, ask.",
+   "word": "הֵבִין",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hd83852fd",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2189833",
+    "heAuthor": "fekundulo",
+    "enAuthor": "riccioberto"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hfd4bf43b",
+   "he": "אני זוכר שנעלתי את הדלת.",
+   "en": "I remember locking the door.",
+   "word": "זָכַר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hfd4bf43b",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/553873",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h26a32615",
+   "he": "אני אאמין כשאראה זאת זה.",
+   "en": "I'll believe it when I see it.",
+   "word": "הֶאֱמִין",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h26a32615",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1556430",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Spamster"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hbab9e498",
+   "he": "לא הייתי דואג בעניין זה.",
+   "en": "I wouldn't have worried about that.",
+   "word": "דָּאַג",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hbab9e498",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/638277",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.002,
+     "negative": 0.0,
+     "neutral": 0.998
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h78d6aa81",
+   "he": "אשמח לקבל תשובה בהקדם האפשרי.",
+   "en": "I'd appreciate an answer ASAP.",
+   "word": "שָׂמַח",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h78d6aa81",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/558188",
+    "heAuthor": "Eldad",
+    "enAuthor": "Joseph"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h6fd09fff",
+   "he": "יש להם דעות שונות בעניין.",
+   "en": "Their views vary on the subject.",
+   "word": "דֵּעָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h6fd09fff",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/621946",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h5f280d64",
+   "he": "אתן בטוחות בתשובה שלכן?",
+   "en": "Are you sure of your answer?",
+   "word": "בָּטוּחַ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h5f280d64",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/3217128",
+    "heAuthor": "nava",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc8edded2",
+   "he": "בתי הדין יחליטו על כך.",
+   "en": "The courts will decide that.",
+   "word": "הֶחְלִיט",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc8edded2",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/4860939",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h12364093",
+   "he": "הוא יצטרך לקום מוקדם מחר.",
+   "en": "He will have to get up early tomorrow.",
+   "word": "הִצְטָרֵךְ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h12364093",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/786392",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hd499f4c4",
+   "he": "היא טיפלה בו יפה מאד.",
+   "en": "She treated him very well.",
+   "word": "טִפֵּל",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hd499f4c4",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2005463",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:h23e0b2a4",
+   "he": "בדיוק בחרתי את היקר ביותר.",
+   "en": "I just picked the most expensive one.",
+   "word": "בָּחַר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h23e0b2a4",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/6024809",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h0c76d311",
+   "he": "שכחתי להדביק בול על המעטפה.",
+   "en": "I forgot to attach a stamp to the envelope.",
+   "word": "שָׁכַח",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h0c76d311",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/635357",
+    "heAuthor": "Eldad",
+    "enAuthor": "xtofu80"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h7a3505d0",
+   "he": "שכנעתי אותו לוותר על הרעיון.",
+   "en": "I persuaded him to give up the idea.",
+   "word": "רַעֲיוֹן",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h7a3505d0",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/576095",
+    "heAuthor": "rafaga",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.999,
+     "neutral": 0.001
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:hfdfd1efd",
+   "he": "אחרי זמן קצר הילדים נרגעו.",
+   "en": "After a while, the children settled down.",
+   "word": "נִרְגַּע",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hfdfd1efd",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/600340",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h62b4707b",
+   "he": "אני שונאת את ימי שני.",
+   "en": "I hate Mondays.",
+   "word": "שָׂנֵא",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h62b4707b",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2232847",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h1694966b",
+   "he": "היא פוחדת מהצל של עצמה.",
+   "en": "She is afraid of her own shadow.",
+   "word": "פָּחַד",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h1694966b",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1113038",
+    "heAuthor": "Eldad",
+    "enAuthor": "royhuggins"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h42829564",
+   "he": "על תסמוך על המילה שלי.",
+   "en": "Don't take my word for it.",
+   "word": "סָמַךְ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h42829564",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1495048",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Spamster"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc33f7702",
+   "he": "יתכן שאת סובלת מזעזוע מוח.",
+   "en": "You may have a concussion.",
+   "word": "מוֹחַ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc33f7702",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/4723562",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.506,
+     "neutral": 0.494
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h8012e24c",
+   "he": "אבא שלי כועס עליי מאוד.",
+   "en": "My father is very angry with me.",
+   "word": "כָּעַס",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h8012e24c",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1100922",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:ha82bf37a",
+   "he": "לא קלטתי מה הוא אמר.",
+   "en": "I didn't catch what he said.",
+   "word": "קָלַט",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "ha82bf37a",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1414268",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h130343ba",
+   "he": "הוא עשה בושות למשפחה שלו.",
+   "en": "He has brought shame upon his family.",
+   "word": "בֹּשׁ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h130343ba",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1830125",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Spamster"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h8e51867b",
+   "he": "אני תוהה אם הוא נשוי.",
+   "en": "I wonder if he is married.",
+   "word": "נִשָּׁה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h8e51867b",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/708027",
+    "heAuthor": "Eldad",
+    "enAuthor": "sacredceltic"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h319721ae",
+   "he": "למי אכפת מתי היא תתחתן?",
+   "en": "Who cares when she gets married?",
+   "word": "אִכְפַּת",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h319721ae",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/603943",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hd354fb0e",
+   "he": "אם אשכח, תזכיר לי בבקשה.",
+   "en": "If I forget, please remind me.",
+   "word": "הִזְכִּיר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hd354fb0e",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1802265",
+    "heAuthor": "Eldad",
+    "enAuthor": "pne"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc26a7ce3",
+   "he": "תנחש מה הוא סיפר לי.",
+   "en": "Guess what he told me.",
+   "word": "נִחֵשׁ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc26a7ce3",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1711637",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h0e1d6c8d",
+   "he": "אני מתגעגע לאושר האבוד שלי.",
+   "en": "I long for my lost happiness.",
+   "word": "הִתְגַּעֲגֵעַ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h0e1d6c8d",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1836531",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h3c6a06b3",
+   "he": "לך בעקבות חלומותיך לקצות תבל.",
+   "en": "Follow your dreams to the ends of the earth.",
+   "word": "חֲלוֹם",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h3c6a06b3",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1529701",
+    "heAuthor": "Eldad",
+    "enAuthor": "erikspen"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h11b79132",
+   "he": "הידיים שלך זקוקות לרחיצה.",
+   "en": "Your hands need washing.",
+   "word": "זָקוּק",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h11b79132",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1884034",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Lumi_alt"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.001,
+     "neutral": 0.999
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h1ac58eed",
+   "he": "אני חש שאני מבין לרגשותיך.",
+   "en": "I feel like I understand your feelings.",
+   "word": "חָשׁ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h1ac58eed",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1125496",
+    "heAuthor": "Eldad",
+    "enAuthor": "Scott"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:he7f4c5c3",
+   "he": "מילים לא יביעו את רגשותיי.",
+   "en": "Words cannot convey my feelings.",
+   "word": "רֶגֶשׁ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "he7f4c5c3",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1641407",
+    "heAuthor": "MrShoval",
+    "enAuthor": "U2FS"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.018,
+     "neutral": 0.982
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h01f9a871",
+   "he": "אני תוהה אם היא נשואה.",
+   "en": "I wonder if she is married.",
+   "word": "תָּהָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h01f9a871",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/646027",
+    "heAuthor": "Eldad",
+    "enAuthor": "CH"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h3cd5e123",
+   "he": "אני חושש שהיא חולה בחזרת.",
+   "en": "I'm afraid she may have the mumps.",
+   "word": "חָשַׁשׁ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h3cd5e123",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1364183",
+    "heAuthor": "DanielTzvi",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:hf1f91fb1",
+   "he": "לעתים קרובות ילדים מפחדים מהחושך.",
+   "en": "Children are often afraid of the dark.",
+   "word": "פִּחֵד",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hf1f91fb1",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/13638096",
+    "heAuthor": "rul",
+    "enAuthor": "rul"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:hf12d3f21",
+   "he": "ג'ים רץ מהר כמו רון.",
+   "en": "Jim runs as fast as Ron.",
+   "word": "רוֹן",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hf12d3f21",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1819892",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CN"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.001,
+     "negative": 0.001,
+     "neutral": 0.998
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h8633259a",
+   "he": "אני רוצה לעשות אותה מאושרת.",
+   "en": "I want to make her happy.",
+   "word": "מְאֻשָּׁר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h8633259a",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/646514",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h3777d988",
+   "he": "אני לא יכולה לחיות ככה.",
+   "en": "I can't live like that.",
+   "word": "כָּכָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h3777d988",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1101714",
+    "heAuthor": "Ploomich",
+    "enAuthor": "AlanF_US"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:hb072a15c",
+   "he": "מילדות חלמתי להיות אופה עוגות.",
+   "en": "From childhood I dreamt of being a pastry cook.",
+   "word": "חָלַם",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hb072a15c",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1914909",
+    "heAuthor": "fekundulo",
+    "enAuthor": "sacredceltic"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc8a77ebe",
+   "he": "זה לא מתקבל על הדעת.",
+   "en": "That's unacceptable.",
+   "word": "דַּעַת",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc8a77ebe",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5413129",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc8e59638",
+   "he": "במקום שיש חיים, יש תקווה.",
+   "en": "Where there is life, there is hope.",
+   "word": "תִּקְוָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc8e59638",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1327764",
+    "heAuthor": "Eldad",
+    "enAuthor": "CC"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:ha57a2fee",
+   "he": "הספר הזה עונה על הצרכים שלך.",
+   "en": "This book is suitable for your needs.",
+   "word": "צֹרֶךְ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "ha57a2fee",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2017431",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CM"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:hcb6c2dad",
+   "he": "ביטחון עצמי הוא המפתח להצלחה.",
+   "en": "Self confidence is the key to success.",
+   "word": "בִּטָּחוֹן",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hcb6c2dad",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1993907",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h252cc244",
+   "he": "כולנו סובלים מזה ברמה מסוימת.",
+   "en": "We all suffer from it to some degree.",
+   "word": "מְסֻיָּם",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h252cc244",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/615431",
+    "heAuthor": "Holyspirit",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h980e5031",
+   "he": "הוא פספס את הרכבת האחרונה.",
+   "en": "He missed the last train.",
+   "word": "פִסְפֵס",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h980e5031",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/556455",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.01,
+     "neutral": 0.99
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hde1ee212",
+   "he": "הוא חי בעולם מדומה.",
+   "en": "He lives in a world of fantasy.",
+   "word": "דֻּמָּה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hde1ee212",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/3775265",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:heb3e6d98",
+   "he": "זה לא היה מפתיע אותי.",
+   "en": "It wouldn't surprise me.",
+   "word": "הִפְתִּיעַ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "heb3e6d98",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1654481",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Spamster"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:he5ad1130",
+   "he": "הוא ודאי יבוא לבקר אותנו.",
+   "en": "He'll certainly come visit us.",
+   "word": "וַדַּאי",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "he5ad1130",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/661179",
+    "heAuthor": "Eldad",
+    "enAuthor": "Joseph"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h5499af4f",
+   "he": "קיוינו שיגמר הגשם לפני הצהריים.",
+   "en": "We had hoped that the rain would stop before noon.",
+   "word": "קִוָּה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h5499af4f",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1903109",
+    "heAuthor": "fekundulo",
+    "enAuthor": "billy_boomo_2"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h1630f4c6",
+   "he": "סמוך על תחושת הבטן שלך.",
+   "en": "Trust your gut.",
+   "word": "תְּחוּשָׁה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h1630f4c6",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1777876",
+    "heAuthor": "Eldad",
+    "enAuthor": "Spamster"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hf97b707b",
+   "he": "אנשי לונדון גאים בגשר הזה.",
+   "en": "The people of London are very proud of this bridge.",
+   "word": "גֵּאֶה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hf97b707b",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5896568",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc586d240",
+   "he": "מה תעדיף - תפוחי עץ או בננות?",
+   "en": "Which do you prefer, apples or bananas?",
+   "word": "הֶעֱדִיף",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc586d240",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1672381",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hb9242e88",
+   "he": "אני צריך לחתן שלוש בנות.",
+   "en": "I have three daughters to marry off.",
+   "word": "בָּן",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hb9242e88",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/6016284",
+    "heAuthor": "fekundulo",
+    "enAuthor": "AlanF_US"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:he012d844",
+   "he": "רק רציתי להרגיע את תום.",
+   "en": "I just wanted to calm Tom down.",
+   "word": "הִרְגִּיעַ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "he012d844",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2375207",
+    "heAuthor": "fekundulo",
+    "enAuthor": "AlanF_US"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h58286005",
+   "he": "הוא בישר לנו חדשות עצובות.",
+   "en": "He brought us sad news.",
+   "word": "עָצוּב",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h58286005",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2494861",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h8a9b78b8",
+   "he": "אחרי הסערה הים היה רגוע.",
+   "en": "After the storm, the sea was calm.",
+   "word": "רָגוּעַ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h8a9b78b8",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1831384",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.006,
+     "negative": 0.001,
+     "neutral": 0.993
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h49c13e35",
+   "he": "אתה עשוי להזדקק למחשבון עכשיו.",
+   "en": "You might need the calculator now.",
+   "word": "הִזְדַּקֵּק",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h49c13e35",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1437592",
+    "heAuthor": "MrShoval",
+    "enAuthor": "caspian"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h68d89cb4",
+   "he": "הים נראה רוגע וחלק למראה.",
+   "en": "The sea looks calm and smooth.",
+   "word": "רֹגַע",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h68d89cb4",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5912261",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:h892fbbd2",
+   "he": "אני חשה מעין חרדה בחזי.",
+   "en": "I felt a certain anxiety in my chest.",
+   "word": "חָרַד",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h892fbbd2",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5456517",
+    "heAuthor": "fekundulo",
+    "enAuthor": "AlanF_US"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h892ef137",
+   "he": "הצייד כיוון לציפור אבל החטיא.",
+   "en": "The hunter aimed at the bird, but missed.",
+   "word": "הֶחְטִיא",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h892ef137",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1855770",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.053,
+     "neutral": 0.947
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h3a70c45c",
+   "he": "לא רציתי שתום יהיה עצבני.",
+   "en": "I didn't want Tom to get nervous.",
+   "word": "עַצְבָּנִי",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h3a70c45c",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2017904",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hd724d599",
+   "he": "רק את אהבתך אני רוצה.",
+   "en": "All I want is your love.",
+   "word": "אַהֲבָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hd724d599",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1798018",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Spamster"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.999,
+     "neutral": 0.001
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h06b19bc4",
+   "he": "אתה עוד תתחרט על כך!",
+   "en": "You'll be sorry!",
+   "word": "הִתְחָרֵט",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h06b19bc4",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1286152",
+    "heAuthor": "Eldad",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h3612be9c",
+   "he": "שמחת את תום עד מאד.",
+   "en": "You made Tom very happy.",
+   "word": "שִׂמְחָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h3612be9c",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/4675873",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:h6bc9b91c",
+   "he": "הופתעתי מאד מהתמורה באופן מחשבתה.",
+   "en": "I was very much surprised by her sudden change of mind.",
+   "word": "מַחְשָׁבָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h6bc9b91c",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5993263",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CM"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 0.975,
+     "negative": 0.025,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:h5b87a503",
+   "he": "הוא ממש מכעיס אותי.",
+   "en": "He really makes me angry.",
+   "word": "הִכְעִיס",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h5b87a503",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1840110",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:hb988a9d9",
+   "he": "מי אני שאעביר עליו ביקורת?",
+   "en": "Who am I to second guess him?",
+   "word": "בִּקֹּרֶת",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hb988a9d9",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1988020",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Spamster"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h96b6176d",
+   "he": "אין ספקות לגבי היושר שלו.",
+   "en": "There are no doubts regarding his integrity.",
+   "word": "סָפֵק",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h96b6176d",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1410685",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Sarit"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:h7dc61915",
+   "he": "אני נזכרת בשמו עכשיו.",
+   "en": "I remember his name now.",
+   "word": "נִזְכַּר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h7dc61915",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/4672072",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h30991e3e",
+   "he": "אני יכול להבין את כעסך.",
+   "en": "I can understand your anger.",
+   "word": "כַּעַס",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h30991e3e",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2306491",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.003,
+     "neutral": 0.997
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h57665cd9",
+   "he": "אני שמחה לראות אותך כאן.",
+   "en": "I'm happy to see you here.",
+   "word": "שָׂמֵחַ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h57665cd9",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1439833",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:h2b5d8989",
+   "he": "אל תתן לו להרגיז אותך.",
+   "en": "Don't let him get to you.",
+   "word": "הִרְגִּיז",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h2b5d8989",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5612875",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CH"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.005,
+     "neutral": 0.995
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hf9ddc74d",
+   "he": "תום מחובר למכשירי ניטור.",
+   "en": "Tom is hooked up to monitors.",
+   "word": "נָטַר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hf9ddc74d",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5768464",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h0b698544",
+   "he": "האם אני צריך עוד טיפולי שיניים?",
+   "en": "Do I need more dental work?",
+   "word": "טִפּוּל",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h0b698544",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1509123",
+    "heAuthor": "MrShoval",
+    "enAuthor": "lukaszpp"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hf0970c2b",
+   "he": "יש לנו רק שעות בודדות.",
+   "en": "We only have a few hours.",
+   "word": "בּוֹדֵד",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hf0970c2b",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1877426",
+    "heAuthor": "MrShoval",
+    "enAuthor": "Spamster"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:ha2200362",
+   "he": "שהדבר לא ידאיג אותך!",
+   "en": "Do not worry about that!",
+   "word": "הִדְאִיג",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "ha2200362",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1847327",
+    "heAuthor": "MrShoval",
+    "enAuthor": "belgavox"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hbdf0910e",
+   "he": "הוא בטח עבר את הששים.",
+   "en": "He must be over sixty.",
+   "word": "בֶּטַח",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hbdf0910e",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1366780",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h86a25094",
+   "he": "אני מאחלת לך נסיעה מוצלחת.",
+   "en": "I hope you have a good trip.",
+   "word": "אִחֵל",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h86a25094",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/703666",
+    "heAuthor": "Eldad",
+    "enAuthor": "CM"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:hdd81f67a",
+   "he": "חג המולד הוא זמן ששון.",
+   "en": "Christmas is a joyful time.",
+   "word": "שָׂשׂוֹן",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hdd81f67a",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5697552",
+    "heAuthor": "fekundulo",
+    "enAuthor": "Hybrid"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.002,
+     "negative": 0.0,
+     "neutral": 0.998
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hb37d1c69",
+   "he": "תום אהוד על ידי כולם.",
+   "en": "Tom is liked by everybody.",
+   "word": "אָהַד",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hb37d1c69",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/6063416",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:h4055c5dd",
+   "he": "הפתעות זה לא בשבילי.",
+   "en": "I don't like surprises.",
+   "word": "הַפְתָּעָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h4055c5dd",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2285258",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h19348fe1",
+   "he": "הוא שונה ממה שאני דימיתי.",
+   "en": "He's different from how I imagined him.",
+   "word": "דִּמָּה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h19348fe1",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2843715",
+    "heAuthor": "Ramiav",
+    "enAuthor": "AlanF_US"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc53a69be",
+   "he": "אנו מקווים שכל זה אמת.",
+   "en": "We hope it's all true.",
+   "word": "שֵׂכֶל",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc53a69be",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/5368475",
+    "heAuthor": "Ramiav",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h20be701e",
+   "he": "תום מתענג ממש לבשל.",
+   "en": "Tom really enjoys cooking.",
+   "word": "הִתְעַנֵּג",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h20be701e",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/13051927",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:h7712bca9",
+   "he": "דאגתי היחידה היא שאין לי דאגות.",
+   "en": "The main thing I'm worried about is that I'm not worried.",
+   "word": "דְּאָגָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h7712bca9",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/3992669",
+    "heAuthor": "Ramiav",
+    "enAuthor": "Joseph"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.003,
+     "neutral": 0.997
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hbebda689",
+   "he": "תום נראה יהיר ובטוח בעצמו.",
+   "en": "Tom seems arrogant and sure of himself.",
+   "word": "יָהִיר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hbebda689",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/6140293",
+    "heAuthor": "fekundulo",
+    "enAuthor": "bill"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc72a28ff",
+   "he": "יש לה מזג זועף.",
+   "en": "She is ill-natured.",
+   "word": "זָעַף",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc72a28ff",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1910902",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CM"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h73a0c536",
+   "he": "זה מה שגרם לו להתרגז.",
+   "en": "That's why he got angry.",
+   "word": "הִתְרַגֵּז",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h73a0c536",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1839861",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h708d961c",
+   "he": "עשון הוא גורם מכריע בסרטן הראות.",
+   "en": "Smoking is the major cause of lung cancer.",
+   "word": "הִכְרִיעַ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h708d961c",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/6030916",
+    "heAuthor": "fekundulo",
+    "enAuthor": "Source_VOA"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hc3edc635",
+   "he": "הוא סבור שיש בינינו מרגל.",
+   "en": "He believes that there is a spy among us.",
+   "word": "סָבוּר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hc3edc635",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/566736",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h82740464",
+   "he": "היא השיגה לו כובע חדש.",
+   "en": "She got him a new hat.",
+   "word": "יִגָּה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h82740464",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1714431",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:hab86bd35",
+   "he": "אין לי על מה להתגאות.",
+   "en": "I have nothing to boast about.",
+   "word": "הִתְגָּאָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hab86bd35",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1949539",
+    "heAuthor": "fekundulo",
+    "enAuthor": "AlanF_US"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h72246811",
+   "he": "אתה לא משתעמם כשאתה לבד?",
+   "en": "Don't you get bored when you're alone?",
+   "word": "הִשְׁתַּעֲמֵם",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h72246811",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/4262358",
+    "heAuthor": "Eldad",
+    "enAuthor": "qdii"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:he9d19b9a",
+   "he": "מה הרגשתך ביחס לסוגיה הזאת?",
+   "en": "How do you feel about the issue?",
+   "word": "הַרְגָּשָׁה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "he9d19b9a",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1436117",
+    "heAuthor": "MrShoval",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h82dea0b8",
+   "he": "תהרהר על מה שעשית.",
+   "en": "Reflect on what you have done.",
+   "word": "הִרהֵר",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h82dea0b8",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/576285",
+    "heAuthor": "rafaga",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h240c42b9",
+   "he": "זהירות, הוא עלול לירות בך!",
+   "en": "Be careful, he might shoot you!",
+   "word": "זְהִירוּת",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h240c42b9",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/3676335",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.878,
+     "neutral": 0.122
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h07bdecea",
+   "he": "האנגלית שלו טובה יותר משלי.",
+   "en": "His English is better than mine.",
+   "word": "שָׁלֵו",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h07bdecea",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/519971",
+    "heAuthor": "admor82",
+    "enAuthor": "jose76c"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "vocab:hcfac6fe1",
+   "he": "מעציב אותי לחשוב על מותו.",
+   "en": "It makes me sad to think of his death.",
+   "word": "הֶעֱצִיב",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "hcfac6fe1",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/601256",
+    "heAuthor": "Eldad",
+    "enAuthor": "Eldad"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h943cb71c",
+   "he": "תום חשש לומר את האמת.",
+   "en": "Tom was afraid to tell the truth.",
+   "word": "חֲשָׁשׁ",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h943cb71c",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/3383642",
+    "heAuthor": "fekundulo",
+    "enAuthor": "CK"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 1.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h88265fe3",
+   "he": "האם גברתי דוברת תורכית?",
+   "en": "Does the lady speak Turkish?",
+   "word": "גְּבִרְתִּי",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h88265fe3",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2065042",
+    "heAuthor": "MrShoval",
+    "enAuthor": "halfb1t"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "vocab:h12164a98",
+   "he": "מלאתי את משאלתך, עמית יקר.",
+   "en": "I have fulfilled your wish, dear colleague.",
+   "word": "מִשְׁאָלָה",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h12164a98",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/2048910",
+    "heAuthor": "fekundulo",
+    "enAuthor": "MarijnKp"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.001,
+     "negative": 0.986,
+     "neutral": 0.013
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "vocab:h74394d0a",
+   "he": "הוא היה מאוהב בה בסתר.",
+   "en": "He has been secretly in love with her.",
+   "word": "מְאֹהָב",
+   "source": {
+    "file": "data/vocab/words.json",
+    "entry": "h74394d0a",
+    "license": "CC BY 2.0 FR",
+    "url": "https://tatoeba.org/en/sentences/show/1493284",
+    "heAuthor": "Eldad",
+    "enAuthor": "weihaiping"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.001,
+     "neutral": 0.999
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-cafe-l1",
+   "he": "שָׁלוֹם! מָה תִּרְצִי?",
+   "en": "Hello! What would you like?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-cafe"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-cafe-l2",
+   "he": "אֲנִי רוֹצָה קָפֶה הָפוּךְ, בְּבַקָּשָׁה.",
+   "en": "I'd like a cafe hafuch (a milky coffee), please.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-cafe"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-cafe-l3",
+   "he": "עוֹד מַשֶּׁהוּ?",
+   "en": "Anything else?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-cafe"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-cafe-l4",
+   "he": "כֵּן, גַּם עוּגָה. כַּמָּה זֶה?",
+   "en": "Yes, a cake too. How much is it?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-cafe"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-cafe-l5",
+   "he": "אַרְבָּעִים וּשְׁמוֹנָה שְׁקָלִים.",
+   "en": "Forty-eight shekels.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-cafe"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-cafe-l6",
+   "he": "אֶפְשָׁר בְּכַרְטִיס?",
+   "en": "Can I pay by card?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-cafe"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-cafe-l7",
+   "he": "בֶּטַח. תּוֹדָה רַבָּה!",
+   "en": "Of course. Thanks a lot!",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-cafe"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.069,
+     "negative": 0.0,
+     "neutral": 0.931
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-restaurant-l1",
+   "he": "שָׁלוֹם. לְכַמָּה אֲנָשִׁים?",
+   "en": "Hello. For how many people?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-restaurant"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-restaurant-l2",
+   "he": "לִשְׁנַיִם, בְּבַקָּשָׁה.",
+   "en": "For two, please.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-restaurant"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-restaurant-l3",
+   "he": "בְּבַקָּשָׁה, פֹּה. הִנֵּה הַתַּפְרִיט.",
+   "en": "Please, here. Here is the menu.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-restaurant"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-restaurant-l4",
+   "he": "אֲנִי רוֹצֶה שְׁנִיצֶל וְסָלָט.",
+   "en": "I'd like a schnitzel and a salad.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-restaurant"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-restaurant-l5",
+   "he": "וְלִשְׁתּוֹת?",
+   "en": "And to drink?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-restaurant"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-restaurant-l6",
+   "he": "מַיִם, בְּבַקָּשָׁה.",
+   "en": "Water, please.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-restaurant"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-restaurant-l7",
+   "he": "סְלִיחָה, אֶפְשָׁר אֶת הַחֶשְׁבּוֹן?",
+   "en": "Excuse me, can I have the bill?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-restaurant"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.006,
+     "neutral": 0.994
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-restaurant-l8",
+   "he": "בֶּטַח, רֶגַע.",
+   "en": "Sure, one moment.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-restaurant"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-directions-l1",
+   "he": "סְלִיחָה, אֵיפֹה הַתַּחֲנָה הַמֶּרְכָּזִית?",
+   "en": "Excuse me, where is the central station?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-directions"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-directions-l2",
+   "he": "לֵךְ יָשָׁר, וְאַחַר כָּךְ פְּנֵה שְׂמֹאלָה.",
+   "en": "Go straight, and then turn left.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-directions"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-directions-l3",
+   "he": "זֶה רָחוֹק?",
+   "en": "Is it far?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-directions"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.004,
+     "neutral": 0.996
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-directions-l4",
+   "he": "לֹא, חָמֵשׁ דַּקּוֹת.",
+   "en": "No, five minutes.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-directions"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-directions-l5",
+   "he": "תּוֹדָה רַבָּה!",
+   "en": "Thank you very much!",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-directions"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.002,
+     "negative": 0.0,
+     "neutral": 0.998
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-directions-l6",
+   "he": "בְּבַקָּשָׁה.",
+   "en": "You're welcome.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-directions"
+   },
+   "model": {
+    "label": "negative",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.888,
+     "neutral": 0.112
+    }
+   },
+   "label": "negative",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-smalltalk-l1",
+   "he": "הַיי, מָה נִשְׁמָע?",
+   "en": "Hi, how's it going?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-smalltalk"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-smalltalk-l2",
+   "he": "הַכֹּל בְּסֵדֶר, תּוֹדָה. וְאַתָּה?",
+   "en": "All fine, thanks. And you?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-smalltalk"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-smalltalk-l3",
+   "he": "הַכֹּל טוֹב. מֵאֵיפֹה אַתְּ?",
+   "en": "All good. Where are you from?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-smalltalk"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-smalltalk-l4",
+   "he": "אֲנִי מִתֵּל אָבִיב. וְאַתָּה?",
+   "en": "I'm from Tel Aviv. And you?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-smalltalk"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-smalltalk-l5",
+   "he": "אֲנִי מִקָּנָדָה. אֲנִי מְדַבֵּר עִבְרִית קְצָת.",
+   "en": "I'm from Canada. I speak a little Hebrew.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-smalltalk"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-smalltalk-l6",
+   "he": "מְצֻיָּן! אַתָּה מְדַבֵּר טוֹב.",
+   "en": "Excellent! You speak well.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-smalltalk"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-smalltalk-l7",
+   "he": "נָעִים מְאוֹד.",
+   "en": "Very nice to meet you.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-smalltalk"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-shop-l1",
+   "he": "שָׁלוֹם. אֲנִי יָכוֹל לַעֲזֹר?",
+   "en": "Hello. Can I help?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-shop"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-shop-l2",
+   "he": "כַּמָּה הַחֻלְצָה הַזֹּאת?",
+   "en": "How much is this shirt?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-shop"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-shop-l3",
+   "he": "מֵאָה וַעֲשָׂרָה שְׁקָלִים.",
+   "en": "A hundred and ten shekels.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-shop"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-shop-l4",
+   "he": "יֵשׁ מִדָּה קְטַנָּה?",
+   "en": "Do you have a small size?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-shop"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-shop-l5",
+   "he": "כֵּן, רֶגַע. הִנֵּה.",
+   "en": "Yes, one moment. Here.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-shop"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-shop-l6",
+   "he": "אֶפְשָׁר לִמְדֹּד?",
+   "en": "Can I try it on?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-shop"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-shop-l7",
+   "he": "בֶּטַח. חֲדַר הַלְבָּשָׁה שָׁם.",
+   "en": "Of course. The fitting room is there.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-shop"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-shop-l8",
+   "he": "אֲנִי לוֹקַחַת אֶת זֶה. בְּכַרְטִיס, בְּבַקָּשָׁה.",
+   "en": "I'll take it. By card, please.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-shop"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l1",
+   "he": "שָׁלוֹם. לִשְׂדֵה הַתְּעוּפָה, בְּבַקָּשָׁה.",
+   "en": "Hello. To the airport, please.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l2",
+   "he": "בְּסֵדֶר. עֲלֵה.",
+   "en": "OK. Get in.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l3",
+   "he": "עִם מוֹנֶה, בְּבַקָּשָׁה.",
+   "en": "With the meter, please.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l4",
+   "he": "כֵּן, בְּלִי בְּעָיָה.",
+   "en": "Yes, no problem.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "positive",
+    "scores": {
+     "positive": 1.0,
+     "negative": 0.0,
+     "neutral": 0.0
+    }
+   },
+   "label": "positive",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l5",
+   "he": "כַּמָּה זְמַן?",
+   "en": "How long will it take?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l6",
+   "he": "בְּעֵרֶךְ עֶשְׂרִים דַּקּוֹת.",
+   "en": "About twenty minutes.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l7",
+   "he": "הִגַּעְנוּ.",
+   "en": "We've arrived.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.001,
+     "neutral": 0.999
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l8",
+   "he": "כַּמָּה אֲנִי חַיָּב?",
+   "en": "How much do I owe?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l9",
+   "he": "מֵאָה שְׁקָלִים.",
+   "en": "A hundred shekels.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-taxi-l10",
+   "he": "הִנֵּה, תּוֹדָה. יוֹם טוֹב!",
+   "en": "Here you go, thanks. Have a good day!",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-taxi"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-hotel-l1",
+   "he": "שָׁלוֹם. יֵשׁ לִי הַזְמָנָה.",
+   "en": "Hello. I have a reservation.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-hotel"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-hotel-l2",
+   "he": "בְּאֵיזֶה שֵׁם?",
+   "en": "Under what name?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-hotel"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-hotel-l3",
+   "he": "לֵוִי.",
+   "en": "Levi.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-hotel"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-hotel-l4",
+   "he": "כֵּן, אֲנִי רוֹאֶה. שְׁלוֹשָׁה לֵילוֹת.",
+   "en": "Yes, I see it. Three nights.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-hotel"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-hotel-l5",
+   "he": "מָתַי אֲרוּחַת הַבֹּקֶר?",
+   "en": "When is breakfast?",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-hotel"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-hotel-l6",
+   "he": "מִשֶּׁבַע עַד עֶשֶׂר.",
+   "en": "From seven to ten.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-hotel"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-hotel-l7",
+   "he": "הַחֶדֶר בַּקּוֹמָה הַשְּׁנִיָּה. הִנֵּה הַמַּפְתֵּחַ.",
+   "en": "The room is on the second floor. Here is the key.",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-hotel"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.0,
+     "negative": 0.0,
+     "neutral": 1.0
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  },
+  {
+   "id": "dialogue:d-hotel-l8",
+   "he": "תּוֹדָה רַבָּה!",
+   "en": "Thank you very much!",
+   "source": {
+    "file": "data/curriculum/dialogues.json",
+    "dialogue": "d-hotel"
+   },
+   "model": {
+    "label": "neutral",
+    "scores": {
+     "positive": 0.002,
+     "negative": 0.0,
+     "neutral": 0.998
+    }
+   },
+   "label": "neutral",
+   "checked": false
+  }
+ ]
+}

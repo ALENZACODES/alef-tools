@@ -1,0 +1,1 @@
+export default {"schema":"alef.morph.unit/1","unit":"r03","words":{"לו":[{"l":"לו","p":"","s":"PRON","g":"m","n":"sg","r":"3"}],"שלום":[{"l":"שלום","p":"","s":"NOUN","g":"m","n":"sg","d":"hf8c8316a","how":"exact"}]},"entries":{"hf8c8316a":{"he":"שָׁלוֹם","en":"peace","pos":"noun","gender":"m","root":null,"binyan":null,"rootChecked":false}}};
