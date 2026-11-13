@@ -1,0 +1,70 @@
+{
+ "schema": "alef.pack.v1",
+ "pack": "words",
+ "version": "7818974b022f",
+ "files": [
+  {
+   "name": "joint.int8.onnx",
+   "bytes": 50457248,
+   "sha256": "3fd3b1bf08b390625f1a78c21abd6b04d4d89bac99e5af292bb30bb0ae73632b",
+   "parts": [
+    {
+     "path": "joint.int8.onnx.p000",
+     "bytes": 16777216,
+     "sha256": "6caed5111c02fcb9d79ab73ff7e83161dcfabbb05b816988876d66f2be9bf5d8"
+    },
+    {
+     "path": "joint.int8.onnx.p001",
+     "bytes": 16777216,
+     "sha256": "354f1d23c948d909f40d4162e3d313de730ef38ff21d9c54802151d53e683140"
+    },
+    {
+     "path": "joint.int8.onnx.p002",
+     "bytes": 16777216,
+     "sha256": "d91ee6733806feff34a1fd9cef0d9e5d2ccad333efcdf302bf88f3b08a9e6b10"
+    },
+    {
+     "path": "joint.int8.onnx.p003",
+     "bytes": 125600,
+     "sha256": "6f3debde9eabf184383f4f923c68c679ad11c4a06732055086ed8fa12bd7ffe6"
+    }
+   ]
+  },
+  {
+   "name": "vocab.txt",
+   "bytes": 1500244,
+   "sha256": "0fb90bfa35244d26f0065d1fcd0b5becc3da3d44d616a7e2aacaf6320b9fa2d0",
+   "parts": [
+    {
+     "path": "vocab.txt.p000",
+     "bytes": 1500244,
+     "sha256": "0fb90bfa35244d26f0065d1fcd0b5becc3da3d44d616a7e2aacaf6320b9fa2d0"
+    }
+   ]
+  },
+  {
+   "name": "tokenizer.json",
+   "bytes": 8161,
+   "sha256": "23b95b87cdc8fb94c7398762f10dbf53efc9c3cafa5bd8b5bb27905a358fae83",
+   "parts": [
+    {
+     "path": "tokenizer.json.p000",
+     "bytes": 8161,
+     "sha256": "23b95b87cdc8fb94c7398762f10dbf53efc9c3cafa5bd8b5bb27905a358fae83"
+    }
+   ]
+  },
+  {
+   "name": "labels.json",
+   "bytes": 880,
+   "sha256": "5822d34d55765fd074163a61c62d4b314fb2d93e4193555f28a3b6c52c9cf915",
+   "parts": [
+    {
+     "path": "labels.json.p000",
+     "bytes": 880,
+     "sha256": "5822d34d55765fd074163a61c62d4b314fb2d93e4193555f28a3b6c52c9cf915"
+    }
+   ]
+  }
+ ]
+}
