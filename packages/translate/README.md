@@ -132,3 +132,6 @@ every file is fetched when the Talk or Camera screen first opens.
   `models.manifest.json` now says so (`format`, `cache`, `legacy`).
 - `onnx-community/opus-mt-mul-en` (the baseline for the scoring tool) was not run: `scripts/score.mjs` reads the Talk pack layout only.
 - The Hebrew to English pack shipped since 10 November was not rebuilt: it is a Marian-format release and needs a conversion step that is not here yet.
+- Open question on a licence: the app records the shipped Hebrew to English pack (Tatoeba heb-eng, `opus-2021-02-19`) as Apache-2.0. The Tatoeba
+  Translation Challenge describes its models as CC BY 4.0. Both allow this use; if it is CC BY the pack needs a credit line, which is one
+  `attribution` field in `models.manifest.json`. The licence was not re-read at the source in this lane.

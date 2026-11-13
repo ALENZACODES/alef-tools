@@ -328,7 +328,7 @@
     "webgpu": false,
     "minRamGB": 0
    },
-   "attribution": "OPUS-MT Tatoeba heb-eng by the Language Technology Research Group at the University of Helsinki (the Tatoeba Translation Challenge)."
+   "attribution": ""
   },
   {
    "id": "Helsinki-NLP/opus-mt-tc-big-he-en",

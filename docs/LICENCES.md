@@ -160,7 +160,6 @@ A model with a non-commercial or unclear licence is never shipped: it is dropped
 
 Every CC BY model that ships or shapes shipped content:
 
-- OPUS-MT Tatoeba heb-eng by the Language Technology Research Group at the University of Helsinki (the Tatoeba Translation Challenge).
 - OPUS-MT tc-big he-en by the Language Technology Research Group at the University of Helsinki, CC BY 4.0. Converted to 8-bit for the browser.
 - dictabert-large-char-menaked by Dicta: The Israel Center for Text Analysis, CC BY 4.0
 - dictabert-tiny-joint by Dicta: The Israel Center for Text Analysis, CC BY 4.0
