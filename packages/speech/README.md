@@ -39,11 +39,12 @@ The scripts run the same code the app runs, with onnxruntime-node in place of th
 | Pack | Set | Character error | Word error | Result file |
 |---|---|---|---|---|
 | `listen-lite` | FLEURS short, 81 lines | 30.1% | 74.2% | `eval/results/listen-lite.fleurs-short.json` |
-| `listen-best` | FLEURS short, 81 lines | 13.2% | 26.3% | `eval/results/listen-best.fleurs-short.json` |
+| `listen-best` | FLEURS short, 81 lines | 8.6% | 22.0% | `eval/results/listen-best.fleurs-short.json` |
 
-Against the lane's bar (best at most 12%, quick at most 30%, on short learner phrases): on this stand-in set both are just
-over. Neither was measured on learner phrases. Other sizes of the quick model on the same 81 lines: 8-bit encoder 31.5%,
-full fp32 (291 MB, over budget) 27.9%.
+Against the lane's bar (best at most 12%, quick at most 30%, on short learner phrases): on this stand-in set the best pack
+is inside it and the quick pack is a hair over (30.1%). Neither was measured on learner phrases. Other sizes of the quick
+model on the same 81 lines: 8-bit encoder 31.5%, full fp32 (291 MB, over budget) 27.9%. The quick pack makes many word
+mistakes on full sentences; it is meant for a word or a short phrase.
 
 Letter check (`eval/results/pron-check.fleurs.json`, 327 recordings, 15,390 checked letters): the recordings were read
 correctly, so letters of the expected text were changed and the check should mark exactly those
@@ -73,8 +74,11 @@ What the letter check cannot do, by design of the model (it writes unpointed let
 
 Speed, on the app's vendored onnxruntime-web (WebAssembly, one thread) run in Node on a 2-core machine:
 `listen-lite` loads in about 2 s and answers a 3 s take in about 6 s; `pron-check` loads in about 3 s, answers a 3 s take in
-about 5 s and a 16 s take in about 23 s, and holds about 1.3 GB of memory. No browser was used for these numbers.
-**`listen-best` has not been run on WebGPU at all**: it was scored on a processor only.
+about 5 s and a 16 s take in about 23 s, and holds about 1.3 GB of memory.
+In a real browser (headless Chrome 153 on the same machine, a recording played as the microphone, packs served from the
+site's own folder): both packs downloaded and passed their checks, a 3 s take was written down in about 9 s including
+the first load, and the letter check marked the one letter that had been changed in the expected text (about 8 s).
+No phone was tested. **`listen-best` has not been run in any browser or on WebGPU**: it was scored on a processor only.
 
 ## Use
 
