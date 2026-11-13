@@ -1,0 +1,11 @@
+# Training, export and scoring of the letter checker (CPU is enough; a full run takes about half an hour on two cores).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+scikit-image==0.26.0
+onnx==1.23.2
+onnxruntime==1.29.0
+# only for scripts/bench_trocr.py (QA benchmark of an outside model, never shipped)
+# transformers

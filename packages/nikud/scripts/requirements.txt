@@ -1,0 +1,12 @@
+# Pinned tools for the offline scripts of packages/nikud (conversion, builds, checks). Nothing here ships to the browser.
+# These are the versions the packs and the numbers in the README were made with (Python 3.13, CPU only).
+# torch comes from the CPU index:  pip install --index-url https://download.pytorch.org/whl/cpu torch==2.15.0
+torch==2.15.0
+transformers==5.22.2
+tokenizers==0.23.3
+safetensors==0.8.0
+huggingface_hub==2.4.0
+onnx==1.23.2
+onnxruntime==1.31.1
+onnxscript==0.7.2
+numpy==2.5.4

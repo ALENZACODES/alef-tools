@@ -48,7 +48,7 @@
   },
   "translate-he-en-hq": {
    "title": "Hebrew to English, high quality",
-   "what": "A larger pack for longer Hebrew sentences. For a computer with a graphics card.",
+   "what": "A larger pack that gets more Hebrew lines right. For a computer with a graphics card.",
    "budgetBytes": 262144000,
    "device": {
     "webgpu": true,
@@ -57,8 +57,13 @@
    "deviceNote": "desktop with a graphics card",
    "published": false,
    "lane": 1,
-   "cache": "alef-pack-translate-he-en-hq-v1",
-   "format": "alef.pack.v1"
+   "cache": "alef-talk-pack-v1",
+   "format": "alef.talk.nmt.manifest.v1",
+   "legacy": {
+    "adapter": "talk",
+    "direction": "he-en",
+    "name": "he-en-hq"
+   }
   },
   "listen-lite": {
    "title": "Listening, small",
@@ -331,7 +336,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "D",
-   "reason": "Better Hebrew to English on a desktop with a graphics card (opt-in); also used offline to build the translation memory for app sentences.",
+   "reason": "Better Hebrew to English on a desktop with a graphics card (opt-in). Built and scored on 12 November 2026 (237.6 MiB in 17 parts; the part list with sizes and SHA-256 is packages/translate/packs/he-en-hq.pack.json); the files are not on the pack host yet, so the list below stays empty. Also used offline for the few lesson sentences of the sentence memory that had no English.",
    "pack": "translate-he-en-hq",
    "files": [],
    "budgetBytes": 262144000,
@@ -339,7 +344,7 @@
     "webgpu": true,
     "minRamGB": 0
    },
-   "attribution": "OPUS-MT (opus-mt-tc-big-he-en) by the Language Technology Research Group at the University of Helsinki, CC BY 4.0"
+   "attribution": "OPUS-MT tc-big he-en by the Language Technology Research Group at the University of Helsinki, CC BY 4.0. Converted to 8-bit for the browser."
   },
   {
    "id": "Xenova/opus-mt-mul-en",
@@ -363,7 +368,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "Q",
-   "reason": "Baseline in the scoring harness only.",
+   "reason": "Baseline in the scoring harness only. Not run yet: packages/translate/scripts/score.mjs reads the Talk pack layout, not the stock ONNX layout.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -427,7 +432,7 @@
    "licence": "Apache-2.0 (inherited from ivrit-ai/whisper-large-v3-turbo; the port carries no licence tag)",
    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
    "tier": "D",
-   "reason": "Best listening on a desktop with a graphics card: live translator and voice journal transcripts.",
+   "reason": "Best listening on a desktop with a graphics card: live translator and voice journal transcripts. Pack as built: q4f16 encoder and merged decoder, 538.1 MiB (packages/speech/packs/listen-best.pack.json); not published yet, and not yet run on a graphics card. The port has no model card on the Hub (checked 2026-11-12).",
    "pack": "listen-best",
    "files": [],
    "budgetBytes": 608174080,
@@ -443,7 +448,7 @@
    "licence": "Apache-2.0",
    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
    "tier": "D",
-   "reason": "Quick Hebrew listening on any device, so audio never leaves the device.",
+   "reason": "Quick Hebrew listening on any device, so audio never leaves the device. Pack as built: 4-bit encoder and 8-bit merged decoder, 69.9 MiB (packages/speech/packs/listen-lite.pack.json); not published yet.",
    "pack": "listen-lite",
    "files": [],
    "budgetBytes": 83886080,
@@ -459,7 +464,7 @@
    "licence": "Apache-2.0 (base openai/whisper-small; the port carries no licence tag)",
    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
    "tier": "D",
-   "reason": "Optional middle tier: better listening on a phone.",
+   "reason": "Optional middle tier: better listening on a phone. Not built by Lane 2 in this round.",
    "pack": "listen-mid",
    "files": [],
    "budgetBytes": 268435456,
@@ -491,7 +496,7 @@
    "licence": "Apache-2.0",
    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
    "tier": "D",
-   "reason": "Letter-level pronunciation check (character alignment against the phoneme target).",
+   "reason": "Letter-level pronunciation check (character alignment against the expected letters). Pack as built: re-exported from the fp32 graph to 4-bit weights, 198.6 MiB (packages/speech/packs/pron-check.pack.json); not published yet.",
    "pack": "pron-check",
    "files": [],
    "budgetBytes": 377487360,
@@ -779,7 +784,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "D",
-   "reason": "Vowel marks for any text the learner brings (camera, Talk, typed); offline, vowel marks for every app sentence, checked.",
+   "reason": "Vowel marks for any text the learner brings (camera, Talk, typed): the 8-bit build (303 MiB) made by packages/nikud/scripts/export_menaked.py. Offline, the full-precision model marks the app's own bare sentences (packages/nikud/src/nikud). Sizes and SHA-256 of the converted files are in packages/nikud/conversion.json until the pack is on the pack host.",
    "pack": "nikud",
    "files": [],
    "budgetBytes": 335544320,
@@ -787,7 +792,7 @@
     "webgpu": false,
     "minRamGB": 4
    },
-   "attribution": "dictabert-large-char-menaked by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+   "attribution": "Vowel marks: DictaBERT-large-char-menaked by Dicta: The Israel Center for Text Analysis, CC BY 4.0. Changed: converted to ONNX with 8-bit weights."
   },
   {
    "id": "avraham123/tale-me-dictabert-menaked-browser",
@@ -795,7 +800,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "Q",
-   "reason": "Third-party browser port of the menaked model. Not used: the pack is converted from the Dicta original.",
+   "reason": "Third-party browser port of the menaked model. Never shipped: the pack is converted from the Dicta original. Used once, to compare its answers with our conversion (packages/nikud/review/build-agreement.json).",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -811,7 +816,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "Q",
-   "reason": "Experiment: a smaller vowel-marking head.",
+   "reason": "Looked at as a smaller base for a vowel-marking head. It has no such head and training one was not done in the nikud lane, so nothing was built from it.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -827,7 +832,7 @@
    "licence": "MIT",
    "licenceUrl": "https://opensource.org/license/mit",
    "tier": "D",
-   "reason": "Phonemes and stress marks for any text; the target for the pronunciation check; transliteration checks. (Also reachable as thewh1teagle/phonikud-onnx.)",
+   "reason": "Stress, sounded shva and prefix marks for any text; packages/nikud/src/phonikud.js turns them into a sound line. Used as published (already 8-bit, 294 MiB) with tool notes stripped. The target for the pronunciation check; transliteration checks. (Also reachable as thewh1teagle/phonikud-onnx.)",
    "pack": "phonemes",
    "files": [],
    "budgetBytes": 325058560,
@@ -835,7 +840,7 @@
     "webgpu": false,
     "minRamGB": 4
    },
-   "attribution": ""
+   "attribution": "Sounds and stress: Phonikud (phonikud-onnx), MIT licence. Built on DictaBERT-large-char-menaked by Dicta, CC BY 4.0."
   },
   {
    "id": "Phonikud/phonikud",
@@ -859,7 +864,7 @@
    "licence": "Apache-2.0",
    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
    "tier": "B",
-   "reason": "Punctuate offline transcripts (voice journal export, lesson scripts).",
+   "reason": "Punctuate offline transcripts (voice journal export, lesson scripts): packages/nikud/scripts/punctuate.py. Never runs in the app.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -875,7 +880,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "D",
-   "reason": "Word taps anywhere: dictionary form, root and pattern hint, prefixes, part of speech, names.",
+   "reason": "Word taps on any text (Talk, camera, typed): dictionary form, prefixes, part of speech, gender and number, names. Family letters only where the app word list has them.",
    "pack": "words",
    "files": [],
    "budgetBytes": 52428800,
@@ -883,7 +888,7 @@
     "webgpu": false,
     "minRamGB": 0
    },
-   "attribution": "dictabert-tiny-joint by Dicta: The Israel Center for Text Analysis, CC BY 4.0"
+   "attribution": "dictabert-tiny-joint by Dicta: The Israel Center for Text Analysis, CC BY 4.0. Changed in size and file format for the Words pack."
   },
   {
    "id": "dicta-il/dictabert-joint",
@@ -891,7 +896,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Build-time analysis of every lesson word and sentence into static JSON for lesson explanations.",
+   "reason": "Build time: reads every lesson word and sentence into the per-lesson word notes (packages/morph).",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -907,7 +912,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Cross-check of the joint model; roots table checks.",
+   "reason": "Build time: second opinion on part of speech, gender and number for the lesson notes; disagreements go to review (packages/morph/review/crosscheck.json).",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -923,7 +928,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Cross-check of the joint model; roots table checks.",
+   "reason": "Build time: second opinion on dictionary forms for the lesson notes; disagreements go to review.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -939,7 +944,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Cross-check of the joint model; roots table checks.",
+   "reason": "Build time: second opinion on prefix splits for the lesson notes; disagreements go to review.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -955,7 +960,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Cross-check of the joint model; roots table checks.",
+   "reason": "Build time: second opinion on sentence structure. Pinned, not run yet (packages/morph/README.md, Not done).",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -971,7 +976,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Cross-check of the joint model; roots table checks.",
+   "reason": "Build time: second opinion on the whole lesson analysis; disagreements go to review.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -987,7 +992,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Cross-check of the joint model; roots table checks.",
+   "reason": "Build time: second opinion on the whole lesson analysis from the large model; disagreements go to review.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -1003,7 +1008,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Cross-check of the joint model; roots table checks.",
+   "reason": "Build time: second opinion on the whole lesson analysis from the small model; disagreements go to review.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -1019,7 +1024,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Names and places tags for camera signs and reading texts.",
+   "reason": "Build time: second opinion on name and place tags in lesson text (int8 file); disagreements go to review. No pack is built from it yet.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -1067,7 +1072,7 @@
    "licence": "CC-BY-4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
    "tier": "B",
-   "reason": "Label sentences for the feelings games (static JSON, human-checked).",
+   "reason": "Build time: suggests positive, neutral or negative for feelings-game sentences; only sentences a person has checked ship (packages/morph/review/sentiment.json).",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -1702,12 +1707,44 @@
    "attribution": ""
   },
   {
+   "id": "dicta-il/DictaLM-3.0-1.7B-Thinking-GGUF",
+   "hubRevision": "34cd052348a4ca310ee4b5011ca73468cc60792a",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: Dicta's own 4-bit GGUF of the 1.7B Thinking model, run with llama.cpp as a judge on a CPU box (packages/offline-llm).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/dictalm2.0-instruct-GGUF",
+   "hubRevision": "9ed3346a1440643825287abf86e28800005ec9b3",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: Dicta's own 4-bit GGUF of dictalm2.0-instruct, run with llama.cpp as a judge and as the base of the offensive-language screen (packages/offline-llm).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
    "id": "dicta-il/BEREL_3.0",
    "hubRevision": "25dc07f2e622ba14eeea6c026eaa54f3586ceabf",
    "licence": "Apache-2.0",
    "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
    "tier": "B",
-   "reason": "Biblical and Rabbinic Hebrew: vowel and trope checks on Torah reading texts, cloze items for Torah and prayer units.",
+   "reason": "Biblical and Rabbinic Hebrew: packages/nikud/scripts/qa_berel.py lists unlikely words in Torah and prayer text for a person to read; it never changes a text. Also cloze items for Torah and prayer units.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -2123,7 +2160,7 @@
    "licence": "none stated",
    "licenceUrl": "https://huggingface.co/sivan22/testing-trOCR-hebrew-handwritten",
    "tier": "Q",
-   "reason": "Benchmark only for the tracing checker. No licence stated; never ships.",
+   "reason": "Benchmark only for the tracing checker. No licence stated; never ships. The benchmark gave no score: the published weights file at this revision holds NaN values (packages/handwriting/README.md).",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -2139,7 +2176,7 @@
    "licence": "MIT",
    "licenceUrl": "https://opensource.org/license/mit",
    "tier": "Q",
-   "reason": "Architecture reference only for the tracing checker.",
+   "reason": "Architecture reference only for the tracing checker. Not downloaded and not used.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -2157,15 +2194,28 @@
    "licence": "MIT",
    "licenceUrl": "https://opensource.org/license/mit",
    "tier": "D",
-   "reason": "The tracing checker: our own small network (at most 2 MiB), trained here on letters drawn from OFL Hebrew fonts.",
+   "reason": "The tracing checker: our own small network (1.25 MiB), trained here on letters drawn from OFL Hebrew fonts, the app's own stroke models and the HHD_v0 handwriting dataset (CC BY 4.0). Model 1, 2026-11-12. The parts are carried by the app itself for now and are not on the pack host yet.",
    "pack": "handwriting",
-   "files": [],
+   "files": [
+    {
+     "name": "letters.onnx.p000",
+     "bytes": 1311488,
+     "sha256": "697ea98a7104ecb9db76a3effaa7f4787b8b23b4e51ef37ef1487c3e95dcec98",
+     "url": "https://alenzacodes.github.io/alef-packs/handwriting/letters.onnx.p000"
+    },
+    {
+     "name": "model.json.p000",
+     "bytes": 833,
+     "sha256": "8646e231fa3196463e976e6662f6ddaeea90b59245a9721dbfc9fa0ee583a2dc",
+     "url": "https://alenzacodes.github.io/alef-packs/handwriting/model.json.p000"
+    }
+   ],
    "budgetBytes": 2097152,
    "device": {
     "webgpu": false,
     "minRamGB": 0
    },
-   "attribution": ""
+   "attribution": "Letter check trained in part on the HHD_v0 handwriting dataset by I. Rabaev, B. Kurar Barakat, A. Churkin and J. El-Sana, CC BY 4.0"
   },
   {
    "id": "mr3vial/paleo-hebrew-mt5-post-ocr-processing",

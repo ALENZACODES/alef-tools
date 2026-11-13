@@ -1,0 +1,1 @@
+export default {"schema":"alef.morph.unit/1","unit":"r06","words":{"בי":[{"l":"בי","p":"","s":"PRON","r":"1"}],"לי":[{"l":"לי","p":"","s":"PRON","g":"m","n":"sg","r":"1","d":"p876ae85e","how":"exact"}]},"entries":{"p876ae85e":{"he":"לִי","en":"to me","pos":"unknown","gender":null,"root":null,"binyan":null,"rootChecked":false}}};
