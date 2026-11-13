@@ -1,0 +1,3 @@
+# What CI installs for the Python lint and tests. The heavy conversion tools are not needed for them.
+pytest==8.4.2
+ruff==0.14.4
