@@ -1,0 +1,66 @@
+{
+ "note": "Headless Chromium on a 2-core cloud machine, the real app page and the real pack served from the app folder. Not a phone.",
+ "chromium": "153.0.8010.12",
+ "before": {
+  "canRun": true,
+  "has": false,
+  "total": 317816752
+ },
+ "download": {
+  "ok": true,
+  "progressCalls": 363,
+  "bytes": 317816752,
+  "ready": true,
+  "has": true,
+  "ms": 3523
+ },
+ "lines": [
+  {
+   "in": "שלום, מה שלומך היום?",
+   "text": "שָׁלוֹם, מָה שְׁלוֹמְךָ הַיּוֹם?",
+   "name": false,
+   "marked": true,
+   "ms": 2660
+  },
+  {
+   "in": "אני רוצה להזמין קפה ועוגה, בבקשה.",
+   "text": "אֲנִי רוֹצָה לְהַזְמִין קָפֶה וְעוּגָה, בְּבַקָּשָׁה.",
+   "name": false,
+   "marked": true,
+   "ms": 480
+  },
+  {
+   "in": "איפה התחנה המרכזית? אני צריך להגיע לירושלים לפני השקיעה.",
+   "text": "אֵיפֹה הַתַּחֲנָה הַמֶּרְכָּזִית? אֲנִי צָרִיךְ לְהַגִּיעַ לִירוּשָׁלַיִם לִפְנֵי הַשְּׁקִיעָה.",
+   "name": false,
+   "marked": true,
+   "ms": 762
+  },
+  {
+   "in": "ברוך אתה יהוה אלהינו מלך העולם",
+   "text": "בָּרוּךְ אַתָּה ה׳ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם",
+   "name": true,
+   "marked": true,
+   "ms": 422
+  }
+ ],
+ "linesMs": 4328,
+ "trace": {
+  "target": "מְקָרֵר",
+  "note": "These vowel marks were added on this device and have not been checked by a person. This word is not saved to your retrace list.",
+  "cells": 4
+ },
+ "removed": {
+  "has": false
+ },
+ "sounds": {
+  "ok": true,
+  "phonemes": "ʃaˈlom, ma ʃlomˈχa haˈjom?",
+  "soundsLike": "shalom, mah shelomekha hayom?",
+  "ms": 2749,
+  "has": false,
+  "totalMs": 7843
+ },
+ "pageErrors": [],
+ "sameAsNode": true
+}
