@@ -1,0 +1,38 @@
+{
+ "id": "pu-test",
+ "title": "Test cafe",
+ "level": "L0",
+ "lessons": [
+  {
+   "id": "t01",
+   "title": "Cafe"
+  }
+ ],
+ "items": [
+  {
+   "id": "t-01",
+   "he": "קָפֶה",
+   "en": "coffee"
+  },
+  {
+   "id": "t-02",
+   "he": "מַיִם",
+   "en": "water"
+  },
+  {
+   "id": "t-03",
+   "he": "חָלָב",
+   "en": "milk"
+  },
+  {
+   "id": "t-04",
+   "he": "לֶחֶם",
+   "en": "bread"
+  },
+  {
+   "id": "t-05",
+   "he": "אֲנִי רוֹצֶה קָפֶה",
+   "en": "I would like a coffee"
+  }
+ ]
+}

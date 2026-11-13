@@ -1707,6 +1707,38 @@
    "attribution": ""
   },
   {
+   "id": "dicta-il/DictaLM-3.0-1.7B-Thinking-GGUF",
+   "hubRevision": "34cd052348a4ca310ee4b5011ca73468cc60792a",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: Dicta's own 4-bit GGUF of the 1.7B Thinking model, run with llama.cpp as a judge on a CPU box (packages/offline-llm).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
+   "id": "dicta-il/dictalm2.0-instruct-GGUF",
+   "hubRevision": "9ed3346a1440643825287abf86e28800005ec9b3",
+   "licence": "Apache-2.0",
+   "licenceUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+   "tier": "B",
+   "reason": "Offline only: Dicta's own 4-bit GGUF of dictalm2.0-instruct, run with llama.cpp as a judge and as the base of the offensive-language screen (packages/offline-llm).",
+   "pack": null,
+   "files": [],
+   "budgetBytes": 0,
+   "device": {
+    "webgpu": false,
+    "minRamGB": 0
+   },
+   "attribution": ""
+  },
+  {
    "id": "dicta-il/BEREL_3.0",
    "hubRevision": "25dc07f2e622ba14eeea6c026eaa54f3586ceabf",
    "licence": "Apache-2.0",

@@ -1,0 +1,1285 @@
+{
+ "schema": "alef-offline-llm/1",
+ "kind": "review",
+ "what": "Ask the Torah drafts that did not pass the gate",
+ "items": [
+  {
+   "id": "an-4fa1723106",
+   "type": "ask",
+   "question": "Am I allowed to eat pork?",
+   "question_he": "האם מותר לאכול חזיר?",
+   "hits": [
+    {
+     "verse_id": "deuteronomy.23.25",
+     "span": "כִּי תָבֹא בְּכֶרֶם רֵעֶךָ",
+     "span_score": 0.3574,
+     "sim": 0.3921
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Sources say the Torah addresses this.",
+    "explanation": "Sources say this is addressed in the Torah at Deuteronomy 23:25. It says: When thou comest into thy neighbour’s vineyard, then thou mayest eat grapes until thou have enough at thine own pleasure; but thou shalt not put any in thy vessel. For what to do in practice, ask your rabbi.",
+    "passages": [
+     {
+      "ref": "Deuteronomy 23:25",
+      "he": "כִּי תָבֹא בְּכֶרֶם רֵעֶךָ וְאָכַלְתָּ עֲנָבִים כְּנַפְשְׁךָ שָׂבְעֶךָ וְאֶל־כֶּלְיְךָ לֹא תִתֵּן׃",
+      "en": "When thou comest into thy neighbour’s vineyard, then thou mayest eat grapes until thou have enough at thine own pleasure; but thou shalt not put any in thy vessel.",
+      "quote": "כִּי תָבֹא בְּכֶרֶם רֵעֶךָ",
+      "id": "deuteronomy.23.25",
+      "href": "#/torahreader?book=deuteronomy&chapter=23&verse=25",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": true
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-a53553720c",
+   "type": "ask",
+   "question": "Is it permitted to charge interest on a loan?",
+   "question_he": "האם מותר לקחת ריבית על הלוואה?",
+   "hits": [
+    {
+     "verse_id": "deuteronomy.23.20",
+     "span": "לֹא־תַשִּׁיךְ לְאָחִיךָ נֶשֶׁךְ כֶּסֶף נֶשֶׁךְ אֹכֶל נֶשֶׁךְ כָּל־דָּבָר אֲשֶׁר יִשָּׁךְ׃",
+     "span_score": 0.2603,
+     "sim": 0.3723
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Sources say the Torah addresses this.",
+    "explanation": "Sources say this is addressed in the Torah at Deuteronomy 23:20. It says: Thou shalt not lend upon interest to thy brother: interest of money, interest of victuals, interest of any thing that is lent upon interest. For what to do in practice, ask your rabbi.",
+    "passages": [
+     {
+      "ref": "Deuteronomy 23:20",
+      "he": "לֹא־תַשִּׁיךְ לְאָחִיךָ נֶשֶׁךְ כֶּסֶף נֶשֶׁךְ אֹכֶל נֶשֶׁךְ כָּל־דָּבָר אֲשֶׁר יִשָּׁךְ׃",
+      "en": "Thou shalt not lend upon interest to thy brother: interest of money, interest of victuals, interest of any thing that is lent upon interest.",
+      "quote": "לֹא־תַשִּׁיךְ לְאָחִיךָ נֶשֶׁךְ כֶּסֶף נֶשֶׁךְ אֹכֶל נֶשֶׁךְ כָּל־דָּבָר אֲשֶׁר יִשָּׁךְ׃",
+      "id": "deuteronomy.23.20",
+      "href": "#/torahreader?book=deuteronomy&chapter=23&verse=20",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": true
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-ea372da050",
+   "type": "ask",
+   "question": "Who were the midwives in Egypt?",
+   "question_he": "מי היו המיילדות במצרים?",
+   "hits": [
+    {
+     "verse_id": "exodus.1.17",
+     "span": "וַתִּירֶאןָ",
+     "span_score": 0.531,
+     "sim": 0.4726
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Exodus 1:17. It says: But the midwives feared God, and did not as the king of Egypt commanded them, but saved the men-children alive.",
+    "passages": [
+     {
+      "ref": "Exodus 1:17",
+      "he": "וַתִּירֶאןָ הַמְיַלְּדֹת אֶת־הָאֱלֹהִים וְלֹא עָשׂוּ כַּאֲשֶׁר דִּבֶּר אֲלֵיהֶן מֶלֶךְ מִצְרָיִם וַתְּחַיֶּיןָ אֶת־הַיְלָדִים׃",
+      "en": "But the midwives feared God, and did not as the king of Egypt commanded them, but saved the men-children alive.",
+      "quote": "וַתִּירֶאןָ",
+      "id": "exodus.1.17",
+      "href": "#/torahreader?book=exodus&chapter=1&verse=17",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-e4a528f0ba",
+   "type": "ask",
+   "question": "How many years did the Israelites wander in the wilderness?",
+   "question_he": "כמה שנים הלכו בני ישראל במדבר?",
+   "hits": [
+    {
+     "verse_id": "numbers.32.13",
+     "span": "אַרְבָּעִים שָׁנָה",
+     "span_score": 0.962,
+     "sim": 0.6921
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Numbers 32:13. It says: And the LORD’S anger was kindled against Israel, and He made them wander to and fro in the wilderness forty years, until all the generation, that had done evil in the sight of the LORD, was consumed.",
+    "passages": [
+     {
+      "ref": "Numbers 32:13",
+      "he": "וַיִּחַר־אַף ה׳ בְּיִשְׂרָאֵל וַיְנִעֵם בַּמִּדְבָּר אַרְבָּעִים שָׁנָה עַד־תֹּם כָּל־הַדּוֹר הָעֹשֶׂה הָרַע בְּעֵינֵי ה׳",
+      "en": "And the LORD’S anger was kindled against Israel, and He made them wander to and fro in the wilderness forty years, until all the generation, that had done evil in the sight of the LORD, was consumed.",
+      "quote": "אַרְבָּעִים שָׁנָה",
+      "id": "numbers.32.13",
+      "href": "#/torahreader?book=numbers&chapter=32&verse=13",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-d61099c228",
+   "type": "ask",
+   "question": "What was created on the first day?",
+   "question_he": "מה נברא ביום הראשון?",
+   "hits": [
+    {
+     "verse_id": "genesis.5.2",
+     "span": "זָכָר וּנְקֵבָה",
+     "span_score": 0.8647,
+     "sim": 0.4795
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Genesis 5:2. It says: male and female created He them, and blessed them, and called their name Adam, in the day when they were created.",
+    "passages": [
+     {
+      "ref": "Genesis 5:2",
+      "he": "זָכָר וּנְקֵבָה בְּרָאָם וַיְבָרֶךְ אֹתָם וַיִּקְרָא אֶת־שְׁמָם אָדָם בְּיוֹם הִבָּרְאָם׃",
+      "en": "male and female created He them, and blessed them, and called their name Adam, in the day when they were created.",
+      "quote": "זָכָר וּנְקֵבָה",
+      "id": "genesis.5.2",
+      "href": "#/torahreader?book=genesis&chapter=5&verse=2",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-1ed0e0765d",
+   "type": "ask",
+   "question": "Who was Jethro?",
+   "question_he": "מי היה יתרו?",
+   "hits": [
+    {
+     "verse_id": "exodus.18.9",
+     "span": "לְיִשְׂרָאֵל",
+     "span_score": 0.9018,
+     "sim": 0.4222
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Exodus 18:9. It says: And Jethro rejoiced for all the goodness which the LORD had done to Israel, in that He had delivered them out of the hand of the Egyptians.",
+    "passages": [
+     {
+      "ref": "Exodus 18:9",
+      "he": "וַיִּחַדְּ יִתְרוֹ עַל כָּל־הַטּוֹבָה אֲשֶׁר־עָשָׂה ה׳ לְיִשְׂרָאֵל אֲשֶׁר הִצִּילוֹ מִיַּד מִצְרָיִם׃",
+      "en": "And Jethro rejoiced for all the goodness which the LORD had done to Israel, in that He had delivered them out of the hand of the Egyptians.",
+      "quote": "לְיִשְׂרָאֵל",
+      "id": "exodus.18.9",
+      "href": "#/torahreader?book=exodus&chapter=18&verse=9",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-4e33f16b7b",
+   "type": "ask",
+   "question": "What is the penalty for stealing an ox?",
+   "question_he": "מה העונש על גניבת שור?",
+   "hits": [
+    {
+     "verse_id": "exodus.21.37",
+     "span": "כִּי יִגְנֹב־אִישׁ שׁוֹר אוֹ־שֶׂה וּטְבָחוֹ אוֹ מְכָרוֹ חֲמִשָּׁה בָקָר",
+     "span_score": 0.2832,
+     "sim": 0.5205
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Exodus 21:37. It says: If a man steal an ox, or a sheep, and kill it, or sell it, he shall pay five oxen for an ox, and four sheep for a sheep.",
+    "passages": [
+     {
+      "ref": "Exodus 21:37",
+      "he": "כִּי יִגְנֹב־אִישׁ שׁוֹר אוֹ־שֶׂה וּטְבָחוֹ אוֹ מְכָרוֹ חֲמִשָּׁה בָקָר יְשַׁלֵּם תַּחַת הַשּׁוֹר וְאַרְבַּע־צֹאן תַּחַת הַשֶּׂה׃",
+      "en": "If a man steal an ox, or a sheep, and kill it, or sell it, he shall pay five oxen for an ox, and four sheep for a sheep.",
+      "quote": "כִּי יִגְנֹב־אִישׁ שׁוֹר אוֹ־שֶׂה וּטְבָחוֹ אוֹ מְכָרוֹ חֲמִשָּׁה בָקָר",
+      "id": "exodus.21.37",
+      "href": "#/torahreader?book=exodus&chapter=21&verse=37",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-b7d6a2e1d0",
+   "type": "ask",
+   "question": "Do I have to return a lost animal to its owner?",
+   "question_he": "האם צריך להחזיר אבדה לבעליה?",
+   "hits": [
+    {
+     "verse_id": "exodus.22.13",
+     "span": "וְכִי־יִשְׁאַל אִישׁ מֵעִם רֵעֵהוּ וְנִשְׁבַּר אוֹ־מֵת בְּעָלָיו אֵין־עִמּוֹ שַׁלֵּם יְשַׁלֵּם׃",
+     "span_score": 0.8734,
+     "sim": 0.3668
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Sources say the Torah addresses this.",
+    "explanation": "Sources say this is addressed in the Torah at Exodus 22:13. It says: And if a man borrow aught of his neighbour, and it be hurt, or die, the owner thereof not being with it, he shall surely make restitution. For what to do in practice, ask your rabbi.",
+    "passages": [
+     {
+      "ref": "Exodus 22:13",
+      "he": "וְכִי־יִשְׁאַל אִישׁ מֵעִם רֵעֵהוּ וְנִשְׁבַּר אוֹ־מֵת בְּעָלָיו אֵין־עִמּוֹ שַׁלֵּם יְשַׁלֵּם׃",
+      "en": "And if a man borrow aught of his neighbour, and it be hurt, or die, the owner thereof not being with it, he shall surely make restitution.",
+      "quote": "וְכִי־יִשְׁאַל אִישׁ מֵעִם רֵעֵהוּ וְנִשְׁבַּר אוֹ־מֵת בְּעָלָיו אֵין־עִמּוֹ שַׁלֵּם יְשַׁלֵּם׃",
+      "id": "exodus.22.13",
+      "href": "#/torahreader?book=exodus&chapter=22&verse=13",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": true
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-da076020ed",
+   "type": "ask",
+   "question": "What does the Torah say about honest weights and measures?",
+   "question_he": "מה התורה אומרת על משקל ומידה ישרים?",
+   "hits": [
+    {
+     "verse_id": "leviticus.19.35",
+     "span": "לֹא־תַעֲשׂוּ עָוֶל בַּמִּשְׁפָּט",
+     "span_score": 0.9929,
+     "sim": 0.3799
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Leviticus 19:35. It says: Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure.",
+    "passages": [
+     {
+      "ref": "Leviticus 19:35",
+      "he": "לֹא־תַעֲשׂוּ עָוֶל בַּמִּשְׁפָּט בַּמִּדָּה בַּמִּשְׁקָל וּבַמְּשׂוּרָה׃",
+      "en": "Ye shall do no unrighteousness in judgment, in meteyard, in weight, or in measure.",
+      "quote": "לֹא־תַעֲשׂוּ עָוֶל בַּמִּשְׁפָּט",
+      "id": "leviticus.19.35",
+      "href": "#/torahreader?book=leviticus&chapter=19&verse=35",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-01b80f86a2",
+   "type": "ask",
+   "question": "What happened to Lot's wife?",
+   "question_he": "מה קרה לאשת לוט?",
+   "hits": [
+    {
+     "verse_id": "genesis.19.36",
+     "span": "וַתַּהֲרֶיןָ שְׁתֵּי בְנוֹת־לוֹט מֵאֲבִיהֶן׃",
+     "span_score": 0.0657,
+     "sim": 0.4763
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Genesis 19:36. It says: Thus were both the daughters of Lot with child by their father.",
+    "passages": [
+     {
+      "ref": "Genesis 19:36",
+      "he": "וַתַּהֲרֶיןָ שְׁתֵּי בְנוֹת־לוֹט מֵאֲבִיהֶן׃",
+      "en": "Thus were both the daughters of Lot with child by their father.",
+      "quote": "וַתַּהֲרֶיןָ שְׁתֵּי בְנוֹת־לוֹט מֵאֲבִיהֶן׃",
+      "id": "genesis.19.36",
+      "href": "#/torahreader?book=genesis&chapter=19&verse=36",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-95600a4c16",
+   "type": "ask",
+   "question": "What does the Torah say about leaving gleanings for the poor?",
+   "question_he": "מה התורה אומרת על לקט לעניים?",
+   "hits": [
+    {
+     "verse_id": "leviticus.19.10",
+     "span": "וְכַרְמְךָ לֹא תְעוֹלֵל וּפֶרֶט כַּרְמְךָ לֹא תְלַקֵּט לֶעָנִי וְלַגֵּר תַּעֲזֹב",
+     "span_score": 0.3982,
+     "sim": 0.4789
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Leviticus 19:10. It says: And thou shalt not glean thy vineyard, neither shalt thou gather the fallen fruit of thy vineyard; thou shalt leave them for the poor and for the stranger: I am the LORD your God.",
+    "passages": [
+     {
+      "ref": "Leviticus 19:10",
+      "he": "וְכַרְמְךָ לֹא תְעוֹלֵל וּפֶרֶט כַּרְמְךָ לֹא תְלַקֵּט לֶעָנִי וְלַגֵּר תַּעֲזֹב אֹתָם אֲנִי ה׳ אֱלֹהֵיכֶם׃",
+      "en": "And thou shalt not glean thy vineyard, neither shalt thou gather the fallen fruit of thy vineyard; thou shalt leave them for the poor and for the stranger: I am the LORD your God.",
+      "quote": "וְכַרְמְךָ לֹא תְעוֹלֵל וּפֶרֶט כַּרְמְךָ לֹא תְלַקֵּט לֶעָנִי וְלַגֵּר תַּעֲזֹב",
+      "id": "leviticus.19.10",
+      "href": "#/torahreader?book=leviticus&chapter=19&verse=10",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-37dcfa935f",
+   "type": "ask",
+   "question": "Am I allowed to muzzle an ox while it threshes?",
+   "question_he": "האם מותר לחסום שור בדישו?",
+   "hits": [
+    {
+     "verse_id": "deuteronomy.25.4",
+     "span": "לֹא־תַחְסֹם",
+     "span_score": 0.2739,
+     "sim": 0.6273
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Sources say the Torah addresses this.",
+    "explanation": "Sources say this is addressed in the Torah at Deuteronomy 25:4. It says: Thou shalt not muzzle the ox when he treadeth out the corn. For what to do in practice, ask your rabbi.",
+    "passages": [
+     {
+      "ref": "Deuteronomy 25:4",
+      "he": "לֹא־תַחְסֹם שׁוֹר בְּדִישׁוֹ׃",
+      "en": "Thou shalt not muzzle the ox when he treadeth out the corn.",
+      "quote": "לֹא־תַחְסֹם",
+      "id": "deuteronomy.25.4",
+      "href": "#/torahreader?book=deuteronomy&chapter=25&verse=4",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": true
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-580ff0d66d",
+   "type": "ask",
+   "question": "What does the Torah say about paying a worker on time?",
+   "question_he": "מה התורה אומרת על תשלום שכר לפועל בזמן?",
+   "hits": [
+    {
+     "verse_id": "leviticus.26.34",
+     "span": "אָז תִּרְצֶה הָאָרֶץ אֶת־שַׁבְּתֹתֶיהָ כֹּל יְמֵי הֳשַׁמָּה וְאַתֶּם בְּאֶרֶץ אֹיְבֵיכֶם",
+     "span_score": 0.2965,
+     "sim": 0.3804
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Leviticus 26:34. It says: Then shall the land be paid her sabbaths, as long as it lieth desolate, and ye are in your enemies’land; even then shall the land rest, and repay her sabbaths.",
+    "passages": [
+     {
+      "ref": "Leviticus 26:34",
+      "he": "אָז תִּרְצֶה הָאָרֶץ אֶת־שַׁבְּתֹתֶיהָ כֹּל יְמֵי הֳשַׁמָּה וְאַתֶּם בְּאֶרֶץ אֹיְבֵיכֶם אָז תִּשְׁבַּת הָאָרֶץ וְהִרְצָת אֶת־שַׁבְּתֹתֶיהָ׃",
+      "en": "Then shall the land be paid her sabbaths, as long as it lieth desolate, and ye are in your enemies’land; even then shall the land rest, and repay her sabbaths.",
+      "quote": "אָז תִּרְצֶה הָאָרֶץ אֶת־שַׁבְּתֹתֶיהָ כֹּל יְמֵי הֳשַׁמָּה וְאַתֶּם בְּאֶרֶץ אֹיְבֵיכֶם",
+      "id": "leviticus.26.34",
+      "href": "#/torahreader?book=leviticus&chapter=26&verse=34",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-40c02b2b20",
+   "type": "ask",
+   "question": "Who was Hagar?",
+   "question_he": "מי הייתה הגר?",
+   "hits": [
+    {
+     "verse_id": "genesis.16.8",
+     "span": "שִׁפְחַת שָׂרַי",
+     "span_score": 0.9815,
+     "sim": 0.2918
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Genesis 16:8. It says: And he said: ‘Hagar, Sarai’s handmaid, whence camest thou? and whither goest thou?’ And she said: ‘I flee from the face of my mistress Sarai.’",
+    "passages": [
+     {
+      "ref": "Genesis 16:8",
+      "he": "וַיֹּאמַר הָגָר שִׁפְחַת שָׂרַי אֵי־מִזֶּה בָאת וְאָנָה תֵלֵכִי וַתֹּאמֶר מִפְּנֵי שָׂרַי גְּבִרְתִּי אָנֹכִי בֹּרַחַת׃",
+      "en": "And he said: ‘Hagar, Sarai’s handmaid, whence camest thou? and whither goest thou?’ And she said: ‘I flee from the face of my mistress Sarai.’",
+      "quote": "שִׁפְחַת שָׂרַי",
+      "id": "genesis.16.8",
+      "href": "#/torahreader?book=genesis&chapter=16&verse=8",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-154870d1d2",
+   "type": "ask",
+   "question": "What was the bronze serpent?",
+   "question_he": "מה היה נחש הנחושת?",
+   "hits": [
+    {
+     "verse_id": "numbers.21.9",
+     "span": "נָשַׁךְ הַנָּחָשׁ אֶת־אִישׁ",
+     "span_score": 0.1459,
+     "sim": 0.4502
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Numbers 21:9. It says: And Moses made a serpent of brass, and set it upon the pole; and it came to pass, that if a serpent had bitten any man, when he looked unto the serpent of brass, he lived.",
+    "passages": [
+     {
+      "ref": "Numbers 21:9",
+      "he": "וַיַּעַשׂ מֹשֶׁה נְחַשׁ נְחֹשֶׁת וַיְשִׂמֵהוּ עַל־הַנֵּס וְהָיָה אִם־נָשַׁךְ הַנָּחָשׁ אֶת־אִישׁ וְהִבִּיט אֶל־נְחַשׁ הַנְּחֹשֶׁת וָחָי׃",
+      "en": "And Moses made a serpent of brass, and set it upon the pole; and it came to pass, that if a serpent had bitten any man, when he looked unto the serpent of brass, he lived.",
+      "quote": "נָשַׁךְ הַנָּחָשׁ אֶת־אִישׁ",
+      "id": "numbers.21.9",
+      "href": "#/torahreader?book=numbers&chapter=21&verse=9",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-901ab08a02",
+   "type": "ask",
+   "question": "What does the Torah say about a railing on a roof?",
+   "question_he": "מה התורה אומרת על מעקה לגג?",
+   "hits": [
+    {
+     "verse_id": "deuteronomy.33.8",
+     "span": "עַל־מֵי מְרִיבָה׃",
+     "span_score": 0.5716,
+     "sim": 0.3672
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Yes. This is in the Torah.",
+    "explanation": "The Torah speaks about this at Deuteronomy 33:8. It says: And of Levi he said: Thy Thummim and Thy Urim be with Thy holy one, Whom Thou didst prove at Massah, With whom Thou didst strive at the waters of Meribah;",
+    "passages": [
+     {
+      "ref": "Deuteronomy 33:8",
+      "he": "וּלְלֵוִי אָמַר תֻּמֶּיךָ וְאוּרֶיךָ לְאִישׁ חֲסִידֶךָ אֲשֶׁר נִסִּיתוֹ בְּמַסָּה תְּרִיבֵהוּ עַל־מֵי מְרִיבָה׃",
+      "en": "And of Levi he said: Thy Thummim and Thy Urim be with Thy holy one, Whom Thou didst prove at Massah, With whom Thou didst strive at the waters of Meribah;",
+      "quote": "עַל־מֵי מְרִיבָה׃",
+      "id": "deuteronomy.33.8",
+      "href": "#/torahreader?book=deuteronomy&chapter=33&verse=8",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": false
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "an-15cfc8b149",
+   "type": "ask",
+   "question": "Is it forbidden to take revenge?",
+   "question_he": "האם אסור לנקום?",
+   "hits": [
+    {
+     "verse_id": "deuteronomy.16.19",
+     "span": "הַשֹּׁחַד יְעַוֵּר עֵינֵי חֲכָמִים וִיסַלֵּף דִּבְרֵי צַדִּיקִם׃",
+     "span_score": 0.4365,
+     "sim": 0.3229
+    }
+   ],
+   "answer": {
+    "verdict": "in_torah",
+    "verdict_text": "Sources say the Torah addresses this.",
+    "explanation": "Sources say this is addressed in the Torah at Deuteronomy 16:19. It says: Thou shalt not wrest judgment; thou shalt not respect persons; neither shalt thou take a gift; for a gift doth blind the eyes of the wise, and pervert the words of the righteous. For what to do in practice, ask your rabbi.",
+    "passages": [
+     {
+      "ref": "Deuteronomy 16:19",
+      "he": "לֹא־תַטֶּה מִשְׁפָּט לֹא תַכִּיר פָּנִים וְלֹא־תִקַּח שֹׁחַד כִּי הַשֹּׁחַד יְעַוֵּר עֵינֵי חֲכָמִים וִיסַלֵּף דִּבְרֵי צַדִּיקִם׃",
+      "en": "Thou shalt not wrest judgment; thou shalt not respect persons; neither shalt thou take a gift; for a gift doth blind the eyes of the wise, and pervert the words of the righteous.",
+      "quote": "הַשֹּׁחַד יְעַוֵּר עֵינֵי חֲכָמִים וִיסַלֵּף דִּבְרֵי צַדִּיקִם׃",
+      "id": "deuteronomy.16.19",
+      "href": "#/torahreader?book=deuteronomy&chapter=16&verse=19",
+      "link_kind": "alef",
+      "link_label": "Read this passage in Aleph"
+     }
+    ],
+    "ruling": true
+   },
+   "retriever": {
+    "key": "embed",
+    "id": "dicta-il/neodictabert-bilingual-embed",
+    "revision": "1da86250a8021a7f7c3e427defbd9604fdb16c25"
+   },
+   "span_model": {
+    "key": "heq",
+    "id": "dicta-il/dictabert-heq",
+    "revision": "903b0c9672a54ec791ba3c2cd05b7f69e2c495a8"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed"
+    ]
+   }
+  },
+  {
+   "id": "aw-469083b937",
+   "type": "ask-wording",
+   "answerId": "d225fedba2",
+   "topic": "tree-knowledge",
+   "source_question": "Is forbidden fruit in the Torah?",
+   "he": "האם אכילת פרי האסור בתורה מותרת?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-8bd79bbdb5",
+   "type": "ask-wording",
+   "answerId": "2895ee8036",
+   "topic": "babel",
+   "source_question": "Is babel in the Torah?",
+   "he": "האם בבל מוזכרת בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-882dd87bcb",
+   "type": "ask-wording",
+   "answerId": "83820791bf",
+   "topic": "covenant-pieces",
+   "source_question": "Is covenant between the pieces in the Torah?",
+   "he": "האם הברית בין החלקים במקרא?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-ac20040277",
+   "type": "ask-wording",
+   "answerId": "83820791bf",
+   "topic": "covenant-pieces",
+   "source_question": "Is covenant between the pieces in the Torah?",
+   "he": "האם הברית בין חלקי התורה קיימת?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-be2ac7bb3c",
+   "type": "ask-wording",
+   "answerId": "c81beb82c0",
+   "topic": "priestly-blessing",
+   "source_question": "Is birkat kohanim in the Torah?",
+   "he": "האם ברכת כהנים מוזכרת בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-8c45f47b4e",
+   "type": "ask-wording",
+   "answerId": "c81beb82c0",
+   "topic": "priestly-blessing",
+   "source_question": "Is birkat kohanim in the Torah?",
+   "he": "האם יש ברכת כהנים בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-96cd25e969",
+   "type": "ask-wording",
+   "answerId": "1360a2450c",
+   "topic": "kashrut",
+   "source_question": "Is kosher in the Torah?",
+   "he": "האם המונח 'כשר' מוזכר בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-e423c1b984",
+   "type": "ask-wording",
+   "answerId": "1360a2450c",
+   "topic": "kashrut",
+   "source_question": "Is kosher in the Torah?",
+   "he": "האם יש התייחסות ל'כשרות' במקרא?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-c91a72909a",
+   "type": "ask-wording",
+   "answerId": "6d24fe8225",
+   "topic": "tzedakah",
+   "source_question": "Is charity in the Torah?",
+   "he": "האם צדקה מוזכרת בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-3cdc4b67cc",
+   "type": "ask-wording",
+   "answerId": "6d24fe8225",
+   "topic": "tzedakah",
+   "source_question": "Is charity in the Torah?",
+   "he": "האם יש מצווה של צדקה בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-6eedeb7106",
+   "type": "ask-wording",
+   "answerId": "dc37da2c55",
+   "topic": "yom-kippur",
+   "source_question": "Is yom kippur in the Torah?",
+   "he": "האם יום כיפור מוזכר בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-5d50fed5dd",
+   "type": "ask-wording",
+   "answerId": "65cc064893",
+   "topic": "sukkot",
+   "source_question": "Is sukkot in the Torah?",
+   "he": "האם סוכות מוזכרת בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-675bf4c4bb",
+   "type": "ask-wording",
+   "answerId": "491cbe1f9b",
+   "topic": "shavuot",
+   "source_question": "Is shavuot in the Torah?",
+   "he": "האם פסח מצרים מוזכר בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-b55f4c3e17",
+   "type": "ask-wording",
+   "answerId": "3019410800",
+   "topic": "rosh-chodesh",
+   "source_question": "Is new moon in the Torah?",
+   "he": "האם ירח חדש מוזכר בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-7c56313733",
+   "type": "ask-wording",
+   "answerId": "3019410800",
+   "topic": "rosh-chodesh",
+   "source_question": "Is new moon in the Torah?",
+   "he": "האם הירח החדש מופיע בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-7edd61edff",
+   "type": "ask-wording",
+   "answerId": "ca00825dcb",
+   "topic": "mezuzah-cmd",
+   "source_question": "Is doorposts in the Torah?",
+   "he": "האם עמודים נזכרים בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-2b5c8c46b2",
+   "type": "ask-wording",
+   "answerId": "dba47f5a77",
+   "topic": "honour-parents",
+   "source_question": "Is honor your father in the Torah?",
+   "he": "האם כבוד הוא חלק מהמצוות שנקבעו בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-7ef1fc4c91",
+   "type": "ask-wording",
+   "answerId": "dba47f5a77",
+   "topic": "honour-parents",
+   "source_question": "Is honor your father in the Torah?",
+   "he": "האם כבוד הוא מצווה בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-cf3eb27bda",
+   "type": "ask-wording",
+   "answerId": "ed9a73ca0b",
+   "topic": "justice",
+   "source_question": "Is justice in the Torah?",
+   "he": "האם צדק מופיע בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-db69fe367a",
+   "type": "ask-wording",
+   "answerId": "ed9a73ca0b",
+   "topic": "justice",
+   "source_question": "Is justice in the Torah?",
+   "he": "האם עקרונות הצדק מובעים בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-354b0f4098",
+   "type": "ask-wording",
+   "answerId": "f3cfcb7387",
+   "topic": "cities-refuge",
+   "source_question": "Is cities of refuge in the Torah?",
+   "he": "האם יש ערי מקלט בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "aw-32a0b1a221",
+   "type": "ask-wording",
+   "answerId": "f3cfcb7387",
+   "topic": "cities-refuge",
+   "source_question": "Is cities of refuge in the Torah?",
+   "he": "האם קיימות ערי מקלט בתורה?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  }
+ ]
+}

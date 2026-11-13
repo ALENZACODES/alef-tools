@@ -1,0 +1,30 @@
+name: offline-llm
+# Extra checks for packages/offline-llm on top of ci.yml (which runs the Node tests of every package): the gate's Python
+# tests (standard library only) and the search eval on the committed index. No model is downloaded or run here.
+on:
+  push:
+    paths: ['packages/offline-llm/**', '.github/workflows/offline-llm.yml']
+  pull_request:
+    paths: ['packages/offline-llm/**', '.github/workflows/offline-llm.yml']
+permissions:
+  contents: read
+concurrency:
+  group: offline-llm-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: packages/offline-llm
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with: { node-version: 22 }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with: { python-version: '3.12' }
+      - name: Gate and helpers (Python, standard library only)
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+      - name: Search eval on the committed index (must not fall below the committed build's level; the target is 85%)
+        run: node scripts/eval_search.mjs --index dist/search --min 75
