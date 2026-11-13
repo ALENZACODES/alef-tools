@@ -1,0 +1,52 @@
+{
+ "schema": "alef.dist.v1",
+ "name": "translate",
+ "version": "0.1.0",
+ "files": [
+  {
+   "path": "client.js",
+   "bytes": 4883,
+   "sha256": "28371a621a8ccdd08fbe1fa2d17f93917bbc9f29af375e719a4a9c9ef2649189"
+  },
+  {
+   "path": "decode.js",
+   "bytes": 3588,
+   "sha256": "7553b6f1095b94bd7c2af4b7ec6bd3ab3daf496704e72ce7a8110232ff9a080a"
+  },
+  {
+   "path": "index.js",
+   "bytes": 1831,
+   "sha256": "56824939adca556c5b88a1cba9d3cc8b1f56b760ef04b3ba77176e5de405fef0"
+  },
+  {
+   "path": "pack.js",
+   "bytes": 6154,
+   "sha256": "14273ec11189bb8e9991c080b47d3ce179228b39b2a9063cd2e0c11584bdb886"
+  },
+  {
+   "path": "runtime.js",
+   "bytes": 2437,
+   "sha256": "4b954ec7e6a658fa1040d2a718dfc558a360a54d123a784bb269bf930f2e4c02"
+  },
+  {
+   "path": "scoring.js",
+   "bytes": 3648,
+   "sha256": "33b888ca29e657e0e78df266aa69b32efe698b0b9a68745052d65a366be6d527"
+  },
+  {
+   "path": "tm.js",
+   "bytes": 2264,
+   "sha256": "c0b00e4f9c9603c126abaff343f95578522f56e2f6fd1d18e8c9bb55b6e465fd"
+  },
+  {
+   "path": "tokenizer.js",
+   "bytes": 2257,
+   "sha256": "ed9c8bdd07613c129a3b486f8c67510d0ae9e7b27aaea9a466034ea771213063"
+  },
+  {
+   "path": "worker.js",
+   "bytes": 5873,
+   "sha256": "e3cd63563711f1fb3ae09ccc0f0d3280032352120e47d019f29e1e198cd82f9f"
+  }
+ ]
+}

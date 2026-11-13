@@ -14,7 +14,7 @@ A model with a non-commercial or unclear licence is never shipped: it is dropped
 |---|---|---|---|---|
 | [Helsinki-NLP/opus-mt-en-he](https://huggingface.co/Helsinki-NLP/opus-mt-en-he) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `b3df900afbb1` | translate-en-he | English to Hebrew for Talk, the camera translator and the live translator (the shipped en-he pack). |
 | [Helsinki-NLP/Tatoeba-Challenge:heb-eng/opus-2021-02-19](https://github.com/Helsinki-NLP/Tatoeba-Challenge/tree/master/models/heb-eng) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | n/a | translate-he-en | Hebrew to English (the shipped he-en pack). OPUS-MT Tatoeba release, not a Hub repository. |
-| [Helsinki-NLP/opus-mt-tc-big-he-en](https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-he-en) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | `134c5a850dca` | translate-he-en-hq | Better Hebrew to English on a desktop with a graphics card (opt-in); also used offline to build the translation memory for app sentences. |
+| [Helsinki-NLP/opus-mt-tc-big-he-en](https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-he-en) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | `134c5a850dca` | translate-he-en-hq | Better Hebrew to English on a desktop with a graphics card (opt-in). Built and scored on 12 November 2026 (237.6 MiB in 17 parts; the part list with sizes and SHA-256 is packages/translate/packs/he-en-hq.pack.json); the files are not on the pack host yet, so the list below stays empty. Also used offline for the few lesson sentences of the sentence memory that had no English. |
 | [ivrit-ai/whisper-large-v3-turbo-onnx](https://huggingface.co/ivrit-ai/whisper-large-v3-turbo-onnx) | [Apache-2.0 (inherited from ivrit-ai/whisper-large-v3-turbo; the port carries no licence tag)](https://www.apache.org/licenses/LICENSE-2.0) | `edb17b6b65f6` | listen-best | Best listening on a desktop with a graphics card: live translator and voice journal transcripts. |
 | [onnx-community/whisper-base](https://huggingface.co/onnx-community/whisper-base) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `27a07b4b52b3` | listen-lite | Quick Hebrew listening on any device, so audio never leaves the device. |
 | [onnx-community/whisper-small](https://huggingface.co/onnx-community/whisper-small) | [Apache-2.0 (base openai/whisper-small; the port carries no licence tag)](https://www.apache.org/licenses/LICENSE-2.0) | `36050c46d777` | listen-mid | Optional middle tier: better listening on a phone. |
@@ -78,7 +78,7 @@ A model with a non-commercial or unclear licence is never shipped: it is dropped
 | Model | Licence | Pinned revision | Pack | Why |
 |---|---|---|---|---|
 | [Xenova/opus-mt-mul-en](https://huggingface.co/Xenova/opus-mt-mul-en) | [Apache-2.0 (base model; the port states none)](https://www.apache.org/licenses/LICENSE-2.0) | `72a05e47cee8` |  | Baseline in the scoring harness only. |
-| [onnx-community/opus-mt-mul-en](https://huggingface.co/onnx-community/opus-mt-mul-en) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | `caca514947ac` |  | Baseline in the scoring harness only. |
+| [onnx-community/opus-mt-mul-en](https://huggingface.co/onnx-community/opus-mt-mul-en) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | `caca514947ac` |  | Baseline in the scoring harness only. Not run yet: packages/translate/scripts/score.mjs reads the Talk pack layout, not the stock ONNX layout. |
 | [imvladikon/wav2vec2-xls-r-300m-lm-hebrew](https://huggingface.co/imvladikon/wav2vec2-xls-r-300m-lm-hebrew) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `a532e94f9747` |  | Scoring-harness comparison only. |
 | [imvladikon/wav2vec2-xls-r-1b-hebrew](https://huggingface.co/imvladikon/wav2vec2-xls-r-1b-hebrew) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | `d67afbcd9f37` |  | Scoring-harness comparison only. |
 | [slprl/WhiStress](https://huggingface.co/slprl/WhiStress) | [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/) | `3641786c97df` |  | Non-commercial: may only be used to evaluate our own stress rules internally. Never ships. |
@@ -160,7 +160,7 @@ A model with a non-commercial or unclear licence is never shipped: it is dropped
 
 Every CC BY model that ships or shapes shipped content:
 
-- OPUS-MT (opus-mt-tc-big-he-en) by the Language Technology Research Group at the University of Helsinki, CC BY 4.0
+- OPUS-MT tc-big he-en by the Language Technology Research Group at the University of Helsinki, CC BY 4.0. Converted to 8-bit for the browser.
 - dictabert-large-char-menaked by Dicta: The Israel Center for Text Analysis, CC BY 4.0
 - dictabert-tiny-joint by Dicta: The Israel Center for Text Analysis, CC BY 4.0
 - dictabert-joint by Dicta: The Israel Center for Text Analysis, CC BY 4.0
