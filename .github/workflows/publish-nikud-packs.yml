@@ -1,0 +1,97 @@
+# One-shot: copy the nikud-packs artifact onto the pack host (ALENZACODES/alef-packs).
+# Dispatch by hand. Uses a temporary deploy key (ALEF_PACKS_DEPLOY_KEY).
+name: publish-nikud-packs
+on:
+  workflow_dispatch:
+    inputs:
+      artifact_run_id:
+        description: 'alef-tools actions run that holds the nikud-packs artifact'
+        required: true
+        default: '43355612150'
+      host_branch:
+        description: 'branch to push on alef-packs (never force-push)'
+        required: true
+        default: 'add/nikud-phonemes-packs-2026-11-12'
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the nikud-packs artifact
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p packs-in
+          gh run download "${{ inputs.artifact_run_id }}" --repo ALENZACODES/alef-tools --name nikud-packs --dir packs-in
+          find packs-in -type f | sort | head
+          du -sb packs-in/* || du -sb packs-in
+      - name: Check pack lists and part hashes
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+
+          def sha256(p):
+              h = hashlib.sha256()
+              with open(p, 'rb') as f:
+                  for chunk in iter(lambda: f.read(1 << 20), b''):
+                      h.update(chunk)
+              return h.hexdigest()
+
+          root = Path('packs-in')
+          # artifact may be packs-in/nikud or packs-in/packs/nikud
+          cands = [root / 'nikud', root / 'packs' / 'nikud', *root.rglob('nikud')]
+          nikud_dir = next((p for p in cands if (p / 'pack.json').is_file()), None)
+          if not nikud_dir:
+              raise SystemExit('pack.json for nikud not found under packs-in: ' + str(list(root.rglob('*'))))
+          base = nikud_dir.parent
+          for name in ('nikud', 'phonemes'):
+              recorded = Path('packages/nikud/packs') / f'{name}.pack.json'
+              built = base / name / 'pack.json'
+              rec = recorded.read_bytes()
+              bld = built.read_bytes()
+              if rec != bld:
+                  raise SystemExit(f'{name}: pack.json differs from packages/nikud/packs/{name}.pack.json')
+              print(f'{name}: pack.json is byte-identical to the recorded list')
+              data = json.loads(bld)
+              for f in data['files']:
+                  for part in f['parts']:
+                      p = base / name / part['path']
+                      if p.stat().st_size != part['bytes']:
+                          raise SystemExit(f"{name} {part['path']}: size {p.stat().st_size} != {part['bytes']}")
+                      got = sha256(p)
+                      if got != part['sha256']:
+                          raise SystemExit(f"{name} {part['path']}: hash {got} != {part['sha256']}")
+                  print(f"{name}: {f['name']} {f['bytes']} bytes, {len(f['parts'])} parts, sha256 {f['sha256']}")
+          Path(os.environ['GITHUB_ENV']).open('a').write(f'PACKS_BASE={base.resolve()}\n')
+          PY
+      - name: Commit and push to alef-packs
+        env:
+          ALEF_PACKS_DEPLOY_KEY: ${{ secrets.ALEF_PACKS_DEPLOY_KEY }}
+        run: |
+          set -euo pipefail
+          install -d -m 700 "$HOME/.ssh"
+          printf '%s\n' "$ALEF_PACKS_DEPLOY_KEY" > "$HOME/.ssh/alef-packs-deploy"
+          chmod 600 "$HOME/.ssh/alef-packs-deploy"
+          ssh-keyscan -t ed25519,rsa github.com >> "$HOME/.ssh/known_hosts"
+          export GIT_SSH_COMMAND='ssh -i /home/runner/.ssh/alef-packs-deploy -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes'
+          git clone --filter=blob:none --depth 1 git@github.com:ALENZACODES/alef-packs.git host
+          cd host
+          git checkout -b "${{ inputs.host_branch }}"
+          mkdir -p nikud phonemes
+          # replace only these two pack folders
+          rm -rf nikud phonemes
+          cp -a "$PACKS_BASE"/nikud "$PACKS_BASE"/phonemes .
+          if ! grep -q 'Vowel mark packs' README.md; then
+            python3 -c 'from pathlib import Path; Path("README.md").open("a", encoding="utf-8").write("\n## Vowel mark packs\n\nThe `nikud/` and `phonemes/` folders hold the optional on-device packs for adding vowel marks and a sound line. Each folder has a `pack.json` list and 16 MiB parts. They are downloaded only when a learner presses Get on the ALEF site, from `https://alenzacodes.github.io/alef-packs/nikud/pack.json` and `https://alenzacodes.github.io/alef-packs/phonemes/pack.json`.\n")'
+          fi
+          git add nikud phonemes README.md
+          git config user.name "John Khan"
+          git config user.email "309250657+ALENZACODES@users.noreply.github.com"
+          git commit -m "Add vowel-mark and sounds-and-stress packs" -m "Two optional language packs from the alef-tools nikud-packs build (run 43355612150), byte-identical to the recorded pack lists. Learners fetch them from this host when they press Get in ALEF."
+          git push -u origin "${{ inputs.host_branch }}"
