@@ -22,7 +22,7 @@ A model with a non-commercial or unclear licence is never shipped: it is dropped
 | [dicta-il/dictabert-large-char-menaked](https://huggingface.co/dicta-il/dictabert-large-char-menaked) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | `4dfc20b94565` | nikud | Vowel marks for any text the learner brings (camera, Talk, typed); offline, vowel marks for every app sentence, checked. |
 | [Phonikud/phonikud-onnx](https://huggingface.co/Phonikud/phonikud-onnx) | [MIT](https://opensource.org/license/mit) | `b806189fe1fc` | phonemes | Phonemes and stress marks for any text; the target for the pronunciation check; transliteration checks. (Also reachable as thewh1teagle/phonikud-onnx.) |
 | [dicta-il/dictabert-tiny-joint](https://huggingface.co/dicta-il/dictabert-tiny-joint) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | `708026b7297f` | words | Word taps anywhere: dictionary form, root and pattern hint, prefixes, part of speech, names. |
-| [alef-tools/handwriting-cnn](https://github.com/ALENZACODES/alef-tools/tree/main/packages/handwriting) | [MIT](https://opensource.org/license/mit) | n/a | handwriting | The tracing checker: our own small network (at most 2 MiB), trained here on letters drawn from OFL Hebrew fonts. |
+| [alef-tools/handwriting-cnn](https://github.com/ALENZACODES/alef-tools/tree/main/packages/handwriting) | [MIT](https://opensource.org/license/mit) | n/a | handwriting | The tracing checker: our own small network (1.25 MiB), trained here on letters drawn from OFL Hebrew fonts, the app's own stroke models and the HHD_v0 handwriting dataset (CC BY 4.0). Model 1, 2026-11-12. The parts are carried by the app itself for now and are not on the pack host yet. |
 | [tesseract-ocr/tessdata:heb](https://github.com/tesseract-ocr/tessdata) | [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) | n/a |  | Camera OCR. Already vendored in the app (assets/vendor/_tesseract); stays as it is. |
 
 ## B: offline build time only (43)
@@ -102,8 +102,8 @@ A model with a non-commercial or unclear licence is never shipped: it is dropped
 | [Norod78/gemma-3_4b_hebrew-lyrics-finetune](https://huggingface.co/Norod78/gemma-3_4b_hebrew-lyrics-finetune) | [Gemma Terms of Use](https://ai.google.dev/gemma/terms) | `a16990bd9753` |  | Use-policy terms: internal checks only. |
 | [XythicK/Hebrew-GPT](https://huggingface.co/XythicK/Hebrew-GPT) | [Llama 3.2 Community Licence](https://www.llama.com/llama3_2/license/) | `ad3ef49c8481` |  | Attribution and acceptable-use terms: internal checks only. |
 | [slprl/SIMS-Llama3.2-3B](https://huggingface.co/slprl/SIMS-Llama3.2-3B) | [Llama 3.2 Community Licence](https://www.llama.com/llama3_2/license/) | `847146d5fbb2` |  | Attribution and acceptable-use terms: internal checks only. |
-| [sivan22/testing-trOCR-hebrew-handwritten](https://huggingface.co/sivan22/testing-trOCR-hebrew-handwritten) | [none stated](https://huggingface.co/sivan22/testing-trOCR-hebrew-handwritten) | `419f9f0b3a76` |  | Benchmark only for the tracing checker. No licence stated; never ships. |
-| [Xenova/trocr-small-handwritten](https://huggingface.co/Xenova/trocr-small-handwritten) | [MIT](https://opensource.org/license/mit) | `02bea33ca09a` |  | Architecture reference only for the tracing checker. |
+| [sivan22/testing-trOCR-hebrew-handwritten](https://huggingface.co/sivan22/testing-trOCR-hebrew-handwritten) | [none stated](https://huggingface.co/sivan22/testing-trOCR-hebrew-handwritten) | `419f9f0b3a76` |  | Benchmark only for the tracing checker. No licence stated; never ships. The benchmark gave no score: the published weights file at this revision holds NaN values (packages/handwriting/README.md). |
+| [Xenova/trocr-small-handwritten](https://huggingface.co/Xenova/trocr-small-handwritten) | [MIT](https://opensource.org/license/mit) | `02bea33ca09a` |  | Architecture reference only for the tracing checker. Not downloaded and not used. |
 
 ## X: dropped (46)
 
@@ -182,3 +182,4 @@ Every CC BY model that ships or shapes shipped content:
 - neodictabert-bilingual by Dicta: The Israel Center for Text Analysis, CC BY 4.0
 - MsBERT by Dicta: The Israel Center for Text Analysis, CC BY 4.0
 - neodictabert-bilingual-embed by Dicta: The Israel Center for Text Analysis, CC BY 4.0
+- Letter check trained in part on the HHD_v0 handwriting dataset by I. Rabaev, B. Kurar Barakat, A. Churkin and J. El-Sana, CC BY 4.0

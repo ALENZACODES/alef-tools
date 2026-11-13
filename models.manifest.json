@@ -2123,7 +2123,7 @@
    "licence": "none stated",
    "licenceUrl": "https://huggingface.co/sivan22/testing-trOCR-hebrew-handwritten",
    "tier": "Q",
-   "reason": "Benchmark only for the tracing checker. No licence stated; never ships.",
+   "reason": "Benchmark only for the tracing checker. No licence stated; never ships. The benchmark gave no score: the published weights file at this revision holds NaN values (packages/handwriting/README.md).",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -2139,7 +2139,7 @@
    "licence": "MIT",
    "licenceUrl": "https://opensource.org/license/mit",
    "tier": "Q",
-   "reason": "Architecture reference only for the tracing checker.",
+   "reason": "Architecture reference only for the tracing checker. Not downloaded and not used.",
    "pack": null,
    "files": [],
    "budgetBytes": 0,
@@ -2157,15 +2157,28 @@
    "licence": "MIT",
    "licenceUrl": "https://opensource.org/license/mit",
    "tier": "D",
-   "reason": "The tracing checker: our own small network (at most 2 MiB), trained here on letters drawn from OFL Hebrew fonts.",
+   "reason": "The tracing checker: our own small network (1.25 MiB), trained here on letters drawn from OFL Hebrew fonts, the app's own stroke models and the HHD_v0 handwriting dataset (CC BY 4.0). Model 1, 2026-11-12. The parts are carried by the app itself for now and are not on the pack host yet.",
    "pack": "handwriting",
-   "files": [],
+   "files": [
+    {
+     "name": "letters.onnx.p000",
+     "bytes": 1311488,
+     "sha256": "697ea98a7104ecb9db76a3effaa7f4787b8b23b4e51ef37ef1487c3e95dcec98",
+     "url": "https://alenzacodes.github.io/alef-packs/handwriting/letters.onnx.p000"
+    },
+    {
+     "name": "model.json.p000",
+     "bytes": 833,
+     "sha256": "8646e231fa3196463e976e6662f6ddaeea90b59245a9721dbfc9fa0ee583a2dc",
+     "url": "https://alenzacodes.github.io/alef-packs/handwriting/model.json.p000"
+    }
+   ],
    "budgetBytes": 2097152,
    "device": {
     "webgpu": false,
     "minRamGB": 0
    },
-   "attribution": ""
+   "attribution": "Letter check trained in part on the HHD_v0 handwriting dataset by I. Rabaev, B. Kurar Barakat, A. Churkin and J. El-Sana, CC BY 4.0"
   },
   {
    "id": "mr3vial/paleo-hebrew-mt5-post-ocr-processing",
