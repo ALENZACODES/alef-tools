@@ -189,9 +189,9 @@ To publish the pack: put `work/pack/words/` on the pack host as `words/`, copy t
 
 ## Example Sentence Sweep
 
-`scripts/sweep_examples.py --app <Al-Heb checkout> --out review/example-sweep.json` reads each example sentence of `data/vocab/words.json` with dictabert-joint and compares the word the entry matched with the entry. `review/example-sweep.json` lists all 5,706 examples with a verdict and the evidence.
+`scripts/sweep_examples.py --app <Al-Heb checkout> --out review/example-sweep.json` reads each example sentence of `data/vocab/words.json` with dictabert-joint and compares the word the entry matched with the entry. `review/example-sweep.json` lists all 5,705 examples with a verdict and the evidence.
 
-- Hold (1,445): the word is read as another dictionary word (487), as the same letters in a part of speech the entry does not allow (697), with no dictionary form and a part of speech that cannot be the entry's (182), or as a name while the sentence's English shares no word with the entry's meaning (79).
+- Hold (1,444): the word is read as another dictionary word (487), as the same letters in a part of speech the entry does not allow (696), with no dictionary form and a part of speech that cannot be the entry's (182), or as a name while the sentence's English shares no word with the entry's meaning (79).
 - Keep (4,261): same dictionary form and a fitting part of speech (3,580); no dictionary form but the part of speech fits (405); the word is letter for letter a form the entry lists (179); a pointed verse carries exactly the entry's vowels and the word is not a name there (79); the word could not be found as one word (15); dictabert-parse, asked only about doubtful holds, agreed with the entry (3).
 - In 50 holds looked at by hand before the pointed-verse rule was added, about 42 were right to hold. The keeps were not sampled. Nobody who reads Hebrew natively has checked the list.
 
