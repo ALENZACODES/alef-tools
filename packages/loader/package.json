@@ -1,0 +1,11 @@
+{
+  "name": "@alef-tools/loader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared language pack loader and cache manager for ALEF",
+  "license": "MIT",
+  "exports": { ".": "./dist/index.js" },
+  "scripts": { "test": "node --test \"tests/*.test.js\"" },
+  "alef": { "firstInstall": [] }
+}

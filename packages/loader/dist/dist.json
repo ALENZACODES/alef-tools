@@ -1,0 +1,47 @@
+{
+ "schema": "alef.dist.v1",
+ "name": "loader",
+ "version": "0.1.0",
+ "files": [
+  {
+   "path": "budget.js",
+   "bytes": 1956,
+   "sha256": "234529264502855a6f4a96b423f21759cef79bcc487034a175e79016fcd119e2"
+  },
+  {
+   "path": "cache.js",
+   "bytes": 3617,
+   "sha256": "e966a26f184725d83b68ddab27776ff1d716f7e7e366fe2de777fd062e63a66a"
+  },
+  {
+   "path": "device.js",
+   "bytes": 2029,
+   "sha256": "0a07081ca60c5b8af63761fb6fdd75f7ec05346a2aaf8a8adbe597cd1ffd84c8"
+  },
+  {
+   "path": "errors.js",
+   "bytes": 492,
+   "sha256": "d29ce80a220e93de0331ea299fd8d6cd382d120d43d35718de5a5bcf94d2634f"
+  },
+  {
+   "path": "index.js",
+   "bytes": 1694,
+   "sha256": "abb734b84c4e99aa2b3676bd545486bb9c5e2e00d2dafa550333a134f45ecbeb"
+  },
+  {
+   "path": "loader.js",
+   "bytes": 6646,
+   "sha256": "4af61cdfed3814020d2ed65d53e8538ba4c3fa527782cde03f9139887aee1725"
+  },
+  {
+   "path": "shabbat.js",
+   "bytes": 829,
+   "sha256": "8bb532eaa91d0f68ce44edd48e9918292200e7abcd37e1ffdc7730ba3373d37a"
+  },
+  {
+   "path": "worker-host.js",
+   "bytes": 2072,
+   "sha256": "f619e2d13306f1e51e23e729c32f6ed941915bdf5b735572371a24969d798e16"
+  }
+ ]
+}
