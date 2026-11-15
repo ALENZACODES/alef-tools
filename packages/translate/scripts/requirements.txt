@@ -1,0 +1,12 @@
+# Build-time only. Exact pins: the versions the packs in models.manifest.json were built and checked with (Python 3.13, 12 November 2026).
+# torch is the CPU wheel: pip install --index-url https://download.pytorch.org/whl/cpu torch==2.15.0
+torch==2.15.0
+transformers==5.22.2
+sentencepiece==0.2.3
+sacremoses==0.2.0
+onnx==1.23.2
+onnxruntime==1.31.1
+numpy==2.5.4
+protobuf==7.36.2
+huggingface_hub==2.4.0
+sacrebleu==2.6.0

@@ -1,0 +1,161 @@
+{
+ "schema": "alef.talk.nmt.pack.v1",
+ "direction": "he-en",
+ "model": "OPUS-MT tc-big he-en (Helsinki-NLP/opus-mt-tc-big-he-en)",
+ "licence": "CC-BY-4.0",
+ "bytes": 249129701,
+ "files": [
+  {
+   "name": "table.onnx",
+   "bytes": 62198386,
+   "sha256": "67e8cc16010fcece6999a20258325d1d140fef1db0e19bdf086ec92f06b8f900",
+   "parts": [
+    {
+     "path": "he-en-hq/table.p0.bin",
+     "bytes": 16777216,
+     "sha256": "41ba780c4a75f61711b163ff3f5af10778aed359dd8b28cdb913bb43aef9571e"
+    },
+    {
+     "path": "he-en-hq/table.p1.bin",
+     "bytes": 16777216,
+     "sha256": "181b989bbc1bb672905dc38ee82308a833c991c74680a8a029f432644f6710b5"
+    },
+    {
+     "path": "he-en-hq/table.p2.bin",
+     "bytes": 16777216,
+     "sha256": "584ee6823b34bdbb27f68b61aa3f71897c497c93c62bfcb0d4e7dd0a6aeb16f9"
+    },
+    {
+     "path": "he-en-hq/table.p3.bin",
+     "bytes": 11866738,
+     "sha256": "77eadb04e7e1308063aff7c054f99d61cc4b0f8ab54062237f7eae0ad3585a94"
+    }
+   ]
+  },
+  {
+   "name": "encoder.onnx",
+   "bytes": 92824680,
+   "sha256": "0785a195e4dfe0ccdafff0bd03673f2b70d7a8f8d011b4f5c757489caf62586d",
+   "parts": [
+    {
+     "path": "he-en-hq/encoder.p0.bin",
+     "bytes": 16777216,
+     "sha256": "402f45ba859594de969a56a7e151546d600c7c0bd2dd33ff1fb7e9c5ed6b5aee"
+    },
+    {
+     "path": "he-en-hq/encoder.p1.bin",
+     "bytes": 16777216,
+     "sha256": "543ec3943132c632492d64984d1eaed2240af781d8533c1ea26bc85907c83737"
+    },
+    {
+     "path": "he-en-hq/encoder.p2.bin",
+     "bytes": 16777216,
+     "sha256": "4b30114cd96f8279cbea9916d4a7381dfceb74a6b0e7eba4fb900d44a89572cd"
+    },
+    {
+     "path": "he-en-hq/encoder.p3.bin",
+     "bytes": 16777216,
+     "sha256": "32081c9bf62ea754c9642724667cb18f192323dbe82a471d23b678de935b6ac8"
+    },
+    {
+     "path": "he-en-hq/encoder.p4.bin",
+     "bytes": 16777216,
+     "sha256": "1f4d423b3e63ee19781004b7bf4f95a52af2123206b159c451a7d91ad3161578"
+    },
+    {
+     "path": "he-en-hq/encoder.p5.bin",
+     "bytes": 8938600,
+     "sha256": "c83d3e16ef213784bf82a77988ede5b5a1147b0bbd6e82f646252c08d70c984c"
+    }
+   ]
+  },
+  {
+   "name": "decoder.onnx",
+   "bytes": 92890545,
+   "sha256": "6138ba67708df8cf307512172a510a9d57f323b06165b8448e9058bfd5f5e669",
+   "parts": [
+    {
+     "path": "he-en-hq/decoder.p0.bin",
+     "bytes": 16777216,
+     "sha256": "593f2e032801e3dd0de0571e68faa3ad2c2ee83fab0ede457a4b46a4782e0fe2"
+    },
+    {
+     "path": "he-en-hq/decoder.p1.bin",
+     "bytes": 16777216,
+     "sha256": "7a4ef54e4aa7f497c72630526e8eb2688b8283c04922ab11bf03c30727b150d8"
+    },
+    {
+     "path": "he-en-hq/decoder.p2.bin",
+     "bytes": 16777216,
+     "sha256": "5cdbf55feace0b2b0db36397e6a9c78ace2ff4970b6275221625d825eebd2da0"
+    },
+    {
+     "path": "he-en-hq/decoder.p3.bin",
+     "bytes": 16777216,
+     "sha256": "8ca1bde6c84644649e02b1a52f7072b069c0a31c1daba7fb3c750264f5271a6f"
+    },
+    {
+     "path": "he-en-hq/decoder.p4.bin",
+     "bytes": 16777216,
+     "sha256": "db2c9fe0a5adec6b083498371e39c15b3afdb2591b78b30c03b6679045e6c059"
+    },
+    {
+     "path": "he-en-hq/decoder.p5.bin",
+     "bytes": 9004465,
+     "sha256": "5c4383c50bff6af1b89f2436edee4473d1c7f7b2c96d95fe8cc60ba9a4749fa1"
+    }
+   ]
+  },
+  {
+   "name": "vocab.json",
+   "bytes": 1216090,
+   "sha256": "f0bf27c44f1797ba670c70b48ae85befc220d8c9612548e62ae8571040c47787",
+   "parts": [
+    {
+     "path": "he-en-hq/vocab.json",
+     "bytes": 1216090,
+     "sha256": "f0bf27c44f1797ba670c70b48ae85befc220d8c9612548e62ae8571040c47787"
+    }
+   ]
+  }
+ ],
+ "gpu": [
+  {
+   "name": "encoder.gpu.onnx",
+   "bytes": 113073,
+   "sha256": "b87c74ef7a86ac372dcf3d463804480744d06d490230f4df1cb970064f7363a3",
+   "parts": [
+    {
+     "path": "he-en-hq/encoder.gpu.onnx",
+     "bytes": 113073,
+     "sha256": "b87c74ef7a86ac372dcf3d463804480744d06d490230f4df1cb970064f7363a3"
+    }
+   ]
+  },
+  {
+   "name": "decoder.gpu.onnx",
+   "bytes": 123586,
+   "sha256": "b6c0417cfe5349a5317d1e406628317075e0ddf755c4a62d6dc6d960b2d46c0d",
+   "parts": [
+    {
+     "path": "he-en-hq/decoder.gpu.onnx",
+     "bytes": 123586,
+     "sha256": "b6c0417cfe5349a5317d1e406628317075e0ddf755c4a62d6dc6d960b2d46c0d"
+    }
+   ]
+  }
+ ],
+ "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb",
+ "quality": "high",
+ "requires": "webgpu",
+ "probe": [
+  {
+   "text": "שלום, מה שלומך היום?",
+   "expect": "Hello, how are you today?"
+  },
+  {
+   "text": "אנחנו רוצים לאכול ארוחת ערב במסעדה טובה.",
+   "expect": "We want to have dinner at a good restaurant."
+  }
+ ]
+}

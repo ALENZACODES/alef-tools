@@ -1,0 +1,68 @@
+{
+ "note": "Keys and hashes written by scripts/tm_gates.py; src/tm.js must give the same. chrF from sacreBLEU 2.6.0 (chrF2, corpus level).",
+ "keys": [
+  [
+   "אֲנִי רוֹצֶה שָׁלוֹשׁ בִּירוֹת, בְּבַקָּשָׁה!",
+   "אני רוצה שלוש בירות בבקשה",
+   1804333834
+  ],
+  [
+   "מַה־שְּׁלוֹמְךָ?  היום",
+   "מה שלומך היום",
+   3455439481
+  ],
+  [
+   "חדר 12 — קומה ב׳",
+   "חדר 12 קומה ב",
+   2863768357
+  ],
+  [
+   "שלום עולם",
+   "שלום עולם",
+   3688492724
+  ],
+  [
+   "“אַרְבָּעִים,” הוּא אוֹמֵר לַמַּרְאָה.",
+   "ארבעים הוא אומר למראה",
+   3242723698
+  ],
+  [
+   "Wi-Fi בחדר?",
+   "wi fi בחדר",
+   2298904445
+  ]
+ ],
+ "chrf": {
+  "pairs": [
+   {
+    "hyp": "Where is the station?",
+    "ref": "Where's the train station?"
+   },
+   {
+    "hyp": "I want two coffees, please.",
+    "ref": "I would like two coffees please"
+   },
+   {
+    "hyp": "שלום, מה שלומך היום?",
+    "ref": "שלום, מה נשמע היום?"
+   },
+   {
+    "hyp": "The bill, please.",
+    "ref": "Can I have the check?"
+   }
+  ],
+  "corpus": 40.6595,
+  "lines": [
+   48.5061,
+   49.1777,
+   50.7748,
+   6.0885
+  ],
+  "sacrebleuLines": [
+   48.5061,
+   49.1777,
+   50.7748,
+   6.0885
+  ]
+ }
+}
