@@ -1,0 +1,109 @@
+{
+ "schema": "alef.pack.v1",
+ "pack": "phonemes",
+ "version": "1",
+ "files": [
+  {
+   "name": "phonikud.int8.onnx",
+   "bytes": 307850928,
+   "sha256": "612a0eb42146b7e775ba1881c014c4517a320cf9b20d2213ad380880d55080db",
+   "parts": [
+    {
+     "path": "phonikud.int8.onnx.p000",
+     "bytes": 16777216,
+     "sha256": "1dbfc3410adc3415cc7cc6c18768c39d749356e917007555ec4fe2c74f2f192c"
+    },
+    {
+     "path": "phonikud.int8.onnx.p001",
+     "bytes": 16777216,
+     "sha256": "57683b217f193c4c00105316f04f1b480a71dcb81a6b303a54acb93fa4856a03"
+    },
+    {
+     "path": "phonikud.int8.onnx.p002",
+     "bytes": 16777216,
+     "sha256": "6d07856e61162cc2c0918c611457b5de8df19b52d0d37a292fe4a98be0833f5e"
+    },
+    {
+     "path": "phonikud.int8.onnx.p003",
+     "bytes": 16777216,
+     "sha256": "7194fe3af857a878d52729ef5bd4dcb550f2649d0cdc56d47890da5b4cbc2fab"
+    },
+    {
+     "path": "phonikud.int8.onnx.p004",
+     "bytes": 16777216,
+     "sha256": "2596483e8a9527b60e1131545aae159dacc553ac86f90ffb1e571d5d4ee19d62"
+    },
+    {
+     "path": "phonikud.int8.onnx.p005",
+     "bytes": 16777216,
+     "sha256": "7354701da01b617990f417d119da7ee4d2366399cdf71a746b7e15793f00616b"
+    },
+    {
+     "path": "phonikud.int8.onnx.p006",
+     "bytes": 16777216,
+     "sha256": "ed020a2bef0af3db754a51fd38558b9128b30f085709df086ca511a65207a598"
+    },
+    {
+     "path": "phonikud.int8.onnx.p007",
+     "bytes": 16777216,
+     "sha256": "7c17fb40dcb14a28bdf21d72f3bd82751236251118a1d978947679547b0321d5"
+    },
+    {
+     "path": "phonikud.int8.onnx.p008",
+     "bytes": 16777216,
+     "sha256": "4b3d502da65004bb7d3c949a29b11ae74be93a440b48bb8236f0d4a4a95f058b"
+    },
+    {
+     "path": "phonikud.int8.onnx.p009",
+     "bytes": 16777216,
+     "sha256": "980de93b8914ab637089e91153ffff9db787f9ef36ddf0bc5fde4b36dfa55259"
+    },
+    {
+     "path": "phonikud.int8.onnx.p010",
+     "bytes": 16777216,
+     "sha256": "af9ce629eaa2884fc5c5eaed2a3cbf24e9c8541c730bd7717a594df8002830b2"
+    },
+    {
+     "path": "phonikud.int8.onnx.p011",
+     "bytes": 16777216,
+     "sha256": "d3c74c4de3e80e73a3c0c9e47b1677359d6c7752c0429a0270bb9ae36b571d79"
+    },
+    {
+     "path": "phonikud.int8.onnx.p012",
+     "bytes": 16777216,
+     "sha256": "66e3a6b043d578cdeb5ec12d0b86680b32ae35caf571da0c754ab5cb742340dc"
+    },
+    {
+     "path": "phonikud.int8.onnx.p013",
+     "bytes": 16777216,
+     "sha256": "9bf66e5f1cb6be1340d12828a150fd3bbfd077a1e150e304b4a97c080130dd28"
+    },
+    {
+     "path": "phonikud.int8.onnx.p014",
+     "bytes": 16777216,
+     "sha256": "001f7e0e3db52403f1b6b679970abe16797e83259073e6a2eb98606abf873fd5"
+    },
+    {
+     "path": "phonikud.int8.onnx.p015",
+     "bytes": 16777216,
+     "sha256": "85fd70f18c90fdf8d93c1fdbf84acf276de7292391cdb6c764ce65c3c885ff73"
+    },
+    {
+     "path": "phonikud.int8.onnx.p016",
+     "bytes": 16777216,
+     "sha256": "a5edac4be5269516176ebb16b0a7054c93235fca2d75f6ecef6e9e11d230cbba"
+    },
+    {
+     "path": "phonikud.int8.onnx.p017",
+     "bytes": 16777216,
+     "sha256": "e095ce82be1c8166eccb8d755920711e2ba7080c9b9e5d1f738a6d21c215aef2"
+    },
+    {
+     "path": "phonikud.int8.onnx.p018",
+     "bytes": 5861040,
+     "sha256": "163fc2adbb3a12c9fee324a2d9554d5e2739890b59295be74230d1fb8cf88b2d"
+    }
+   ]
+  }
+ ]
+}

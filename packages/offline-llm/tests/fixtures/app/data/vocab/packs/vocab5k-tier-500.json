@@ -1,0 +1,94 @@
+{
+ "entries": [
+  {
+   "id": "v001",
+   "lemma": "אני",
+   "pointed": "אני",
+   "gloss": "I",
+   "tier": 500,
+   "forms": []
+  },
+  {
+   "id": "v002",
+   "lemma": "רוצה",
+   "pointed": "רוצה",
+   "gloss": "want",
+   "tier": 500,
+   "forms": []
+  },
+  {
+   "id": "v003",
+   "lemma": "עם",
+   "pointed": "עם",
+   "gloss": "with",
+   "tier": 500,
+   "forms": []
+  },
+  {
+   "id": "v004",
+   "lemma": "בבקשה",
+   "pointed": "בבקשה",
+   "gloss": "please",
+   "tier": 500,
+   "forms": []
+  },
+  {
+   "id": "v005",
+   "lemma": "שותה",
+   "pointed": "שותה",
+   "gloss": "drinks",
+   "tier": 500,
+   "forms": []
+  },
+  {
+   "id": "v006",
+   "lemma": "ילד",
+   "pointed": "ילד",
+   "gloss": "boy",
+   "tier": 500,
+   "forms": [
+    {
+     "he": "ילדה",
+     "label": "f"
+    }
+   ]
+  },
+  {
+   "id": "v007",
+   "lemma": "קר",
+   "pointed": "קר",
+   "gloss": "cold",
+   "tier": 500,
+   "forms": [
+    {
+     "he": "קרים",
+     "label": "mpl"
+    }
+   ]
+  },
+  {
+   "id": "v008",
+   "lemma": "מים",
+   "pointed": "מים",
+   "gloss": "water",
+   "tier": 500,
+   "forms": []
+  },
+  {
+   "id": "v009",
+   "lemma": "יום",
+   "pointed": "יום",
+   "gloss": "day",
+   "tier": 500,
+   "forms": []
+  },
+  {
+   "id": "v010",
+   "lemma": "בית",
+   "pointed": "בית",
+   "gloss": "house",
+   "tier": 500,
+   "forms": []
+  }
+ ]
+}

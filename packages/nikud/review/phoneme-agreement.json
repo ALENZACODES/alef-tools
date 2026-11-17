@@ -1,0 +1,4526 @@
+{
+ "kamatzKatan": {
+  "agree": 12,
+  "appOnly": [],
+  "packOnly": []
+ },
+ "shva": {
+  "agree": 1085,
+  "differ": [
+   {
+    "word": "חָכְמָה",
+    "letter": 1,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תָּכְנִית",
+    "letter": 1,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּמוֹ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "זְמַן",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְצָת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְרָב",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרִית",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלוֹשָׁה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּלִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּבָר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּמוּנָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁבִיעִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּלוּם",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "הִזְדַּמְּנוּת",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְבוּצָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּלָל",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְדָקָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּלִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְפִינָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁאֵלָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּרוּמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּשׁוּבָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "מִילְיוֹן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "זְכוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּנַעֲנִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּכֵלֶת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרָט",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּבִירָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּנִימָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּרוּפָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁכֶם",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דּוֹקְטוֹר",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁטוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּדִיקָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אַנְגְּלִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלִישִׁי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּהֵמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּבַשׁ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּקוּפָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרָטִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּצָצָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "רְצִינוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "הָלְאָה",
+    "letter": 1,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁנִיָּה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "הִיסְטוֹרְיָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "הִיסְטוֹרְיָה",
+    "letter": 5,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "מִסְעָדָה",
+    "letter": 1,
+    "app": "silent",
+    "rule": "B3",
+    "pack": "sounded"
+   },
+   {
+    "word": "תְּנוּעָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְגָן",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרִיחַ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּנֵסִיָּה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְבִיבָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "יְפֵהפֶה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּחוּשָׁה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּחִירָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "יַאלְלָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L2",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּגוּבָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "נוֹרְמָלִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּנַאי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "נְשָׁמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אִינְטֶרְנֶט",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּמוּרָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּשׂוּמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרָכָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּגִישָׁה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דּוּגְמָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּמוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּרוּעָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְבָאִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְפּוֹרְט",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּתוּלָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טֶכְנוֹלוֹגְיָה",
+    "letter": 6,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁמוּעָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְבִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְחוֹק",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְפִיָּה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "מִסְדְּרוֹן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּלִילִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּרָקוֹן",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּלִידָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "זְרוֹעַ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּדוּד",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "וִיסְקִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תֵּיאוֹרְיָה",
+    "letter": 4,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּשׁוּקָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "מַדְּעָן",
+    "letter": 1,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְפָרַדִּי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁתִיָּה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְלִיל",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרוֹפִיל",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "זְכוּכִית",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁבִיל",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁמוֹק",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְלָלָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קוֹלְנוֹעַ",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁפֵלָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּפִיר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּפָפָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּנוּךְ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּלִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּבִיסָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פּוֹרְנוֹ",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרִיט",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרַקְלִיט",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טְרָאוּמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּלוּב",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְחוֹרָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְעִירָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כַּדּוּרְסַל",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "זוֹמְבִּי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּפוּס",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּסִיכוֹלוֹג",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּלוּלָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּבִיר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּרָמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּסַנְתֵּר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּתוּבִית",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "זְמַנִּי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְרִיאָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "מְבוּלְבָּל",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרוֹשׁ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְמִיג",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְרוֹבָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְבוּרָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "יְמָנִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּבִיעָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טְרָגֶדְיָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּסִיסִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אַסְטְרָטֶגְיָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרִיטִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סוֹלְלָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L2",
+    "pack": "silent"
+   },
+   {
+    "word": "נוֹצְרִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "מִילְיַארְד",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּדֵרָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טֶקְסְט",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּרוֹר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קוֹנְדּוֹם",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּרָמָטִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּשִׁיעִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אִימְפֶּרְיָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "זְרִיקָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוֹבְּסֵסִיבִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "לְבוּשׁ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׂרֵפָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "זְבוּב",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "מִיקְרוֹפוֹן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "אַפִּיפְיוֹר",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "סְפִירָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּקִיפָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרָס",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוֹרְגָּן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּחִיָּה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְרִיטִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כּוֹנְנוּת",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L2",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּלִימָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סִיסְמָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּלוּנָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פִּיקְנִיק",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "סְנִיף",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּבוֹרָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּיוֹ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "רֶפּוּבְּלִיקָה",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּנוּחָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּבִינָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלִיחָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טְרָגִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קוֹנְצֵרְט",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלִישִׁיָּה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טְרִיפּ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׂמִיכָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אֵינְסוֹפִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁגִיאָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁטָר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלִילִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוֹרְגָּנִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּלוֹק",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּבִישׁ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בִּיּוֹלוֹגְיָה",
+    "letter": 5,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "קְבוּצָתִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוֹפְּטִימִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּרוּטָאָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּתוּלִים",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְטָטָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טוּרְקִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "פִילוֹסוֹפְיָה",
+    "letter": 6,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּדִידוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְפּוֹרְטַאי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְפּוֹרְטַאי",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "הִתְנַקְּשׁוּת",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׂמֹאל",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תַּרְנְגוֹל",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּגִיעָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלוֹשִׁים",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טוּמְאָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁחִיתוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "לְעוֹלָם",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְעוּדָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּמוּתָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּנִינָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּסִיכוֹלוֹגְיָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּסִיכוֹלוֹגְיָה",
+    "letter": 7,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּרִיס",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טְרוֹל",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּפִיָּה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְנָס",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "נוֹגְדָן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "סְטַנְדַּרְט",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלִישׁ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁמִינִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְרוּם",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּחִיפוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּבוּסָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּפִיסָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְטַנְדַּרְטִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְרִיף",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׂפָתוֹן",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוּלְטִימָטִיבִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁמִירָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּכוּנָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְבִיעוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "נוֹרְמָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁבוּעָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלִיטָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "רְנָנָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דִּימְדּוּמִים",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "אַפְּלִיקַצְיָה",
+    "letter": 1,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּמִידִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "הִתְבַּגְּרוּת",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְלִישָׁאָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּלוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "דִּיפְּלוֹמָט",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁנָתִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוֹלִימְפִּי",
+    "letter": 4,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "קָטֵגוֹרְיָה",
+    "letter": 4,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּדִיל",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְדָדִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אַפּוֹטְרוֹפּוֹס",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּנָזִים",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְלִיפּ",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "מְשִׁיבוֹן",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בּוּרְסָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּבִרְתִּי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קוֹבְּרָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוֹסְטְרָלִי",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "אִינְטֶנְסִיבִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "סְמַרְטוּט",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְרִיכָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּנוּמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "מַהְפְּכָן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּדִירוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרִיאוּתִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אֵלֶקְטְרוֹמַגְנֵטִי",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "שׁוֹמְרוֹנִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "קוֹמְמִיּוּת",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L2",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּלַזְמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁלוּלִית",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְצִיצָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְנִיעוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סוּלְטָן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "רוֹכְסָן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "סְטָטוּס",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁפִיכָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תּוֹקְפָנוּת",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "צְפִיפוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרוּסָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרוּטָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּלִישָׁה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קוֹנְסוּלְיָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "קוֹנְסוּלְיָה",
+    "letter": 5,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "מִילְיַארְדֶּר",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּנוּדָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּלִיָּה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּלַסְטֶר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "טְרַקְלִין",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "הִתְמַכְּרוּת",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "פּוֹלִיגְרָף",
+    "letter": 4,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "רוֹפְאָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "קַבְּצָן",
+    "letter": 1,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "טְרַקְטוֹר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סוֹבְלָנוּת",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּכוּלָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוֹפְּיוּם",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "דְּבֵקוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "חוּצְפָּן",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "מִיקְרוֹסְקוֹפּ",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "מִיקְרוֹסְקוֹפּ",
+    "letter": 5,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּנַאי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְטָטִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סְלִיחָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁפוֹפֶרֶת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוּרַנְיוּם",
+    "letter": 3,
+    "app": "silent",
+    "rule": "B3",
+    "pack": "sounded"
+   },
+   {
+    "word": "תְּשׂוּאָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פּוֹרְנוֹגְרַפְיָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "פּוֹרְנוֹגְרַפְיָה",
+    "letter": 5,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "הִיסְטֶרְיָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרוֹטֶסְטַנְטִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "הִיפְּנוֹזָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "אֵינְסוֹף",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "זְדוֹנִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "רֵפוֹרְמָה",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּלַטְפוֹרְמָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּלַטְפוֹרְמָה",
+    "letter": 5,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "קְטִינָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "נוּדְנִיק",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁרִירִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁקוּפִית",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "לוּטְרָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "קְרִיפְּטוֹן",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְרִיפְּטוֹן",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּרִיחָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּלוֹבּוּס",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרוֹנְזָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרוֹנְזָה",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "הִדַּרְדְּרוּת",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "B2",
+    "pack": "silent"
+   },
+   {
+    "word": "דֵּמוֹקְרָטִי",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "בְּרוֹקוֹלִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "הִתְנַגְּדוּת",
+    "letter": 3,
+    "app": "sounded",
+    "rule": "L1",
+    "pack": "silent"
+   },
+   {
+    "word": "גְּמִישׁוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "סוּלְיָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "סְלִיק",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "צְלִילוּת",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "הִיסְטֵרִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "פְּלָטִינָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "קְשִׁישָׁא",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "אוֹרְגָּנִיזְם",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "תְּלוּתִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "פוֹרְמָלִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "הִיסְפָּנִי",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "אִינְפוֹרְמַצְיָה",
+    "letter": 2,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "אִינְפוֹרְמַצְיָה",
+    "letter": 5,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "סְגַלְגַּל",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "כְּלוֹמַר",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׂמֹאלָה",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   },
+   {
+    "word": "וּבְכָל",
+    "letter": 1,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "וּבְרַחֲמִים",
+    "letter": 1,
+    "app": "sounded",
+    "rule": "L3",
+    "pack": "silent"
+   },
+   {
+    "word": "שְׁמִי",
+    "letter": 0,
+    "app": "sounded",
+    "rule": "B1",
+    "pack": "silent"
+   }
+  ],
+  "byRule": {
+   "L3": {
+    "agree": 0,
+    "differ": 81
+   },
+   "B3": {
+    "agree": 898,
+    "differ": 2
+   },
+   "B1": {
+    "agree": 160,
+    "differ": 229
+   },
+   "B2": {
+    "agree": 25,
+    "differ": 9
+   },
+   "L1": {
+    "agree": 1,
+    "differ": 12
+   },
+   "X1": {
+    "agree": 1,
+    "differ": 0
+   },
+   "L2": {
+    "agree": 0,
+    "differ": 4
+   }
+  },
+  "differCount": 337
+ },
+ "dagesh": {
+  "lettersCompared": 24117,
+  "same": 22865,
+  "differ": [
+   {
+    "word": "קָדְשׁוֹ",
+    "pack": "קַדְּשׁוּ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "קָדְשׁוֹ",
+    "pack": "קַדְּשׁוּ",
+    "letter": 3,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "אֵת",
+    "pack": "אַתְּ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "הִוָּה",
+    "pack": "הוֹה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בְּ־",
+    "pack": "ב־",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "סִדֵּר",
+    "pack": "סֵדֶר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אֱלוֹהַּ",
+    "pack": "אֱלְוה",
+    "letter": 3,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "דִּבֵּר",
+    "pack": "דְּבָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עָבַד",
+    "pack": "עַבְּד",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "סִפֵּר",
+    "pack": "סֵפֶר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כִּוֵּן",
+    "pack": "כּוֹן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עֶבֶד",
+    "pack": "עַבְּד",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "מַשֶּׁהוּ",
+    "pack": "מַשֶּׁהו",
+    "letter": 3,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חֻשַּׁב",
+    "pack": "חָשַׁב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חַיָּב",
+    "pack": "חֵיב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁלֵּם",
+    "pack": "שָׁלֵם",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נָשָׂא",
+    "pack": "נַשָּׂא",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "שִׁנָּה",
+    "pack": "שָׁנָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "יֻדַּע",
+    "pack": "יֶדַע",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "טוּב",
+    "pack": "טוֹב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אֲפִלּוּ",
+    "pack": "אַפְלו",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אֲפִלּוּ",
+    "pack": "אַפְלו",
+    "letter": 3,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בַּד",
+    "pack": "בד",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "דַּבָּר",
+    "pack": "דְּבָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִפֵּשׂ",
+    "pack": "חַפֶשׁ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חָנָה",
+    "pack": "חַנָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "רָבָה",
+    "pack": "רַבָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "מְכָל",
+    "pack": "מִכׇּל",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "כֹּחַ",
+    "pack": "כח",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הֵגֵן",
+    "pack": "הַגַּן",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "אִבֵּד",
+    "pack": "אַבָד",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גִּדֵּל",
+    "pack": "גָּדַל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "וִתֵּר",
+    "pack": "ותר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פַּר",
+    "pack": "פר",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גִּלָּה",
+    "pack": "גַּלָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גִּדּוּל",
+    "pack": "גָּדוֹל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גִּדּוּל",
+    "pack": "גָּדוֹל",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִיֵּב",
+    "pack": "חֵיב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קִדֵּשׁ",
+    "pack": "קָדֶשׁ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "טִפֵּל",
+    "pack": "טַפֶל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עֲבוּר",
+    "pack": "עֲבוֹר",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "סִיֵּם",
+    "pack": "סַים",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גֵּר",
+    "pack": "גר",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִוָּה",
+    "pack": "אוֹה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גָּר",
+    "pack": "גר",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "דֻּבַּר",
+    "pack": "דְּבָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חַטָּאת",
+    "pack": "חָטָאת",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "דְּ־",
+    "pack": "ד־",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִצֵּחַ",
+    "pack": "נֵצַח",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "תִּוֵּךְ",
+    "pack": "תּוֹך",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בָּנָה",
+    "pack": "בְּנָהּ",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "פְּלִשְׁתִּי",
+    "pack": "פָּלַּשְׁתִּי",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "כִי",
+    "pack": "כִּי",
+    "letter": 0,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "פִּנָּה",
+    "pack": "פִּנֵה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מִיֵּן",
+    "pack": "מִין",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בִּקֵּר",
+    "pack": "בָּקָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִשֵּׁב",
+    "pack": "חָשַׁב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פָּקַד",
+    "pack": "פַּקָּד",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "מִקְוֶה",
+    "pack": "מְקַוֶּה",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "יִשֵּׁב",
+    "pack": "יָשַׁב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "זִמֵּן",
+    "pack": "זְמַן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הוּסַף",
+    "pack": "הוֹסֵף",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כַּף",
+    "pack": "כף",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִטָּה",
+    "pack": "הִטָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שָׁפַט",
+    "pack": "שֶׁפָּט",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "מָכַר",
+    "pack": "מַכָּר",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "כִּפֵּר",
+    "pack": "כְּפַר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גָּנַב",
+    "pack": "גַּנָּב",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "בִּצֵּעַ",
+    "pack": "בָּצַע",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִכֵּף",
+    "pack": "אַכְף",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פִּתֵּחַ",
+    "pack": "פֶּתַח",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כַּסָּף",
+    "pack": "כֶּסֶף",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חָלָה",
+    "pack": "חַלָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "זִיֵּן",
+    "pack": "זִין",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִקָּה",
+    "pack": "נָקָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "וִדֵּא",
+    "pack": "וַדָא",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שָׁכַן",
+    "pack": "שֶׁכֵּן",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "צֶוֶת",
+    "pack": "צוּת",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "מֻשָּׂג",
+    "pack": "מֶשֶׁג",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אֵבֶר",
+    "pack": "אַבֶּר",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "תִּקֵּן",
+    "pack": "תֶּקֶן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִמֵּת",
+    "pack": "אֱמֶת",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "סִכּוּי",
+    "pack": "סַכּוֹי",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כְּ־",
+    "pack": "כ־",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִשְׁתַּחֲוָה",
+    "pack": "הִשְׁתַּחוּה",
+    "letter": 4,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "לִמֵּד",
+    "pack": "לָמַד",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קִיֵּם",
+    "pack": "קַים",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִיֵּם",
+    "pack": "אִים",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁקֵּר",
+    "pack": "שֶׁקֶר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אָמוּר",
+    "pack": "אֱמוֹר",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁלֵּחַ",
+    "pack": "שְׁלַח",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גֵּב",
+    "pack": "גב",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קׇדָשִׁים",
+    "pack": "קׇדָּשִׁים",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "גָּבֹהַ",
+    "pack": "גַּבָּהּ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "גָּבֹהַ",
+    "pack": "גַּבָּהּ",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "עִוֵּת",
+    "pack": "עוֹת",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁמֵּשׁ",
+    "pack": "שֶׁמֶשׁ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חֵמָה",
+    "pack": "חַמָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "גִּבָּה",
+    "pack": "גַּבָּהּ",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "קֻפָּה",
+    "pack": "קָפֶה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פִּטֵּר",
+    "pack": "פֶּטֶר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "זִקּוּק",
+    "pack": "זָקוּק",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִשָּׁה",
+    "pack": "נָשֶׁה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "סִפֵּק",
+    "pack": "סָפֵק",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "תָּר",
+    "pack": "תר",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אַשּׁוּר",
+    "pack": "אַשׁוּר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מְצֻיָּן",
+    "pack": "מֵצִין",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִחוּר",
+    "pack": "אָחוֹר",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "זֶהוּ",
+    "pack": "זֶהו",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גָּד",
+    "pack": "גד",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִמֵּן",
+    "pack": "אָמֵן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִתְאִים",
+    "pack": "הַתָּאִים",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "הִתְגַּעֲגֵעַ",
+    "pack": "הִתְגַּעְגֵּעַ",
+    "letter": 4,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "אִשֵּׁר",
+    "pack": "אָשֶׁר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כָּלָה",
+    "pack": "כַּלָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "כִּבֵּס",
+    "pack": "כַּבס",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כִּבֵּד",
+    "pack": "כָּבֵד",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קְטֹרֶת",
+    "pack": "קַטֶּרֶת",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "קָלָה",
+    "pack": "קַלָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "חָתַם",
+    "pack": "חֲתֵּם",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "יַחְדָּו",
+    "pack": "יַחַדו",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בֻּקַּר",
+    "pack": "בָּקָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִתֵּר",
+    "pack": "אֲתָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "צִיּוּן",
+    "pack": "צִיּוֹן",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִקְטִיר",
+    "pack": "הַקָּטִיר",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "רֻפָּא",
+    "pack": "רָפָא",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִתֵּחַ",
+    "pack": "נֵתַח",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שַׁיָּךְ",
+    "pack": "שַׁיך",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "טֻפַּל",
+    "pack": "טַפֶל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חַיָּל",
+    "pack": "חַיל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִדֵּשׁ",
+    "pack": "חָדָשׁ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִתַּן",
+    "pack": "נָתָן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בִּטּוּחַ",
+    "pack": "בָּטוּחַ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִלֵּק",
+    "pack": "חֵלֶק",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כַּנָּה",
+    "pack": "כֵּנָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "צָפָה",
+    "pack": "צָפָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "בִּלָּה",
+    "pack": "בֵּלָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִלֵּף",
+    "pack": "אֶלֶף",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מְאֻשָּׁר",
+    "pack": "מֵאֲשֶׁר",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כַּוָּן",
+    "pack": "כּוֹן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "טִיֵּל",
+    "pack": "טִיל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁטֵּר",
+    "pack": "שְׁטָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִגַּשׁ",
+    "pack": "נַגַשׁ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִגְנִיב",
+    "pack": "הַגֵּנִיב",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "חֲתֻנָּה",
+    "pack": "חֲתָנָה",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "טְוָח",
+    "pack": "טוּחַ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "רִשֵּׁת",
+    "pack": "רֶשֶׁת",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "תְּאֻנָּה",
+    "pack": "תְּאֵנָה",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "לוּ",
+    "pack": "לוֹ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עֻבְדָּה",
+    "pack": "עָבְדָה",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בִּיֵּת",
+    "pack": "בַּיִת",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כִּיֵּף",
+    "pack": "כֵּיף",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הֻפְתַּע",
+    "pack": "הַפֶּתַע",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "הֻפְתַּע",
+    "pack": "הַפֶּתַע",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "דַּיָּן",
+    "pack": "דִּין",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עִיֵּף",
+    "pack": "עֵיף",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כִּנָּה",
+    "pack": "כֵּנָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִבֵּר",
+    "pack": "חָבֵר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קִטֵּר",
+    "pack": "קָטֶר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִשּׂוּאִין",
+    "pack": "נְשׂוּאִין",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פְּעֻלָּה",
+    "pack": "פָּעֲלָה",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אָמָה",
+    "pack": "אַמָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "אֻמַּן",
+    "pack": "אָמֵן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁטָּה",
+    "pack": "שָׁטָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "רִמָּה",
+    "pack": "רָמָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מִזְדַּיֵּן",
+    "pack": "מזְדִין",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מִזְדַּיֵּן",
+    "pack": "מזְדִין",
+    "letter": 3,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פֻּטַּר",
+    "pack": "פֶּטֶר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִרְגֵן",
+    "pack": "אֲרְגֵּן",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "אָרוּר",
+    "pack": "אָרור",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "זָמַר",
+    "pack": "זֶמָּר",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "נִשֵּׁק",
+    "pack": "נֶשֶׁק",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִצַּב",
+    "pack": "נֵצַב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מַצָּה",
+    "pack": "מַצָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הָמָה",
+    "pack": "הַמָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "תֵּבָה",
+    "pack": "תֵּבָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "יִבֵּשׁ",
+    "pack": "יָבֵשׁ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מְסֻיָּם",
+    "pack": "מִסִּים",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "מְסֻיָּם",
+    "pack": "מִסִּים",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מִלֵּא",
+    "pack": "מָלֵא",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁיֵּט",
+    "pack": "שַׁיט",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִלֵּל",
+    "pack": "חָלָל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עִוֵּר",
+    "pack": "עוֹר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קַיָּם",
+    "pack": "קַים",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "סִנְכְרֵן",
+    "pack": "סַנְכָּרן",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "נִגֵּב",
+    "pack": "נֶגֶב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "צִיֵּר",
+    "pack": "צִיר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חַמָּר",
+    "pack": "חֶמֶר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "צַיָּד",
+    "pack": "צַיד",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "לָכַד",
+    "pack": "לַכְּד",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "חִסֵּל",
+    "pack": "חַסַל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "טַיָּס",
+    "pack": "טַיִס",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "דֻּמָּה",
+    "pack": "דָּמָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "צָרַעַת",
+    "pack": "צָּרַעַת",
+    "letter": 0,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "אִמֵּץ",
+    "pack": "אֶמץ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עִשֵּׁן",
+    "pack": "עָשָׁן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כּוֹר",
+    "pack": "כּוּר",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "מִקּוּם",
+    "pack": "מָקוֹם",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מִקּוּם",
+    "pack": "מָקוֹם",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "תֵּה",
+    "pack": "תה",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אֲהָהּ",
+    "pack": "אָהָה",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִדָּה",
+    "pack": "נָדָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "יִוֵּן",
+    "pack": "יוֹן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "צִפּוֹר",
+    "pack": "צְפור",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פֶּרֶד",
+    "pack": "פְרֶד",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עִצֵּב",
+    "pack": "עָצֵב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "רְאָיָה",
+    "pack": "רְאִיָּה",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "גַּג",
+    "pack": "גג",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "סִמֵּן",
+    "pack": "סְמָן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הֵימִין",
+    "pack": "הַיָּמִין",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "סִפּוּר",
+    "pack": "סִפּור",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "רִפֵּא",
+    "pack": "רָפָא",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בִּטֵּל",
+    "pack": "בָּטָל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "תְּפִלָּה",
+    "pack": "תְּפֵלָה",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קִנֵּא",
+    "pack": "קַנָא",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קִבֵּץ",
+    "pack": "קַבֶץ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "סִכּוּן",
+    "pack": "סַכּוֹן",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִיֵּךְ",
+    "pack": "חַיךְ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קִוָּה",
+    "pack": "קָוָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כְּתֹבֶת",
+    "pack": "כַּתֶּבְת",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "שִׁעוּר",
+    "pack": "שֵׁעוֹר",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִפְעִיל",
+    "pack": "הַפָּעִיל",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "נַיָּד",
+    "pack": "נִיד",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אַיָּל",
+    "pack": "אֵיִל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "סִכֵּם",
+    "pack": "סַכֶם",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "לִמּוּד",
+    "pack": "לָמוּד",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִקְהִיל",
+    "pack": "הַקְּהִיל",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "צָפוּן",
+    "pack": "צָפוֹן",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עִגֵּל",
+    "pack": "עֵגֶל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "נִתֵּק",
+    "pack": "נֶתֶק",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גָּבַהּ",
+    "pack": "גַּבָּהּ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "חִזֵּק",
+    "pack": "חָזָק",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חָנַךְ",
+    "pack": "חֲנֵּךְ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "הִרְכִּיב",
+    "pack": "הָרְכִיב",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִתִּיךְ",
+    "pack": "הָתִיך",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חֻבַּר",
+    "pack": "חָבֵר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גּוּפָה",
+    "pack": "גּוּפָהּ",
+    "letter": 3,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "סִיֵּעַ",
+    "pack": "סִיע",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קִדֵּם",
+    "pack": "קֶדֶם",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "מֹתֶן",
+    "pack": "מַתָּן",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "חִשּׁוּב",
+    "pack": "חָשׁוב",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִשּׁוּב",
+    "pack": "חָשׁוב",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "צִיֵּן",
+    "pack": "צִין",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "תְּחִלָּה",
+    "pack": "תַּחָלָה",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "גַּב",
+    "pack": "גב",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "תָּפַשׂ",
+    "pack": "תַּפָּשׁ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "חִתּוּל",
+    "pack": "חָתוּל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קֻפְסָה",
+    "pack": "קַפְּסָה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "פִּצָּה",
+    "pack": "פַצָה",
+    "letter": 0,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פִּצָּה",
+    "pack": "פַצָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "דִּוּוּחַ",
+    "pack": "דַּוַּוחַ",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עִבֵּר",
+    "pack": "עָבָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הֶחְנָה",
+    "pack": "הַחַנָּה",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "סוּף",
+    "pack": "סוֹף",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הֵסֵב",
+    "pack": "הַסָּב",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "הֻדְאַג",
+    "pack": "הַדְּאג",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "חִמֵּשׁ",
+    "pack": "חָמֵשׁ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "עִדָּן",
+    "pack": "עֵדֶן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "צָפַן",
+    "pack": "צַפָּן",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "רֶוַח",
+    "pack": "רוּחַ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "נִתּוּחַ",
+    "pack": "נָתוּחַ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חָשׁוּב",
+    "pack": "חָשׁוב",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "לָוָה",
+    "pack": "לוּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "אֶנֶרְגִּיָה",
+    "pack": "אֵנֶרְגִּיָּה",
+    "letter": 4,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "עִקָּר",
+    "pack": "עָקָר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁכּוֹר",
+    "pack": "שְׂכוּר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁכּוֹר",
+    "pack": "שְׂכוּר",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "סֻנְכְרַן",
+    "pack": "סַנְכָּרן",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "כִּוּוּן",
+    "pack": "כַּוֵּון",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הֶחֱוָה",
+    "pack": "הַחַוָּה",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "סֻפַּר",
+    "pack": "סֵפֶר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חִבֵּל",
+    "pack": "חֲבָל",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִיֵּר",
+    "pack": "אִיר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "הִשְׁקִיעַ",
+    "pack": "הִשָּׁקִיעַ",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "טַבָּח",
+    "pack": "טַבַח",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "רִשּׁוּם",
+    "pack": "רָשׁוּם",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חָמַל",
+    "pack": "חַמָּל",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "רִמּוֹן",
+    "pack": "רָמוֹן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "תִּיֵּק",
+    "pack": "תִּיק",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "קַשָּׁר",
+    "pack": "קֶשֶׁר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "פֻּנָּה",
+    "pack": "פִּנֵה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חָמוֹת",
+    "pack": "חַמּוֹת",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "דִּבּוּר",
+    "pack": "דְּבוֹר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "דִּבּוּר",
+    "pack": "דְּבוֹר",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חָסָה",
+    "pack": "חַסָּה",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "שֻׁנָּה",
+    "pack": "שָׁנָה",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "חָבַט",
+    "pack": "חַבָּט",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "חִלֵּץ",
+    "pack": "חָלֵץ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בִּטֵּא",
+    "pack": "בָּטָא",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "רִגֵּשׁ",
+    "pack": "רֶגֶשׁ",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "כַּשְׂדִּי",
+    "pack": "כְּשְׁדִי",
+    "letter": 2,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "אִטִּי",
+    "pack": "אֵטִי",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שִׁנֵּן",
+    "pack": "שְׁנָן",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "שְׁאוֹל",
+    "pack": "שָׁאוּל",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "מִיָּד",
+    "pack": "מִיד",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "בּוּר",
+    "pack": "בּוֹר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "יִסֵּד",
+    "pack": "יָסד",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   },
+   {
+    "word": "רְאוֹת",
+    "pack": "רְאוּת",
+    "letter": 2,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "הֻשְׁלַם",
+    "pack": "הַשָּׁלֵם",
+    "letter": 1,
+    "app": false,
+    "packHas": true
+   },
+   {
+    "word": "צַוָּאר",
+    "pack": "צוֹאר",
+    "letter": 1,
+    "app": true,
+    "packHas": false
+   }
+  ]
+ },
+ "wordsAsked": 6063,
+ "wordsSamePointing": 2947,
+ "wordsDifferentPointing": 3116,
+ "listWordsDifferentPointing": [
+  {
+   "word": "קָרְבָּן",
+   "pack": "קַרְבָּן"
+  },
+  {
+   "word": "קָדְשׁוֹ",
+   "pack": "קַדְּשׁוּ"
+  },
+  {
+   "word": "אָזְנַיִם",
+   "pack": "אׇזָנַיִם"
+  }
+ ],
+ "note": "Where the app's own rules and the phoneme pack differ. Nothing in the app was changed. The shva list is long by design: the app's rules are for careful synagogue reading, the pack marks everyday Israeli speech."
+}

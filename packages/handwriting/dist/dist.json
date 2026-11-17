@@ -1,0 +1,27 @@
+{
+ "schema": "alef.dist.v1",
+ "name": "handwriting",
+ "version": "0.1.0",
+ "files": [
+  {
+   "path": "classify.js",
+   "bytes": 6770,
+   "sha256": "927b5f250db92295e0cf190934cc199747c87e41bdea0044875d41dd49b5cad9"
+  },
+  {
+   "path": "feedback.js",
+   "bytes": 7400,
+   "sha256": "518039c52b94da3173751130f6656c84eefa1fd2acff26c03874901d8a4402b1"
+  },
+  {
+   "path": "index.js",
+   "bytes": 3472,
+   "sha256": "7c373bcc647575d16512e6d29d4f3b42bbd3d19a52fc6b30b230080a58e2a2a0"
+  },
+  {
+   "path": "preprocess.js",
+   "bytes": 5426,
+   "sha256": "9403f0b0cca742aa68ff8ea0373bacea16535f517f371dff3ef19b47b0bac36b"
+  }
+ ]
+}

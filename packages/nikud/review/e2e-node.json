@@ -1,0 +1,93 @@
+{
+ "note": "Node on a 2-core cloud machine, Cache Storage in memory, the worker in-process. Not a browser and not a phone.",
+ "ran": "dist",
+ "rssMiB": 2128,
+ "distBytes": {
+  "code": 26810,
+  "all": 1840256
+ },
+ "nikud": {
+  "bytes": 317816752,
+  "MiB": 303.1,
+  "parts": 19,
+  "loadMs": 2038,
+  "backend": "wasm",
+  "msPerLine": 477,
+  "lines": [
+   {
+    "in": "שלום, מה שלומך היום?",
+    "text": "שָׁלוֹם, מָה שְׁלוֹמְךָ הַיּוֹם?",
+    "name": false,
+    "reason": ""
+   },
+   {
+    "in": "אני רוצה להזמין קפה ועוגה, בבקשה.",
+    "text": "אֲנִי רוֹצָה לְהַזְמִין קָפֶה וְעוּגָה, בְּבַקָּשָׁה.",
+    "name": false,
+    "reason": ""
+   },
+   {
+    "in": "איפה התחנה המרכזית? אני צריך להגיע לירושלים לפני השקיעה.",
+    "text": "אֵיפֹה הַתַּחֲנָה הַמֶּרְכָּזִית? אֲנִי צָרִיךְ לְהַגִּיעַ לִירוּשָׁלַיִם לִפְנֵי הַשְּׁקִיעָה.",
+    "name": false,
+    "reason": ""
+   },
+   {
+    "in": "ברוך אתה יהוה אלהינו מלך העולם",
+    "text": "בָּרוּךְ אַתָּה ה׳ אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם",
+    "name": true,
+    "reason": ""
+   },
+   {
+    "in": "בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים",
+    "text": "בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים",
+    "name": false,
+    "reason": "cantillation"
+   }
+  ]
+ },
+ "phonemes": {
+  "bytes": 307850928,
+  "MiB": 293.6,
+  "parts": 19,
+  "loadMs": 1389,
+  "backend": "wasm",
+  "msPerLine": 439,
+  "lines": [
+   {
+    "in": "שלום, מה שלומך היום?",
+    "text": "שָׁלוֹם, מָה שְׁלוֹמְךָ הַיּוֹם?",
+    "phonemes": "ʃaˈlom, ma ʃlomˈχa haˈjom?",
+    "name": false,
+    "reason": ""
+   },
+   {
+    "in": "אני רוצה להזמין קפה ועוגה, בבקשה.",
+    "text": "אֲנִי רוֹצָה לְהַזְמִין קָפֶה וְעוּגָה, בְּבַקָּשָׁה.",
+    "phonemes": "ʔaˈni ʁoˈtsa lehazˈmin kaˈfe veʔuˈɡa, bevakaˈʃa.",
+    "name": false,
+    "reason": ""
+   },
+   {
+    "in": "איפה התחנה המרכזית? אני צריך להגיע לירושלים לפני השקיעה.",
+    "text": "אֵיפֹה הַתַּחֲנָה הַמֶּרְכָּזִית? אֲנִי צָרִיךְ לְהַגִּיעַ לִירוּשָׁלַיִם לִפְנֵי הַשְּׁקִיעָה.",
+    "phonemes": "ʔeˈfo hataχaˈna hameʁkaˈzit? ʔaˈni tsaˈʁiχ lehaˈɡia liʁuʃaˈlajim lifˈne haʃkiˈʔa.",
+    "name": false,
+    "reason": ""
+   },
+   {
+    "in": "ברוך אתה יהוה אלהינו מלך העולם",
+    "text": "ברוך אתה ה׳ אלהינו מלך העולם",
+    "name": true,
+    "reason": "name"
+   },
+   {
+    "in": "בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים",
+    "text": "בְּרֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים",
+    "phonemes": "beʁeˈʃit baˈʁa ʔeloˈhim",
+    "name": false,
+    "reason": ""
+   }
+  ]
+ }
+}

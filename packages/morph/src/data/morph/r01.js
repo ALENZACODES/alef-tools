@@ -1,0 +1,1 @@
+export default {"schema":"alef.morph.unit/1","unit":"r01","words":{"שב":[{"l":"שב","p":"","s":"VERB","g":"m","n":"sg","r":"2","t":"command","d":"h842147e5","how":"exact"}]},"entries":{"h842147e5":{"he":"שָׁב","en":"to return","pos":"verb","gender":null,"root":"שׁ־ו־ב","binyan":"pa'al","rootChecked":false}}};

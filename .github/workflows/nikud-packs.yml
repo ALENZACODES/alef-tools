@@ -1,0 +1,53 @@
+name: nikud-packs
+# Builds the two language packs of packages/nikud from the pinned Hub revisions and keeps them as a workflow artifact:
+# for each pack a pack.json and parts of at most 16 MiB. Nothing is published from here. A person copies the two folders to
+# the pack host (alef-packs: nikud/ and phonemes/) and then marks the packs published in models.manifest.json.
+# It also says whether the lists it built are the ones recorded in packages/nikud/packs/ (same bytes, same SHA-256).
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/nikud-packs.yml', 'packages/nikud/scripts/export_menaked.py', 'packages/nikud/scripts/requirements.txt']
+permissions:
+  contents: read
+concurrency:
+  group: nikud-packs-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with: { node-version: 22 }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with: { python-version: '3.13' }
+      - name: Conversion tools (pinned; torch from the CPU index)
+        run: |
+          python -m pip install --disable-pip-version-check --index-url https://download.pytorch.org/whl/cpu "$(grep '^torch==' packages/nikud/scripts/requirements.txt)"
+          grep -v '^torch==' packages/nikud/scripts/requirements.txt > /tmp/req.txt
+          python -m pip install --disable-pip-version-check -r /tmp/req.txt
+      - name: Vowel marks pack (DictaBERT-large-char-menaked, pinned revision, 8-bit)
+        run: |
+          python packages/nikud/scripts/export_menaked.py --download --model-dir work/menaked --out work/build --variants int8
+          rm -rf work/menaked
+          node scripts/sha256-parts.mjs --pack nikud --version 1 --out out/packs/nikud work/build/menaked.int8.onnx
+          cat work/build/conversion.json
+      - name: Sounds and stress pack (Phonikud ONNX, pinned revision, tool notes stripped)
+        run: |
+          python - <<'PY'
+          import importlib.util, pathlib
+          spec = importlib.util.spec_from_file_location("cc", pathlib.Path("scripts/convert-common.py")); cc = importlib.util.module_from_spec(spec); spec.loader.exec_module(cc)
+          d = cc.snapshot("Phonikud/phonikud-onnx", "work/phonikud", allow_patterns=["phonikud-1.0.int8.onnx"])
+          cc.strip_onnx_metadata(pathlib.Path(d) / "phonikud-1.0.int8.onnx", "work/build/phonikud.int8.onnx")
+          PY
+          node scripts/sha256-parts.mjs --pack phonemes --version 1 --out out/packs/phonemes work/build/phonikud.int8.onnx
+      - name: Same as the recorded lists?
+        run: |
+          for p in nikud phonemes; do
+            if cmp -s "out/packs/$p/pack.json" "packages/nikud/packs/$p.pack.json"; then echo "$p: identical to packages/nikud/packs/$p.pack.json";
+            else echo "::warning::$p: the list built here differs from packages/nikud/packs/$p.pack.json (publish the list from this run with its own parts)"; fi
+          done
+          du -sb out/packs/*
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with: { name: nikud-packs, path: out/packs, retention-days: 30, compression-level: 0, if-no-files-found: error }

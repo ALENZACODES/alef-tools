@@ -1,0 +1,928 @@
+{
+ "set": "fleurs-he_il-dev",
+ "subset": "all",
+ "lines": 327,
+ "linesWithNoSpeech": 1,
+ "model": "pron-check pack (model.q4.onnx, 198.6 MiB)",
+ "margin": -6,
+ "dropMargin": -30,
+ "clean": {
+  "letters": 15390,
+  "marked": 739,
+  "falseAlarmRate": 0.048,
+  "linesNotScored": 0
+ },
+ "near": {
+  "wrongLetters": 1663,
+  "rightLetters": 13727,
+  "precision": 0.6652,
+  "recall": 0.8316,
+  "f1": 0.7392
+ },
+ "far": {
+  "wrongLetters": 1807,
+  "rightLetters": 13583,
+  "precision": 0.7052,
+  "recall": 0.9054,
+  "f1": 0.7928
+ },
+ "plainReading": {
+  "cer": 0.2259,
+  "wer": 0.5764
+ },
+ "sweep": [
+  {
+   "margin": -12,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0114,
+   "nearF1": 0.3451,
+   "farF1": 0.602
+  },
+  {
+   "margin": -12,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.0117,
+   "nearF1": 0.3453,
+   "farF1": 0.6016
+  },
+  {
+   "margin": -12,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0121,
+   "nearF1": 0.3454,
+   "farF1": 0.6008
+  },
+  {
+   "margin": -12,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0138,
+   "nearF1": 0.3427,
+   "farF1": 0.6006
+  },
+  {
+   "margin": -12,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.018,
+   "nearF1": 0.3368,
+   "farF1": 0.5968
+  },
+  {
+   "margin": -12,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0243,
+   "nearF1": 0.3325,
+   "farF1": 0.5819
+  },
+  {
+   "margin": -12,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0325,
+   "nearF1": 0.3328,
+   "farF1": 0.577
+  },
+  {
+   "margin": -12,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.0421,
+   "nearF1": 0.3312,
+   "farF1": 0.5738
+  },
+  {
+   "margin": -12,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.052,
+   "nearF1": 0.3353,
+   "farF1": 0.5879
+  },
+  {
+   "margin": -12,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0648,
+   "nearF1": 0.3646,
+   "farF1": 0.6023
+  },
+  {
+   "margin": -10,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0204,
+   "nearF1": 0.5692,
+   "farF1": 0.7497
+  },
+  {
+   "margin": -10,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.0207,
+   "nearF1": 0.5689,
+   "farF1": 0.7494
+  },
+  {
+   "margin": -10,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0209,
+   "nearF1": 0.569,
+   "farF1": 0.7487
+  },
+  {
+   "margin": -10,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0224,
+   "nearF1": 0.5658,
+   "farF1": 0.7476
+  },
+  {
+   "margin": -10,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0259,
+   "nearF1": 0.5561,
+   "farF1": 0.7419
+  },
+  {
+   "margin": -10,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0312,
+   "nearF1": 0.5465,
+   "farF1": 0.7286
+  },
+  {
+   "margin": -10,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0385,
+   "nearF1": 0.5394,
+   "farF1": 0.7187
+  },
+  {
+   "margin": -10,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.047,
+   "nearF1": 0.5287,
+   "farF1": 0.7088
+  },
+  {
+   "margin": -10,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0561,
+   "nearF1": 0.5185,
+   "farF1": 0.7052
+  },
+  {
+   "margin": -10,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0678,
+   "nearF1": 0.5192,
+   "farF1": 0.6968
+  },
+  {
+   "margin": -9,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0264,
+   "nearF1": 0.659,
+   "farF1": 0.7877
+  },
+  {
+   "margin": -9,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.0268,
+   "nearF1": 0.6586,
+   "farF1": 0.7874
+  },
+  {
+   "margin": -9,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0269,
+   "nearF1": 0.6586,
+   "farF1": 0.7868
+  },
+  {
+   "margin": -9,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0281,
+   "nearF1": 0.6554,
+   "farF1": 0.7856
+  },
+  {
+   "margin": -9,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0311,
+   "nearF1": 0.6473,
+   "farF1": 0.781
+  },
+  {
+   "margin": -9,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0361,
+   "nearF1": 0.6373,
+   "farF1": 0.7697
+  },
+  {
+   "margin": -9,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0426,
+   "nearF1": 0.6266,
+   "farF1": 0.7597
+  },
+  {
+   "margin": -9,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.05,
+   "nearF1": 0.6137,
+   "farF1": 0.7494
+  },
+  {
+   "margin": -9,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0583,
+   "nearF1": 0.6013,
+   "farF1": 0.7426
+  },
+  {
+   "margin": -9,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0699,
+   "nearF1": 0.5924,
+   "farF1": 0.727
+  },
+  {
+   "margin": -8,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0329,
+   "nearF1": 0.7016,
+   "farF1": 0.7953
+  },
+  {
+   "margin": -8,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.0332,
+   "nearF1": 0.7014,
+   "farF1": 0.7952
+  },
+  {
+   "margin": -8,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0333,
+   "nearF1": 0.7013,
+   "farF1": 0.7945
+  },
+  {
+   "margin": -8,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0346,
+   "nearF1": 0.6983,
+   "farF1": 0.7934
+  },
+  {
+   "margin": -8,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0371,
+   "nearF1": 0.6918,
+   "farF1": 0.7909
+  },
+  {
+   "margin": -8,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0415,
+   "nearF1": 0.6824,
+   "farF1": 0.7819
+  },
+  {
+   "margin": -8,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0473,
+   "nearF1": 0.672,
+   "farF1": 0.7738
+  },
+  {
+   "margin": -8,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.0537,
+   "nearF1": 0.6608,
+   "farF1": 0.7641
+  },
+  {
+   "margin": -8,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0613,
+   "nearF1": 0.6487,
+   "farF1": 0.7555
+  },
+  {
+   "margin": -8,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0722,
+   "nearF1": 0.6348,
+   "farF1": 0.7381
+  },
+  {
+   "margin": -7,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0402,
+   "nearF1": 0.7264,
+   "farF1": 0.7982
+  },
+  {
+   "margin": -7,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.0405,
+   "nearF1": 0.7261,
+   "farF1": 0.7981
+  },
+  {
+   "margin": -7,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0405,
+   "nearF1": 0.7261,
+   "farF1": 0.7979
+  },
+  {
+   "margin": -7,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0414,
+   "nearF1": 0.7238,
+   "farF1": 0.7967
+  },
+  {
+   "margin": -7,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0432,
+   "nearF1": 0.72,
+   "farF1": 0.7953
+  },
+  {
+   "margin": -7,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.047,
+   "nearF1": 0.7132,
+   "farF1": 0.7886
+  },
+  {
+   "margin": -7,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0516,
+   "nearF1": 0.7045,
+   "farF1": 0.7832
+  },
+  {
+   "margin": -7,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.0576,
+   "nearF1": 0.6939,
+   "farF1": 0.7731
+  },
+  {
+   "margin": -7,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0643,
+   "nearF1": 0.6817,
+   "farF1": 0.7643
+  },
+  {
+   "margin": -7,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0742,
+   "nearF1": 0.6668,
+   "farF1": 0.7464
+  },
+  {
+   "margin": -6,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0478,
+   "nearF1": 0.7394,
+   "farF1": 0.7929
+  },
+  {
+   "margin": -6,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.048,
+   "nearF1": 0.7392,
+   "farF1": 0.7928
+  },
+  {
+   "margin": -6,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0481,
+   "nearF1": 0.7391,
+   "farF1": 0.7926
+  },
+  {
+   "margin": -6,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0485,
+   "nearF1": 0.7375,
+   "farF1": 0.7917
+  },
+  {
+   "margin": -6,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0499,
+   "nearF1": 0.7347,
+   "farF1": 0.79
+  },
+  {
+   "margin": -6,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0531,
+   "nearF1": 0.7297,
+   "farF1": 0.7848
+  },
+  {
+   "margin": -6,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0565,
+   "nearF1": 0.7236,
+   "farF1": 0.7812
+  },
+  {
+   "margin": -6,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.0619,
+   "nearF1": 0.7136,
+   "farF1": 0.7719
+  },
+  {
+   "margin": -6,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0685,
+   "nearF1": 0.7013,
+   "farF1": 0.7624
+  },
+  {
+   "margin": -6,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0775,
+   "nearF1": 0.6868,
+   "farF1": 0.7451
+  },
+  {
+   "margin": -5,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0569,
+   "nearF1": 0.7388,
+   "farF1": 0.7788
+  },
+  {
+   "margin": -5,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.057,
+   "nearF1": 0.7387,
+   "farF1": 0.7789
+  },
+  {
+   "margin": -5,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0571,
+   "nearF1": 0.7383,
+   "farF1": 0.7787
+  },
+  {
+   "margin": -5,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0572,
+   "nearF1": 0.7376,
+   "farF1": 0.7786
+  },
+  {
+   "margin": -5,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0582,
+   "nearF1": 0.736,
+   "farF1": 0.7772
+  },
+  {
+   "margin": -5,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0606,
+   "nearF1": 0.7329,
+   "farF1": 0.7735
+  },
+  {
+   "margin": -5,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0632,
+   "nearF1": 0.728,
+   "farF1": 0.7706
+  },
+  {
+   "margin": -5,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.0678,
+   "nearF1": 0.7203,
+   "farF1": 0.7634
+  },
+  {
+   "margin": -5,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0736,
+   "nearF1": 0.7088,
+   "farF1": 0.7535
+  },
+  {
+   "margin": -5,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0817,
+   "nearF1": 0.6954,
+   "farF1": 0.7376
+  },
+  {
+   "margin": -4,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0669,
+   "nearF1": 0.7305,
+   "farF1": 0.7686
+  },
+  {
+   "margin": -4,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.067,
+   "nearF1": 0.7304,
+   "farF1": 0.7687
+  },
+  {
+   "margin": -4,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0671,
+   "nearF1": 0.7301,
+   "farF1": 0.7685
+  },
+  {
+   "margin": -4,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0671,
+   "nearF1": 0.7296,
+   "farF1": 0.7684
+  },
+  {
+   "margin": -4,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0676,
+   "nearF1": 0.729,
+   "farF1": 0.7676
+  },
+  {
+   "margin": -4,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0693,
+   "nearF1": 0.7266,
+   "farF1": 0.7654
+  },
+  {
+   "margin": -4,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0712,
+   "nearF1": 0.7224,
+   "farF1": 0.7634
+  },
+  {
+   "margin": -4,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.0748,
+   "nearF1": 0.7171,
+   "farF1": 0.757
+  },
+  {
+   "margin": -4,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0797,
+   "nearF1": 0.7069,
+   "farF1": 0.7478
+  },
+  {
+   "margin": -4,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0869,
+   "nearF1": 0.6949,
+   "farF1": 0.7318
+  },
+  {
+   "margin": -3,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0782,
+   "nearF1": 0.7164,
+   "farF1": 0.7522
+  },
+  {
+   "margin": -3,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.0784,
+   "nearF1": 0.716,
+   "farF1": 0.7523
+  },
+  {
+   "margin": -3,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0784,
+   "nearF1": 0.7157,
+   "farF1": 0.7521
+  },
+  {
+   "margin": -3,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.0785,
+   "nearF1": 0.7154,
+   "farF1": 0.752
+  },
+  {
+   "margin": -3,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0788,
+   "nearF1": 0.7152,
+   "farF1": 0.7513
+  },
+  {
+   "margin": -3,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0796,
+   "nearF1": 0.7145,
+   "farF1": 0.7506
+  },
+  {
+   "margin": -3,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0808,
+   "nearF1": 0.7124,
+   "farF1": 0.7487
+  },
+  {
+   "margin": -3,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.0834,
+   "nearF1": 0.7087,
+   "farF1": 0.7441
+  },
+  {
+   "margin": -3,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0869,
+   "nearF1": 0.7009,
+   "farF1": 0.7377
+  },
+  {
+   "margin": -3,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.0925,
+   "nearF1": 0.6907,
+   "farF1": 0.7251
+  },
+  {
+   "margin": -2,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.0908,
+   "nearF1": 0.6953,
+   "farF1": 0.7303
+  },
+  {
+   "margin": -2,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.0908,
+   "nearF1": 0.6953,
+   "farF1": 0.7303
+  },
+  {
+   "margin": -2,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.0909,
+   "nearF1": 0.6951,
+   "farF1": 0.7301
+  },
+  {
+   "margin": -2,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.091,
+   "nearF1": 0.6948,
+   "farF1": 0.73
+  },
+  {
+   "margin": -2,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.0912,
+   "nearF1": 0.6945,
+   "farF1": 0.7298
+  },
+  {
+   "margin": -2,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.0916,
+   "nearF1": 0.6945,
+   "farF1": 0.7292
+  },
+  {
+   "margin": -2,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.0925,
+   "nearF1": 0.6931,
+   "farF1": 0.7279
+  },
+  {
+   "margin": -2,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.0939,
+   "nearF1": 0.6901,
+   "farF1": 0.7253
+  },
+  {
+   "margin": -2,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.0964,
+   "nearF1": 0.6849,
+   "farF1": 0.7205
+  },
+  {
+   "margin": -2,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.1006,
+   "nearF1": 0.6784,
+   "farF1": 0.7116
+  },
+  {
+   "margin": -1,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.1071,
+   "nearF1": 0.6724,
+   "farF1": 0.7009
+  },
+  {
+   "margin": -1,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.1071,
+   "nearF1": 0.6724,
+   "farF1": 0.7009
+  },
+  {
+   "margin": -1,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.1071,
+   "nearF1": 0.6724,
+   "farF1": 0.7009
+  },
+  {
+   "margin": -1,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.1072,
+   "nearF1": 0.6721,
+   "farF1": 0.7009
+  },
+  {
+   "margin": -1,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.1072,
+   "nearF1": 0.672,
+   "farF1": 0.7009
+  },
+  {
+   "margin": -1,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.1074,
+   "nearF1": 0.6718,
+   "farF1": 0.7005
+  },
+  {
+   "margin": -1,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.1075,
+   "nearF1": 0.6717,
+   "farF1": 0.7003
+  },
+  {
+   "margin": -1,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.1084,
+   "nearF1": 0.67,
+   "farF1": 0.6988
+  },
+  {
+   "margin": -1,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.1099,
+   "nearF1": 0.6669,
+   "farF1": 0.6961
+  },
+  {
+   "margin": -1,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.1129,
+   "nearF1": 0.662,
+   "farF1": 0.6897
+  },
+  {
+   "margin": 0,
+   "dropMargin": "never",
+   "falseAlarmRate": 0.1233,
+   "nearF1": 0.6455,
+   "farF1": 0.6705
+  },
+  {
+   "margin": 0,
+   "dropMargin": -30,
+   "falseAlarmRate": 0.1233,
+   "nearF1": 0.6455,
+   "farF1": 0.6705
+  },
+  {
+   "margin": 0,
+   "dropMargin": -24,
+   "falseAlarmRate": 0.1233,
+   "nearF1": 0.6455,
+   "farF1": 0.6705
+  },
+  {
+   "margin": 0,
+   "dropMargin": -20,
+   "falseAlarmRate": 0.1233,
+   "nearF1": 0.6453,
+   "farF1": 0.6705
+  },
+  {
+   "margin": 0,
+   "dropMargin": -16,
+   "falseAlarmRate": 0.1233,
+   "nearF1": 0.6453,
+   "farF1": 0.6705
+  },
+  {
+   "margin": 0,
+   "dropMargin": -14,
+   "falseAlarmRate": 0.1234,
+   "nearF1": 0.6453,
+   "farF1": 0.6704
+  },
+  {
+   "margin": 0,
+   "dropMargin": -12,
+   "falseAlarmRate": 0.1235,
+   "nearF1": 0.6451,
+   "farF1": 0.6703
+  },
+  {
+   "margin": 0,
+   "dropMargin": -10,
+   "falseAlarmRate": 0.124,
+   "nearF1": 0.6442,
+   "farF1": 0.6694
+  },
+  {
+   "margin": 0,
+   "dropMargin": -8,
+   "falseAlarmRate": 0.125,
+   "nearF1": 0.6423,
+   "farF1": 0.6683
+  },
+  {
+   "margin": 0,
+   "dropMargin": -6,
+   "falseAlarmRate": 0.1273,
+   "nearF1": 0.6392,
+   "farF1": 0.6637
+  }
+ ],
+ "shippedDefaultsOnHeldOut": {
+  "margin": -6,
+  "dropMargin": -30,
+  "heldOut": "odd lines",
+  "clean": {
+   "letters": 7809,
+   "marked": 372,
+   "falseAlarmRate": 0.0476,
+   "linesNotScored": 0
+  },
+  "near": {
+   "wrongLetters": 825,
+   "rightLetters": 6984,
+   "precision": 0.6728,
+   "recall": 0.8473,
+   "f1": 0.75
+  },
+  "far": {
+   "wrongLetters": 929,
+   "rightLetters": 6880,
+   "precision": 0.7069,
+   "recall": 0.9139,
+   "f1": 0.7972
+  }
+ },
+ "calibrated": {
+  "chosenOn": "even lines",
+  "margin": -5,
+  "dropMargin": "never",
+  "heldOut": "odd lines",
+  "clean": {
+   "letters": 7809,
+   "marked": 441,
+   "falseAlarmRate": 0.0565,
+   "linesNotScored": 0
+  },
+  "near": {
+   "wrongLetters": 825,
+   "rightLetters": 6984,
+   "precision": 0.6424,
+   "recall": 0.8861,
+   "f1": 0.7448
+  },
+  "far": {
+   "wrongLetters": 929,
+   "rightLetters": 6880,
+   "precision": 0.6742,
+   "recall": 0.9333,
+   "f1": 0.7828
+  }
+ },
+ "how": "Recordings read correctly by native speakers; letters of the EXPECTED text were changed (near = a sound learners confuse, far = any other consonant) and the check should mark exactly those. A stand-in for learner mistakes, not a measurement of them. See scripts/eval-pron.mjs.",
+ "thresholds": "margin chosen on the even-numbered lines with the 8-bit model; dropMargin set by hand after that sweep showed \"no letter here\" alone should not mark a letter. shippedDefaultsOnHeldOut is the odd-numbered lines."
+}

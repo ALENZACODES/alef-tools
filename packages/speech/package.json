@@ -1,0 +1,14 @@
+{
+  "name": "@alef-tools/speech",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hebrew listening on the device for ALEF: speech to text and a letter-by-letter pronunciation check",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "exports": { ".": "./dist/index.js" },
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\""
+  },
+  "alef": { "firstInstall": [] }
+}

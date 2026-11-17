@@ -1,0 +1,17 @@
+{
+  "name": "@alef-tools/nikud",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Vowel marks (nikud) and a sound line for any Hebrew text on the device, plus build-time nikud for the app's own sentences",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\""
+  },
+  "alef": {
+    "firstInstall": []
+  }
+}

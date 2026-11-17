@@ -1,0 +1,17 @@
+{
+ "schema": "alef.dist.v1",
+ "name": "ocr-fix",
+ "version": "0.1.0",
+ "files": [
+  {
+   "path": "correct.js",
+   "bytes": 9308,
+   "sha256": "4f9dd3a5017466a474003a467346a3f3f1b20301a484f04043aa035fc4ebd6c3"
+  },
+  {
+   "path": "index.js",
+   "bytes": 1311,
+   "sha256": "8bb207c058310308377b7fd57fc238a06e1fe27a446a767a15b8fda55ff72944"
+  }
+ ]
+}

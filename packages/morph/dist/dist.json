@@ -1,0 +1,947 @@
+{
+ "schema": "alef.dist.v1",
+ "name": "morph",
+ "version": "0.1.0",
+ "files": [
+  {
+   "path": "data/morph/I-01.js",
+   "bytes": 5274,
+   "sha256": "0cda1e19d912a05545308c2d365c0aa2e422aad096e7ae1def59587dc97cffec"
+  },
+  {
+   "path": "data/morph/I-02.js",
+   "bytes": 15800,
+   "sha256": "3666b5489d829391207a9869d14d1b050b973ea74cd7de9118b9a628695379d0"
+  },
+  {
+   "path": "data/morph/I-03.js",
+   "bytes": 24932,
+   "sha256": "2dd8839cc7a93c9924a5d71081637d9da99b8e5af6444cd4d3254ed46a3a35d8"
+  },
+  {
+   "path": "data/morph/I-04.js",
+   "bytes": 11443,
+   "sha256": "1c8e31f17b9f976b8c3b86802f9563f2176ad320336e5190e1246213d40b465c"
+  },
+  {
+   "path": "data/morph/I-05.js",
+   "bytes": 22421,
+   "sha256": "243371c91cb339c67b9eb53a602ee7b70b9c487dae6d942a23162b9f629ec4af"
+  },
+  {
+   "path": "data/morph/I-06.js",
+   "bytes": 17155,
+   "sha256": "594471218879334ec37fc627fe681aa9db269f943da2b7cd7d9e5e3fc110f581"
+  },
+  {
+   "path": "data/morph/I-07.js",
+   "bytes": 13937,
+   "sha256": "81c60a8789395511cecbd531edd2724a248605a1aed5451bf93de66a5b99b621"
+  },
+  {
+   "path": "data/morph/I-08.js",
+   "bytes": 14750,
+   "sha256": "b282a5d009fc9c151e2f6275598c3a81bbc1ec4bb6a4b926098f0312199e6fec"
+  },
+  {
+   "path": "data/morph/I-09.js",
+   "bytes": 31776,
+   "sha256": "9f00eca846063689b4ca887a5252a40bde0865fccf68c82606fd693a47ed24ee"
+  },
+  {
+   "path": "data/morph/I-10.js",
+   "bytes": 10683,
+   "sha256": "e6f7553d946d8da4e8f9460a154def0c6194ab3a7061e57e66fc8ec42126bb1f"
+  },
+  {
+   "path": "data/morph/I-11.js",
+   "bytes": 9692,
+   "sha256": "2fec5afb495820e4bdea26f7ba8e43451605ab908b3ddd96d71477fa0c5d2162"
+  },
+  {
+   "path": "data/morph/I-12.js",
+   "bytes": 9313,
+   "sha256": "f80b0c4c664138f316f9843fd157dd08b37fec67195111b5d9f447fa3fbed965"
+  },
+  {
+   "path": "data/morph/I-13.js",
+   "bytes": 9194,
+   "sha256": "a7ec9f54146874b12fd521bd41a0e42eeebde164cf27fb678c5feddac81ed61a"
+  },
+  {
+   "path": "data/morph/I-14.js",
+   "bytes": 9224,
+   "sha256": "c6e3ad38115054859e78ef2066148cc031aa7e0fb3de0af97eec6d6931abbe86"
+  },
+  {
+   "path": "data/morph/I-15.js",
+   "bytes": 9257,
+   "sha256": "6bf2a2f7499eca1b2e9b815049db8416a84eea710c3861609042aed3ceb1918a"
+  },
+  {
+   "path": "data/morph/I-16.js",
+   "bytes": 7899,
+   "sha256": "9932a625c4f360a70a00e15b4cc12a9044493ffdd0014e777cf75e1d5941e768"
+  },
+  {
+   "path": "data/morph/I-17.js",
+   "bytes": 8892,
+   "sha256": "8279dcf50530cf9cb268977dc41e12bdc5f918eb57f8b415534b14238e35e782"
+  },
+  {
+   "path": "data/morph/I-18.js",
+   "bytes": 7044,
+   "sha256": "8c7891408057d4f38ff8da3ce8b0bd81a97e62567271c610defcae9ecc83abb4"
+  },
+  {
+   "path": "data/morph/I-19.js",
+   "bytes": 10470,
+   "sha256": "d54b586b003426d65602c15737bdb98c3768014c9ea9082a99770c5ea29ad36d"
+  },
+  {
+   "path": "data/morph/I-20.js",
+   "bytes": 8813,
+   "sha256": "a7188607f8022c2a1f878830a9665eb8a960d606dbdd54a258628c00b13a7635"
+  },
+  {
+   "path": "data/morph/I-21.js",
+   "bytes": 8337,
+   "sha256": "a7a06e9b29994fece8de95f67d7d2409c24a497caa8640257f2943eca50cd194"
+  },
+  {
+   "path": "data/morph/I-22.js",
+   "bytes": 7612,
+   "sha256": "3d1b7d40c3e0750ee553e5d4cd825642cbb563b10e6b703ff0bc64b4c005320a"
+  },
+  {
+   "path": "data/morph/I-23.js",
+   "bytes": 7737,
+   "sha256": "44c7a2b4855b3a3e7b9d59e35a43de00566701fc46a572affbc8f4805123ef92"
+  },
+  {
+   "path": "data/morph/I-24.js",
+   "bytes": 6582,
+   "sha256": "bd2fd780981fcb4e2ec0d4eece92a3be1cf16d7acddb4b4e189b913292982fbd"
+  },
+  {
+   "path": "data/morph/I-25.js",
+   "bytes": 11255,
+   "sha256": "5f9491e4fcdd21778a2fcf00987298e550a131fc3226c3b9c180b42e03b2e522"
+  },
+  {
+   "path": "data/morph/I-26.js",
+   "bytes": 40728,
+   "sha256": "4893bfc8a360e9476076a2d14d346b69c8d9613acb3e561e58bc3756f719576e"
+  },
+  {
+   "path": "data/morph/I-27.js",
+   "bytes": 26317,
+   "sha256": "7864a54265d66ae93a5cc1cff2c407871acfc3679be126e46e47dc9cd9861190"
+  },
+  {
+   "path": "data/morph/I-28.js",
+   "bytes": 25949,
+   "sha256": "821cb4eeb2abad7734914ceae067092c51e498cfbcf8b5f849ea0bc6136102ae"
+  },
+  {
+   "path": "data/morph/I-29.js",
+   "bytes": 16349,
+   "sha256": "f3bb1aa69b7a91cce469f02dbbeb6fbd72b0c8333c3eb2b6c97e9d38b8bbceb9"
+  },
+  {
+   "path": "data/morph/I-30.js",
+   "bytes": 11444,
+   "sha256": "7d5d13dcf39029caa18b962b04eb04dc602aaa50d14d552479d97da42ed342dc"
+  },
+  {
+   "path": "data/morph/I-31.js",
+   "bytes": 6496,
+   "sha256": "f73cb95c1f886bb5a06788a6f9f922a5002b0906df4e189ec561d1efae98339a"
+  },
+  {
+   "path": "data/morph/I-32.js",
+   "bytes": 16099,
+   "sha256": "8b8d99dc0af06ca44ac7052bacafec7e68304ba6fb6584f53adaa9d929d1a982"
+  },
+  {
+   "path": "data/morph/I-33.js",
+   "bytes": 16171,
+   "sha256": "c8b6f256f2102ac0dc1784772840398c6cffeb67389b85276cf89a02bd3f1036"
+  },
+  {
+   "path": "data/morph/I-34.js",
+   "bytes": 10955,
+   "sha256": "0979e726f80f14cdb038a38a6b5c12a3d71dc9cb6b1d575c1e615541a20340fc"
+  },
+  {
+   "path": "data/morph/I-35.js",
+   "bytes": 14754,
+   "sha256": "12a76a73ba63101109483ded91b1ce994c0270cbc6f483c34f59a89b09f1bdfe"
+  },
+  {
+   "path": "data/morph/I-36.js",
+   "bytes": 9149,
+   "sha256": "e8a527551e2ade499ace7a8897001b4ab00ff17e18e42a33c8c534fe6a4b4ff9"
+  },
+  {
+   "path": "data/morph/I-37.js",
+   "bytes": 5802,
+   "sha256": "25e7c897e1675f8872a0d82be045f2bfd216cd944df721ac2eaaaa31d01399d1"
+  },
+  {
+   "path": "data/morph/I-38.js",
+   "bytes": 5914,
+   "sha256": "9949b92cbdd3feeb1fe07ffb0df3bc8afbfc339ab6a98b2ecd007f64c67fd1da"
+  },
+  {
+   "path": "data/morph/I-39.js",
+   "bytes": 6807,
+   "sha256": "dc74894c06a2bff385a1bf640d49ec532799468f17f6b17415a9e12e62f12d20"
+  },
+  {
+   "path": "data/morph/I-40.js",
+   "bytes": 7096,
+   "sha256": "2e0bb44deee134c850dd1ac9f7753f81b05d953e54290275aecd9f25ea8461f7"
+  },
+  {
+   "path": "data/morph/I-41.js",
+   "bytes": 4167,
+   "sha256": "852f0b5f037e5af141159ba5b8bead20e4a77e52c2512145286c6ecccc2e920c"
+  },
+  {
+   "path": "data/morph/I-42.js",
+   "bytes": 5577,
+   "sha256": "a680860c7175aceaead08cd2a716a0385c773c74075d223a20575e011cf88986"
+  },
+  {
+   "path": "data/morph/I-43.js",
+   "bytes": 6093,
+   "sha256": "0b5d7ba5d58080fd3afb8ed3375aa78dbb9adf57dbeac9cccbd1633c7f0afccb"
+  },
+  {
+   "path": "data/morph/I-44.js",
+   "bytes": 6097,
+   "sha256": "4235cd10adbd93c858dbaa585ce0aea704d933fbf7b470e0ec43a70d5e9d6d76"
+  },
+  {
+   "path": "data/morph/I-45.js",
+   "bytes": 7035,
+   "sha256": "62bb7e98632111d3279db84037bf5efb3982ba9761d36284779f5c9a6ac9f624"
+  },
+  {
+   "path": "data/morph/I-46.js",
+   "bytes": 7048,
+   "sha256": "fc4022c3314abb7ca5ffa53741ec0dd7efd2da04042b62f92ec02e1194725c87"
+  },
+  {
+   "path": "data/morph/I-47.js",
+   "bytes": 5159,
+   "sha256": "73a859af0327e4803bc104c704562246523e5ffac681d505228bead837036653"
+  },
+  {
+   "path": "data/morph/I-48.js",
+   "bytes": 4721,
+   "sha256": "b193b8a0e9f2e92b1ec9c4d8bb5561c1064ff9e56aa64e737d5b9c9313fd9f8c"
+  },
+  {
+   "path": "data/morph/I-49.js",
+   "bytes": 4328,
+   "sha256": "214db76c35404fd2fade753908cd79e2466619e35622d6a8983c4ad7a4812932"
+  },
+  {
+   "path": "data/morph/I-50.js",
+   "bytes": 5065,
+   "sha256": "372a0cf605405ae3a9c8b41a44c356d5a818619ccdd401af0a8b67e83beaf5dd"
+  },
+  {
+   "path": "data/morph/d-cafe.js",
+   "bytes": 4910,
+   "sha256": "e41c35ca0e72f660c876deac005181c497c0ca8681f9824db62773dce843e24c"
+  },
+  {
+   "path": "data/morph/d-directions.js",
+   "bytes": 3532,
+   "sha256": "51531b466d7f8c4e20dedb3a76a5c20439b6f6b5415131fc14b043b0d7ba1969"
+  },
+  {
+   "path": "data/morph/d-hotel.js",
+   "bytes": 5072,
+   "sha256": "96acbb1d362b32a66fd446087b726d623e25bb272a71a2c1633c91948c54c4c2"
+  },
+  {
+   "path": "data/morph/d-restaurant.js",
+   "bytes": 4224,
+   "sha256": "c20152c6cc462890427824b99feea8954668e0d7fc997c19530d8af96ba866c1"
+  },
+  {
+   "path": "data/morph/d-shop.js",
+   "bytes": 5706,
+   "sha256": "4f2ca09398aba02d9b32eb47278f8c66209107b14315c58f8f42340dac18d131"
+  },
+  {
+   "path": "data/morph/d-smalltalk.js",
+   "bytes": 4684,
+   "sha256": "bc643c34cc2696345de604bd871d1247af802845af7f91cf0d9c614e2adb98d8"
+  },
+  {
+   "path": "data/morph/d-taxi.js",
+   "bytes": 5025,
+   "sha256": "444e1dad809d020d53614625d1edd82623fba3ffac675ff011ac3fbda21d96a8"
+  },
+  {
+   "path": "data/morph/il01.js",
+   "bytes": 1785,
+   "sha256": "cb3255f9fadd387055c862854fb48d56909e1e55b61d860a00c27559f182b465"
+  },
+  {
+   "path": "data/morph/il02.js",
+   "bytes": 1168,
+   "sha256": "a3c4a2958d91370c274310c55c25f1a76a20f14a38c4f9dff2f2b760a1048514"
+  },
+  {
+   "path": "data/morph/il03.js",
+   "bytes": 1265,
+   "sha256": "dd43991cb6518c52fc6ae96462bf1a2215fa84bb4703c4fbe9b3eb2565f3489f"
+  },
+  {
+   "path": "data/morph/il04.js",
+   "bytes": 1891,
+   "sha256": "4f67a1b8d58e97e05a639f9d880a9944c7949ea2c22a35e4fa06d2b9afd0b01f"
+  },
+  {
+   "path": "data/morph/il05.js",
+   "bytes": 1051,
+   "sha256": "04ed07c109a0f387146725cbc5188c7c8eab59e5381fd84e4b96a4c0eacf6ec6"
+  },
+  {
+   "path": "data/morph/il06.js",
+   "bytes": 1486,
+   "sha256": "bb1c7bb15fa6e2565380887a8f267ab4ac24daa157f5168524d8d1a6f27298fa"
+  },
+  {
+   "path": "data/morph/il07.js",
+   "bytes": 1375,
+   "sha256": "5292a3a21d409d912a322a1a54d304658bf08896d32971c58905a49e70426a59"
+  },
+  {
+   "path": "data/morph/il08.js",
+   "bytes": 1778,
+   "sha256": "7bb8d2d1407014db02391f14e8ca206c24bbcd11416cb9f72583b8310a54f244"
+  },
+  {
+   "path": "data/morph/il09.js",
+   "bytes": 1462,
+   "sha256": "c7896c3a38f93531e6fd737163d672009c8f209b29f2b2715c99845aa13c7d57"
+  },
+  {
+   "path": "data/morph/il10.js",
+   "bytes": 1549,
+   "sha256": "b20fc5691e25e64c208506ee87272d0209a4867d10c3630b8e17f2cca92aedbd"
+  },
+  {
+   "path": "data/morph/il11.js",
+   "bytes": 1191,
+   "sha256": "87f5028f1f373aac9902a507c5d53ac484d2a16087efd551ccba98d27ab66cc8"
+  },
+  {
+   "path": "data/morph/il12.js",
+   "bytes": 1526,
+   "sha256": "2bb9009c11634d45aabc56c261248f29e83c6cbca421760a7591e6ee413d2362"
+  },
+  {
+   "path": "data/morph/il13.js",
+   "bytes": 1920,
+   "sha256": "9b17df7efb0748ee6a5e012bf4f72dde021033a7b90cdf609c590e95c01a4206"
+  },
+  {
+   "path": "data/morph/il14.js",
+   "bytes": 1413,
+   "sha256": "5029a779768b532515fd6e51771ed1d20376b1df9568c9f3a5f65b6f7f60e35b"
+  },
+  {
+   "path": "data/morph/il15.js",
+   "bytes": 1363,
+   "sha256": "9386141e96988b347e2905da0b845f97ec1bc9924e98dfa25c1049f6ef14dbe0"
+  },
+  {
+   "path": "data/morph/il16.js",
+   "bytes": 1572,
+   "sha256": "9860182fc1bceb30404a82782f3ab8ccb7f37ebd51653ccf44e9313acfdd1a13"
+  },
+  {
+   "path": "data/morph/il17.js",
+   "bytes": 1403,
+   "sha256": "6e77243d471f1b2fdee83c25c016b140bfa264d8fa857b1078d5ce25244a5083"
+  },
+  {
+   "path": "data/morph/il18.js",
+   "bytes": 2406,
+   "sha256": "e39481577bf52ff480fa3fb4d1110515697d2e854f66cadf9672f286c0b319a6"
+  },
+  {
+   "path": "data/morph/il19.js",
+   "bytes": 1298,
+   "sha256": "adee58290d2c5d873f78c8b19dbd291d435ee7e9fec43339131ffbdfa5bdd856"
+  },
+  {
+   "path": "data/morph/il20.js",
+   "bytes": 1394,
+   "sha256": "fba6a83e9d6a45e948d032021727620258d59200d8f6e4a6a5aa2cc7f2c8579d"
+  },
+  {
+   "path": "data/morph/il21.js",
+   "bytes": 1345,
+   "sha256": "ba6467d8083d4a9873b4f081f9a8e0b235862814a7268cba0dc971eb990a8b46"
+  },
+  {
+   "path": "data/morph/il22.js",
+   "bytes": 1277,
+   "sha256": "eac9337f5f299431e3650bcf4c0aa916f8d0ccec96b5d143e604899e9ec295b2"
+  },
+  {
+   "path": "data/morph/il23.js",
+   "bytes": 914,
+   "sha256": "9f09e54e7fde0ca2fd391dfff193f7052662c047f8904ef9027efa8c3bafd968"
+  },
+  {
+   "path": "data/morph/il24.js",
+   "bytes": 1505,
+   "sha256": "ae5f664430fdb72444c2b298693816a08298b90492cac64b7ae9bf8f9925044b"
+  },
+  {
+   "path": "data/morph/pu-airport-taxi.js",
+   "bytes": 3925,
+   "sha256": "c46fb9e070287de9f2e6c5ec9457f85b05eb2a749b4eadd7ae9b69572d94f0dc"
+  },
+  {
+   "path": "data/morph/pu-apartment.js",
+   "bytes": 3694,
+   "sha256": "a2c0051be8c6e2a0ed7d727c0351a3200752420e93aaaeecdb88f6ca63b432fc"
+  },
+  {
+   "path": "data/morph/pu-army.js",
+   "bytes": 3951,
+   "sha256": "9e5d5ab7e68e065ff3eb155f392324159b84551bf42f3996ad754055ac39ede4"
+  },
+  {
+   "path": "data/morph/pu-bank.js",
+   "bytes": 5445,
+   "sha256": "9ad4950423265ca89f1c2f00842672ccbedf52820c2139ed74240930c505e71a"
+  },
+  {
+   "path": "data/morph/pu-beach.js",
+   "bytes": 2859,
+   "sha256": "f018e5c6fcaa6fb7a107483b27b55b0d9211af94713469db0cb9d22ca1a4ad31"
+  },
+  {
+   "path": "data/morph/pu-cafe.js",
+   "bytes": 14821,
+   "sha256": "5069fcf10e6ab8defa15f9ae2aa40dc0c8f7d933e91bb40733d7bbef2fcaae64"
+  },
+  {
+   "path": "data/morph/pu-decide.js",
+   "bytes": 1510,
+   "sha256": "f06b1c48e75f7888d093412f8dacc0e1c65ff468362e02e42a04682c6bc65d00"
+  },
+  {
+   "path": "data/morph/pu-delivery.js",
+   "bytes": 2874,
+   "sha256": "09e6fd423cc1498551e74890157affe7f9920e1f424406d8b743b623bb3bf004"
+  },
+  {
+   "path": "data/morph/pu-directions.js",
+   "bytes": 8836,
+   "sha256": "16a0abce0993702402b0500964f9347c100754ff2886812677a9eb144643be3f"
+  },
+  {
+   "path": "data/morph/pu-driving.js",
+   "bytes": 3332,
+   "sha256": "a037152b770d5de3c099fc18e4cc1e7fbc0212ff7c0f2e7bfce53ccbb3ee1dfd"
+  },
+  {
+   "path": "data/morph/pu-emergencies.js",
+   "bytes": 7384,
+   "sha256": "d5c8cd2293927a6619064fa398f14daf5657f4e6e473f796ab9ed661248e18bd"
+  },
+  {
+   "path": "data/morph/pu-family.js",
+   "bytes": 3447,
+   "sha256": "239b7de5a2957f04f953b3b33db632cfb3deb905ec3ac2f47766a1885ed00540"
+  },
+  {
+   "path": "data/morph/pu-fillers.js",
+   "bytes": 8802,
+   "sha256": "b3bcb8b4111b469cf1c916b6307f320f00dd8f44a3114a88919e931d81a37640"
+  },
+  {
+   "path": "data/morph/pu-going-out.js",
+   "bytes": 2968,
+   "sha256": "cfb8593a462fb12e1862e11dd5cc059d0a9dc1f0e5f2f809e51b58d63ccbd0bc"
+  },
+  {
+   "path": "data/morph/pu-greetings.js",
+   "bytes": 9139,
+   "sha256": "c7883d73774c3bcbddefea319b70e788ccb40b19cebd0e0b65a8bb2f33d01381"
+  },
+  {
+   "path": "data/morph/pu-health.js",
+   "bytes": 8755,
+   "sha256": "c9d490c81c420501afab751de6e51786f02eb166da4aca51c09dd5238fadf307"
+  },
+  {
+   "path": "data/morph/pu-hiking.js",
+   "bytes": 2676,
+   "sha256": "a25df2b6e50de62a46dea6422eece1a911d84ab4e712559fd13f68bfa4a39309"
+  },
+  {
+   "path": "data/morph/pu-holidays.js",
+   "bytes": 4647,
+   "sha256": "d9364cd5f040a5952254e512e13b85e58b15de51e5725cd9b956ff4e20ac09a4"
+  },
+  {
+   "path": "data/morph/pu-home.js",
+   "bytes": 3293,
+   "sha256": "2134811d0cd0e736610279c63bb657760123395e253e6fdc413f7441cf40028a"
+  },
+  {
+   "path": "data/morph/pu-hospital.js",
+   "bytes": 3918,
+   "sha256": "18100133535db9a0be9647f22dfe42d63b5758b3b11abb427c6cd599327cf5b9"
+  },
+  {
+   "path": "data/morph/pu-hotel.js",
+   "bytes": 5762,
+   "sha256": "7a9d738d5161e027fe1b95cb0cf3fc07278039fe67b57d05e79b45cc0c6b2bc8"
+  },
+  {
+   "path": "data/morph/pu-introducing.js",
+   "bytes": 1427,
+   "sha256": "59fc62b4b9566a3a0ec2b34eaa375ea9c774fa020a75e45701c0b911884f4c15"
+  },
+  {
+   "path": "data/morph/pu-news.js",
+   "bytes": 2589,
+   "sha256": "9b950948a8deb5c2dc3e93ccd820bf77e684a62fd56e0d77fc436afe3fbd853c"
+  },
+  {
+   "path": "data/morph/pu-numbers.js",
+   "bytes": 6680,
+   "sha256": "b550bd3963af75e583728bb3556266072ec5eac4a09c65fb2f2e00b8010e1117"
+  },
+  {
+   "path": "data/morph/pu-opinions.js",
+   "bytes": 1622,
+   "sha256": "e7dcfae25895736d7b51c4d6a9147a2cbb771d07b1ad05f7d216a98da8752278"
+  },
+  {
+   "path": "data/morph/pu-past.js",
+   "bytes": 1713,
+   "sha256": "fb935af0ce609be6c7875821cca3b2aa5bf9bbbb22ed41d086a4bf09734d73ec"
+  },
+  {
+   "path": "data/morph/pu-pharmacy.js",
+   "bytes": 4247,
+   "sha256": "9616f10806425cbc7b59352ac95bc9c8864d790c86c330afd9bb7f0b2b1ee23b"
+  },
+  {
+   "path": "data/morph/pu-phone.js",
+   "bytes": 4013,
+   "sha256": "5de18531f3f0dc95e87635a4e24c0a74326bcf1b325da97ddc9769f1bc6b2290"
+  },
+  {
+   "path": "data/morph/pu-plans.js",
+   "bytes": 1738,
+   "sha256": "361bf115d9a17c345d9bb7b843309277c70c5af9b14d09bd9349f0393a74b92f"
+  },
+  {
+   "path": "data/morph/pu-politeness.js",
+   "bytes": 6685,
+   "sha256": "f6bdfc5e0af316e04554290df3782e7d58360c70c47b7db27d1c7c634b686391"
+  },
+  {
+   "path": "data/morph/pu-post.js",
+   "bytes": 2886,
+   "sha256": "fb20140b10d6c6d71abb9fbafa1d1b41dfa9505ea4162b0e4c2a1a6fb6f30f1c"
+  },
+  {
+   "path": "data/morph/pu-restaurant.js",
+   "bytes": 16254,
+   "sha256": "ddd7fd73f1322cc63c84c6044b2adb1f83a599b82cd9f79a6dc9d381e42e52d5"
+  },
+  {
+   "path": "data/morph/pu-school.js",
+   "bytes": 2467,
+   "sha256": "8daf95d974ad074989df444043c5b185587fb3ff0fa7e36d6c3f7e173e1fc77f"
+  },
+  {
+   "path": "data/morph/pu-shabbat.js",
+   "bytes": 4186,
+   "sha256": "ddcd8dde04310a1541a84cd28928ff9786d077c5b8c9fd87d30066d4c2d20f2b"
+  },
+  {
+   "path": "data/morph/pu-shop.js",
+   "bytes": 14989,
+   "sha256": "86849320b150cde445cc57c1fa620ba1af29d6f15bd982796f781295a9cf6861"
+  },
+  {
+   "path": "data/morph/pu-shuk.js",
+   "bytes": 4133,
+   "sha256": "ac783421c4a778772660c4e681b07e3f09b96caa5e677d6b2b6085cc4d045c6f"
+  },
+  {
+   "path": "data/morph/pu-small-talk.js",
+   "bytes": 16079,
+   "sha256": "8cbc8c610fd76f376149d2747e0e3c7b3a2be8def134f93b1763e4077c8e44ef"
+  },
+  {
+   "path": "data/morph/pu-social.js",
+   "bytes": 2933,
+   "sha256": "7273b533eef8a7cc36b08e3be612a9cce76abb6e5759e9c73a2c2d743ff3b4f5"
+  },
+  {
+   "path": "data/morph/pu-supermarket.js",
+   "bytes": 2440,
+   "sha256": "617c8960c1a7c9613c9eacf149af68eebce67ece940e0853be05fe7d26d8445c"
+  },
+  {
+   "path": "data/morph/pu-time.js",
+   "bytes": 1529,
+   "sha256": "c47ca2ca299fc318f4edf8d2288c559b1a61c5c665a301652e005875ab56d6fe"
+  },
+  {
+   "path": "data/morph/pu-transport.js",
+   "bytes": 14870,
+   "sha256": "e7d8927106eb28ab2d87800c33fa15b34f9a072a67bf0edbfe1e4425993bbb7a"
+  },
+  {
+   "path": "data/morph/pu-university.js",
+   "bytes": 2724,
+   "sha256": "b78a2d70e578e54343206e6dfbf665e8a607638460eaddb0cbb46a1d5fefa2b0"
+  },
+  {
+   "path": "data/morph/pu-verbs-now.js",
+   "bytes": 1716,
+   "sha256": "0a0b6c303652eb8bbd5aea0cc3562df81c7e25dc7bded343666a87909bf58bab"
+  },
+  {
+   "path": "data/morph/pu-weather.js",
+   "bytes": 3552,
+   "sha256": "559d9d954abab0fcc83a5c13c18995bdaa925c97846d62c874c3bec98a16f820"
+  },
+  {
+   "path": "data/morph/pu-work.js",
+   "bytes": 5023,
+   "sha256": "a0209a5989ea8e5d85940eed0132055a35c6de67227826b50164d346ce9893e3"
+  },
+  {
+   "path": "data/morph/r01.js",
+   "bytes": 324,
+   "sha256": "bd2162b93d59c4f178cb813f7e3da549196457400a674d8a0cef66d4335b244c"
+  },
+  {
+   "path": "data/morph/r02.js",
+   "bytes": 509,
+   "sha256": "a9f78d6a9b1558f99eca4dd75f17e2408bf9d4011d4958d35e54d1ba8bd91775"
+  },
+  {
+   "path": "data/morph/r03.js",
+   "bytes": 363,
+   "sha256": "bbcc41c4a72c3b250cf0894d31fd3f900db68383ab200aff105f0a5ce8506313"
+  },
+  {
+   "path": "data/morph/r04.js",
+   "bytes": 611,
+   "sha256": "d307ab72d7c2ff60ebeb0db467161922ec163519913093c1d752fb9615ab4b64"
+  },
+  {
+   "path": "data/morph/r05.js",
+   "bytes": 2573,
+   "sha256": "6ce457b7e2293ce12585afeb2773b9f37f06d8eddb5c97b130f0284c86cb26c4"
+  },
+  {
+   "path": "data/morph/r06.js",
+   "bytes": 342,
+   "sha256": "f7d57819d740cf49d5b66ac89d30161c8dd4556da2738bbd3c463fca2ba2ebd5"
+  },
+  {
+   "path": "data/morph/r07.js",
+   "bytes": 936,
+   "sha256": "817d817b325c5c049ae8dde74cc165589cbbacf1def2a418fb7bc53e218e8ae6"
+  },
+  {
+   "path": "data/morph/r08.js",
+   "bytes": 672,
+   "sha256": "ff3c384aa95db9e3d4491db90fe6c2373928f41e9bb74eb5a5a82c9db35fa016"
+  },
+  {
+   "path": "data/morph/r09.js",
+   "bytes": 913,
+   "sha256": "326f2eb2e67a7a12e158451baa077070aad9c39f078d32742db49273a29e74c1"
+  },
+  {
+   "path": "data/morph/r10.js",
+   "bytes": 736,
+   "sha256": "9fc3f7dc93bafd3ad2acbbc58de5092c51e1fb6c764ad84db20a7dd9987d44c9"
+  },
+  {
+   "path": "data/morph/r11.js",
+   "bytes": 522,
+   "sha256": "66bfa2e164e0108591186499be85e85fe4ff4ec6fc3d46660449c79638bc3458"
+  },
+  {
+   "path": "data/morph/r12.js",
+   "bytes": 932,
+   "sha256": "286dd0b4a61b011fe28fddb402dd0d9c7f7f106bde083a00d60f744fa8e5eeba"
+  },
+  {
+   "path": "data/morph/r13.js",
+   "bytes": 713,
+   "sha256": "3edffe67e9d9acff26169ede20f2e10b71589f4910e592d658481332bfff52d2"
+  },
+  {
+   "path": "data/morph/r14.js",
+   "bytes": 1028,
+   "sha256": "10c880ed2b84e3eabff2be82bf4dbe1cfe024899cab45a74bbd875a84784151d"
+  },
+  {
+   "path": "data/morph/r15.js",
+   "bytes": 868,
+   "sha256": "19263be47d5e8ae2f8edbc3071e69f48bde293f78de6e806896842784f72391d"
+  },
+  {
+   "path": "data/morph/r16.js",
+   "bytes": 560,
+   "sha256": "9c40ce246397eed73c128e92189cb908eeb10f7c132476fe879f3dd40f9baac9"
+  },
+  {
+   "path": "data/morph/r17.js",
+   "bytes": 561,
+   "sha256": "a9e5b76986c12caf6efbf2f29dd20494ee6f5c4b73e23ebcff0f56f6bab4efa7"
+  },
+  {
+   "path": "data/morph/r18.js",
+   "bytes": 966,
+   "sha256": "8f097f6a5af40264aa3a32b1f3519fdfae93e1a36d2a744fe6105f08aca358b7"
+  },
+  {
+   "path": "data/morph/r19.js",
+   "bytes": 771,
+   "sha256": "b8f943148c1a9ab719a6f9f9e7f5866625313304a0b4d3d251047c4b9ebe94c2"
+  },
+  {
+   "path": "data/morph/r20.js",
+   "bytes": 757,
+   "sha256": "9392555058a63bb2869979e43bcdb52bf2667dca8ac30ac3bc1bd500c1c1fd4d"
+  },
+  {
+   "path": "data/morph/r21.js",
+   "bytes": 1227,
+   "sha256": "5c17157ded666c948f3208089f72984d67b78b2fc8543dc644c7153be1d865d4"
+  },
+  {
+   "path": "data/morph/r22.js",
+   "bytes": 1200,
+   "sha256": "54a9b1c3069ab03d7279f99a378596dfe9cf229e68feb1203bba2726ad44ad21"
+  },
+  {
+   "path": "data/morph/r23.js",
+   "bytes": 936,
+   "sha256": "38882c1eaf814ceb90317fd4ca70db89f8ad2e66a55de74f640638f1158fddee"
+  },
+  {
+   "path": "data/morph/r24.js",
+   "bytes": 1185,
+   "sha256": "b6c77a1ae795f9dd3ddb560cbc9246410f695feccbed7f8ec6218f089df51811"
+  },
+  {
+   "path": "data/morph/r25.js",
+   "bytes": 1352,
+   "sha256": "78880c28c34a7b1aa8ecf40725b743ff881772de8e1591951d5dc1c71e61209d"
+  },
+  {
+   "path": "data/morph/r26.js",
+   "bytes": 1893,
+   "sha256": "78a6b26ec705b7a6a21411346e2d435cf4a6ac5ec1afdb218af07cdcc53006e7"
+  },
+  {
+   "path": "data/morph/r27.js",
+   "bytes": 2877,
+   "sha256": "709e78cf7faed6b53258ac9dd0e7c1d0b99a81a78bec30783d843366e011e8a4"
+  },
+  {
+   "path": "data/morph/r28.js",
+   "bytes": 1219,
+   "sha256": "85752d444d529b94ba3dee770043a957536378824a198a27cc87582bcec7b5af"
+  },
+  {
+   "path": "data/morph/r29.js",
+   "bytes": 1014,
+   "sha256": "a129448f76c632ac67ff8ab38fdbf0271e58eff87982b857dc374d9dbd707e4f"
+  },
+  {
+   "path": "data/morph/r30.js",
+   "bytes": 1022,
+   "sha256": "11fa25e47ccaa1e2fdc0dd3161459954693a19d07bfb079578ce2a4dc8f6e358"
+  },
+  {
+   "path": "data/morph/r31.js",
+   "bytes": 992,
+   "sha256": "483fe28b42f887e6fb2dd51172f3b2bbf0d6811dc9fdc0e62bc2a0db84f7d74c"
+  },
+  {
+   "path": "data/morph/r32.js",
+   "bytes": 2368,
+   "sha256": "24c157e362fb62a9006f5415b94661c897ccd647832ee26ba7b063412dba51b5"
+  },
+  {
+   "path": "data/morph/r33.js",
+   "bytes": 1024,
+   "sha256": "7dea1eb8018d5bf6eadcecb6a1c8672da8012b1e1fe7e25b90c1d652e732fde8"
+  },
+  {
+   "path": "data/morph/r34.js",
+   "bytes": 621,
+   "sha256": "771c88fd6962d615c8fbbb0b09d20df5a7c4941d90dfbda0ad274625f07b2dee"
+  },
+  {
+   "path": "data/morph/r35.js",
+   "bytes": 724,
+   "sha256": "ebebed90ca287564030c28d4cf757f8bccf9b41300e1006bf6bf11b5b678eb1b"
+  },
+  {
+   "path": "data/morph/r36.js",
+   "bytes": 2573,
+   "sha256": "d1798fa089038033c327f35c6821d60ef599e0680fc8621cba5104ac4ac0671a"
+  },
+  {
+   "path": "data/morph/r37.js",
+   "bytes": 5236,
+   "sha256": "0d112afbe15caf0438447463aac3ecdf78b11e0a8582d9e918221ad5d511ae41"
+  },
+  {
+   "path": "data/morph/r38.js",
+   "bytes": 5108,
+   "sha256": "043302ae6badc1144ea7cc3d3a3a9e36616fe195d399c486daf7b515b4153d8d"
+  },
+  {
+   "path": "data/morph/r39.js",
+   "bytes": 3170,
+   "sha256": "f404ade19582ad871ad258af115805e2e4d499e4c65f1c45666179dbde15336e"
+  },
+  {
+   "path": "data/morph/r40.js",
+   "bytes": 1926,
+   "sha256": "4083426e1f6343314de5600e7e29f859e1c121168fccaa3ba9bbc91f4f12f143"
+  },
+  {
+   "path": "data/morph/r41.js",
+   "bytes": 2360,
+   "sha256": "5c3b2d1c11cea6025f7bbcfac1f402574e6c8bde994d502e3695c8ff91c477d6"
+  },
+  {
+   "path": "data/morph/r42.js",
+   "bytes": 6782,
+   "sha256": "494d799d87741c03c082ace54fed16a7903cf90d696b944b5fb42fc100fc26ad"
+  },
+  {
+   "path": "data/morph/r43.js",
+   "bytes": 2392,
+   "sha256": "f6810adf23fd83ad1070a2f4a88dd5a0338091ddcbec6c32d3b4e852b003b9c5"
+  },
+  {
+   "path": "data/morph/r44.js",
+   "bytes": 13001,
+   "sha256": "c3a0c715d76d14d2acacdda23c7e914197a2aa92c525ebc4c4e9ab209c000d49"
+  },
+  {
+   "path": "data/morph/r45.js",
+   "bytes": 9078,
+   "sha256": "45f1f2abe612999afb925ad99229b61b0806690d17ea7fb0e0adf06bc30f0dd8"
+  },
+  {
+   "path": "data/morph/r46.js",
+   "bytes": 10845,
+   "sha256": "e835150088e5f0f95b06bea5889e43ea7adbec651dc84cccf2918b2674e23c14"
+  },
+  {
+   "path": "data/morph/r47.js",
+   "bytes": 4914,
+   "sha256": "507d8da2d07ec5920daf77c436bae87f3448080861ec577ea68766e49aaf6dd5"
+  },
+  {
+   "path": "data/morph/r48.js",
+   "bytes": 5196,
+   "sha256": "88e89e77f072ec65d22021a00b0aed916a038e08ad9250038e343efd42b60fe7"
+  },
+  {
+   "path": "data/morph/r49.js",
+   "bytes": 6134,
+   "sha256": "45edd92db7e9f5f93f380fad2e57bb5010b61ecf89936448618a05bace78fd5c"
+  },
+  {
+   "path": "data/morph/r50.js",
+   "bytes": 26601,
+   "sha256": "0a60e40a9c71f5a8d2c2046af076f3231b4a9ee1e8cfa4f0aba06c32b44f37b5"
+  },
+  {
+   "path": "data/morph/r51.js",
+   "bytes": 23710,
+   "sha256": "17e3744fe0bdd4efe8eb1c308c68b6a6c8f9562f264e626e1f21d612bf1a259f"
+  },
+  {
+   "path": "data/morph/roots.js",
+   "bytes": 60783,
+   "sha256": "5aa805ca17e2f26c1850d7794e28afd4c93315dd63c1d6fb7643cccf7071ab67"
+  },
+  {
+   "path": "data/morph/units.js",
+   "bytes": 6427,
+   "sha256": "6cb3d697b74d1136c7ff02279fa40a09f9d80d842691dac586597ede863b046d"
+  },
+  {
+   "path": "data/sentiment/games.js",
+   "bytes": 171,
+   "sha256": "16616d17c22b753573478eef5e0f6910abf46c942b01a8637628373a989fcd71"
+  },
+  {
+   "path": "explain.js",
+   "bytes": 8272,
+   "sha256": "2ccc87ec8a10c237a092d4bf109d04bcf5fc686fee2207e69562de8a2fffb905"
+  },
+  {
+   "path": "index.js",
+   "bytes": 3607,
+   "sha256": "d5b916999127ae8cf4636eb6800e6a2f15e213414aabbfecc601d483cd3e7ae4"
+  },
+  {
+   "path": "joint.js",
+   "bytes": 4179,
+   "sha256": "88cd93b33d9d49d6a1b34d47dab133f65d87e1c5c50d60b85dd7f77ef9ccefef"
+  },
+  {
+   "path": "lookup.js",
+   "bytes": 1992,
+   "sha256": "b98e550877e7f0e0a898ab3bd1e0f93cf70ddf6380a8c9e75738aa9892ff3b5a"
+  },
+  {
+   "path": "plene.js",
+   "bytes": 2394,
+   "sha256": "bd326dc3bc862964f0e60f74826087a89af873a95f230179d2db9c95fbd5c0f5"
+  },
+  {
+   "path": "text.js",
+   "bytes": 2002,
+   "sha256": "361a3b350241cfa3de8fea209ad4b5baf7c81d8ec0652911ef52b4c504116e69"
+  },
+  {
+   "path": "tokenize.js",
+   "bytes": 3567,
+   "sha256": "3417bac5d65aec12f7aa46d4aa4d9db4928bac2b04afb5db65666a81360112e3"
+  },
+  {
+   "path": "worker.js",
+   "bytes": 2472,
+   "sha256": "f19073e8dfc6d7cdff22ef26836d2b4a618f5ad31be6ef0e6207d04593bd6e4f"
+  }
+ ]
+}

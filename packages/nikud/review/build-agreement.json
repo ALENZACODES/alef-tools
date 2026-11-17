@@ -1,0 +1,302 @@
+{
+ "lines": 300,
+ "words": 1457,
+ "reference": "fp32",
+ "referenceSecondsPerLine": 0.222,
+ "builds": {
+  "int8": {
+   "bytes": 317816752,
+   "wordsSame": 1435,
+   "words": 1457,
+   "wordShare": 0.9849,
+   "linesSame": 279,
+   "secondsPerLine": 0.052,
+   "examples": [
+    {
+     "reference": "נִרְאֶה",
+     "build": "נִרְאָה"
+    },
+    {
+     "reference": "כִּירוּרְגִי",
+     "build": "כִּירוּרְגִּי"
+    },
+    {
+     "reference": "בַּמֵּיצָג",
+     "build": "בַּמֵּיצָּג"
+    },
+    {
+     "reference": "רַעֲיוֹן",
+     "build": "רַעְיוֹן"
+    },
+    {
+     "reference": "אָטִּי",
+     "build": "אִטִּי"
+    },
+    {
+     "reference": "בְּלֶאגָן",
+     "build": "בְּלֶאגֶן"
+    },
+    {
+     "reference": "נִלְוֶּוה",
+     "build": "נִלְוֶוה"
+    },
+    {
+     "reference": "שִׁמְרִי",
+     "build": "שֶׁמְרִי"
+    },
+    {
+     "reference": "אֶרְאֶה",
+     "build": "אַרְאֶה"
+    },
+    {
+     "reference": "שֶׁאָפוֹל",
+     "build": "שֶׁאָפּוֹל"
+    },
+    {
+     "reference": "לַנֵּטֶל",
+     "build": "לְנֵּטֶל"
+    },
+    {
+     "reference": "בַּפַּרְבֶּר",
+     "build": "בַּפַּרְבָּר"
+    },
+    {
+     "reference": "נִמְשַׁךְ",
+     "build": "נִמְשָׁךְ"
+    },
+    {
+     "reference": "בָּאִינְטֶרְנֵט",
+     "build": "בָּאִינְטֶרְנֶט"
+    },
+    {
+     "reference": "בַּשָּׁתֶן",
+     "build": "בַּשֶּׁתֶן"
+    },
+    {
+     "reference": "נְיֶּירֶת",
+     "build": "נַיֶּירֶת"
+    },
+    {
+     "reference": "בָּאוֹפַנַּיִים",
+     "build": "בְּאוֹפַנַּיִים"
+    },
+    {
+     "reference": "שֹׁח",
+     "build": "שַׁח"
+    },
+    {
+     "reference": "חַשְׁמַלַּאי",
+     "build": "חַשְׁמַלַאי"
+    },
+    {
+     "reference": "מְחַלֵּף",
+     "build": "מְחַלַף"
+    },
+    {
+     "reference": "עֵלֶם",
+     "build": "עֶלֶם"
+    },
+    {
+     "reference": "שְׁמְךְ",
+     "build": "שְׁמֵךְ"
+    }
+   ]
+  },
+  "q4": {
+   "bytes": 203116791,
+   "wordsSame": 1428,
+   "words": 1457,
+   "wordShare": 0.9801,
+   "linesSame": 272,
+   "secondsPerLine": 0.17,
+   "examples": [
+    {
+     "reference": "כִּירוּרְגִי",
+     "build": "כִּירוּרְגִּי"
+    },
+    {
+     "reference": "בַּמֵּיצָג",
+     "build": "בַּמֵּיצָּג"
+    },
+    {
+     "reference": "כַּסָּה",
+     "build": "כַּסֵּה"
+    },
+    {
+     "reference": "תֶּשֶׁר",
+     "build": "תֵּשֶׁר"
+    },
+    {
+     "reference": "בְּלֶאגָן",
+     "build": "בְּלֶאגֶן"
+    },
+    {
+     "reference": "נִלְוֶּוה",
+     "build": "נִלְוֶוה"
+    },
+    {
+     "reference": "בְּיַפֵּי",
+     "build": "בְּיַפֵי"
+    },
+    {
+     "reference": "תׇּואֲרָהּ",
+     "build": "תׇּואַרָהּ"
+    },
+    {
+     "reference": "תֵּעָרֵךְ",
+     "build": "תֵּעָרֶךְ"
+    },
+    {
+     "reference": "לַוְויָינִים",
+     "build": "לִוְויָינִים"
+    },
+    {
+     "reference": "יִרְפֶּה",
+     "build": "יְרְפֶּה"
+    },
+    {
+     "reference": "לְמַחְשְׁבוֹן",
+     "build": "לְמַחְשְׁבּוֹן"
+    },
+    {
+     "reference": "מַגְפַיִים",
+     "build": "מַגָּפַיִים"
+    },
+    {
+     "reference": "לַנֵּטֶל",
+     "build": "לְנֵּטֶל"
+    },
+    {
+     "reference": "בַּפַּרְבֶּר",
+     "build": "בַּפַּרְבָּר"
+    },
+    {
+     "reference": "לְהִשְׁתַּחְמֵּשׁ",
+     "build": "לְהִשְׁתַּחְמֵשׁ"
+    },
+    {
+     "reference": "הַכַּלָּה",
+     "build": "הַכָלָּה"
+    },
+    {
+     "reference": "בַּשָּׁתֶן",
+     "build": "בַּשֶּׁתֶן"
+    },
+    {
+     "reference": "לְחָמֵשׁ",
+     "build": "לְחֲמֵשׁ"
+    },
+    {
+     "reference": "סֶנְטִימֶטֶר",
+     "build": "סֶנְטִימֵטֶר"
+    },
+    {
+     "reference": "הַנֵּעַ",
+     "build": "הַנַּעַ"
+    },
+    {
+     "reference": "מַזְלָג",
+     "build": "מִזְלָג"
+    },
+    {
+     "reference": "חַשְׁמַלַּאי",
+     "build": "חַשְׁמַלַאי"
+    },
+    {
+     "reference": "רוֹצָה",
+     "build": "רוֹצֶה"
+    },
+    {
+     "reference": "עֵלֶם",
+     "build": "עֶלֶם"
+    }
+   ]
+  },
+  "third-party-int8": {
+   "bytes": 317980253,
+   "wordsSame": 1438,
+   "words": 1457,
+   "wordShare": 0.987,
+   "linesSame": 281,
+   "secondsPerLine": 0.05,
+   "examples": [
+    {
+     "reference": "מַגְנֵטִיּוּת",
+     "build": "מִגְנֵטִיּוּת"
+    },
+    {
+     "reference": "רַעֲיוֹן",
+     "build": "רַעְיוֹן"
+    },
+    {
+     "reference": "אָטִּי",
+     "build": "אִטִּי"
+    },
+    {
+     "reference": "בְּלֶאגָן",
+     "build": "בְּלֶאגֶן"
+    },
+    {
+     "reference": "נִלְוֶּוה",
+     "build": "נִלְוֶוה"
+    },
+    {
+     "reference": "בְּיַפֵּי",
+     "build": "בְּיְפִי"
+    },
+    {
+     "reference": "לַוְויָינִים",
+     "build": "לִוְויָינִים"
+    },
+    {
+     "reference": "שִׁמְרִי",
+     "build": "שֶׁמְרִי"
+    },
+    {
+     "reference": "יִרְפֶּה",
+     "build": "יְרְפֶּה"
+    },
+    {
+     "reference": "שֶׁאָפוֹל",
+     "build": "שֶׁאָפֹּוּל"
+    },
+    {
+     "reference": "בַּשָּׁתֶן",
+     "build": "בַּשֶּׁתָן"
+    },
+    {
+     "reference": "נְיֶּירֶת",
+     "build": "נַיֶּירֶת"
+    },
+    {
+     "reference": "בָּאוֹפַנַּיִים",
+     "build": "בְּאוֹפַנַּיִים"
+    },
+    {
+     "reference": "לִטָאָה",
+     "build": "לְטָאָה"
+    },
+    {
+     "reference": "שֹׁח",
+     "build": "שַׁח"
+    },
+    {
+     "reference": "רוֹצָה",
+     "build": "רוֹצֶה"
+    },
+    {
+     "reference": "מְחַלֵּף",
+     "build": "מְחַלַף"
+    },
+    {
+     "reference": "לִוְויְיתָן",
+     "build": "לַוְויְיתָן"
+    },
+    {
+     "reference": "שְׁמְךְ",
+     "build": "שְׁמֵךְ"
+    }
+   ]
+  }
+ }
+}

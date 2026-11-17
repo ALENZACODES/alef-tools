@@ -1,0 +1,498 @@
+{
+ "model": {
+  "file": "letters.onnx",
+  "bytes": 1311488,
+  "sha256": "697ea98a7104ecb9db76a3effaa7f4787b8b23b4e51ef37ef1487c3e95dcec98",
+  "parameters": 328036,
+  "packVersion": "1",
+  "packBytes": 1312321
+ },
+ "training": {
+  "date": "2026-11-12",
+  "seed": 7,
+  "epochs": 60,
+  "bestEpoch": 49,
+  "checkpointPickedOn": "a validation slice of the training data (one tenth), never the test sets",
+  "validationRealHandwritingTop1": 0.8715,
+  "trainImages": 32059,
+  "sources": [
+   "fonts (OFL-1.1, google/fonts pinned commit)",
+   "app stroke templates (16200 drawn with wobble; file sha256 74f43876d1ad4d9013de1b333df4a20112f24616244230dc52f34ed8df6e17e3)",
+   "HHD_v0 real handwriting, CC-BY-4.0, doi:10.5281/zenodo.4287442 (TRAIN -> train, TEST -> held-out test; folder 27 of TRAIN, a stray mark, is not used)"
+  ],
+  "fonts": [
+   "alef/Alef-Regular.ttf",
+   "amaticsc/AmaticSC-Bold.ttf",
+   "amaticsc/AmaticSC-Regular.ttf",
+   "arimo/Arimo[wght].ttf",
+   "assistant/Assistant[wght].ttf",
+   "bellefair/Bellefair-Regular.ttf",
+   "bonanova/BonaNova-Regular.ttf",
+   "cousine/Cousine-Regular.ttf",
+   "frankruhllibre/FrankRuhlLibre[wght].ttf",
+   "fredoka/Fredoka[wdth,wght].ttf",
+   "gveretlevin/GveretLevin-Regular.ttf",
+   "heebo/Heebo[wght].ttf",
+   "karantina/Karantina-Regular.ttf",
+   "miriamlibre/MiriamLibre[wght].ttf",
+   "notosanshebrew/NotoSansHebrew[wdth,wght].ttf",
+   "notoserifhebrew/NotoSerifHebrew[wdth,wght].ttf",
+   "opensans/OpenSans[wdth,wght].ttf",
+   "playpensanshebrew/PlaypenSansHebrew[wght].ttf",
+   "rubik/Rubik[wght].ttf",
+   "secularone/SecularOne-Regular.ttf",
+   "suezone/SuezOne-Regular.ttf"
+  ],
+  "fontsHeldOut": [
+   "davidlibre/DavidLibre-Regular.ttf",
+   "ibmplexsanshebrew/IBMPlexSansHebrew-Regular.ttf",
+   "varelaround/VarelaRound-Regular.ttf"
+  ]
+ },
+ "heldOut": {
+  "hhd_test": {
+   "n": 1134,
+   "top1": 0.8413,
+   "top3": 0.9462,
+   "per_class": {
+    "alef": {
+     "n": 45,
+     "top1": 0.9111
+    },
+    "bet": {
+     "n": 45,
+     "top1": 0.8222
+    },
+    "gimel": {
+     "n": 45,
+     "top1": 0.8889
+    },
+    "dalet": {
+     "n": 45,
+     "top1": 0.8222
+    },
+    "he": {
+     "n": 45,
+     "top1": 0.8889
+    },
+    "vav": {
+     "n": 45,
+     "top1": 0.7556
+    },
+    "zayin": {
+     "n": 45,
+     "top1": 0.9111
+    },
+    "chet": {
+     "n": 45,
+     "top1": 0.8889
+    },
+    "tet": {
+     "n": 45,
+     "top1": 0.9556
+    },
+    "yod": {
+     "n": 45,
+     "top1": 0.6444
+    },
+    "kaf": {
+     "n": 45,
+     "top1": 0.8889
+    },
+    "lamed": {
+     "n": 45,
+     "top1": 0.8889
+    },
+    "mem": {
+     "n": 45,
+     "top1": 0.9333
+    },
+    "nun": {
+     "n": 45,
+     "top1": 0.8222
+    },
+    "samekh": {
+     "n": 45,
+     "top1": 0.8667
+    },
+    "ayin": {
+     "n": 30,
+     "top1": 0.8667
+    },
+    "pe": {
+     "n": 44,
+     "top1": 0.9318
+    },
+    "tsadi": {
+     "n": 45,
+     "top1": 0.9111
+    },
+    "qof": {
+     "n": 46,
+     "top1": 0.8913
+    },
+    "resh": {
+     "n": 45,
+     "top1": 0.8667
+    },
+    "shin": {
+     "n": 45,
+     "top1": 0.9111
+    },
+    "tav": {
+     "n": 44,
+     "top1": 0.8864
+    },
+    "kaf-final": {
+     "n": 31,
+     "top1": 0.5806
+    },
+    "mem-final": {
+     "n": 31,
+     "top1": 0.871
+    },
+    "nun-final": {
+     "n": 33,
+     "top1": 0.5455
+    },
+    "pe-final": {
+     "n": 33,
+     "top1": 0.6364
+    },
+    "tsadi-final": {
+     "n": 32,
+     "top1": 0.6875
+    }
+   },
+   "groups": {
+    "bet/kaf": {
+     "n": 90,
+     "top1": 0.8556,
+     "in_group": 0.9778
+    },
+    "dalet/resh": {
+     "n": 90,
+     "top1": 0.8444,
+     "in_group": 1.0
+    },
+    "he/chet": {
+     "n": 90,
+     "top1": 0.8889,
+     "in_group": 0.9667
+    },
+    "vav/zayin/nun-final": {
+     "n": 123,
+     "top1": 0.7561,
+     "in_group": 0.8455
+    },
+    "samekh/mem-final": {
+     "n": 76,
+     "top1": 0.8684,
+     "in_group": 0.9868
+    }
+   },
+   "called_not_a_letter": 0.037,
+   "top_confusions": [
+    [
+     "nun-final>vav",
+     13
+    ],
+    [
+     "vav>yod",
+     7
+    ],
+    [
+     "yod>not-a-letter",
+     7
+    ],
+    [
+     "kaf-final>bet",
+     5
+    ],
+    [
+     "pe-final>not-a-letter",
+     5
+    ],
+    [
+     "pe-final>tsadi-final",
+     5
+    ],
+    [
+     "tsadi-final>not-a-letter",
+     5
+    ],
+    [
+     "alef>not-a-letter",
+     4
+    ],
+    [
+     "dalet>tsadi",
+     4
+    ],
+    [
+     "bet>kaf-final",
+     3
+    ],
+    [
+     "vav>nun-final",
+     3
+    ],
+    [
+     "yod>vav",
+     3
+    ],
+    [
+     "kaf-final>qof",
+     3
+    ],
+    [
+     "tsadi-final>pe-final",
+     3
+    ],
+    [
+     "resh>he",
+     3
+    ]
+   ],
+   "top1_yod_vav_final_nun_counted_as_one": 0.866
+  },
+  "font_heldout": {
+   "n": 405,
+   "top1": 0.9037,
+   "top3": 0.9975,
+   "per_class": {
+    "alef": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "bet": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "gimel": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "dalet": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "he": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "vav": {
+     "n": 15,
+     "top1": 0.0667
+    },
+    "zayin": {
+     "n": 15,
+     "top1": 0.8
+    },
+    "chet": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "tet": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "yod": {
+     "n": 15,
+     "top1": 0.4667
+    },
+    "kaf": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "lamed": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "mem": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "nun": {
+     "n": 15,
+     "top1": 0.7333
+    },
+    "samekh": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "ayin": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "pe": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "tsadi": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "qof": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "resh": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "shin": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "tav": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "kaf-final": {
+     "n": 15,
+     "top1": 0.6667
+    },
+    "mem-final": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "nun-final": {
+     "n": 15,
+     "top1": 0.6667
+    },
+    "pe-final": {
+     "n": 15,
+     "top1": 1.0
+    },
+    "tsadi-final": {
+     "n": 15,
+     "top1": 1.0
+    }
+   },
+   "groups": {
+    "bet/kaf": {
+     "n": 30,
+     "top1": 1.0,
+     "in_group": 1.0
+    },
+    "dalet/resh": {
+     "n": 30,
+     "top1": 1.0,
+     "in_group": 1.0
+    },
+    "he/chet": {
+     "n": 30,
+     "top1": 1.0,
+     "in_group": 1.0
+    },
+    "vav/zayin/nun-final": {
+     "n": 45,
+     "top1": 0.5111,
+     "in_group": 0.6889
+    },
+    "samekh/mem-final": {
+     "n": 30,
+     "top1": 1.0,
+     "in_group": 1.0
+    }
+   },
+   "called_not_a_letter": 0.0074,
+   "top_confusions": [
+    [
+     "vav>nun-final",
+     9
+    ],
+    [
+     "nun-final>vav",
+     5
+    ],
+    [
+     "vav>resh",
+     4
+    ],
+    [
+     "nun>kaf",
+     4
+    ],
+    [
+     "yod>nun-final",
+     4
+    ],
+    [
+     "zayin>not-a-letter",
+     3
+    ],
+    [
+     "kaf-final>dalet",
+     3
+    ],
+    [
+     "yod>vav",
+     3
+    ],
+    [
+     "kaf-final>zayin",
+     2
+    ],
+    [
+     "vav>yod",
+     1
+    ],
+    [
+     "yod>resh",
+     1
+    ]
+   ],
+   "top1_yod_vav_final_nun_counted_as_one": 0.958
+  }
+ },
+ "appLetterModels": {
+  "note": "the 54 print and cursive letter models from the app (data/letters/letters.json), drawn exactly as stored and read through src/preprocess.js. The same models, with wobble, were part of training, so this is a sanity check and not a held-out score.",
+  "readAsThemselves": 54,
+  "of": 54
+ },
+ "speed": {
+  "machine": "2 vCPU cloud Linux box, Node 22; no phone was measured",
+  "builtInRunnerMsMedian": 16.3,
+  "builtInRunnerMsP95": 18.9,
+  "onnxruntimeWebWasm1ThreadMsMedian": 1.96,
+  "onnxruntimeNativeCpu1ThreadMs": 0.36,
+  "backendsAgree": "largest difference between the two backends on one input: 3.7e-9 in probability"
+ },
+ "outsideBenchmark": {
+  "model": "sivan22/testing-trOCR-hebrew-handwritten",
+  "revision": "419f9f0b3a76c20254e17a9a1722f91c588420f6",
+  "file": "pytorch_model.bin",
+  "bytes": 964560765,
+  "sha256": "4bc9b38745a16b4f2b5333edc8e6576c0712e325603b82c71fbf54831c9e2606",
+  "result": "no score: 543 of the 558 tensors in the published file hold NaN or infinite values, so the model writes nothing for any image (checked with torch.isfinite on the file itself, 2026-11-12)"
+ },
+ "acceptance": {
+  "top1RealHandwriting": {
+   "bar": 0.95,
+   "measured": 0.8413,
+   "met": false
+  },
+  "lookAlikeGroupsTop1": {
+   "bar": 0.9,
+   "measured": {
+    "bet/kaf": 0.8556,
+    "dalet/resh": 0.8444,
+    "he/chet": 0.8889,
+    "vav/zayin/nun-final": 0.7561,
+    "samekh/mem-final": 0.8684
+   },
+   "met": false
+  },
+  "under30msOnAMidPhone": {
+   "measured": null,
+   "met": null,
+   "note": "not measured on a phone"
+  },
+  "modelUnder2MiB": {
+   "bytes": 1311488,
+   "met": true
+  }
+ }
+}

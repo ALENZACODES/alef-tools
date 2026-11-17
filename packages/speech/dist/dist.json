@@ -1,0 +1,52 @@
+{
+ "schema": "alef.dist.v1",
+ "name": "speech",
+ "version": "0.1.0",
+ "files": [
+  {
+   "path": "asr-worker.js",
+   "bytes": 5171,
+   "sha256": "5438c11741d91d279e1e0c148f645d271909b05b11feb17bc04b0aa90c293e98"
+  },
+  {
+   "path": "audio.js",
+   "bytes": 6098,
+   "sha256": "119730e3189a5dd7d4b455899e8d7bf04306f6120840eabdd5ea62e0bf0bd671"
+  },
+  {
+   "path": "ctc-align.js",
+   "bytes": 3493,
+   "sha256": "3fdedd10cdc1f49e32152313331e2aaba33738a0500c69070f380fd751d79da3"
+  },
+  {
+   "path": "ctc.js",
+   "bytes": 1857,
+   "sha256": "bc12ad247baaf6363cdb25189c66c4c0c923592a067f8cc3a54247bde9236f06"
+  },
+  {
+   "path": "index.js",
+   "bytes": 3353,
+   "sha256": "83f91ebdeb85fa193dc33276d5b960b758139a21265da454e6a1f6ddf64e8972"
+  },
+  {
+   "path": "mel.js",
+   "bytes": 3289,
+   "sha256": "b331fa122f6638c3a71d07abc64d3809df9fa20e1b1404d5eea7555edad4cda7"
+  },
+  {
+   "path": "score.js",
+   "bytes": 8047,
+   "sha256": "152897f889fe82e3755adb7c24c8040c8ada1f5e28cfef6b5d52673a97031b42"
+  },
+  {
+   "path": "tokens.js",
+   "bytes": 2287,
+   "sha256": "4416e23668ec82ab201ad4b8ebad6ad3ce01e2c730234b58163f07872ae43e3b"
+  },
+  {
+   "path": "whisper.js",
+   "bytes": 6496,
+   "sha256": "25c23624601113574533db5ece01417c1bd89ff359f921b8c09f30ce82ee2e9e"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "schema": "alef.translate.tm.report.v1",
+ "records": 2453,
+ "held": 118,
+ "sacred": 42,
+ "duplicates": 1375,
+ "conflicts": 131,
+ "unique": 918,
+ "withAppEnglish": 886,
+ "withoutEnglish": 32,
+ "kept": 885,
+ "keptApp": 876,
+ "keptMachine": 9,
+ "review": 33,
+ "reviewMachine": 23,
+ "reviewAppPair": 10,
+ "units": [
+  {
+   "id": "curriculum",
+   "bytes": 23290,
+   "entries": 317
+  },
+  {
+   "id": "books",
+   "bytes": 28358,
+   "entries": 421
+  },
+  {
+   "id": "israel",
+   "bytes": 9434,
+   "entries": 126
+  },
+  {
+   "id": "games",
+   "bytes": 1513,
+   "entries": 21
+  }
+ ],
+ "largestUnitBytes": 28358,
+ "indexBytes": 5638
+}

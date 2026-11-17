@@ -1,0 +1,16 @@
+[
+ {"id": "c-good-1", "good": true, "he": "הילדה הלכה לבית הספר", "en": "The girl went to school", "target": {"he": "בית הספר"}},
+ {"id": "c-good-2", "good": true, "he": "אני רוצה קפה עם חלב, בבקשה", "en": "I want coffee with milk, please", "target": {"he": "קפה"}},
+ {"id": "c-good-3", "good": true, "he": "הילדים שותים מים קרים", "en": "The children are drinking cold water", "target": {"he": "מים"}},
+ {"id": "c-good-4", "good": true, "he": "אמא שלי גרה בחיפה", "en": "My mother lives in Haifa", "target": {"he": "אמא"}},
+ {"id": "c-good-5", "good": true, "he": "יש לי אח גדול ואחות קטנה", "en": "I have a big brother and a little sister", "target": {"he": "אח"}},
+ {"id": "c-good-6", "good": true, "he": "בוקר טוב, מה שלומך?", "en": "Good morning, how are you?", "target": {"he": "בוקר טוב"}},
+ {"id": "c-bad-1", "good": false, "flaw": "agreement", "he": "הילדה הלך לבית הספר", "en": "The girl went to school", "target": {"he": "בית הספר"}},
+ {"id": "c-bad-2", "good": false, "flaw": "agreement", "he": "אני רוצה קפה שחורה גדולה", "en": "I want a big black coffee", "target": {"he": "קפה"}},
+ {"id": "c-bad-3", "good": false, "flaw": "agreement", "he": "הילדים שותה מים קרים", "en": "The children are drinking cold water", "target": {"he": "מים"}},
+ {"id": "c-bad-4", "good": false, "flaw": "agreement", "he": "האחות שלי גר בחיפה", "en": "My sister lives in Haifa", "target": {"he": "אחות"}},
+ {"id": "c-bad-5", "good": false, "flaw": "translation", "he": "אני רוצה כוס מים", "en": "I want a cup of coffee with sugar", "target": {"he": "מים"}},
+ {"id": "c-bad-6", "good": false, "flaw": "translation", "he": "הבטחתי לך בירה", "en": "The weather is nice today", "target": {"he": "בירה"}},
+ {"id": "c-bad-7", "good": false, "flaw": "word-order", "he": "קפה אני בבקשה רוצה את", "en": "I want coffee, please", "target": {"he": "קפה"}},
+ {"id": "c-bad-8", "good": false, "flaw": "agreement", "he": "שלושה בנות יושבים בבית", "en": "Three girls are sitting at home", "target": {"he": "בנות"}}
+]

@@ -1,0 +1,177 @@
+// @ts-check
+// Sound in, 16 kHz mono floats out. No DOM, no network. Everything here runs on the device.
+// Used by the worker (browser) and by the scoring scripts (Node), so the numbers in eval/ are numbers of the shipped code.
+
+export const SAMPLE_RATE = 16000;
+
+/** Mixes channels down to one. @param {Float32Array[]} channels @returns {Float32Array} */
+export function toMono(channels) {
+  if (!channels.length) return new Float32Array(0);
+  if (channels.length === 1) return channels[0];
+  const n = channels[0].length;
+  const out = new Float32Array(n);
+  for (const c of channels) for (let i = 0; i < n; i++) out[i] += c[i];
+  const k = 1 / channels.length;
+  for (let i = 0; i < n; i++) out[i] *= k;
+  return out;
+}
+
+const sinc = (x) => (x === 0 ? 1 : Math.sin(Math.PI * x) / (Math.PI * x));
+
+/**
+ * Changes the sample rate with a windowed-sinc filter (Hann window, `taps` zero crossings each side).
+ * Going down, the filter is widened so nothing above the new half-rate folds back.
+ * @param {Float32Array} pcm @param {number} from @param {number} [to] @param {number} [taps]
+ * @returns {Float32Array}
+ */
+export function resample(pcm, from, to = SAMPLE_RATE, taps = 12) {
+  if (!(from > 0) || !(to > 0)) throw new Error('bad sample rate');
+  if (from === to || !pcm.length) return pcm;
+  const ratio = from / to;
+  const cut = Math.min(1, to / from); // filter cutoff as a share of the input half-rate
+  const half = taps / cut;
+  const n = Math.max(1, Math.round(pcm.length / ratio));
+  const out = new Float32Array(n);
+  for (let i = 0; i < n; i++) {
+    const at = i * ratio;
+    const lo = Math.max(0, Math.ceil(at - half)), hi = Math.min(pcm.length - 1, Math.floor(at + half));
+    let sum = 0, norm = 0;
+    for (let j = lo; j <= hi; j++) {
+      const d = j - at;
+      const w = cut * sinc(d * cut) * (0.5 + 0.5 * Math.cos((Math.PI * d) / half));
+      sum += pcm[j] * w; norm += w;
+    }
+    out[i] = norm ? sum / norm : 0;
+  }
+  return out;
+}
+
+/** Loudness (root mean square) of each frame. @param {Float32Array} pcm @param {number} frame @returns {Float32Array} */
+export function frameLevels(pcm, frame) {
+  const n = Math.floor(pcm.length / frame);
+  const out = new Float32Array(n);
+  for (let f = 0; f < n; f++) {
+    let s = 0;
+    for (let i = f * frame, e = i + frame; i < e; i++) s += pcm[i] * pcm[i];
+    out[f] = Math.sqrt(s / frame);
+  }
+  return out;
+}
+
+/**
+ * Finds where speech starts and ends (a simple loudness gate; no model). A frame counts as speech when it is clearly louder
+ * than the quiet parts of the same take. The gate follows the take's own level, so a quiet microphone still works. A take that
+ * holds one steady level all the way through (a silent room, a fan) has no speech. Short clicks are ignored.
+ * @param {Float32Array} pcm 16 kHz mono
+ * @param {{frameMs?:number, floor?:number, ratio?:number, minSpeechMs?:number, padMs?:number, rate?:number}} [o]
+ * @returns {{speech:boolean, start:number, end:number, pcm:Float32Array, speechMs:number}} start/end in samples; pcm is the trimmed take
+ */
+export function trimSilence(pcm, o = {}) {
+  const rate = o.rate || SAMPLE_RATE;
+  const frame = Math.round(((o.frameMs || 20) * rate) / 1000);
+  const lv = frameLevels(pcm, frame);
+  const none = { speech: false, start: 0, end: 0, pcm: new Float32Array(0), speechMs: 0 };
+  if (!lv.length) return none;
+  const sorted = Float32Array.from(lv).sort();
+  const quiet = sorted[Math.floor(sorted.length * 0.1)], loud = sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * 0.97))];
+  const floor = o.floor ?? 0.0004;
+  if (loud < floor) return none;
+  if (loud < quiet * 4) {
+    // No quiet part to compare with: either steady noise, or speech from start to end (often over a noisy room).
+    // Speech rises and falls from one moment to the next; steady noise does not.
+    let mean = 0; for (const v of lv) mean += v; mean /= lv.length;
+    let dev = 0; for (const v of lv) dev += (v - mean) * (v - mean);
+    if (Math.sqrt(dev / lv.length) / mean < 0.08) return none;
+    return { speech: true, start: 0, end: pcm.length, pcm, speechMs: Math.round((pcm.length * 1000) / rate) };
+  }
+  const gate = Math.max(floor, quiet * (o.ratio ?? 3), loud * 0.08);
+  const need = Math.max(1, Math.round((o.minSpeechMs ?? 80) / (o.frameMs || 20)));
+  let first = -1, last = -1, run = 0, voiced = 0;
+  for (let f = 0; f < lv.length; f++) {
+    if (lv[f] >= gate) { run++; voiced++; if (run >= need) { if (first < 0) first = f - run + 1; last = f; } } else run = 0;
+  }
+  if (first < 0) return none;
+  const pad = Math.round(((o.padMs ?? 200) * rate) / 1000);
+  const start = Math.max(0, first * frame - pad), end = Math.min(pcm.length, (last + 1) * frame + pad);
+  return { speech: true, start, end, pcm: pcm.subarray(start, end), speechMs: Math.round((voiced * frame * 1000) / rate) };
+}
+
+/**
+ * Cuts a long take into pieces of at most `maxSec`, each cut placed at the quietest moment of the last third of the piece.
+ * @param {Float32Array} pcm @param {number} [maxSec] @param {number} [rate] @returns {Float32Array[]}
+ */
+export function splitLong(pcm, maxSec = 28, rate = SAMPLE_RATE) {
+  const max = Math.round(maxSec * rate);
+  const out = [];
+  let at = 0;
+  const frame = Math.round(rate * 0.02);
+  while (pcm.length - at > max) {
+    const from = at + Math.round(max * 0.67), to = at + max;
+    let best = to, low = Infinity;
+    for (let i = from; i + frame <= to; i += frame) {
+      let s = 0;
+      for (let j = i; j < i + frame; j++) s += pcm[j] * pcm[j];
+      if (s < low) { low = s; best = i + (frame >> 1); }
+    }
+    out.push(pcm.subarray(at, best));
+    at = best;
+  }
+  if (pcm.length - at > 0) out.push(pcm.subarray(at));
+  return out;
+}
+
+/**
+ * Reads a WAV file (16-bit or 32-bit float PCM). For tests and the Node scripts.
+ * @param {ArrayBuffer|Uint8Array} file @returns {{rate:number, channels:Float32Array[]}}
+ */
+export function parseWav(file) {
+  const u8 = file instanceof Uint8Array ? file : new Uint8Array(file);
+  const dv = new DataView(u8.buffer, u8.byteOffset, u8.byteLength);
+  const tag = (o) => String.fromCharCode(u8[o], u8[o + 1], u8[o + 2], u8[o + 3]);
+  if (tag(0) !== 'RIFF' || tag(8) !== 'WAVE') throw new Error('not a WAV file');
+  let fmt = null, at = 12;
+  while (at + 8 <= u8.length) {
+    const id = tag(at), size = dv.getUint32(at + 4, true), body = at + 8;
+    if (id === 'fmt ') fmt = { format: dv.getUint16(body, true), ch: dv.getUint16(body + 2, true), rate: dv.getUint32(body + 4, true), bits: dv.getUint16(body + 14, true) };
+    else if (id === 'data') {
+      if (!fmt) throw new Error('WAV data before format');
+      const float = fmt.format === 3 || (fmt.format === 0xfffe && fmt.bits === 32);
+      if (!(float && fmt.bits === 32) && !(fmt.bits === 16)) throw new Error(`unsupported WAV sample format (${fmt.bits} bit)`);
+      const step = fmt.bits / 8, n = Math.floor(Math.min(size, u8.length - body) / (step * fmt.ch));
+      const channels = Array.from({ length: fmt.ch }, () => new Float32Array(n));
+      for (let i = 0; i < n; i++) for (let c = 0; c < fmt.ch; c++) {
+        const o = body + (i * fmt.ch + c) * step;
+        channels[c][i] = float ? dv.getFloat32(o, true) : dv.getInt16(o, true) / 32768;
+      }
+      return { rate: fmt.rate, channels };
+    }
+    at = body + size + (size & 1);
+  }
+  throw new Error('WAV has no data');
+}
+
+/** WAV file → 16 kHz mono. @param {ArrayBuffer|Uint8Array} file */
+export function wavToPcm(file) {
+  const w = parseWav(file);
+  return resample(toMono(w.channels), w.rate, SAMPLE_RATE);
+}
+
+/**
+ * A recording from the microphone (any format the browser can play) → 16 kHz mono. Browser only.
+ * The bytes are decoded by the browser's own audio decoder, on the device.
+ * @param {Blob|ArrayBuffer} take @param {{AudioContext?:any}} [env] @returns {Promise<Float32Array>}
+ */
+export async function decodeTake(take, env = {}) {
+  const g = /** @type {any} */ (globalThis);
+  const Ctx = env.AudioContext || g.OfflineAudioContext || g.webkitOfflineAudioContext || g.AudioContext || g.webkitAudioContext;
+  if (!Ctx) throw new Error('no-audio-decoder');
+  const bytes = take instanceof ArrayBuffer ? take : await /** @type {Blob} */ (take).arrayBuffer();
+  const offline = /Offline/.test(Ctx.name || '');
+  const ctx = offline ? new Ctx(1, 1, 44100) : new Ctx();
+  try {
+    const buf = await ctx.decodeAudioData(bytes.slice(0));
+    const channels = [];
+    for (let c = 0; c < buf.numberOfChannels; c++) channels.push(buf.getChannelData(c));
+    return resample(toMono(channels), buf.sampleRate, SAMPLE_RATE);
+  } finally { try { await ctx.close?.(); } catch { /* an offline context has nothing to close */ } }
+}

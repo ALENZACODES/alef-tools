@@ -1,0 +1,138 @@
+{
+ "note": "What each listening pack is built from. scripts/export.py fetch downloads exactly these files at the revision pinned in models.manifest.json and refuses anything whose size or SHA-256 differs. \"files\" maps the names inside the pack to their source. \"build\" names a file made here from a fetched one (scripts/export.py shrink-ctc) with the SHA-256 it had when the pack was built.",
+ "packs": {
+  "listen-lite": {
+   "model": "onnx-community/whisper-base",
+   "fetch": [
+    {
+     "path": "onnx/encoder_model_q4.onnx",
+     "bytes": 18772451,
+     "sha256": "9d4e9c31e8559e71de3e0e49d60b830951484699ef53747a4a06261bbbc8cb88"
+    },
+    {
+     "path": "onnx/decoder_model_merged_int8.onnx",
+     "bytes": 53693315,
+     "sha256": "fa3ef9902734ce5ae6f9ef2bdb2ba9a6c4b5785b09f4f420ce036573dc9d090b"
+    },
+    {
+     "path": "vocab.json",
+     "bytes": 1036584,
+     "sha256": "50d6a919f0a0601d56a04eb583c780d18553aa388254ba3158eb6a00f13e2c1a"
+    },
+    {
+     "path": "added_tokens.json",
+     "bytes": 34604,
+     "sha256": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1"
+    },
+    {
+     "path": "config.json",
+     "bytes": 2243,
+     "sha256": "f4d0608f7d918166da7edb3e188de5ef1bfe70d9802e785d271fd88111e9cf4b"
+    },
+    {
+     "path": "generation_config.json",
+     "bytes": 3832,
+     "sha256": "61070cf8de25b1e9256e8e102ded49d8d24a8369ed36ef84fdf21549e68125a0"
+    }
+   ],
+   "files": {
+    "spec.json": {
+     "spec": {
+      "kind": "whisper"
+     }
+    },
+    "tokens.json": {
+     "tokens": [
+      "vocab.json",
+      "added_tokens.json"
+     ]
+    },
+    "encoder.onnx": "encoder_model_q4.onnx",
+    "decoder.onnx": "decoder_model_merged_int8.onnx"
+   }
+  },
+  "listen-best": {
+   "model": "ivrit-ai/whisper-large-v3-turbo-onnx",
+   "fetch": [
+    {
+     "path": "onnx/encoder_model_q4f16.onnx",
+     "bytes": 369947784,
+     "sha256": "68e295aa55129fbbf31432d16bd2a11498620dedc4aa6e5f070771b82ceb6b6d"
+    },
+    {
+     "path": "onnx/decoder_model_merged_q4f16.onnx",
+     "bytes": 193401635,
+     "sha256": "dd2c65af4523e903d993e5bb2c2c8fa1ca830540d8d2e531caa93ec17b2b673a"
+    },
+    {
+     "path": "vocab.json",
+     "bytes": 1036558,
+     "sha256": "e2aa043ef015641d363d8288e7c241c85e36a5c761fb303598e0710233344387"
+    },
+    {
+     "path": "added_tokens.json",
+     "bytes": 34648,
+     "sha256": "3c51f66c4c21f9e126970078f11ae77a78c74aee8df606ee9daba86e467108e0"
+    },
+    {
+     "path": "config.json",
+     "bytes": 1276,
+     "sha256": "5304ba6440479c7b550001fd4e8fbb86b31670d92922887b1db696de48fa9ab3"
+    },
+    {
+     "path": "generation_config.json",
+     "bytes": 3797,
+     "sha256": "7441c2a0bc2f507b7a7605617bce59524981c73ad4556588b0a8109a7fc0c380"
+    }
+   ],
+   "files": {
+    "spec.json": {
+     "spec": {
+      "kind": "whisper"
+     }
+    },
+    "tokens.json": {
+     "tokens": [
+      "vocab.json",
+      "added_tokens.json"
+     ]
+    },
+    "encoder.onnx": "encoder_model_q4f16.onnx",
+    "decoder.onnx": "decoder_model_merged_q4f16.onnx"
+   }
+  },
+  "pron-check": {
+   "model": "XDcobra/wav2vec2-large-xlsr-53-hebrew-ONNX",
+   "fetch": [
+    {
+     "path": "onnx/model.onnx",
+     "bytes": 1262283307,
+     "sha256": "1b3b1b85fd458feac67a9484ce0bac9b54a11ce7fa251294d11dd99cf5d4db05"
+    },
+    {
+     "path": "vocab.json",
+     "bytes": 369,
+     "sha256": "4b91c83c6be36875788cd432f4567f586f65cf5909b2816909e567b1e7c828ba"
+    }
+   ],
+   "build": {
+    "model.q4.onnx": {
+     "shrink-ctc": "model.onnx",
+     "block": 32,
+     "sha256": "4a67c327f8dede48c9718f94aad5071ee685aa52704e0c835b00e20c40a3364d"
+    }
+   },
+   "files": {
+    "spec.json": {
+     "spec": {
+      "kind": "ctc",
+      "margin": -6,
+      "dropMargin": -30
+     }
+    },
+    "vocab.json": "vocab.json",
+    "model.onnx": "model.q4.onnx"
+   }
+  }
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "schema": "alef-offline-llm/1",
+ "version": 1,
+ "judges": {
+  "judge-1.7b-thinking": {
+   "good_accepted": 6,
+   "good": 6,
+   "bad_rejected": 0,
+   "bad": 8,
+   "qualified": false,
+   "rule": "accept at least 5 of 6 good and reject at least 6 of 8 bad"
+  },
+  "judge-dictalm2": {
+   "good_accepted": 6,
+   "good": 6,
+   "bad_rejected": 2,
+   "bad": 8,
+   "qualified": false,
+   "rule": "accept at least 5 of 6 good and reject at least 6 of 8 bad"
+  }
+ },
+ "counts": {
+  "examples": {
+   "generated": 145,
+   "passed_gate": 0,
+   "sent_to_review": 104,
+   "review_reasons": {
+    "judges": 104,
+    "level": 61,
+    "morph": 1,
+    "offensive": 104,
+    "roundtrip": 14
+   },
+   "dropped_before_judging": {
+    "length": 21,
+    "target-missing": 20
+   }
+  },
+  "quiz": {
+   "generated": 66,
+   "passed_gate": 0,
+   "sent_to_review": 66,
+   "review_reasons": {
+    "judges": 66
+   }
+  },
+  "ask_answers": {
+   "generated": 17,
+   "passed_gate": 0,
+   "sent_to_review": 17,
+   "review_reasons": {
+    "judges": 17
+   }
+  },
+  "ask_hebrew_wordings": {
+   "generated": 22,
+   "passed_gate": 0,
+   "sent_to_review": 22,
+   "review_reasons": {
+    "judges": 22,
+    "offensive": 22
+   }
+  }
+ },
+ "built": "2026-11-12",
+ "built_on": "2 CPUs, 7 GB memory, no GPU; no money spent",
+ "models_run": {
+  "generator": "dicta-il/DictaLM-3.0-1.7B-Instruct (Q8_0 GGUF made from the pinned revision)",
+  "judges": [
+   "dicta-il/DictaLM-3.0-1.7B-Thinking-GGUF (Q4_K_M)",
+   "dicta-il/dictalm2.0-instruct-GGUF (Q4_K_M)"
+  ],
+  "checks": [
+   "dicta-il/dictabert-joint",
+   "Helsinki-NLP/opus-mt-tc-big-he-en",
+   "dicta-il/BEREL_3.0",
+   "dicta-il/dictabert-heq",
+   "dicta-il/neodictabert-bilingual-embed"
+  ],
+  "not_run": [
+   "dicta-il/DictaLM-3.0-24B-Thinking (needs a GPU box)",
+   "dicta-il/DictaLM-3.0-Nemotron-12B-Instruct (7.5 GB file, 7 GB box)",
+   "KevynKrancenblum/hebrew-offensive-detection on the candidates (it loads and labels test strings correctly, but it runs last and no item got that far)",
+   "the QA-only judges"
+  ]
+ },
+ "notes": [
+  "Neither judge qualified on the known-answer sentences, so by the gate's rule nothing could pass: every draft is in review/.",
+  "Example sentences: 65 words of pu-greetings, pu-cafe and pu-family (first 25 one- or two-word items of each).",
+  "Hebrew wordings: the run was stopped after 36 of 132 topics; 22 drafts are in review/.",
+  "Agreement check on the known-answer sentences: 11 of 11 right."
+ ],
+ "search": {
+  "eval": "eval/search-eval.v1.json",
+  "top3_percent": 77,
+  "hits": 77,
+  "total": 100,
+  "english": "45/50",
+  "hebrew": "32/50",
+  "byType": {
+   "ask": {
+    "total": 70,
+    "hits": 51
+   },
+   "unit": {
+    "total": 15,
+    "hits": 12
+   },
+   "word": {
+    "total": 15,
+    "hits": 14
+   }
+  },
+  "target_percent": 85,
+  "target_met": false,
+  "compare": {
+   "words_only_no_attached_words": "63% (Hebrew 18/50)",
+   "with_vector_pull_up_near_0.5": "72%"
+  },
+  "entries": 2443,
+  "index_json_bytes": 476126,
+  "vectors_bytes": 78176,
+  "total_bytes": 554302,
+  "budget_bytes": 1572864
+ }
+}

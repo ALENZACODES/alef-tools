@@ -1,0 +1,144 @@
+{
+ "model": "dicta-il/dictabert-tiny-joint",
+ "items": 6661,
+ "targetNotFound": 5,
+ "bySet": {
+  "all": {
+   "gender": {
+    "n": 2868,
+    "right": 2559,
+    "pct": 89.23
+   },
+   "lemma": {
+    "n": 5835,
+    "right": 4613,
+    "pct": 79.06,
+    "strictPct": 72.08
+   },
+   "number": {
+    "n": 2434,
+    "right": 2194,
+    "pct": 90.14
+   },
+   "pos": {
+    "n": 5827,
+    "right": 5089,
+    "pct": 87.33
+   },
+   "prefix": {
+    "n": 2955,
+    "right": 2797,
+    "pct": 94.65
+   }
+  },
+  "context": {
+   "gender": {
+    "n": 1635,
+    "right": 1506,
+    "pct": 92.11
+   },
+   "lemma": {
+    "n": 3070,
+    "right": 2526,
+    "pct": 82.28,
+    "strictPct": 74.1
+   },
+   "number": {
+    "n": 1134,
+    "right": 1063,
+    "pct": 93.74
+   },
+   "pos": {
+    "n": 3066,
+    "right": 2734,
+    "pct": 89.17
+   },
+   "prefix": {
+    "n": 1964,
+    "right": 1920,
+    "pct": 97.76
+   }
+  },
+  "prefix-built": {
+   "prefix": {
+    "n": 800,
+    "right": 695,
+    "pct": 86.88
+   }
+  },
+  "prefix-deck": {
+   "prefix": {
+    "n": 21,
+    "right": 20,
+    "pct": 95.24
+   }
+  },
+  "single": {
+   "gender": {
+    "n": 1030,
+    "right": 911,
+    "pct": 88.45
+   },
+   "lemma": {
+    "n": 2500,
+    "right": 1947,
+    "pct": 77.88,
+    "strictPct": 72.12
+   },
+   "number": {
+    "n": 1220,
+    "right": 1081,
+    "pct": 88.61
+   },
+   "pos": {
+    "n": 2496,
+    "right": 2150,
+    "pct": 86.14
+   }
+  },
+  "verse": {
+   "gender": {
+    "n": 203,
+    "right": 142,
+    "pct": 69.95
+   },
+   "lemma": {
+    "n": 265,
+    "right": 140,
+    "pct": 52.83,
+    "strictPct": 48.3
+   },
+   "number": {
+    "n": 80,
+    "right": 50,
+    "pct": 62.5
+   },
+   "pos": {
+    "n": 265,
+    "right": 205,
+    "pct": 77.36
+   },
+   "prefix": {
+    "n": 170,
+    "right": 162,
+    "pct": 95.29
+   }
+  }
+ },
+ "dictionaryLink": {
+  "context": {
+   "n": 3070,
+   "linked": 2444,
+   "linkedPct": 79.61,
+   "right": 2343,
+   "rightPct": 95.87
+  },
+  "verse": {
+   "n": 265,
+   "linked": 162,
+   "linkedPct": 61.13,
+   "right": 141,
+   "rightPct": 87.04
+  }
+ }
+}

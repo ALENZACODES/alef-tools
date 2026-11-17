@@ -1,0 +1,5894 @@
+{
+ "schema": "alef-offline-llm/1",
+ "kind": "review",
+ "what": "example sentences that did not pass the gate",
+ "items": [
+  {
+   "id": "ex-4a64f7b6ab",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-01",
+    "he": "שָׁלוֹם",
+    "en": "hello / goodbye / peace"
+   },
+   "he": "שלום, מה שלומך?",
+   "en": "Hello, how are you?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Hello, how are you?",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Hello, how are you?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "שלומ": "שלום",
+      "": "?",
+      "מה": "מה",
+      "שלומכ": "שלום"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-60ee492f11",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-01",
+    "he": "שָׁלוֹם",
+    "en": "hello / goodbye / peace"
+   },
+   "he": "לא שלום, שלום.",
+   "en": "Goodbye, goodbye.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.0,
+     "mt": "No. Hello, hello.",
+     "detail": "round-trip 0.00 (needs 0.5): reads back as “No. Hello, hello.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "לא": "לא",
+      "שלומ": "שלום",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.00 (needs 0.5): reads back as “No. Hello, hello.”"
+    ]
+   }
+  },
+  {
+   "id": "ex-6869a35831",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-04",
+    "he": "צָהֳרַיִם טוֹבִים",
+    "en": "good afternoon"
+   },
+   "he": "צהרים טובים לכולם",
+   "en": "Good afternoon to everyone",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "Good afternoon to all.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “Good afternoon to all.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "צהרימ": "צהריים",
+      "טובימ": "טוב",
+      "לכולמ": "כול"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: לכולמ"
+    ]
+   }
+  },
+  {
+   "id": "ex-9fe87ce76d",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-04",
+    "he": "צָהֳרַיִם טוֹבִים",
+    "en": "good afternoon"
+   },
+   "he": "צהרים טובים לכם",
+   "en": "Good afternoon to you",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Good afternoon to you.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Good afternoon to you.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "צהרימ": "צהריים",
+      "טובימ": "טוב",
+      "לכמ": "לו"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-bd5a98d011",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-05",
+    "he": "עֶרֶב טוֹב",
+    "en": "good evening"
+   },
+   "he": "ערב טוב, צהריים נהדרים",
+   "en": "Good evening, wonderful afternoons",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "Good evening, lovely afternoon.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “Good evening, lovely afternoon.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ערב": "ערב",
+      "טוב": "טוב",
+      "": ",",
+      "צהריימ": "צהריים",
+      "נהדרימ": "נהדר"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: צהריימ"
+    ]
+   }
+  },
+  {
+   "id": "ex-70cd50bac5",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-05",
+    "he": "עֶרֶב טוֹב",
+    "en": "good evening"
+   },
+   "he": "ערב טוב, יום נעים",
+   "en": "Good evening, pleasant day",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "Good evening, have a nice day.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “Good evening, have a nice day.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ערב": "ערב",
+      "טוב": "טוב",
+      "": ",",
+      "יומ": "יום",
+      "נעימ": "נעים"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-8e733fbeb3",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-06",
+    "he": "לַיְלָה טוֹב",
+    "en": "good night"
+   },
+   "he": "לילה טוב, מחר זה יום חדש.",
+   "en": "Good night, tomorrow is a new day.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Good night, tomorrow's a new day.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Good night, tomorrow's a new day.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "לילה": "לילה",
+      "טוב": "[BLANK]",
+      "": ".",
+      "מחר": "מחר",
+      "זה": "זה",
+      "יומ": "יום",
+      "חדש": "חדש"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-f516c811c6",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-06",
+    "he": "לַיְלָה טוֹב",
+    "en": "good night"
+   },
+   "he": "לילה טוב, אני הולך לישון.",
+   "en": "Good night, I am going to sleep.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "Good night, I'm going to bed.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “Good night, I'm going to bed.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "לילה": "לילה",
+      "טוב": "[BLANK]",
+      "": ".",
+      "אני": "אני",
+      "הולכ": "הולך",
+      "לישונ": "ישן"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-ef41a73d1d",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-07",
+    "he": "שַׁבָּת שָׁלוֹם",
+    "en": "peaceful Sabbath (greeting from Friday afternoon to Saturday)"
+   },
+   "he": "שבת שלום לכל עם ישראל.",
+   "en": "Have a peaceful Sabbath to all of Israel!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.444,
+     "mt": "Shabbat Shalom for all the people of Israel.",
+     "detail": "round-trip 0.44 (needs 0.5): reads back as “Shabbat Shalom for all the people of Israel.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "שבת": "שבת",
+      "שלומ": "שלום",
+      "לכל": "כול",
+      "עמ": "עם",
+      "ישראל": "ישראל",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.44 (needs 0.5): reads back as “Shabbat Shalom for all the people of Israel.”",
+     "level: above the unit's level: ישראל"
+    ]
+   }
+  },
+  {
+   "id": "ex-141e5aa336",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-08",
+    "he": "שָׁבוּעַ טוֹב",
+    "en": "good week"
+   },
+   "he": "שבוע טוב, חברים.",
+   "en": "Good week, friends.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "Good week, guys.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “Good week, guys.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "שבוע": "שבוע",
+      "טוב": "טוב",
+      "": ".",
+      "חברימ": "חבר"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-88902fa063",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-08",
+    "he": "שָׁבוּעַ טוֹב",
+    "en": "good week"
+   },
+   "he": "שבוע טוב, לכולם.",
+   "en": "Good week, everyone.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Good week, everyone.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Good week, everyone.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "שבוע": "שבוע",
+      "טוב": "טוב",
+      "": ".",
+      "לכולמ": "כול"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: לכולמ"
+    ]
+   }
+  },
+  {
+   "id": "ex-f3a07775dd",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-09",
+    "he": "חַג שָׂמֵחַ",
+    "en": "happy holiday"
+   },
+   "he": "חג שמח לך!",
+   "en": "Happy holiday to you!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.0,
+     "mt": "Merry Christmas to you!",
+     "detail": "round-trip 0.00 (needs 0.5): reads back as “Merry Christmas to you!”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "חג": "חג",
+      "שמח": "שמח",
+      "לכ": "לו",
+      "": "!"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.00 (needs 0.5): reads back as “Merry Christmas to you!”"
+    ]
+   }
+  },
+  {
+   "id": "ex-16dfbe5c7e",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-09",
+    "he": "חַג שָׂמֵחַ",
+    "en": "happy holiday"
+   },
+   "he": "חג שמח לכל המשפחה",
+   "en": "Happy holiday to the whole family!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.5,
+     "mt": "Merry Christmas to the whole family.",
+     "detail": "round-trip 0.50 (needs 0.5): reads back as “Merry Christmas to the whole family.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "חג": "חג",
+      "שמח": "שמח",
+      "לכל": "כול",
+      "המשפחה": "משפחה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-ff4e8c795a",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-10",
+    "he": "שָׁנָה טוֹבָה",
+    "en": "happy new year (Rosh Hashana greeting)"
+   },
+   "he": "שנה טובה לכולם!",
+   "en": "Happy new year to everyone!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Happy New Year everyone!",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Happy New Year everyone!”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "שנה": "שנה",
+      "טובה": "טוב",
+      "לכולמ": "כול",
+      "": "!"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: לכולמ"
+    ]
+   }
+  },
+  {
+   "id": "ex-05b61cc2f2",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-10",
+    "he": "שָׁנָה טוֹבָה",
+    "en": "happy new year (Rosh Hashana greeting)"
+   },
+   "he": "שנה טובה ומבורכת!",
+   "en": "Happy new year and blessed!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.857,
+     "mt": "Happy New Year!",
+     "detail": "round-trip 0.86 (needs 0.5): reads back as “Happy New Year!”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "שנה": "שנה",
+      "טובה": "טוב",
+      "ומבורכת": "מבורך",
+      "": "!"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: ומבורכת"
+    ]
+   }
+  },
+  {
+   "id": "ex-7f076f8659",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-12",
+    "he": "מָה נִשְׁמָע?",
+    "en": "what's up? (lit. what is heard?)"
+   },
+   "he": "מה נשמע היום?",
+   "en": "How are you today?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "How's it going today?",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “How's it going today?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "מה": "מה",
+      "נשמע": "נשמע",
+      "היומ": "יום",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-e97a1893e7",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-13",
+    "he": "מָה קוֹרֶה?",
+    "en": "what's happening?"
+   },
+   "he": "מה קורה, חבר'ה?",
+   "en": "What's up, guys?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "What's up, guys?",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “What's up, guys?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "מה": "מה",
+      "קורה": "קורה",
+      "": "?",
+      "חבר": "חבר",
+      "ה": "ה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: חבר'ה"
+    ]
+   }
+  },
+  {
+   "id": "ex-55d4e7a247",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-13",
+    "he": "מָה קוֹרֶה?",
+    "en": "what's happening?"
+   },
+   "he": "מה קורה איתך?",
+   "en": "How are you doing?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.0,
+     "mt": "What's going on with you?",
+     "detail": "round-trip 0.00 (needs 0.5): reads back as “What's going on with you?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "מה": "מה",
+      "קורה": "קורה",
+      "איתכ": "את",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.00 (needs 0.5): reads back as “What's going on with you?”"
+    ]
+   }
+  },
+  {
+   "id": "ex-16ed428bab",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-14",
+    "he": "הַכֹּל בְּסֵדֶר",
+    "en": "everything is OK"
+   },
+   "he": "הכל בסדר, תודה.",
+   "en": "Everything is OK, thank you.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "Everything's fine, thank you.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “Everything's fine, thank you.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הכל": "כול",
+      "בסדר": "בסדר",
+      "": ".",
+      "תודה": "תודה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-b971f550ef",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-14",
+    "he": "הַכֹּל בְּסֵדֶר",
+    "en": "everything is OK"
+   },
+   "he": "הכל בסדר, אני כאן.",
+   "en": "Everything is OK, I'm here.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.0,
+     "mt": "It's all right, I'm here.",
+     "detail": "round-trip 0.00 (needs 0.5): reads back as “It's all right, I'm here.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הכל": "כול",
+      "בסדר": "בסדר",
+      "": ".",
+      "אני": "אני",
+      "כאנ": "כאן"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.00 (needs 0.5): reads back as “It's all right, I'm here.”"
+    ]
+   }
+  },
+  {
+   "id": "ex-5285c3bcc2",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-15",
+    "he": "בְּסֵדֶר",
+    "en": "OK / fine / alright"
+   },
+   "he": "בסדר גמור, תודה.",
+   "en": "Fine, thanks.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.5,
+     "mt": "Very well, thank you.",
+     "detail": "round-trip 0.50 (needs 0.5): reads back as “Very well, thank you.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "בסדר": "בסדר",
+      "גמור": "גמור",
+      "": ".",
+      "תודה": "תודה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: גמור"
+    ]
+   }
+  },
+  {
+   "id": "ex-a56a7e607b",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-17",
+    "he": "לֹא רַע",
+    "en": "not bad"
+   },
+   "he": "לא רע, תודה ששאלת.",
+   "en": "Not bad, thanks for asking.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Not bad, thanks for asking.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Not bad, thanks for asking.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "לא": "לא",
+      "רע": "רע",
+      "": ".",
+      "תודה": "תודה",
+      "ששאלת": "שאלה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: ששאלת"
+    ]
+   }
+  },
+  {
+   "id": "ex-feb5860e53",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-17",
+    "he": "לֹא רַע",
+    "en": "not bad"
+   },
+   "he": "לא רע, בוא נמשיך.",
+   "en": "Not bad, let's continue.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.571,
+     "mt": "Not bad. Let's keep going.",
+     "detail": "round-trip 0.57 (needs 0.5): reads back as “Not bad. Let's keep going.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "לא": "לא",
+      "רע": "רע",
+      "": ".",
+      "בוא": "בא",
+      "נמשיכ": "המשיך"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-5d508715ed",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-18",
+    "he": "כָּכָה כָּכָה",
+    "en": "so-so"
+   },
+   "he": "היום יום שמשי, ככה ככה.",
+   "en": "It's a sunny day, so-so.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.8,
+     "mt": "It's a sunny day, like this.",
+     "detail": "round-trip 0.80 (needs 0.5): reads back as “It's a sunny day, like this.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "היומ": "יום",
+      "יומ": "יום",
+      "שמשי": "שמשי",
+      "": ".",
+      "ככה": "ככה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: שמשי"
+    ]
+   }
+  },
+  {
+   "id": "ex-bcea65ccce",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-18",
+    "he": "כָּכָה כָּכָה",
+    "en": "so-so"
+   },
+   "he": "ארוחת צהריים טעימה, ככה ככה.",
+   "en": "The lunch was delicious, so-so.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.8,
+     "mt": "A delicious lunch, like that.",
+     "detail": "round-trip 0.80 (needs 0.5): reads back as “A delicious lunch, like that.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ארוחת": "ארוחה",
+      "צהריימ": "צהריים",
+      "טעימה": "טעימה",
+      "": ".",
+      "ככה": "ככה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: צהריימ טעימה"
+    ]
+   }
+  },
+  {
+   "id": "ex-880114a085",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-19",
+    "he": "נָעִים מְאֹד",
+    "en": "nice to meet you"
+   },
+   "he": "נעים מאד להכיר, נפגשנו לראשונה.",
+   "en": "Nice to meet you, we met for the first time.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "It's very nice to meet you. We met for the first time.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “It's very nice to meet you. We met for the first time.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "נעימ": "נעים",
+      "מאד": "מאוד",
+      "להכיר": "הכיר",
+      "": ".",
+      "נפגשנו": "נפגש",
+      "לראשונה": "ראשון"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: נפגשנו"
+    ]
+   }
+  },
+  {
+   "id": "ex-1061f38d07",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-19",
+    "he": "נָעִים מְאֹד",
+    "en": "nice to meet you"
+   },
+   "he": "נעים מאד להכיר, אני שמחה מאוד.",
+   "en": "Nice to meet you, I'm very happy.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "It's very nice to meet you. I'm very happy.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “It's very nice to meet you. I'm very happy.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "נעימ": "נעים",
+      "מאד": "מאוד",
+      "להכיר": "הכיר",
+      "": ".",
+      "אני": "אני",
+      "שמחה": "שמחה",
+      "מאוד": "מאוד"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: שמחה"
+    ]
+   }
+  },
+  {
+   "id": "ex-b4696faa54",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-20",
+    "he": "לְהִתְרָאוֹת",
+    "en": "see you (later)"
+   },
+   "he": "להתראות, ביי ביי.",
+   "en": "See you later, bye bye.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.4,
+     "mt": "Goodbye. Bye-bye.",
+     "detail": "round-trip 0.40 (needs 0.5): reads back as “Goodbye. Bye-bye.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "להתראות": "התראה",
+      "": ".",
+      "ביי": "ביי"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.40 (needs 0.5): reads back as “Goodbye. Bye-bye.”",
+     "level: above the unit's level: ביי ביי"
+    ]
+   }
+  },
+  {
+   "id": "ex-fb42c60f6b",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-20",
+    "he": "לְהִתְרָאוֹת",
+    "en": "see you (later)"
+   },
+   "he": "להתראות, עד שניפגש שוב.",
+   "en": "See you later, until we meet again.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "Goodbye, until we meet again.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “Goodbye, until we meet again.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "להתראות": "התראה",
+      "": ".",
+      "עד": "עד",
+      "שניפגש": "נפגש",
+      "שוב": "שוב"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: שניפגש שוב"
+    ]
+   }
+  },
+  {
+   "id": "ex-13715ea3f9",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-21",
+    "he": "יוֹם נָעִים",
+    "en": "have a nice day"
+   },
+   "he": "יום נעים, אדוני.",
+   "en": "Have a nice day, sir.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Have a nice day, sir.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Have a nice day, sir.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "יומ": "יום",
+      "נעימ": "נעים",
+      "": ".",
+      "אדוני": "אדוני"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: אדוני"
+    ]
+   }
+  },
+  {
+   "id": "ex-4022f2af52",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-21",
+    "he": "יוֹם נָעִים",
+    "en": "have a nice day"
+   },
+   "he": "יום נעים, לכולם.",
+   "en": "Have a nice day, everyone.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Have a nice day, everyone.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Have a nice day, everyone.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "יומ": "יום",
+      "נעימ": "נעים",
+      "": ".",
+      "לכולמ": "כול"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: לכולמ"
+    ]
+   }
+  },
+  {
+   "id": "ex-6bfb7a06fe",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-22",
+    "he": "בָּרוּךְ הַבָּא",
+    "en": "welcome (to one person)"
+   },
+   "he": "ברוך הבא לבית הספר.",
+   "en": "Welcome to school.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Welcome to the school.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Welcome to the school.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ברוכ": "ברוך",
+      "הבא": "בא",
+      "לבית": "בית",
+      "הספר": "ספר",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-334d90a495",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-22",
+    "he": "בָּרוּךְ הַבָּא",
+    "en": "welcome (to one person)"
+   },
+   "he": "ברוך הבא לחנות.",
+   "en": "Welcome to the store.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Welcome to the store.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Welcome to the store.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ברוכ": "ברוך",
+      "הבא": "בא",
+      "לחנות": "חנות",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: לחנות"
+    ]
+   }
+  },
+  {
+   "id": "ex-0dac1d7299",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-23",
+    "he": "בְּרוּכִים הַבָּאִים",
+    "en": "welcome (to several people)"
+   },
+   "he": "ברוכים הבאים לאתר שלנו!",
+   "en": "Welcome to our website!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Welcome to our website!",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Welcome to our website!”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ברוכימ": "ברוך",
+      "הבאימ": "בא",
+      "לאתר": "אתר",
+      "שלנו": "של",
+      "": "!"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: לאתר"
+    ]
+   }
+  },
+  {
+   "id": "ex-c52cf2709f",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-23",
+    "he": "בְּרוּכִים הַבָּאִים",
+    "en": "welcome (to several people)"
+   },
+   "he": "ברוכים הבאים לפורטל החדש!",
+   "en": "Welcome to the new portal!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Welcome to the new portal!",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Welcome to the new portal!”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ברוכימ": "ברוך",
+      "הבאימ": "בא",
+      "לפורטל": "פורטל",
+      "החדש": "חדש",
+      "": "!"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: לפורטל"
+    ]
+   }
+  },
+  {
+   "id": "ex-11103cc0bd",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-24",
+    "he": "מַזָּל טוֹב",
+    "en": "congratulations / good luck"
+   },
+   "he": "מזל טוב ליום הולדתך, אושר גדול.",
+   "en": "Congratulations for your birthday, great happiness.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Congratulations on your birthday, great happiness.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Congratulations on your birthday, great happiness.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "מזל": "מזל",
+      "טוב": "[BLANK]",
+      "ליומ": "יום",
+      "הולדתכ": "הולדת",
+      "": ".",
+      "אושר": "אושר",
+      "גדול": "גדול"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: הולדתכ אושר"
+    ]
+   }
+  },
+  {
+   "id": "ex-cdac3d9a3e",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-24",
+    "he": "מַזָּל טוֹב",
+    "en": "congratulations / good luck"
+   },
+   "he": "מזל טוב ליום הולדתך, יום מיוחד.",
+   "en": "Congratulations for your birthday, a special day.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Congratulations on your birthday, special day.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Congratulations on your birthday, special day.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "מזל": "מזל",
+      "טוב": "טוב",
+      "ליומ": "יום",
+      "הולדתכ": "הולדת",
+      "": ".",
+      "יומ": "יום",
+      "מיוחד": "מיוחד"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: הולדתכ מיוחד"
+    ]
+   }
+  },
+  {
+   "id": "ex-8072ccaa63",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-25",
+    "he": "בְּהַצְלָחָה",
+    "en": "good luck / all the best"
+   },
+   "he": "בהצלחה גדולה במסעך!",
+   "en": "Good luck on your journey!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Good luck on your journey!",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Good luck on your journey!”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "בהצלחה": "הצלחה",
+      "גדולה": "גדול",
+      "במסעכ": "מסע",
+      "": "!"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: במסעכ"
+    ]
+   }
+  },
+  {
+   "id": "ex-8c29e02d08",
+   "type": "example",
+   "unit": "pu-greetings",
+   "level": "L0",
+   "target": {
+    "itemId": "greetings-25",
+    "he": "בְּהַצְלָחָה",
+    "en": "good luck / all the best"
+   },
+   "he": "בהצלחה רבה בהמשך הדרך!",
+   "en": "All the best on your next step!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.0,
+     "mt": "Good luck down the road!",
+     "detail": "round-trip 0.00 (needs 0.5): reads back as “Good luck down the road!”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "בהצלחה": "הצלחה",
+      "רבה": "רב",
+      "בהמשכ": "המשך",
+      "הדרכ": "דרך",
+      "": "!"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.00 (needs 0.5): reads back as “Good luck down the road!”"
+    ]
+   }
+  },
+  {
+   "id": "ex-e990c81eee",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-04",
+    "he": "קָפֶה הָפוּךְ",
+    "en": "latte-style milky coffee (lit. upside-down coffee)"
+   },
+   "he": "אני רוצה קפה הפוך עם חלב, בבקשה.",
+   "en": "I'd like a latte with milk, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.571,
+     "mt": "I'd like a reverse coffee with milk, please.",
+     "detail": "round-trip 0.57 (needs 0.5): reads back as “I'd like a reverse coffee with milk, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "רוצה": "רוצה",
+      "קפה": "קפה",
+      "הפוכ": "הפוך",
+      "עמ": "עם",
+      "חלב": "חלב",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-18f761b74c",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-04",
+    "he": "קָפֶה הָפוּךְ",
+    "en": "latte-style milky coffee (lit. upside-down coffee)"
+   },
+   "he": "אני אשמח לקבל קפה הפוך, בבקשה.",
+   "en": "I'd like a latte, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.0,
+     "mt": "I'd love to have a reverse coffee, please.",
+     "detail": "round-trip 0.00 (needs 0.5): reads back as “I'd love to have a reverse coffee, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "אשמח": "אשמח",
+      "לקבל": "קיבל",
+      "קפה": "קפה",
+      "הפוכ": "הפוך",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.00 (needs 0.5): reads back as “I'd love to have a reverse coffee, please.”",
+     "level: above the unit's level: אשמח"
+    ]
+   }
+  },
+  {
+   "id": "ex-74f272fdb2",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-05",
+    "he": "אֶסְפְּרֶסוֹ",
+    "en": "espresso"
+   },
+   "he": "הכנתי לכם אספרסו חזק, תיהנו.",
+   "en": "I made a strong espresso for you, enjoy.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "I made you a strong espresso. Have fun.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “I made you a strong espresso. Have fun.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הכנתי": "[BLANK]",
+      "לכמ": "לו",
+      "אספרסו": "אספרסו",
+      "חזק": "חזק",
+      "": ".",
+      "תיהנו": "נהנה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: הכנתי תיהנו"
+    ]
+   }
+  },
+  {
+   "id": "ex-d6d822d961",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-05",
+    "he": "אֶסְפְּרֶסוֹ",
+    "en": "espresso"
+   },
+   "he": "אפשר להזמין גם אספרסו קצר?",
+   "en": "Would you like a short espresso?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.571,
+     "mt": "Can I order a short espresso too?",
+     "detail": "round-trip 0.57 (needs 0.5): reads back as “Can I order a short espresso too?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אפשר": "אפשר",
+      "להזמינ": "הזמין",
+      "גמ": "גם",
+      "אספרסו": "אספרסו",
+      "קצר": "קצר",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: קצר"
+    ]
+   }
+  },
+  {
+   "id": "ex-71fe9c2503",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-06",
+    "he": "קָפֶה שָׁחוֹר",
+    "en": "black coffee"
+   },
+   "he": "הגעתי לקפה, חיכיתי לשתות קפה שחור.",
+   "en": "I went to the cafe, waiting for a black coffee.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.889,
+     "mt": "I went for coffee, waiting for a black coffee.",
+     "detail": "round-trip 0.89 (needs 0.5): reads back as “I went for coffee, waiting for a black coffee.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הגעתי": "הגיע",
+      "לקפה": "קפה",
+      "": ".",
+      "חיכיתי": "חיכה",
+      "לשתות": "השתייה",
+      "קפה": "קפה",
+      "שחור": "שחור"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: חיכיתי לשתות"
+    ]
+   }
+  },
+  {
+   "id": "ex-d69958f18b",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-06",
+    "he": "קָפֶה שָׁחוֹר",
+    "en": "black coffee"
+   },
+   "he": "הציעו לי קפה שחור, זה מה שאני רוצה.",
+   "en": "They offered me a black coffee, that's what I want.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.889,
+     "mt": "I've been offered black coffee, that's what I want.",
+     "detail": "round-trip 0.89 (needs 0.5): reads back as “I've been offered black coffee, that's what I want.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הציעו": "הציע",
+      "לי": "לי",
+      "קפה": "קפה",
+      "שחור": "שחור",
+      "": ".",
+      "זה": "זה",
+      "מה": "מה",
+      "שאני": "אני",
+      "רוצה": "רוצה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-f951415942",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-09",
+    "he": "מַיִם",
+    "en": "water"
+   },
+   "he": "המים מתוקים, בבקשה.",
+   "en": "The water is sweet, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "The water is sweet, please.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “The water is sweet, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "המימ": "מים",
+      "מתוקימ": "מתוק",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-e4285a89ac",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-09",
+    "he": "מַיִם",
+    "en": "water"
+   },
+   "he": "תביא לי מים חמים.",
+   "en": "Bring me some hot water.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "Get me some hot water.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “Get me some hot water.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "תביא": "הביא",
+      "לי": "לי",
+      "מימ": "מים",
+      "חמימ": "חם",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-e99d3c6c9e",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-11",
+    "he": "בִּירָה",
+    "en": "beer"
+   },
+   "he": "אני שותה בירה קרה, אתה רוצה גם?",
+   "en": "I'm drinking a cold beer, do you want any too?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.8,
+     "mt": "I'm having a cold beer, you want some too?",
+     "detail": "round-trip 0.80 (needs 0.5): reads back as “I'm having a cold beer, you want some too?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "שותה": "שותה",
+      "בירה": "בירה",
+      "קרה": "קר",
+      "": "?",
+      "אתה": "את",
+      "רוצה": "רוצה",
+      "גמ": "גם"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-a5a1e04f2a",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-12",
+    "he": "יַיִן",
+    "en": "wine"
+   },
+   "he": "היה לי יין לבן, בבקשה.",
+   "en": "I had a white wine, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "I had white wine, please.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “I had white wine, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "היה": "היי",
+      "לי": "לי",
+      "יינ": "יין",
+      "לבנ": "לבן",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-728837130e",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-12",
+    "he": "יַיִן",
+    "en": "wine"
+   },
+   "he": "אני רוצה עוד יין, בבקשה.",
+   "en": "I want more wine, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "I'd like some more wine, please.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “I'd like some more wine, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "רוצה": "רוצה",
+      "עוד": "עוד",
+      "יינ": "יין",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-13d01975cd",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-13",
+    "he": "לְחַיִּים!",
+    "en": "cheers!"
+   },
+   "he": "תודה רבה, לחיים!",
+   "en": "Thank you, cheers!",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.8,
+     "mt": "Thank you very much, cheers!",
+     "detail": "round-trip 0.80 (needs 0.5): reads back as “Thank you very much, cheers!”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "תודה": "תודה",
+      "רבה": "רב",
+      "": "!",
+      "לחיימ": "לחיים"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-6b3e592db0",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-14",
+    "he": "אֶפְשָׁר לְהַזְמִין?",
+    "en": "can I order?"
+   },
+   "he": "אפשר להזמין תה קר?",
+   "en": "Can I order a cup of tea?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "Can I order some iced tea?",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “Can I order some iced tea?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אפשר": "אפשר",
+      "להזמינ": "הזמין",
+      "תה": "תה",
+      "קר": "קר",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-e49cd9b415",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-14",
+    "he": "אֶפְשָׁר לְהַזְמִין?",
+    "en": "can I order?"
+   },
+   "he": "אפשר להזמין קפה שחור?",
+   "en": "Can I order a black coffee?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Can I order black coffee?",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Can I order black coffee?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אפשר": "אפשר",
+      "להזמינ": "הזמין",
+      "קפה": "קפה",
+      "שחור": "שחור",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-73f8494b78",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-16",
+    "he": "חוּמוּס",
+    "en": "hummus"
+   },
+   "he": "אני רוצה חומוס, בבקשה.",
+   "en": "I'd like hummus, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "I'd like some hummus, please.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “I'd like some hummus, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "רוצה": "רוצה",
+      "חומוס": "חומוס",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-8fef1a2cc3",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-16",
+    "he": "חוּמוּס",
+    "en": "hummus"
+   },
+   "he": "החומוס שלך מוכן.",
+   "en": "Your hummus is ready.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.5,
+     "mt": "Your chick is ready.",
+     "detail": "round-trip 0.50 (needs 0.5): reads back as “Your chick is ready.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "החומוס": "חומוס",
+      "שלכ": "של",
+      "מוכנ": "מוכן",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-5913b2a9f7",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-17",
+    "he": "פָלָאפֶל",
+    "en": "falafel"
+   },
+   "he": "הכנתי פלאפל עם טחינה, בבקשה.",
+   "en": "I ordered falafel with tahini, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.333,
+     "mt": "I made pepper with tahini, please.",
+     "detail": "round-trip 0.33 (needs 0.5): reads back as “I made pepper with tahini, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הכנתי": "[BLANK]",
+      "פלאפל": "פלאפל",
+      "עמ": "עם",
+      "טחינה": "טחינה",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.33 (needs 0.5): reads back as “I made pepper with tahini, please.”",
+     "level: above the unit's level: הכנתי טחינה"
+    ]
+   }
+  },
+  {
+   "id": "ex-adf6f9faa3",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-17",
+    "he": "פָלָאפֶל",
+    "en": "falafel"
+   },
+   "he": "רוצה פלאפל נוסף?",
+   "en": "Would you like some more falafel?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.333,
+     "mt": "Want another falafel?",
+     "detail": "round-trip 0.33 (needs 0.5): reads back as “Want another falafel?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "רוצה": "רוצה",
+      "פלאפל": "פלאפל",
+      "נוספ": "נוסף",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.33 (needs 0.5): reads back as “Want another falafel?”"
+    ]
+   }
+  },
+  {
+   "id": "ex-24f0df6f12",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-18",
+    "he": "שַׁקְשׁוּקָה",
+    "en": "shakshuka (eggs poached in tomato sauce)"
+   },
+   "he": "הכנתי שקשוקה, מתכון קל להכנה.",
+   "en": "I made shakshuka, a simple recipe.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "I made Shakshuka, an easy recipe to make.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “I made Shakshuka, an easy recipe to make.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הכנתי": "[BLANK]",
+      "שקשוקה": "שקשוקה",
+      "": ".",
+      "מתכונ": "מתכון",
+      "קל": "קל",
+      "להכנה": "הכנה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: הכנתי מתכונ להכנה"
+    ]
+   }
+  },
+  {
+   "id": "ex-752d9ce3fe",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-18",
+    "he": "שַׁקְשׁוּקָה",
+    "en": "shakshuka (eggs poached in tomato sauce)"
+   },
+   "he": "היא בישלה שקשוקה, טעימה במיוחד.",
+   "en": "She cooked shakshuka, especially delicious.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "She cooked shakshuka, especially delicious.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “She cooked shakshuka, especially delicious.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "היא": "הוא",
+      "בישלה": "בישל",
+      "שקשוקה": "שקשוקה",
+      "": ".",
+      "טעימה": "טעימה",
+      "במיוחד": "מאוד"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: בישלה טעימה"
+    ]
+   }
+  },
+  {
+   "id": "ex-eb5523f831",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-19",
+    "he": "פִּיתָה",
+    "en": "pita bread"
+   },
+   "he": "רציתי פיתה עם תוספות, בבקשה.",
+   "en": "I ordered a pita with toppings, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "I wanted a pita with toppings, please.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “I wanted a pita with toppings, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "רציתי": "רוצה",
+      "פיתה": "פיתה",
+      "עמ": "עם",
+      "תוספות": "תוספת",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: תוספות"
+    ]
+   }
+  },
+  {
+   "id": "ex-4be4d689db",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-19",
+    "he": "פִּיתָה",
+    "en": "pita bread"
+   },
+   "he": "קיבלתי פיתה טרייה עם חומוס וטחינה.",
+   "en": "I received a fresh pita with hummus and tahini.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.6,
+     "mt": "I got a fresh pita with hummus and milling.",
+     "detail": "round-trip 0.60 (needs 0.5): reads back as “I got a fresh pita with hummus and milling.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "קיבלתי": "קיבל",
+      "פיתה": "פיתה",
+      "טרייה": "טרי",
+      "עמ": "עם",
+      "חומוס": "חומוס",
+      "וטחינה": "טחינה",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: קיבלתי וטחינה"
+    ]
+   }
+  },
+  {
+   "id": "ex-8927385142",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-20",
+    "he": "סָלָט",
+    "en": "salad"
+   },
+   "he": "אני רוצה סלט עם טונה ועגבנייה.",
+   "en": "I want a salad with tuna and tomato.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "I'd like a salad with tuna and tomato.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “I'd like a salad with tuna and tomato.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "רוצה": "רוצה",
+      "סלט": "סלט",
+      "עמ": "עם",
+      "טונה": "טונה",
+      "ועגבנייה": "עגבנייה",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: טונה ועגבנייה"
+    ]
+   }
+  },
+  {
+   "id": "ex-8782ce36bb",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-20",
+    "he": "סָלָט",
+    "en": "salad"
+   },
+   "he": "אפשר סלט עם עוף וירקות?",
+   "en": "Can we have a salad with chicken and vegetables?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Can I have a salad with chicken and vegetables?",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Can I have a salad with chicken and vegetables?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אפשר": "אפשר",
+      "סלט": "סלט",
+      "עמ": "עם",
+      "עופ": "עוף",
+      "וירקות": "ירק",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: וירקות"
+    ]
+   }
+  },
+  {
+   "id": "ex-7406a1594e",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-21",
+    "he": "טָעִים מְאֹד",
+    "en": "very tasty"
+   },
+   "he": "הקפה היה טעים מאד, כל ביס הרגיש כמו חלום.",
+   "en": "The coffee was very tasty, every bite felt like a dream.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.714,
+     "mt": "The coffee was delicious, each bite felt like a dream.",
+     "detail": "round-trip 0.71 (needs 0.5): reads back as “The coffee was delicious, each bite felt like a dream.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הקפה": "קפה",
+      "היה": "היי",
+      "טעימ": "טעים",
+      "מאד": "מאוד",
+      "": ".",
+      "כל": "כל",
+      "ביס": "ביס",
+      "הרגיש": "הרגיש",
+      "כמו": "כמו",
+      "חלומ": "חלום"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: ביס"
+    ]
+   }
+  },
+  {
+   "id": "ex-9769bc9f9d",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-22",
+    "he": "אֲנִי צִמְחוֹנִי",
+    "en": "I'm vegetarian"
+   },
+   "he": "אני צמחוני, אשמח לקבל את התפריט.",
+   "en": "I'm vegetarian, I'd like to see the menu.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.571,
+     "mt": "I'm a vegetarian. I'd love to have the menu.",
+     "detail": "round-trip 0.57 (needs 0.5): reads back as “I'm a vegetarian. I'd love to have the menu.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "צמחוני": "צמחוני",
+      "": ".",
+      "אשמח": "[BLANK]",
+      "לקבל": "קיבל",
+      "את": "את",
+      "התפריט": "תפריט"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: אשמח"
+    ]
+   }
+  },
+  {
+   "id": "ex-00e734e37b",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-22",
+    "he": "אֲנִי צִמְחוֹנִי",
+    "en": "I'm vegetarian"
+   },
+   "he": "אני צמחוני, לא אוכל בשר.",
+   "en": "I'm vegetarian, I don't eat meat.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.571,
+     "mt": "I'm a vegetarian, not a meat eater.",
+     "detail": "round-trip 0.57 (needs 0.5): reads back as “I'm a vegetarian, not a meat eater.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "צמחוני": "צמחוני",
+      "": ".",
+      "לא": "לא",
+      "אוכל": "אוכל",
+      "בשר": "בשר"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: אוכל"
+    ]
+   }
+  },
+  {
+   "id": "ex-7babfc334b",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-23",
+    "he": "אֲנִי טִבְעוֹנִי",
+    "en": "I'm vegan"
+   },
+   "he": "אני טבעוני, אני לא אוכל בשר.",
+   "en": "I'm vegan, I don't eat meat.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "I'm vegan, I don't eat meat.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “I'm vegan, I don't eat meat.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "טבעוני": "טבעוני",
+      "": ".",
+      "לא": "לא",
+      "אוכל": "אוכל",
+      "בשר": "בשר"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: אוכל"
+    ]
+   }
+  },
+  {
+   "id": "ex-41b518cbef",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "cafe-23",
+    "he": "אֲנִי טִבְעוֹנִי",
+    "en": "I'm vegan"
+   },
+   "he": "אני טבעוני, אני לא אוכל בשר, עוף או דגים.",
+   "en": "I'm vegan, I don't eat meat, poultry, or fish.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.833,
+     "mt": "I'm vegan, I don't eat meat, chicken or fish.",
+     "detail": "round-trip 0.83 (needs 0.5): reads back as “I'm vegan, I don't eat meat, chicken or fish.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "טבעוני": "טבעוני",
+      "": ".",
+      "לא": "לא",
+      "אוכל": "אוכל",
+      "בשר": "בשר",
+      "עופ": "עוף",
+      "או": "או",
+      "דגימ": "דג"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: אוכל דגימ"
+    ]
+   }
+  },
+  {
+   "id": "ex-0c428d5920",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il06-w1",
+    "he": "אֶפְשָׁר",
+    "en": "may I; is it possible"
+   },
+   "he": "אפשר בבקשה קפה שחור?",
+   "en": "May I have a black coffee?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.8,
+     "mt": "Can I please have a black coffee?",
+     "detail": "round-trip 0.80 (needs 0.5): reads back as “Can I please have a black coffee?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אפשר": "אפשר",
+      "בבקשה": "בבקשה",
+      "קפה": "קפה",
+      "שחור": "שחור",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-accd8848ed",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il06-w1",
+    "he": "אֶפְשָׁר",
+    "en": "may I; is it possible"
+   },
+   "he": "אפשר גם כריך קטן?",
+   "en": "May I also have a small sandwich?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.286,
+     "mt": "Can I have a little sandwich too?",
+     "detail": "round-trip 0.29 (needs 0.5): reads back as “Can I have a little sandwich too?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אפשר": "אפשר",
+      "גמ": "גם",
+      "כריכ": "כריך",
+      "קטנ": "קטן",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.29 (needs 0.5): reads back as “Can I have a little sandwich too?”",
+     "level: above the unit's level: כריכ"
+    ]
+   }
+  },
+  {
+   "id": "ex-054db2c009",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il06-w2",
+    "he": "קָפֶה",
+    "en": "coffee"
+   },
+   "he": "הגעתי לקפה, שמחה מהמרקם החמים.",
+   "en": "I went to the cafe, happy about the warm texture.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.545,
+     "mt": "I came for coffee, happy with the warm texture.",
+     "detail": "round-trip 0.55 (needs 0.5): reads back as “I came for coffee, happy with the warm texture.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": false,
+     "detail": "agreement: מהמרקם (Number Sing) with החמים (Number Plur); מהמרקם (Number Sing) with החמים (Number Plur), read alone",
+     "lemmas": {
+      "הגעתי": "הגיע",
+      "לקפה": "קפה",
+      "": ".",
+      "שמחה": "שמחה",
+      "מהמרקמ": "מרקם",
+      "החמימ": "חם"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "morph: agreement: מהמרקם (Number Sing) with החמים (Number Plur); מהמרקם (Number Sing) with החמים (Number Plur), read alone",
+     "offensive: not run",
+     "level: above the unit's level: שמחה מהמרקמ"
+    ]
+   }
+  },
+  {
+   "id": "ex-1eee4cbc68",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il06-w2",
+    "he": "קָפֶה",
+    "en": "coffee"
+   },
+   "he": "הבטחתי לקפה, לא אאחר.",
+   "en": "I promised the cafe I wouldn't be late.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.5,
+     "mt": "I promised coffee, I won't be late.",
+     "detail": "round-trip 0.50 (needs 0.5): reads back as “I promised coffee, I won't be late.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הבטחתי": "הבטיח",
+      "לקפה": "קפה",
+      "": ".",
+      "לא": "לא",
+      "אאחר": "איחר"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: אאחר"
+    ]
+   }
+  },
+  {
+   "id": "ex-a36e0fd630",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il06-w5",
+    "he": "לְהַזְמִין",
+    "en": "to order"
+   },
+   "he": "אני רוצה להזמין קפה ומאפה.",
+   "en": "I want to order coffee and a pastry.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "I'd like to order coffee and pastry.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “I'd like to order coffee and pastry.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "רוצה": "רוצה",
+      "להזמינ": "הזמין",
+      "קפה": "קפה",
+      "ומאפה": "מאפה",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: ומאפה"
+    ]
+   }
+  },
+  {
+   "id": "ex-b4bfc96968",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il06-w5",
+    "he": "לְהַזְמִין",
+    "en": "to order"
+   },
+   "he": "אפשר בבקשה להזמין תה חם?",
+   "en": "Can I please order some hot tea?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Can we please order some hot tea?",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Can we please order some hot tea?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אפשר": "אפשר",
+      "בבקשה": "בבקשה",
+      "להזמינ": "הזמין",
+      "תה": "תה",
+      "חמ": "חם",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-afbe6ca006",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il06-w6",
+    "he": "חֶשְׁבּוֹן",
+    "en": "bill; check"
+   },
+   "he": "לאחר שסיימנו את ארוחת הבוקר, נצטרך לשלם על החשבון.",
+   "en": "After breakfast, we'll need to pay for the bill.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.769,
+     "mt": "After we've finished breakfast, we'll have to pay for the bill.",
+     "detail": "round-trip 0.77 (needs 0.5): reads back as “After we've finished breakfast, we'll have to pay for the bill.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "לאחר": "לאחר",
+      "שסיימנו": "[BLANK]",
+      "את": "את",
+      "ארוחת": "ארוחה",
+      "הבוקר": "בקר",
+      "": ".",
+      "נצטרכ": "יצטרך",
+      "לשלמ": "שילם",
+      "על": "על",
+      "החשבונ": "חשבון"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: שסיימנו נצטרכ"
+    ]
+   }
+  },
+  {
+   "id": "ex-cb4d6d3ab4",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il07-w1",
+    "he": "אֹכֶל",
+    "en": "food"
+   },
+   "he": "הוא אכל את הקפה שלו והוסיף קצת סוכר.",
+   "en": "He ate his coffee and added some sugar.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "He ate his coffee and added some sugar.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “He ate his coffee and added some sugar.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הוא": "הוא",
+      "אכל": "אוכל",
+      "את": "את",
+      "הקפה": "קפה",
+      "שלו": "של",
+      "והוסיפ": "הוסיף",
+      "קצת": "קצת",
+      "סוכר": "סוכר",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: והוסיפ סוכר"
+    ]
+   }
+  },
+  {
+   "id": "ex-99a87864ea",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il07-w2",
+    "he": "לֶחֶם",
+    "en": "bread"
+   },
+   "he": "אני רוצה לחם, לא ארוחה שלמה.",
+   "en": "I want bread, not a full meal.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "I want bread, not a whole meal.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “I want bread, not a whole meal.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "רוצה": "רוצה",
+      "לחמ": "לחם",
+      "": ".",
+      "לא": "לא",
+      "ארוחה": "ארוחה",
+      "שלמה": "שלם"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-0e56963f93",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il07-w2",
+    "he": "לֶחֶם",
+    "en": "bread"
+   },
+   "he": "אפשר בבקשה לחם, לא עוגה?",
+   "en": "Can I have bread, not a cake?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Can we please have bread, not cake?",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Can we please have bread, not cake?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אפשר": "אפשר",
+      "בבקשה": "בבקשה",
+      "לחמ": "לחם",
+      "": "?",
+      "לא": "לא",
+      "עוגה": "עוגה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-b588a4c638",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il07-w3",
+    "he": "גְּבִינָה",
+    "en": "cheese"
+   },
+   "he": "אני רוצה גבינה, בבקשה.",
+   "en": "I want cheese, please.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.5,
+     "mt": "I'd like some cheese, please.",
+     "detail": "round-trip 0.50 (needs 0.5): reads back as “I'd like some cheese, please.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אני": "אני",
+      "רוצה": "רוצה",
+      "גבינה": "גבינה",
+      "": ".",
+      "בבקשה": "בבקשה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-0e4fe9388e",
+   "type": "example",
+   "unit": "pu-cafe",
+   "level": "L1",
+   "target": {
+    "itemId": "il07-w3",
+    "he": "גְּבִינָה",
+    "en": "cheese"
+   },
+   "he": "האם יש גבינה חלבית היום?",
+   "en": "Is there any cheese today?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.8,
+     "mt": "Is there dairy cheese today?",
+     "detail": "round-trip 0.80 (needs 0.5): reads back as “Is there dairy cheese today?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "האמ": "אם",
+      "יש": "יש",
+      "גבינה": "גבינה",
+      "חלבית": "חלבי",
+      "היומ": "יום",
+      "": "?"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: חלבית"
+    ]
+   }
+  },
+  {
+   "id": "ex-300d495f80",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w1",
+    "he": "מִשְׁפָּחָה",
+    "en": "family"
+   },
+   "he": "משפחה היא קבוצה של אנשים שמחוברים זה לזה.",
+   "en": "Family is a group of people who are connected to one another.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "A family is a group of people who are connected to each other.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “A family is a group of people who are connected to each other.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "משפחה": "משפחה",
+      "היא": "הוא",
+      "קבוצה": "קבוצה",
+      "של": "של",
+      "אנשימ": "איש",
+      "שמחוברימ": "מחובר",
+      "זה": "זה",
+      "לזה": "לזה",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: שמחוברימ"
+    ]
+   }
+  },
+  {
+   "id": "ex-c7ed99c4a1",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w1",
+    "he": "מִשְׁפָּחָה",
+    "en": "family"
+   },
+   "he": "במשפחה יש הורים, אחים, ואולי גם סבים.",
+   "en": "In a family there are parents, siblings, and sometimes grandparents.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.8,
+     "mt": "The family has parents, siblings, and possibly grandparents.",
+     "detail": "round-trip 0.80 (needs 0.5): reads back as “The family has parents, siblings, and possibly grandparents.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "במשפחה": "משפחה",
+      "יש": "יש",
+      "הורימ": "הורה",
+      "": ".",
+      "אחימ": "אח",
+      "ואולי": "אולי",
+      "גמ": "גם",
+      "סבימ": "סב"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: סבימ"
+    ]
+   }
+  },
+  {
+   "id": "ex-9dd60f1d9f",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w2",
+    "he": "אָח",
+    "en": "brother"
+   },
+   "he": "אח שלי אוהב לעזור במטבח",
+   "en": "My brother loves helping with the kitchen",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "My brother likes to help in the kitchen",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “My brother likes to help in the kitchen”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אח": "אח",
+      "שלי": "של",
+      "אוהב": "אוהב",
+      "לעזור": "עזר",
+      "במטבח": "מטבח"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: אוהב"
+    ]
+   }
+  },
+  {
+   "id": "ex-e44dbb853c",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w2",
+    "he": "אָח",
+    "en": "brother"
+   },
+   "he": "אח שלי תמיד שם בשביל לעזור",
+   "en": "My brother is always there to help",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "My brother is always there to help.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “My brother is always there to help.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אח": "אח",
+      "שלי": "של",
+      "תמיד": "תמיד",
+      "שמ": "שם",
+      "בשביל": "בשביל",
+      "לעזור": "עזר"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-af1416c63b",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w3",
+    "he": "אָחוֹת",
+    "en": "sister"
+   },
+   "he": "האחות שלי תמיד תומכת בנו.",
+   "en": "My sister always supports us.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "My sister always supports us.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “My sister always supports us.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "האחות": "אחות",
+      "שלי": "של",
+      "תמיד": "תמיד",
+      "תומכת": "תומך",
+      "בנו": "בי",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: תומכת"
+    ]
+   }
+  },
+  {
+   "id": "ex-088929e5e2",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w3",
+    "he": "אָחוֹת",
+    "en": "sister"
+   },
+   "he": "האחות שלנו היא חברה נהדרת.",
+   "en": "My sister is a great friend.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Our sister is a great friend.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Our sister is a great friend.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "האחות": "אחות",
+      "שלנו": "של",
+      "היא": "הוא",
+      "חברה": "חברה",
+      "נהדרת": "נהדר",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-c843e149c6",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w4",
+    "he": "יֶלֶד",
+    "en": "boy; child"
+   },
+   "he": "ילד קטן משחק עם חבריו בגינה.",
+   "en": "A little boy plays with his friends in the garden.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "A little boy playing with his friends in the garden.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “A little boy playing with his friends in the garden.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ילד": "ילד",
+      "קטנ": "קטן",
+      "משחק": "שיחק",
+      "עמ": "עם",
+      "חבריו": "חבר",
+      "בגינה": "גינה",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: בגינה"
+    ]
+   }
+  },
+  {
+   "id": "ex-223c2b00dd",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w4",
+    "he": "יֶלֶד",
+    "en": "boy; child"
+   },
+   "he": "הילד הצעיר שיחק בקוביות והשתעשע עם חבריו.",
+   "en": "The young boy played with the dice and amused his friends.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.833,
+     "mt": "The young boy played dice and had fun with his friends.",
+     "detail": "round-trip 0.83 (needs 0.5): reads back as “The young boy played dice and had fun with his friends.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הילד": "ילד",
+      "הצעיר": "צעיר",
+      "שיחק": "שיחק",
+      "בקוביות": "קובייה",
+      "והשתעשע": "משתעשע",
+      "עמ": "עם",
+      "חבריו": "חבר",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: שיחק בקוביות והשתעשע"
+    ]
+   }
+  },
+  {
+   "id": "ex-39fd8ab3a2",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w5",
+    "he": "יַלְדָּה",
+    "en": "girl"
+   },
+   "he": "הילדה אוהבת לשחק עם חבריה.",
+   "en": "The girl loves to play with her friends.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "The girl likes to play with her friends.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “The girl likes to play with her friends.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הילדה": "ילדה",
+      "אוהבת": "אוהב",
+      "לשחק": "שיחק",
+      "עמ": "עם",
+      "חבריה": "חבר",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: אוהבת"
+    ]
+   }
+  },
+  {
+   "id": "ex-bcccc4166c",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w5",
+    "he": "יַלְדָּה",
+    "en": "girl"
+   },
+   "he": "הילדה היא ילדה גדולה.",
+   "en": "The girl is a big girl.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "The girl is a big girl.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “The girl is a big girl.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הילדה": "ילדה",
+      "היא": "הוא",
+      "ילדה": "ילדה",
+      "גדולה": "גדול",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-5346f522d6",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w3",
+    "he": "יְלָדִים",
+    "en": "children"
+   },
+   "he": "ילדים הם חברינו הכי טובים.",
+   "en": "Children are our best friends.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.667,
+     "mt": "Kids are our best friends.",
+     "detail": "round-trip 0.67 (needs 0.5): reads back as “Kids are our best friends.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "ילדימ": "ילד",
+      "המ": "הוא",
+      "חברינו": "חבר",
+      "הכי": "הכי",
+      "טובימ": "טוב",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-24103e837b",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w3",
+    "he": "יְלָדִים",
+    "en": "children"
+   },
+   "he": "כל הילדים אוהבים לבלות בחוץ.",
+   "en": "All children love to spend time outdoors.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.182,
+     "mt": "All the kids like to hang out.",
+     "detail": "round-trip 0.18 (needs 0.5): reads back as “All the kids like to hang out.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "כל": "כל",
+      "הילדימ": "ילד",
+      "אוהבימ": "אוהב",
+      "לבלות": "בילה",
+      "בחוצ": "חוץ",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.18 (needs 0.5): reads back as “All the kids like to hang out.”",
+     "level: above the unit's level: אוהבימ לבלות"
+    ]
+   }
+  },
+  {
+   "id": "ex-8654b8559b",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w4",
+    "he": "תִּינוֹק",
+    "en": "baby"
+   },
+   "he": "תינוק הוא יצור קטן ורך שגדל ומתפתח.",
+   "en": "A baby is a small and soft creature that grows and develops.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "A baby is a small, soft creature that grows and develops.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “A baby is a small, soft creature that grows and develops.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "תינוק": "תינוק",
+      "הוא": "הוא",
+      "יצור": "יצור",
+      "קטנ": "קטן",
+      "ורכ": "רך",
+      "שגדל": "גדל",
+      "ומתפתח": "מתפתח",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: יצור ומתפתח"
+    ]
+   }
+  },
+  {
+   "id": "ex-93de133c8b",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w4",
+    "he": "תִּינוֹק",
+    "en": "baby"
+   },
+   "he": "כל תינוק הוא עולם קטן שרק מתחיל.",
+   "en": "Every baby is a tiny world that is just beginning.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.833,
+     "mt": "Every baby is a small world that is just beginning.",
+     "detail": "round-trip 0.83 (needs 0.5): reads back as “Every baby is a small world that is just beginning.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "כל": "כל",
+      "תינוק": "תינוק",
+      "הוא": "הוא",
+      "עולמ": "עולם",
+      "קטנ": "קטן",
+      "שרק": "רק",
+      "מתחיל": "התחיל",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-b018a98e16",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w5",
+    "he": "גַּן",
+    "en": "garden, kindergarten"
+   },
+   "he": "גן הילדים הוא מקום שמח ללמוד בו.",
+   "en": "The kindergarten is a happy place to learn.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.75,
+     "mt": "Kindergarten is a happy place to study.",
+     "detail": "round-trip 0.75 (needs 0.5): reads back as “Kindergarten is a happy place to study.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "גנ": "גן",
+      "הילדימ": "ילד",
+      "הוא": "הוא",
+      "מקומ": "מקום",
+      "שמח": "שמח",
+      "ללמוד": "למד",
+      "בו": "[BLANK]",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-bb214629ee",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w5",
+    "he": "גַּן",
+    "en": "garden, kindergarten"
+   },
+   "he": "הילדים בגן משחקים יחד ונהנים.",
+   "en": "The children in the garden play together and enjoy.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.4,
+     "mt": "The kids in kindergarten play together and have fun.",
+     "detail": "round-trip 0.40 (needs 0.5): reads back as “The kids in kindergarten play together and have fun.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הילדימ": "ילד",
+      "בגנ": "גן",
+      "משחקימ": "שיחק",
+      "יחד": "יחד",
+      "ונהנימ": "נהנה",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.40 (needs 0.5): reads back as “The kids in kindergarten play together and have fun.”",
+     "level: above the unit's level: משחקימ ונהנימ"
+    ]
+   }
+  },
+  {
+   "id": "ex-168b27db1d",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w8",
+    "he": "מִשְׂחָק",
+    "en": "game"
+   },
+   "he": "כל אחד מביא את המשחק שלו, וכולם נהנים.",
+   "en": "Each brings their own game, and everyone enjoys.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.727,
+     "mt": "Everyone brings their own game, and everyone has fun.",
+     "detail": "round-trip 0.73 (needs 0.5): reads back as “Everyone brings their own game, and everyone has fun.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "כל": "כול",
+      "אחד": "אחד",
+      "מביא": "מביא",
+      "את": "את",
+      "המשחק": "משחק",
+      "שלו": "של",
+      "": ".",
+      "וכולמ": "כול",
+      "נהנימ": "נהנה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: וכולמ נהנימ"
+    ]
+   }
+  },
+  {
+   "id": "ex-acc55bd67a",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w9",
+    "he": "אִמָּא",
+    "en": "mother"
+   },
+   "he": "אמא היא האמא שלי, היא תמיד שם בשבילי.",
+   "en": "Mother is my mother, she is always there for me.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.5,
+     "mt": "Mom is my mom, she's always there for me.",
+     "detail": "round-trip 0.50 (needs 0.5): reads back as “Mom is my mom, she's always there for me.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אמא": "אמא",
+      "היא": "הוא",
+      "האמא": "אמא",
+      "שלי": "של",
+      "": ".",
+      "תמיד": "תמיד",
+      "שמ": "שם",
+      "בשבילי": "בשביל"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-8e0c5aaad5",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w10",
+    "he": "אַבָּא",
+    "en": "father"
+   },
+   "he": "אבא הוא איש מבוגר, אוהב ומסור.",
+   "en": "A father is an old man, loving and devoted.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.6,
+     "mt": "Dad is an old, loving, dedicated man.",
+     "detail": "round-trip 0.60 (needs 0.5): reads back as “Dad is an old, loving, dedicated man.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אבא": "אבא",
+      "הוא": "הוא",
+      "איש": "איש",
+      "מבוגר": "מבוגר",
+      "": ".",
+      "אוהב": "אוהב",
+      "ומסור": "מסור"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: מבוגר אוהב ומסור"
+    ]
+   }
+  },
+  {
+   "id": "ex-303392e155",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w10",
+    "he": "אַבָּא",
+    "en": "father"
+   },
+   "he": "אבא תמיד שם בשביל ילדיו.",
+   "en": "A father is always there for his children.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": false,
+     "score": 0.333,
+     "mt": "Dad's always there for his kids.",
+     "detail": "round-trip 0.33 (needs 0.5): reads back as “Dad's always there for his kids.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "אבא": "אבא",
+      "תמיד": "תמיד",
+      "שמ": "שם",
+      "בשביל": "בשביל",
+      "ילדיו": "ילד",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "roundtrip: round-trip 0.33 (needs 0.5): reads back as “Dad's always there for his kids.”"
+    ]
+   }
+  },
+  {
+   "id": "ex-54a25aec3e",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w11",
+    "he": "בֶּן כַּמָּה?",
+    "en": "how old (lit. son of how much)?"
+   },
+   "he": "בן כמה אתה, יקירי?",
+   "en": "How old are you, dear?",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 0.5,
+     "mt": "How old are you, darling?",
+     "detail": "round-trip 0.50 (needs 0.5): reads back as “How old are you, darling?”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "בנ": "בן",
+      "כמה": "כמה",
+      "אתה": "את",
+      "": "?",
+      "יקירי": "יקיר"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run"
+    ]
+   }
+  },
+  {
+   "id": "ex-6f69b9c3e0",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w12",
+    "he": "חָמוּד",
+    "en": "cute, sweet, charming"
+   },
+   "he": "הילד הקטן הזה כל כך חמוד, הוא תמיד מחייך.",
+   "en": "That little boy is so cute, he always smiles.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "That little boy is so cute, he's always smiling.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “That little boy is so cute, he's always smiling.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    },
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הילד": "ילד",
+      "הקטנ": "קטן",
+      "הזה": "זה",
+      "כל": "כול",
+      "ככ": "כך",
+      "חמוד": "חמוד",
+      "": ".",
+      "הוא": "הוא",
+      "תמיד": "תמיד",
+      "מחייכ": "מחייך"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: מחייכ"
+    ]
+   }
+  },
+  {
+   "id": "ex-5b5dd33dbd",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "il14-w6",
+    "he": "נָשׂוּי",
+    "en": "married (m.)"
+   },
+   "he": "הוא נשוי, אבל הוא עדיין אוהב את אשתו.",
+   "en": "He's married, but he still loves his wife.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "הוא": "הוא",
+      "נשוי": "נשוי",
+      "": ".",
+      "אבל": "אבל",
+      "עדיינ": "עדיין",
+      "אוהב": "אוהב",
+      "את": "את",
+      "אשתו": "אישה"
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    },
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "He's married, but he still loves his wife.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “He's married, but he still loves his wife.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: עדיינ אוהב אשתו"
+    ]
+   }
+  },
+  {
+   "id": "ex-af72b36201",
+   "type": "example",
+   "unit": "pu-family",
+   "level": "L2",
+   "target": {
+    "itemId": "i-42-w6",
+    "he": "מוֹרָה",
+    "en": "teacher (f)"
+   },
+   "he": "המורה שלנו לימד אותנו על משפחתנו ועל מי שאנחנו.",
+   "en": "Our teacher taught us about our family and who we are.",
+   "generator": {
+    "key": "gen-1.7b",
+    "id": "dicta-il/DictaLM-3.0-1.7B-Instruct",
+    "revision": "5add44d6941d6ffb9eb6cc6b516f9fb4fd472494",
+    "file": "DictaLM-3.0-1.7B-Instruct-Q8_0.gguf"
+   },
+   "checks": {
+    "morph": {
+     "ok": true,
+     "detail": "agrees",
+     "lemmas": {
+      "המורה": "מורה",
+      "שלנו": "של",
+      "לימד": "לימד",
+      "אותנו": "את",
+      "על": "על",
+      "משפחתנו": "משפחה",
+      "ועל": "על",
+      "מי": "מי",
+      "שאנחנו": "אני",
+      "": "."
+     },
+     "provider": {
+      "key": "morph",
+      "id": "dicta-il/dictabert-joint",
+      "revision": "7b1256fc0846e22d1af431eae299e2dcecee2778"
+     }
+    },
+    "roundtrip": {
+     "ok": true,
+     "score": 1.0,
+     "mt": "Our teacher taught us about our family and who we are.",
+     "detail": "round-trip 1.00 (needs 0.5): reads back as “Our teacher taught us about our family and who we are.”",
+     "provider": {
+      "key": "mt-he-en",
+      "id": "Helsinki-NLP/opus-mt-tc-big-he-en",
+      "revision": "134c5a850dcaa763eec85bd1f4eb25112fecedbb"
+     }
+    }
+   },
+   "gate": {
+    "passed": false,
+    "fails": [
+     "judges: 0 qualified judge(s) answered; two are needed",
+     "offensive: not run",
+     "level: above the unit's level: לימד"
+    ]
+   }
+  }
+ ]
+}

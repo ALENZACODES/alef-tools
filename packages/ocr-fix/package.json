@@ -1,0 +1,16 @@
+{
+  "name": "@alef-tools/ocr-fix",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tidies the Hebrew text read from a photo using the app's own word list; writes the Name as ה׳.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "alef": {
+    "firstInstall": [],
+    "packs": []
+  }
+}

@@ -1,0 +1,53 @@
+name: clip-audit
+# Offline check of the app's shipped Hebrew clips (packages/speech/scripts/audit-clips.py). Started by hand only.
+# Each shard writes down its share of the clips with a pinned speech-to-text model on the runner and uploads its lines;
+# the last job joins them into clip-audit.json. Nothing is pushed anywhere and no file of the app is changed.
+on:
+  workflow_dispatch:
+    inputs:
+      app_ref:
+        description: Al-Heb branch, tag or commit to check
+        default: main
+      traditions:
+        description: Comma-separated traditions to check (empty = all)
+        default: israeli
+permissions:
+  contents: read
+concurrency:
+  group: clip-audit
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with: { repository: ALENZACODES/Al-Heb, ref: '${{ inputs.app_ref }}', path: app }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with: { python-version: '3.12' }
+      - run: sudo apt-get -qq update && sudo apt-get -qq install -y --no-install-recommends ffmpeg
+      - run: python -m pip install --disable-pip-version-check "$(grep '^faster-whisper==' packages/speech/scripts/requirements.txt)"
+      - name: Shard ${{ matrix.shard }} of 20
+        run: python packages/speech/scripts/audit-clips.py scan --app app --out audit --shard ${{ matrix.shard }} --of 20 --traditions "${{ inputs.traditions }}"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with: { name: 'clip-audit-${{ matrix.shard }}', path: audit/, if-no-files-found: ignore }
+  report:
+    needs: scan
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with: { python-version: '3.12' }
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with: { pattern: 'clip-audit-*', path: audit, merge-multiple: true }
+      - run: python packages/speech/scripts/audit-clips.py report --in audit --out review/clip-audit.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with: { name: clip-audit, path: review/clip-audit.json }

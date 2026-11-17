@@ -1,0 +1,787 @@
+{
+ "schema": "alef.dist.v1",
+ "name": "nikud",
+ "version": "0.1.0",
+ "files": [
+  {
+   "path": "hebrew.js",
+   "bytes": 2745,
+   "sha256": "0e29951b8b30d1cb11d23d369876821ba9d9499a60c70db42a163ecf1fc40c03"
+  },
+  {
+   "path": "index.js",
+   "bytes": 3634,
+   "sha256": "4f6cedde4184cc0f883917df15baff45f78bc0356a8043fbdee668cec2844a5f"
+  },
+  {
+   "path": "menaked.js",
+   "bytes": 4153,
+   "sha256": "6d80753cd676165df41569f60833673b682ce200091c8812192ab3eacdbaf348"
+  },
+  {
+   "path": "nikud/index.json",
+   "bytes": 5563,
+   "sha256": "dc4277a8cdefa9662ae7e4edf34c99ca35efae453546b1fe27514128a7944d96"
+  },
+  {
+   "path": "nikud/lessons.json",
+   "bytes": 65833,
+   "sha256": "23bc0242a5083b19f4c5022bd8ea31506c687ce15e11dde82ab0f5e29c3d1796"
+  },
+  {
+   "path": "nikud/talk.json",
+   "bytes": 84543,
+   "sha256": "751cbba7e6d4cc687794a277e39a56c02c00eb42887d202084197e8d1bdefc76"
+  },
+  {
+   "path": "nikud/vocab-arts-sports-1.json",
+   "bytes": 16599,
+   "sha256": "128c1843859d441c6ea8fa45c36350a25e8b298d37d7ab25afe7aa43a076e6eb"
+  },
+  {
+   "path": "nikud/vocab-body-health-1.json",
+   "bytes": 11742,
+   "sha256": "af02fd8d137dc2a1f1d2cc53288215e9ef7254e58c77096482dc8dd76a7e71fa"
+  },
+  {
+   "path": "nikud/vocab-body-health-2.json",
+   "bytes": 12079,
+   "sha256": "b955fb80091ae0eb994abbd54d5483ff7aeb3ed5b7d028638744983a1c48ce51"
+  },
+  {
+   "path": "nikud/vocab-body-health-3.json",
+   "bytes": 12344,
+   "sha256": "8601171bcbd418f2881ada411412d9505be9d9e6ad9e52e504e74a066140c613"
+  },
+  {
+   "path": "nikud/vocab-clothes-shopping-1.json",
+   "bytes": 16977,
+   "sha256": "540eb3049ffef8d59184d4874ee8b3a497bd00a3b59fa9647fbe989b80796b4b"
+  },
+  {
+   "path": "nikud/vocab-describing-words-1.json",
+   "bytes": 12579,
+   "sha256": "65b07bca48b8ab94ddd0b2701ad7c9cdc98cd3fb988c92c57d3da853dec2a37a"
+  },
+  {
+   "path": "nikud/vocab-describing-words-10.json",
+   "bytes": 13299,
+   "sha256": "80bc5ae9ff00cfabf6de262ca0da473f3ab1c334443342c985abf2ec0ca439a0"
+  },
+  {
+   "path": "nikud/vocab-describing-words-11.json",
+   "bytes": 12786,
+   "sha256": "a6a84d766b5e99f2dc7d650968e14f3a82008c09ea2b33d2c45d1ed718b0de69"
+  },
+  {
+   "path": "nikud/vocab-describing-words-12.json",
+   "bytes": 11694,
+   "sha256": "8a03e0b6914e0f1efdc1db598dfaa598839f989226f3cf636d30eacad3059649"
+  },
+  {
+   "path": "nikud/vocab-describing-words-2.json",
+   "bytes": 12332,
+   "sha256": "1ffd026dc8b3cf568936355b4a08aa09c2ce6dcd05a24e8d78ffe2ee22763f6c"
+  },
+  {
+   "path": "nikud/vocab-describing-words-3.json",
+   "bytes": 13118,
+   "sha256": "7d7817fa4aea83c5551054477539c5025e290ac75e632aa8ace8ffbe532d9a75"
+  },
+  {
+   "path": "nikud/vocab-describing-words-4.json",
+   "bytes": 13463,
+   "sha256": "b6e527eda65f9467cea62a697abdf27bfd738e20cfc5cf263ee5c4caa7055514"
+  },
+  {
+   "path": "nikud/vocab-describing-words-5.json",
+   "bytes": 13533,
+   "sha256": "cc01ff77e4acb8ecbadb2bc42353cfd02d01a0d1f3efe26369ccda9880bc2854"
+  },
+  {
+   "path": "nikud/vocab-describing-words-6.json",
+   "bytes": 13538,
+   "sha256": "9b5bb1c2d163a74569788981a49ffb0839843c7f5fe5aef15b0fab3549802088"
+  },
+  {
+   "path": "nikud/vocab-describing-words-7.json",
+   "bytes": 12871,
+   "sha256": "40f62ae2602f8b472600ed87ff37dbf1b022c01ff8b2663f55cddc7edd999f77"
+  },
+  {
+   "path": "nikud/vocab-describing-words-8.json",
+   "bytes": 12206,
+   "sha256": "0f45a57129b25a5abd6af0754a17f69c7d1495722d054b63cebb8b3c320b270e"
+  },
+  {
+   "path": "nikud/vocab-describing-words-9.json",
+   "bytes": 13548,
+   "sha256": "dd3ac1d27dffa464a8987f3ce48572cd426b5ccd0c040c0b157cae509efecaba"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-1.json",
+   "bytes": 11860,
+   "sha256": "71e3d19a84799ed7e8439d157e0b6264a2f34edaeb0b02370e8bfbcb18ba8df2"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-10.json",
+   "bytes": 13682,
+   "sha256": "cc15f86ea02f50eb9c1a5240c41933e9a5941cbc1d613bfd64de32579a7e49f8"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-11.json",
+   "bytes": 13494,
+   "sha256": "51348d34447aad9e824620471ed80a2a8367c3d7574489a5d4c1740471d7e988"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-12.json",
+   "bytes": 13575,
+   "sha256": "7a568df56af67e75c628f9480533361f4cf18577d079d36b91677c07e118af5a"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-13.json",
+   "bytes": 13372,
+   "sha256": "9347f72e9cfa8facb5d60ce2e57fbd5fed61e6f93caa5c15c6e0cb05842ceeba"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-14.json",
+   "bytes": 13846,
+   "sha256": "027787ab24df39fcab286d120262210d4cc64b4d91a419019991764b9d11762a"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-15.json",
+   "bytes": 12603,
+   "sha256": "13f410872d00db4e3571c8c6c4d13721ac7822bc317640b2b6b1c00f173883d3"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-16.json",
+   "bytes": 12728,
+   "sha256": "22d01d615552432bd18def91bf4bbd40e0eddddc3f55fd8401d9f844901899ef"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-17.json",
+   "bytes": 13004,
+   "sha256": "aedd97c63db2c27c3c5b40cac2db146bcfe5be5ad30e2ef7a9dc759da124298d"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-18.json",
+   "bytes": 12946,
+   "sha256": "c22d5f7e7cb115e4fc63c6206cc3c1dadf1f744542f36434a500c048f1b949a4"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-19.json",
+   "bytes": 13194,
+   "sha256": "40f6f7f47d8858a0680d024c63432dfe06f4647bfe457a71dcccead5e22abdb2"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-2.json",
+   "bytes": 13467,
+   "sha256": "82542bdc6062f84bc7c1f79fc82d1b58bd540831035986fda079e11480551d68"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-20.json",
+   "bytes": 12895,
+   "sha256": "3de24c4b09611271173fb93962fc3ca71f7b1f69a9d5400a50d5503acf064e1f"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-21.json",
+   "bytes": 13159,
+   "sha256": "e343f618b28b64837125d68606768d5f8cdde63b77edccd516b1498251c020e9"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-22.json",
+   "bytes": 12921,
+   "sha256": "6a39873e45c93ee89c757280a3b06f27bedd13704c8ba9da2ffc3b0e0aa3128c"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-23.json",
+   "bytes": 13330,
+   "sha256": "9944c846ec5cde577708c23e90deff0d8059c84404efe47c257999d2c3e9eab4"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-24.json",
+   "bytes": 8364,
+   "sha256": "d81d3df1a21eb66114dd4931cf3d0f308f426f8eae7abecdba5dee8273c2d438"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-3.json",
+   "bytes": 13588,
+   "sha256": "9578c782a4e61ef138a23c0157a68bbdd380e0baf7454326f11e350595324153"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-4.json",
+   "bytes": 12602,
+   "sha256": "9a030765d37f5acb2f57dce90b3d464fc9680b98f1110cb1f7a618c5fa1215de"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-5.json",
+   "bytes": 13178,
+   "sha256": "2da6e9bb44594c5fbd31366616354d5a25f06369e1d0c52bdce38fcf3997f2ff"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-6.json",
+   "bytes": 13400,
+   "sha256": "a58f4ae56f6bbda337648f4c1e7029bb818e4270d4894dbaff6d9c41aeb22092"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-7.json",
+   "bytes": 13511,
+   "sha256": "c877a21f97ea71a589e5bc209bc0d9f1d9bf6ff60488763f0466095191869099"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-8.json",
+   "bytes": 13157,
+   "sha256": "e5e7165593ad1937cb36152a6574ee89c4f96af682cf822ea168d84723fa9e0d"
+  },
+  {
+   "path": "nikud/vocab-doing-verbs-9.json",
+   "bytes": 13415,
+   "sha256": "d7233cbbfba1988652b44031e4ec8ff098f60a0cde39c7cf185347035260ce5e"
+  },
+  {
+   "path": "nikud/vocab-feelings-mind-1.json",
+   "bytes": 14414,
+   "sha256": "a7bce6ba24795bb1bab94123c3be2b2dd4052f825025b739ba066e5995b4dc02"
+  },
+  {
+   "path": "nikud/vocab-feelings-mind-2.json",
+   "bytes": 14607,
+   "sha256": "02684927a504300a38550b72dd35fc696991bde2efdac94377437c78a466e21e"
+  },
+  {
+   "path": "nikud/vocab-food-drink-1.json",
+   "bytes": 13668,
+   "sha256": "fbc43feb0292176f66c88a279008272ad2c7c8c86407df82529e98517f1f4282"
+  },
+  {
+   "path": "nikud/vocab-food-drink-2.json",
+   "bytes": 13662,
+   "sha256": "2fb1317dd46ee00226141a733f82da576b100b155a659c04db7a67cc1e6f43ae"
+  },
+  {
+   "path": "nikud/vocab-general-things-1.json",
+   "bytes": 12826,
+   "sha256": "4efd89f68ba6d6ddd2ae16d1208c543e9a5b3fb14f26c5ff94c8cf149b2ce028"
+  },
+  {
+   "path": "nikud/vocab-general-things-10.json",
+   "bytes": 12634,
+   "sha256": "98c0b3c1c08ec39979a968f9122bf96c89c27664942a56038b50bd4a2d73655d"
+  },
+  {
+   "path": "nikud/vocab-general-things-11.json",
+   "bytes": 13154,
+   "sha256": "a1133e88fc92f936165ff590e2e22fe76c6aed03eb71e00436cd04027cf3aa82"
+  },
+  {
+   "path": "nikud/vocab-general-things-12.json",
+   "bytes": 13550,
+   "sha256": "194fe0b93bf2be15904c4bdeec5be4ddb7e3a0c024c1bfad1a88ce250ec869d6"
+  },
+  {
+   "path": "nikud/vocab-general-things-13.json",
+   "bytes": 13315,
+   "sha256": "13b7041eb91752cdcd873e00687dfa81b8543eb29b987d0d678fd9968d5460f2"
+  },
+  {
+   "path": "nikud/vocab-general-things-14.json",
+   "bytes": 13093,
+   "sha256": "d2a04e905b48b364c0977d45a3a37f4fb6a71f39d7b01c2333df8e911a3046c0"
+  },
+  {
+   "path": "nikud/vocab-general-things-15.json",
+   "bytes": 12820,
+   "sha256": "35d69af2fb260222bb6db081bc63f90441a8066c8551e6d2d2c3b52bbaee91dc"
+  },
+  {
+   "path": "nikud/vocab-general-things-16.json",
+   "bytes": 12967,
+   "sha256": "e941bfc0d70762719ed12824ea5419bfa9297bb378630d760eb5bcf5b0bd599c"
+  },
+  {
+   "path": "nikud/vocab-general-things-17.json",
+   "bytes": 13461,
+   "sha256": "35ad244c91bf3cdc14fe80fe821459f022495cb2303650712fe5eee40ddee991"
+  },
+  {
+   "path": "nikud/vocab-general-things-18.json",
+   "bytes": 12848,
+   "sha256": "068659a13a19dfd2f64717a37d2a66fc41f4dc5c21023247981f24c5cfd935ae"
+  },
+  {
+   "path": "nikud/vocab-general-things-19.json",
+   "bytes": 12879,
+   "sha256": "e90d5e5bd291ff4b36ee110f2912914dc54984aa158118e31b04b9b8d316bdd2"
+  },
+  {
+   "path": "nikud/vocab-general-things-2.json",
+   "bytes": 13351,
+   "sha256": "075331ef07f67cb51406a6b1a82ff64eb7ed94ba3122c0b92af570e83e03e764"
+  },
+  {
+   "path": "nikud/vocab-general-things-20.json",
+   "bytes": 13147,
+   "sha256": "5e080d12166fb1e6cf23f1731ad459e496a54a128833e0dff4cc52b5b65a5d63"
+  },
+  {
+   "path": "nikud/vocab-general-things-21.json",
+   "bytes": 13206,
+   "sha256": "f5d5fa9e23f179a3bb225038b55afe27b1447e34cea76dde16164e3a94e85487"
+  },
+  {
+   "path": "nikud/vocab-general-things-22.json",
+   "bytes": 13142,
+   "sha256": "568597418168d57ba6289669b040a5b711c3e5931246bcc43a4598723893fae1"
+  },
+  {
+   "path": "nikud/vocab-general-things-23.json",
+   "bytes": 13006,
+   "sha256": "590ce3ffdb73dd91072793266a676045e7ef0b7b2234184c927872b05a34a3fc"
+  },
+  {
+   "path": "nikud/vocab-general-things-24.json",
+   "bytes": 13569,
+   "sha256": "f99c5eabf1b18b2d42bb13c94259744f403f4f453a2a5b47f1856a1d9758e4ec"
+  },
+  {
+   "path": "nikud/vocab-general-things-25.json",
+   "bytes": 12221,
+   "sha256": "ec66e5342e0f13d7317fb854dde6a8234c526f75634e8c8ed302d88d25333d7d"
+  },
+  {
+   "path": "nikud/vocab-general-things-26.json",
+   "bytes": 12501,
+   "sha256": "bba4b7a54c2275f90764fea6a3a4fcb965b850158b77443ea529865e26727dab"
+  },
+  {
+   "path": "nikud/vocab-general-things-27.json",
+   "bytes": 12056,
+   "sha256": "3762fb99f23bbec3e604f38eb1f74be820e97427098cb939a0435ee4d0bdf9e7"
+  },
+  {
+   "path": "nikud/vocab-general-things-28.json",
+   "bytes": 12121,
+   "sha256": "c7b7505987c2ebca9f8eaac2fba4ef678d792653aafcef745decf97c09bbc0dd"
+  },
+  {
+   "path": "nikud/vocab-general-things-29.json",
+   "bytes": 11585,
+   "sha256": "8cf11f8f8e48dda51ba0483a193230ed82b2ab93d19f5b91bc8bf06e20789081"
+  },
+  {
+   "path": "nikud/vocab-general-things-3.json",
+   "bytes": 13040,
+   "sha256": "569d4638aa0934bccd7eae7fa6d2a89107a7266797bcaa4933f35aab7f313780"
+  },
+  {
+   "path": "nikud/vocab-general-things-30.json",
+   "bytes": 7976,
+   "sha256": "c2bfa42e5b3a5e1f47eb3635a65479d54e362d3859fb2a2f8e22deffccd892da"
+  },
+  {
+   "path": "nikud/vocab-general-things-4.json",
+   "bytes": 12754,
+   "sha256": "5331d44bac1469dc4bd20a252bae5d3edf9d2b08ce11d425be5a2689189a248f"
+  },
+  {
+   "path": "nikud/vocab-general-things-5.json",
+   "bytes": 13671,
+   "sha256": "50fb23330b63740de593dcd863c4c91691d1e7795735da0ea60f2356ede271a1"
+  },
+  {
+   "path": "nikud/vocab-general-things-6.json",
+   "bytes": 13473,
+   "sha256": "13154ccf0c9aac1c735e3d00c0ff0529b8a25bf02ea3c0426afe849be80d8e28"
+  },
+  {
+   "path": "nikud/vocab-general-things-7.json",
+   "bytes": 13756,
+   "sha256": "9ad95de0e819c5bf898ea50880187c9bc85c9fe3b5df3cecb168c1519dacef9a"
+  },
+  {
+   "path": "nikud/vocab-general-things-8.json",
+   "bytes": 13327,
+   "sha256": "7caebad90c6e51c731e0a92a5e35b041df181608c2c29934ba5716a1bd643e51"
+  },
+  {
+   "path": "nikud/vocab-general-things-9.json",
+   "bytes": 13958,
+   "sha256": "99f82bd7f4b6b59d7df92fd9be311c5ef088c9f6f526c506960abac63db549ca"
+  },
+  {
+   "path": "nikud/vocab-home-things-1.json",
+   "bytes": 13036,
+   "sha256": "d82a14b77fd2be7e4d7bf51b20559469643823625fef203b02d3c654ff673604"
+  },
+  {
+   "path": "nikud/vocab-home-things-2.json",
+   "bytes": 13387,
+   "sha256": "18db4a07414b87b378a78af684c272530468117024d9875d7c7b290d66a527d0"
+  },
+  {
+   "path": "nikud/vocab-moving-doing-1.json",
+   "bytes": 13175,
+   "sha256": "e103030dfa5a1fd6f41fe22eae20b26a01339f0df9ba27c877ef1d2c6b65286e"
+  },
+  {
+   "path": "nikud/vocab-moving-doing-2.json",
+   "bytes": 13495,
+   "sha256": "6e2449daad393deb17cfed26f85b5d4dbd44874a77377fbd7f8092791a5ba642"
+  },
+  {
+   "path": "nikud/vocab-moving-doing-3.json",
+   "bytes": 12573,
+   "sha256": "66bea868de39929a5a7526fdd0634d865083b4f8701cc9aa2dc78dc77eb09371"
+  },
+  {
+   "path": "nikud/vocab-nature-animals-1.json",
+   "bytes": 13371,
+   "sha256": "9aec019cb0631eb4174d30134efad3c2904d1410060d6ac6017919e95fcc5c3a"
+  },
+  {
+   "path": "nikud/vocab-nature-animals-2.json",
+   "bytes": 12056,
+   "sha256": "04b35b111e180e8300e5e8404eb69e2ab3febf954ea7fca1443e2adf47c8fec3"
+  },
+  {
+   "path": "nikud/vocab-nature-animals-3.json",
+   "bytes": 12568,
+   "sha256": "25e0df34cc7604c1be619617a98d7d1cdc87b718db90f57d89129dd5f528fc43"
+  },
+  {
+   "path": "nikud/vocab-people-family-1.json",
+   "bytes": 10975,
+   "sha256": "90f62e0110566199c77d5b30eac77e0958005734e09252ec8eee2c8371ecafa3"
+  },
+  {
+   "path": "nikud/vocab-people-family-2.json",
+   "bytes": 11165,
+   "sha256": "8798cb97f906131b2f89771f179b1ef7741844a2376e0838f30fe5b3fd30a6f9"
+  },
+  {
+   "path": "nikud/vocab-people-family-3.json",
+   "bytes": 11351,
+   "sha256": "e23f34791f286100e9cf671c8f37d4376c387a04e58553d64d8e7482252194ad"
+  },
+  {
+   "path": "nikud/vocab-people-family-4.json",
+   "bytes": 9436,
+   "sha256": "702d0336a0e1bbcd899cda97bfc6e9eb63124b6717cdc4726e2448f2f8586251"
+  },
+  {
+   "path": "nikud/vocab-places-travel-1.json",
+   "bytes": 15063,
+   "sha256": "8d6b5c12f62f2eb5d63f3f219e38937b0598739f92fd809f4989f4633deb3fd9"
+  },
+  {
+   "path": "nikud/vocab-places-travel-2.json",
+   "bytes": 14613,
+   "sha256": "bcb578153ba9054e3b3cdc44d438886179ba6962e895f75f133db93da34091b1"
+  },
+  {
+   "path": "nikud/vocab-read-arts-sports-1.json",
+   "bytes": 1962,
+   "sha256": "5b9af9d295dcdd0eb09469a94f1958c00a9b58cdc7924631a36c74edbc176064"
+  },
+  {
+   "path": "nikud/vocab-read-body-health-1.json",
+   "bytes": 9739,
+   "sha256": "206b43649c3166a796c7dc073a4c4aa68c44b9c29e0a383c2d6d11ed48c77dc8"
+  },
+  {
+   "path": "nikud/vocab-read-clothes-shopping-1.json",
+   "bytes": 3601,
+   "sha256": "487002830dc3b031c3a39e517fe7b4893d1e986572b8db0277a2adb97c700051"
+  },
+  {
+   "path": "nikud/vocab-read-describing-words-1.json",
+   "bytes": 13540,
+   "sha256": "44cb4a2b3820310557f47402c6dabd3171533f40d9be2f89a3511bfa2806df2a"
+  },
+  {
+   "path": "nikud/vocab-read-doing-verbs-1.json",
+   "bytes": 14022,
+   "sha256": "8e517ea9f6f82214c554672c3ac766fb0145dfaa4cfa01ff038fd73847e92450"
+  },
+  {
+   "path": "nikud/vocab-read-doing-verbs-2.json",
+   "bytes": 12618,
+   "sha256": "75c5dcd30de917917cf3036640d9c1af6b434f3c380e8eccf6d762fa34ef3ebe"
+  },
+  {
+   "path": "nikud/vocab-read-feelings-mind-1.json",
+   "bytes": 3144,
+   "sha256": "4f1f5a3d7c2c5cd16bd3365f04b05d7095bd42d6e59a2d7c91c2690af2941fcb"
+  },
+  {
+   "path": "nikud/vocab-read-food-drink-1.json",
+   "bytes": 5292,
+   "sha256": "cce7f2f236fc305a2ead7c35406b15fcc80995a2049bc4c973a577b840dd1524"
+  },
+  {
+   "path": "nikud/vocab-read-general-things-1.json",
+   "bytes": 16058,
+   "sha256": "cf2199a3ce009d8f8bef21659dae9329548c91a1053fa2ebe36171c52ecfeeb0"
+  },
+  {
+   "path": "nikud/vocab-read-general-things-2.json",
+   "bytes": 16827,
+   "sha256": "89ae837429c1d75a1ac52bfe0d8f471babf98422ba60ca17dd1e6c8616eee25a"
+  },
+  {
+   "path": "nikud/vocab-read-general-things-3.json",
+   "bytes": 14564,
+   "sha256": "67ddd0c0c16402bfa152a45f5d766c26e567dc748cb68dfa0a28c628a596a7a7"
+  },
+  {
+   "path": "nikud/vocab-read-general-things-4.json",
+   "bytes": 14130,
+   "sha256": "474ac443eeb104335ad0582c59e7db3354a8a7776d50a1e1f776b83dec5810b1"
+  },
+  {
+   "path": "nikud/vocab-read-general-things-5.json",
+   "bytes": 12033,
+   "sha256": "9923ee596ad75d01866aa56b09c51ecbb05ffa58fd64345cfa7f523289bffeee"
+  },
+  {
+   "path": "nikud/vocab-read-home-things-1.json",
+   "bytes": 4192,
+   "sha256": "cdbaf0e546617c65dd2a476e1d0b7af2356497d9379d8a4688a61b3b4efd1776"
+  },
+  {
+   "path": "nikud/vocab-read-moving-doing-1.json",
+   "bytes": 2489,
+   "sha256": "ac13f334a2b85b9289db968a3c87af9dda204f211980e441b9c84a25f70f1f7b"
+  },
+  {
+   "path": "nikud/vocab-read-nature-animals-1.json",
+   "bytes": 13364,
+   "sha256": "1a6d51e3be20f862f9bd3bdbc6598a36c447a7e423e8ac0a23b44ce5258b3982"
+  },
+  {
+   "path": "nikud/vocab-read-people-family-1.json",
+   "bytes": 7483,
+   "sha256": "438b6dcbd3ee5f8234b7f1e8dbd2c06cfb7056b5a27c22a52621e1ad6c2741ab"
+  },
+  {
+   "path": "nikud/vocab-read-places-travel-1.json",
+   "bytes": 3966,
+   "sha256": "1450d50be49ad630316888a69e178beafa81b6b48621685064d5d439b43ca4a2"
+  },
+  {
+   "path": "nikud/vocab-read-religion-prayer-1.json",
+   "bytes": 18350,
+   "sha256": "52ca5c1125343cd2ddb473d95c5c1a415eb52f7b8e45ecf3ef44cc5b5657db6d"
+  },
+  {
+   "path": "nikud/vocab-read-school-learning-1.json",
+   "bytes": 921,
+   "sha256": "e5ca9f46a04cf58a0abd0b6c2d3ec6406b7504c6e9dc5b9b9a1d47198a89a024"
+  },
+  {
+   "path": "nikud/vocab-read-science-ideas-1.json",
+   "bytes": 6706,
+   "sha256": "078791de5efc493b7a4211cac3c4f4c61aa5aa6ad27a6dc06525ed7b739d2428"
+  },
+  {
+   "path": "nikud/vocab-read-small-words-1.json",
+   "bytes": 3499,
+   "sha256": "084819c50f97cf7e8191815e81952d9e100d828e70c95acb4e1b0970e00c1f77"
+  },
+  {
+   "path": "nikud/vocab-read-society-work-law-1.json",
+   "bytes": 7081,
+   "sha256": "258f6412dbceea2281600432a74cb4d30aec8b05bc66e2e1c701f760bccfd422"
+  },
+  {
+   "path": "nikud/vocab-read-talking-asking-1.json",
+   "bytes": 2163,
+   "sha256": "7a66758e904a3af8c658fd777cf6fc72b9b50e6a9f37e9bfb719c1fcc35b93c8"
+  },
+  {
+   "path": "nikud/vocab-read-tech-media-1.json",
+   "bytes": 2454,
+   "sha256": "df5b5540a4eed490d15e093b7e2321a6d6eed3779ac40ee0231c105525bc2c3a"
+  },
+  {
+   "path": "nikud/vocab-read-time-numbers-1.json",
+   "bytes": 6517,
+   "sha256": "d216b7f9dd52b8fbde2022b3f47011df92dc086192f1e17be6b8e286988a07be"
+  },
+  {
+   "path": "nikud/vocab-religion-prayer-1.json",
+   "bytes": 13197,
+   "sha256": "838d966e7f378b409988ff9a3c98d27858c3064ca483cf3c48a2aa97402ad6fa"
+  },
+  {
+   "path": "nikud/vocab-religion-prayer-2.json",
+   "bytes": 14492,
+   "sha256": "8668dc07bb8f706a4fbfe4b9e422755d32feadaa1a4edaa999fce7422e7899b8"
+  },
+  {
+   "path": "nikud/vocab-religion-prayer-3.json",
+   "bytes": 14204,
+   "sha256": "870753d121eab0ef4f2137cad33ac5d49a5c0a581b0c5fe55f2e9be1af4d0ee7"
+  },
+  {
+   "path": "nikud/vocab-school-learning-1.json",
+   "bytes": 11925,
+   "sha256": "81b2a206f86d7def76b18f9c25b212ad9ab2bfe71716eeaeeeb5a005051e83d7"
+  },
+  {
+   "path": "nikud/vocab-science-ideas-1.json",
+   "bytes": 13980,
+   "sha256": "74c610433d9b3c60f22c06f1d770619133621c59dc258d6a0aa1570f9ecc8307"
+  },
+  {
+   "path": "nikud/vocab-science-ideas-2.json",
+   "bytes": 15311,
+   "sha256": "16191e22a63574bc01f3f3b5377804aac36ba073c51c469234953412d2b6108b"
+  },
+  {
+   "path": "nikud/vocab-science-ideas-3.json",
+   "bytes": 13585,
+   "sha256": "4c7c459487456f487f82615a39ccf90e682ef66f979f24de791b8a64b0b2d4f0"
+  },
+  {
+   "path": "nikud/vocab-science-ideas-4.json",
+   "bytes": 12978,
+   "sha256": "cd57d1e1d83a98358996591ef5f9f7120c60d05d38c3d97ee43d691a5ff7980b"
+  },
+  {
+   "path": "nikud/vocab-small-words-1.json",
+   "bytes": 14091,
+   "sha256": "84a0a437fcc15fd5563dbe73058a015103b452ad1936f49261d77be0170842f5"
+  },
+  {
+   "path": "nikud/vocab-small-words-2.json",
+   "bytes": 14889,
+   "sha256": "9d9234e7645bfffdd6fcc3824433a94475731bc69d994fcc9851e6111072ca09"
+  },
+  {
+   "path": "nikud/vocab-society-work-law-1.json",
+   "bytes": 12090,
+   "sha256": "eb3c493422ce47318ff14a5db4b62180e15e48d6935f8c718a1b15336e80a7a2"
+  },
+  {
+   "path": "nikud/vocab-society-work-law-2.json",
+   "bytes": 12552,
+   "sha256": "4c543c622707de1a0036aae0db4e6292ded15e5322569c753121e8e6c1063fd5"
+  },
+  {
+   "path": "nikud/vocab-society-work-law-3.json",
+   "bytes": 11464,
+   "sha256": "44460caa51b7b8d8e78d18db0ad3f93709a6f198933c4dc08508055dce2dacd5"
+  },
+  {
+   "path": "nikud/vocab-society-work-law-4.json",
+   "bytes": 11724,
+   "sha256": "0b170a1ac8195cbbd2bbc5757d52221110ca74851bcfd0dd22d630a96d8e969d"
+  },
+  {
+   "path": "nikud/vocab-survival-cafe-1.json",
+   "bytes": 3142,
+   "sha256": "d092dbf0bf206d4bc1ca4b03b6c3d8c772a45844277a8377e5f0015c0b1707d9"
+  },
+  {
+   "path": "nikud/vocab-survival-directions-1.json",
+   "bytes": 2280,
+   "sha256": "ecb1bfb8597028d1ac3eac3a9aa3fad9ac77b9859816d901962cf339c6409c97"
+  },
+  {
+   "path": "nikud/vocab-survival-fillers-1.json",
+   "bytes": 2017,
+   "sha256": "4421e28645c89c3878f07887c792e6e8401976b7503e17efb4888abe87ceef79"
+  },
+  {
+   "path": "nikud/vocab-survival-greetings-1.json",
+   "bytes": 2516,
+   "sha256": "e00b88d8b2cc5f34c52a4c2c79e3446752e69bff0d0f8b4bd6732a17678c7e71"
+  },
+  {
+   "path": "nikud/vocab-survival-help-1.json",
+   "bytes": 1574,
+   "sha256": "ffe50673a5779a7f49ee985bdb887d77a6fd708d76dcafed82d41ac37fc0215b"
+  },
+  {
+   "path": "nikud/vocab-survival-lesson-israel-1.json",
+   "bytes": 5063,
+   "sha256": "0ef8fc9dd7e3c47aebb619eb1d075d9aab1e64f95ad8df22f3605d4d1a7644a7"
+  },
+  {
+   "path": "nikud/vocab-survival-lesson-read-1.json",
+   "bytes": 5377,
+   "sha256": "67d976513ba89a2fdf1ca807e04187bf77e3ffb7ccaf5b98aa6fab080f3f32fd"
+  },
+  {
+   "path": "nikud/vocab-survival-numbers-1.json",
+   "bytes": 525,
+   "sha256": "b9dadf46ed0db3f79e837d5b7e3ce86dd87c5d43fa2ecfd2507f7c37530b2bc2"
+  },
+  {
+   "path": "nikud/vocab-survival-politeness-1.json",
+   "bytes": 1500,
+   "sha256": "f76020da4b145c91bbde6979cabfb58a7e140c65aefb452b14adcabaab49518e"
+  },
+  {
+   "path": "nikud/vocab-survival-shop-1.json",
+   "bytes": 2129,
+   "sha256": "835862994285612760675910d1b601a7d39343ae4b3c83f3f985b6a8ef5080ce"
+  },
+  {
+   "path": "nikud/vocab-survival-small-talk-1.json",
+   "bytes": 2337,
+   "sha256": "d432615ad325304cdb986050edced25d2ced837c0c5012d815f9e421cac1ef2c"
+  },
+  {
+   "path": "nikud/vocab-survival-taxi-1.json",
+   "bytes": 2550,
+   "sha256": "5cf921f1b40bfa1fad0871361fc199aad2eda3430c15ce40435ff9a56cf85588"
+  },
+  {
+   "path": "nikud/vocab-talking-asking-1.json",
+   "bytes": 14032,
+   "sha256": "5fc7972c041d8138a7a9bffce240e49699f6e315d9f229ec1ecb06265c098c8d"
+  },
+  {
+   "path": "nikud/vocab-tech-media-1.json",
+   "bytes": 13306,
+   "sha256": "8d3a63065968abcc3a309d2147aec5c982c2e71821d5f5eea27a3fc365505649"
+  },
+  {
+   "path": "nikud/vocab-tech-media-2.json",
+   "bytes": 12304,
+   "sha256": "6aceb703cf1e23cfe7910b438d72524b651dffd6284c175c26a2186916e916f4"
+  },
+  {
+   "path": "nikud/vocab-time-numbers-1.json",
+   "bytes": 14915,
+   "sha256": "60cfd45bf19aa646d0ce9451c2f9b931f2703d0816a191a3ab94e9134ec461a8"
+  },
+  {
+   "path": "nikud/vocab-time-numbers-2.json",
+   "bytes": 14722,
+   "sha256": "56b83a6159b15b01c34ec7456c5c6c7639adcae8bbc76ae4d40017613820e161"
+  },
+  {
+   "path": "phonikud.js",
+   "bytes": 8417,
+   "sha256": "29025d7f306cd2ba4c2fab3fa50c4d14854b7624da12d2f7011865338d1416da"
+  },
+  {
+   "path": "units.js",
+   "bytes": 1078,
+   "sha256": "e03db528ff0d89e9d03686c16d83c7353628ffa2e58ea35cdde8e12ea00eb67f"
+  },
+  {
+   "path": "vocab.js",
+   "bytes": 4697,
+   "sha256": "7320289caeed378c245e01bc318ed4cb1535e4c0e87d499517a4ccc8899aa75b"
+  },
+  {
+   "path": "worker.js",
+   "bytes": 2086,
+   "sha256": "9d6ca714c6846dd63738de7f81e314bbb56946b5f50bbc5d64f3d47cab1d1d6e"
+  }
+ ]
+}

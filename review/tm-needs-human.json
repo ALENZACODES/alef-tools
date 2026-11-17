@@ -1,0 +1,400 @@
+{
+ "schema": "alef.translate.tm.review.v1",
+ "note": "Entries the checks turned down. None of them is in the app. kind machine: translated offline, failed a check. kind app-pair: the app's own English failed a rule check (often a free wording; sometimes a slip worth a look). For a person to settle.",
+ "entries": [
+  {
+   "kind": "app-pair",
+   "he": "לָקַחַת פַּעֲמַיִם בְּיוֹם, אַחֲרֵי אֹכֶל.",
+   "english": "To take twice a day, after food.",
+   "file": "data/curriculum/lessons.json",
+   "why": [
+    "numbers differ: Hebrew [] English [2]"
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "שֻׁלְחָן לִשְׁנַיִם, בְּבַקָּשָׁה",
+   "english": "a table for two, please",
+   "file": "data/curriculum/practical/pu-cafe.json",
+   "why": [
+    "numbers differ: Hebrew [] English [2]"
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "עוֹמֶר קוֹנֶה שְׁנַיִם.",
+   "english": "Omer buys two.",
+   "file": "data/books/book21.json",
+   "why": [
+    "numbers differ: Hebrew [] English [2]"
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "שֶׁבַע וָחֵצִי. כְּבִישׁ אַיָּלוֹן.",
+   "english": "Seven thirty. The Ayalon highway.",
+   "file": "data/books/book39.json",
+   "why": [
+    "numbers differ: Hebrew [7] English [7, 30]"
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "מִשְׂרָד קָטָן בְּקוֹמָה שֵׁשׁ.",
+   "english": "A small office on the sixth floor.",
+   "file": "data/books/book46.json",
+   "why": [
+    "numbers differ: Hebrew [6] English []"
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "אִמָּא שֶׁלּוֹ גָּרָה בִּבְאֵר שֶׁבַע.",
+   "english": "His mother lives in Be'er Sheva.",
+   "file": "data/books/book54.json",
+   "why": [
+    "numbers differ: Hebrew [7] English []"
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "בֶּרְלִין מְרִיחָה כְּמוֹ בְּאֵר שֶׁבַע.",
+   "english": "Berlin smells like Be'er Sheva.",
+   "file": "data/books/book54.json",
+   "why": [
+    "numbers differ: Hebrew [7] English []"
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "שְׁבוּעַיִם אַחֲרֵי: טֶלֶפוֹן.",
+   "english": "Two weeks later: a phone call.",
+   "file": "data/books/book58.json",
+   "why": [
+    "numbers differ: Hebrew [] English [2]"
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "תּוֹדָה רַבָּה מְאוֹד",
+   "english": "Thank you very much.",
+   "back": "תודה רבה לך.",
+   "roundTrip": 53.4,
+   "second": "Thank you very much.",
+   "agreement": 100.0,
+   "file": "data/israel/giveaways.json",
+   "why": [
+    "round trip 53 (needs 60): came back as \"תודה רבה לך.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי יֵשׁ אָחוֹת",
+   "english": "I have a sister.",
+   "back": "יש לי אחות.",
+   "roundTrip": 29.6,
+   "second": "I have a sister.",
+   "agreement": 100.0,
+   "file": "data/israel/giveaways.json",
+   "why": [
+    "round trip 30 (needs 60): came back as \"יש לי אחות.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "הַאִם אַתָּה בָּא?",
+   "english": "Are you coming?",
+   "back": "אתה בא?",
+   "roundTrip": 52.5,
+   "second": "Are you coming?",
+   "agreement": 100.0,
+   "file": "data/israel/giveaways.json",
+   "why": [
+    "round trip 53 (needs 60): came back as \"אתה בא?\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "תַּעַצְרִי פֹּה, בְּבַקָּשָׁה",
+   "english": "Stop here, please.",
+   "back": "עצור כאן, בבקשה.",
+   "roundTrip": 29.5,
+   "second": "Pull over here, please.",
+   "agreement": 62.5,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 29 (needs 60): came back as \"עצור כאן, בבקשה.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "תַּעֲבִירִי קָדִימָה, בְּבַקָּשָׁה",
+   "english": "Forward forward please.",
+   "back": "קדימה קדימה בבקשה.",
+   "roundTrip": 56.7,
+   "second": "Pass forward, please.",
+   "agreement": 70.1,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "a word is said twice in a row",
+    "round trip 57 (needs 60): came back as \"קדימה קדימה בבקשה.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "סְלִיחָה, הַאִם תּוּכְלִי לוֹמַר לִי אֵיפֹה נִמְצָא הַשּׁוּק?",
+   "english": "Excuse me. Can you tell me where the market is?",
+   "back": "סליחה, אתה יכול להגיד לי איפה השוק?",
+   "roundTrip": 32.2,
+   "second": "Excuse me. Can you tell me where the market is?",
+   "agreement": 100.0,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 32 (needs 60): came back as \"סליחה, אתה יכול להגיד לי איפה השוק?\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "הַאִם תּוּכְלִי לַעֲשׂוֹת לִי הַנָּחָה?",
+   "english": "Can you give me a discount?",
+   "back": "אתה יכול לתת לי הנחה?",
+   "roundTrip": 34.7,
+   "second": "Can you give me a discount?",
+   "agreement": 100.0,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 35 (needs 60): came back as \"אתה יכול לתת לי הנחה?\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "תַּעֲשִׂי לִי מְחִיר",
+   "english": "Give me a price.",
+   "back": "תן לי מחיר.",
+   "roundTrip": 47.8,
+   "second": "Give me a price.",
+   "agreement": 100.0,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 48 (needs 60): came back as \"תן לי מחיר.\""
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "אִם אֶקַּח שְׁנַיִם, מָה יִהְיֶה הַמְּחִיר?",
+   "english": "if I take two, what will the price be?",
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "numbers differ: Hebrew [] English [2]"
+   ]
+  },
+  {
+   "kind": "app-pair",
+   "he": "אִם אֶקַּח שְׁנַיִם, כַּמָּה זֶה יוֹצֵא?",
+   "english": "if I take two, how much does it come to?",
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "numbers differ: Hebrew [] English [2]"
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "הַאִם אַתְּ מְדַבֶּרֶת אַנְגְּלִית?",
+   "english": "Do you speak English?",
+   "back": "אתה מדבר אנגלית?",
+   "roundTrip": 41.9,
+   "second": "Do you speak English?",
+   "agreement": 100.0,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 42 (needs 60): came back as \"אתה מדבר אנגלית?\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי עוֹד לוֹמֶדֶת",
+   "english": "I'm still learning.",
+   "back": "אני עדיין לומד.",
+   "roundTrip": 34.5,
+   "second": "I'm still learning.",
+   "agreement": 100.0,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 35 (needs 60): came back as \"אני עדיין לומד.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "הַאִם תּוּכְלִי לְדַבֵּר לְאַט יוֹתֵר?",
+   "english": "Could you speak more slowly?",
+   "back": "אתה יכול לדבר יותר לאט?",
+   "roundTrip": 33.5,
+   "second": "Can you talk slower?",
+   "agreement": 21.9,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 34 (needs 60): came back as \"אתה יכול לדבר יותר לאט?\"",
+    "the two packs disagree (22, needs 45): the ordinary pack says \"Can you talk slower?\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "תְּדַבְּרִי יוֹתֵר לְאַט, בְּבַקָּשָׁה",
+   "english": "Speak more slowly, please.",
+   "back": "דבר יותר לאט, בבקשה.",
+   "roundTrip": 76.6,
+   "second": "Slow down, please.",
+   "agreement": 38.5,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "the two packs disagree (39, needs 45): the ordinary pack says \"Slow down, please.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "בְּמָה אַתְּ עוֹבֶדֶת?",
+   "english": "What do you do?",
+   "back": "מה אתה עושה?",
+   "roundTrip": 24.5,
+   "second": "What do you do?",
+   "agreement": 100.0,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 25 (needs 60): came back as \"מה אתה עושה?\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי מִצְטַעֶרֶת עַל הָאִחוּר",
+   "english": "I'm sorry about the back.",
+   "back": "אני מצטער על הגב.",
+   "roundTrip": 48.4,
+   "second": "I'm sorry about the back.",
+   "agreement": 100.0,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 48 (needs 60): came back as \"אני מצטער על הגב.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "תִּשְׁלְחִי לִי מִקּוּם",
+   "english": "Send me a place.",
+   "back": "שלח לי מקום.",
+   "roundTrip": 50.6,
+   "second": "Send me a seat.",
+   "agreement": 52.7,
+   "file": "data/israel/register-ladder.json",
+   "why": [
+    "round trip 51 (needs 60): came back as \"שלח לי מקום.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי סוֹבֶלֶת מִכְּאֵב רֹאשׁ. אֶפְשָׁר תְּרוּפָה?",
+   "english": "I have a headache. Allow medication.",
+   "back": "יש לי כאב ראש.",
+   "roundTrip": 20.4,
+   "second": "I'm having a headache. Allow medicine.",
+   "agreement": 67.4,
+   "file": "data/israel/scenarios.json",
+   "why": [
+    "round trip 20 (needs 60): came back as \"יש לי כאב ראש.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי מִצְטַעֶרֶת מְאוֹד עַל הָאִחוּר",
+   "english": "I'm very sorry about the back.",
+   "back": "אני מאוד מצטער על הגב.",
+   "roundTrip": 36.6,
+   "second": "I'm so sorry about the back.",
+   "agreement": 78.9,
+   "file": "data/israel/scenarios.json",
+   "why": [
+    "round trip 37 (needs 60): came back as \"אני מאוד מצטער על הגב.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "לֹא אֲשֵׁמָה, הָיְתָה תְּנוּעָה",
+   "english": "Not guilty was a movement",
+   "back": "לא אשם היה תנועה",
+   "roundTrip": 43.3,
+   "second": "Not guilty. There was traffic.",
+   "agreement": 41.4,
+   "file": "data/israel/scenarios.json",
+   "why": [
+    "round trip 43 (needs 60): came back as \"לא אשם היה תנועה\"",
+    "the two packs disagree (41, needs 45): the ordinary pack says \"Not guilty. There was traffic.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי נִמְצֵאת בַּדֶּרֶךְ וְאַגִּיעַ בְּעוֹד כַּחֲמֵשׁ דַּקּוֹת",
+   "english": "I'm on my way and I'll be there in about five minutes.",
+   "back": "אני בדרך ואני אהיה שם בעוד כחמש דקות.",
+   "roundTrip": 53.7,
+   "second": "I'm on my way and I'll be there in about five minutes.",
+   "agreement": 100.0,
+   "file": "data/israel/scenarios.json",
+   "why": [
+    "round trip 54 (needs 60): came back as \"אני בדרך ואני אהיה שם בעוד כחמש דקות.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי שְׂמֵחָה לְהִתְוַדַּע אֵלֶיךָ בְּאֹפֶן אִישִׁי",
+   "english": "I am happy to inform you in a personal way.",
+   "back": "אני שמח להודיע לך באופן אישי.",
+   "roundTrip": 41.0,
+   "second": "I'm happy to be known to you in person.",
+   "agreement": 43.3,
+   "file": "data/israel/scenarios.json",
+   "why": [
+    "round trip 41 (needs 60): came back as \"אני שמח להודיע לך באופן אישי.\"",
+    "the two packs disagree (43, needs 45): the ordinary pack says \"I'm happy to be known to you in person.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "מָה? מָה? אֲנִי לֹא מְבִינָה כְּלוּם!",
+   "english": "What? I don't understand anything.",
+   "back": "אני לא מבין כלום.",
+   "roundTrip": 47.5,
+   "second": "What? What? I don't understand anything.",
+   "agreement": 96.8,
+   "file": "data/israel/scenarios.json",
+   "why": [
+    "round trip 48 (needs 60): came back as \"אני לא מבין כלום.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי מַסְכִּימָה לַמּוֹעֵד הַמּוּצָע",
+   "english": "I agree to the proposed date",
+   "back": "אני מסכים לדייט המוצע.",
+   "roundTrip": 43.0,
+   "second": "I accept the proposed date.",
+   "agreement": 67.0,
+   "file": "data/israel/scenarios.json",
+   "why": [
+    "round trip 43 (needs 60): came back as \"אני מסכים לדייט המוצע.\""
+   ]
+  },
+  {
+   "kind": "machine",
+   "he": "אֲנִי מְאַחֶלֶת לְךָ שַׁבָּת שָׁלוֹם",
+   "english": "I wish you a good Saturday.",
+   "back": "אני מאחל לך שבת טובה.",
+   "roundTrip": 47.7,
+   "second": "I wish you Shabbat Shalom",
+   "agreement": 34.7,
+   "file": "data/israel/scenarios.json",
+   "why": [
+    "round trip 48 (needs 60): came back as \"אני מאחל לך שבת טובה.\"",
+    "the two packs disagree (35, needs 45): the ordinary pack says \"I wish you Shabbat Shalom\""
+   ]
+  }
+ ]
+}

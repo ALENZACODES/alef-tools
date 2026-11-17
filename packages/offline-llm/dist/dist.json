@@ -1,0 +1,37 @@
+{
+ "schema": "alef.dist.v1",
+ "name": "offline-llm",
+ "version": "0.1.0",
+ "files": [
+  {
+   "path": "ask/answers.v1.json",
+   "bytes": 99,
+   "sha256": "6b2f227a2b60904728a375edce07d1e6bfea8ca72aa2f246d3e806b5d4c8739e"
+  },
+  {
+   "path": "index.js",
+   "bytes": 2072,
+   "sha256": "af687a826258d0bfb851af6d2d43053fba1102ffab3e7509d761adece570f7f2"
+  },
+  {
+   "path": "report.json",
+   "bytes": 3063,
+   "sha256": "ad73da8318d4767e7a3a7584c8e03ce503be588bd6d33066d926eee39c38070b"
+  },
+  {
+   "path": "search.js",
+   "bytes": 6829,
+   "sha256": "f18950ef9c6ee70c99c48c37fdbba671f2155c8c122d2888453bcfcd3bc3ae77"
+  },
+  {
+   "path": "search/index.v1.json",
+   "bytes": 476126,
+   "sha256": "b5277b145028d158f81f499136c9ba6975f612f66efda944bb4240c0ec821383"
+  },
+  {
+   "path": "search/index.v1.vec",
+   "bytes": 78176,
+   "sha256": "d2a716701865f5ee8e5dd15c3cb9eeb752d4a4c07feef778e63a8f50a892c2a3"
+  }
+ ]
+}
