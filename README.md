@@ -15,17 +15,28 @@ at build time.
 **Start with [`docs/CONTRACT.md`](docs/CONTRACT.md).** It says what a package
 exports, how a language pack is split and checked, and how the app pulls it in.
 
-## Layout
+## Project structure
 
-```
-packages/
-  loader/        shared language pack loader and cache manager (Lane 7)
-  translate/     Lane 1      speech/       Lane 2      nikud/    Lane 3
-  morph/         Lane 4      offline-llm/  Lane 5      handwriting/, ocr-fix/   Lane 6
-scripts/         build-dist, check-manifest, check-budgets, pin-revisions, sha256-parts,
-                 build-licences, release (Node); convert-common.py (Python)
-models.manifest.json (+ .schema.json)    every model: licence, pinned revision, tier, pack, files
-docs/            CONTRACT.md, LICENCES.md (generated), sources.md, QA reports
+```text
+alef-tools/
+├── .github/                     # CI workflows (3 files)
+├── docs/                        # Contract, licences, sources and QA reports (5 files)
+├── packages/
+│   ├── handwriting/             # Handwriting recognition (1 file)
+│   ├── loader/                  # Shared language-pack loader and cache (23 files)
+│   ├── morph/                   # Morphology (1 file)
+│   ├── nikud/                   # Vowel marks (1 file)
+│   ├── ocr-fix/                 # OCR correction (1 file)
+│   ├── offline-llm/             # Offline language model (1 file)
+│   ├── speech/                  # Speech (1 file)
+│   └── translate/               # Translation (1 file)
+├── scripts/                     # Build, manifest, budget and release scripts (14 files)
+├── .gitignore
+├── LICENSE                      # Licence
+├── models.manifest.json         # Every model: licence, pinned revision, tier, pack, files
+├── models.manifest.schema.json  # Schema for the manifest
+├── package.json                 # npm scripts and dependencies
+└── README.md                    # This file
 ```
 
 ## Working here
